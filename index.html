@@ -3,16 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Economics Debate Review</title>
+  <title>Economics Debate Review — Saint Francis High School</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,700;1,700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            headline: ['"Source Serif 4"', 'Georgia', 'serif'],
+            body: ['Barlow', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            leather: { DEFAULT: '#48291b', light: '#f5ebe6' },
+            cedar: { DEFAULT: '#a16c0d', light: '#faf3e6' },
+            sunlight: '#ffc62b',
+            fire: '#b66008',
+            ash: { 1: '#e3e1de', 2: '#c6c2bd', 3: '#978f85', 4: '#5e5243', 5: '#1f1c1a' },
+            dove: '#ffffff',
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    * { scrollbar-width: thin; scrollbar-color: #cbd5e1 transparent; }
+    * { scrollbar-width: thin; scrollbar-color: #c6c2bd transparent; }
     *::-webkit-scrollbar { width: 6px; }
-    *::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
-    body { margin: 0; }
+    *::-webkit-scrollbar-thumb { background: #c6c2bd; border-radius: 3px; }
+    body { margin: 0; font-family: 'Barlow', system-ui, sans-serif; color: #1f1c1a; }
+    h1, h2, h3, .sf-headline { font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; }
+
+    /* SFHS Team Color Classes */
+    .sf-bg-cedar { background-color: #a16c0d; }
+    .sf-bg-cedar-light { background-color: #faf3e6; }
+    .sf-text-cedar { color: #a16c0d; }
+    .sf-border-cedar { border-color: #c9a34d; }
+    .sf-badge-cedar { background-color: #faf3e6; color: #a16c0d; }
+
+    .sf-bg-leather { background-color: #48291b; }
+    .sf-bg-leather-light { background-color: #f5ebe6; }
+    .sf-text-leather { color: #48291b; }
+    .sf-border-leather { border-color: #8b6650; }
+    .sf-badge-leather { background-color: #f5ebe6; color: #48291b; }
+
+    /* Active segment tab override */
+    .sf-bg-cedar.text-white, .sf-bg-leather.text-white { color: #fff !important; }
   </style>
 </head>
 <body>
@@ -20,7 +60,6 @@
   <script type="text/babel">
     const { useState, useEffect, useRef, useCallback, useMemo } = React;
 
-    // Inline SVG icon components (no external icon library needed)
     const Icon = ({d, className = "w-4 h-4", fill = "none", stroke = "currentColor"}) => (
       <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill={fill} stroke={stroke} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">{typeof d === 'string' ? <path d={d}/> : d}</svg>
     );
@@ -41,8 +80,7 @@
     const FileText = ({className}) => <Icon className={className} d={<><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></>}/>;
     const Volume2 = ({className}) => <Icon className={className} d={<><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></>}/>;
     const Eye = ({className}) => <Icon className={className} d={<><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></>}/>;
-
-
+\n
 // ============================================================================
 // DEBATE CONFIG DATA
 // ============================================================================
@@ -441,13 +479,13 @@ function formatTime(s) {
 }
 
 function segmentTypeLabel(type) {
-  return { opening: 'Opening', main: 'Main Argument', counter: 'Counter', closing: 'Closing' }[type] || type;
+  return { opening: 'Opening', main: 'Main Argument', counter: 'Counter', rebuttal: 'Counter', closing: 'Closing' }[type] || type;
 }
 
 function teamColor(team, variant = 'bg') {
   const colors = {
-    A: { bg: 'bg-blue-600', bgLight: 'bg-blue-50', text: 'text-blue-700', border: 'border-blue-300', ring: 'ring-blue-400', badge: 'bg-blue-100 text-blue-800' },
-    B: { bg: 'bg-amber-600', bgLight: 'bg-amber-50', text: 'text-amber-700', border: 'border-amber-300', ring: 'ring-amber-400', badge: 'bg-amber-100 text-amber-800' },
+    A: { bg: 'sf-bg-cedar', bgLight: 'sf-bg-cedar-light', text: 'sf-text-cedar', border: 'sf-border-cedar', ring: 'ring-yellow-600', badge: 'sf-badge-cedar' },
+    B: { bg: 'sf-bg-leather', bgLight: 'sf-bg-leather-light', text: 'sf-text-leather', border: 'sf-border-leather', ring: 'ring-amber-800', badge: 'sf-badge-leather' },
   };
   return colors[team]?.[variant] || '';
 }
@@ -563,7 +601,7 @@ function DebateReview() {
     if (!segment?.transcript) return -1;
     let idx = -1;
     for (let i = 0; i < segment.transcript.length; i++) {
-      if (currentTime >= segment.transcript[i].time) idx = i;
+      if (currentTime >= segment.transcript[i].start) idx = i;
     }
     return idx;
   }, [currentTime, segment?.transcript]);
@@ -802,10 +840,10 @@ function DebateReview() {
             {searchResults.slice(0, 20).map((r, i) => (
               <button
                 key={i}
-                onClick={() => { goToSegment(r.segIndex); setTimeout(() => seekTo(r.time), 500); setSearchQuery(''); setSearchResults([]); }}
+                onClick={() => { goToSegment(r.segIndex); setTimeout(() => seekTo(r.start), 500); setSearchQuery(''); setSearchResults([]); }}
                 className="w-full text-left text-xs p-1.5 rounded hover:bg-white flex gap-2"
               >
-                <span className="text-gray-400 shrink-0">{r.segLabel} @ {formatTime(r.time)}</span>
+                <span className="text-gray-400 shrink-0">{r.segLabel} @ {formatTime(r.start)}</span>
                 <span className="text-gray-700 truncate">{r.text}</span>
               </button>
             ))}
@@ -966,14 +1004,14 @@ function DebateReview() {
                 <button
                   key={i}
                   data-active={isActive}
-                  onClick={() => seekTo(t.time)}
+                  onClick={() => seekTo(t.start)}
                   className={`w-full text-left px-2 py-1.5 rounded text-sm transition-colors ${
                     isActive
                       ? `${teamColor(segment.team, 'bgLight')} ${teamColor(segment.team, 'text')} font-medium`
                       : 'text-gray-600 hover:bg-gray-50'
                   }`}
                 >
-                  <span className="text-xs text-gray-400 mr-2 font-mono">{formatTime(t.time)}</span>
+                  <span className="text-xs text-gray-400 mr-2 font-mono">{formatTime(t.start)}</span>
                   {t.text}
                 </button>
               );
