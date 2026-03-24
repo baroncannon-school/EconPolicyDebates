@@ -620,6 +620,12 @@ function topicBadge(topic) {
 }
 
 // ============================================================================
+// SFHS Logo assets (base64-encoded for self-contained HTML)
+const SFHS_LOGO_SHIELD = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAkCAYAAACTz/ouAAAIKUlEQVRIx6WWeXBb1RXGf/c+7Za8xDKJLWQ7sZ3EhpikTuPBocRJimOWmsUUArRMYJqhmdJ1oFC6TGEoMGEpSztTCg0QWoYWytLCtNAMBZJMMRjI4uA4dmLLi+RFXiVZlqV3b/+QrQRIgE7vjP7QvHfOd853zve9K/iCp7HSh9Ya4Ayl1ENCiHelNO7SWkWFEPyzfeCkccYXSVzm9SCEcGmlmrTWDxb6S+uEEGvisWiJlLJLShku93p0VzjyqXgxnwSQcz9xwjOH1nqRMs1apdUVbk/OhrUNF7guvvIKBoOD/OWJx+k6dKAvlUr+VUrjFSlluxBiHEhlABorfQghLMo0t5im2aTneAAsQop8q9Xuz833Lqxctdqo37QJf75m6OCruPJ8uErX8f4HHezd9Rq9R49MT0cj/co0g1rrCKABxPln+C1mMrnV7nDeU/OV9dm5+V601hiGgScnh0Kfj9N9Xlxikolj/2G87yAqNQuA3b0Ab3kd9oVnMjql6O8LMjI4RDw+PT8vRMOywpttNvttzdfdkLtx/UriI50gBCiTVCJKYmqI2Fg/icgoWpkg5MdJ1grD6sCZV4grz4fN7UVa7IBAiDRAvOmaLY6Lzq8l8PZjJGLjafbniBJCpAHnRpP5r0FrhRAiXa3WaFQmbn6SFsOwOJZWVTHa/jqJ2DjSsJxyo7TWWJ05lNVvZbx3H4MHXwchMqAC+akYy1wkWqWr+eyjkVY7+WW1JKcnjrf5GUd+7hv/57F81sPjG3uyXk7+TpqE40z8bx18PiN8sqZTdqCVSXZRFafXXIIQEj2X3bA6sTqzKaiow+7Ony8ZISTTo70EWv6MSs1m5nlqAMCWlcuC0poTdl8jpIE0rDhyCrE4PBk6hJQYNifiEzo5JYAQkvHAPlp33nicUq2xewqovvxORjp207P3aZDHE6pUEpVKfD6A1mlBqdQMs5GZzDCVUiil0cpkdiZKbCKEYRhpxZ7gkUII9FxvJwWQEkxTE42nGJ9KMjaVZCKSJDqdxL3AwoqrFZ29MV5+a5gspxVPloU8j5UFOVZy3VYcdgMp0oVmAOY1NhFJ0jsYpyc0zdBYguh0isRsKtPVwkQuKVMzEU1ypDeasQqLIXHYLeR6LPgKnCz2uViUb08DaGBoLMHu1jDHgjNMRlMold4am93OuY2NgKDlzX8hRbp1gUAITfGScs6qXUvb+y0Euo4QT5iEwgkOdE2Rn2NDIiCZUrzRGua9jyaYiCTRWiOlQGtFedWZLKtexfLqVZRXrcA0578lGiEkG5qasTudbGhqxmqzMe+FyZQiFJ5JC01rSCY1Yt64IONNk2OjGNKgqHQx6y+6lJwF+Wit0MBZa+qo/vLZFPpLCA+GME0zsxDpXCcO+QSfW7NuI4HODgYH+gj29vD8jt/hyc1lU/NVfOvmn+PMcrP6nHqWLKvixZ2Pc+zwIcZGhtBKIaVkVd25DPQcI9TXg/ykfyqlqDmnnq23/AKH0wXAeHiYns4Odtz/K/a37MWZ5UZKgx0P3MWe114h1BdgNpFAKUX1mrP59k9uJ8uTnaZaa63VHPI8NePhEYrLluJwueZFAWhO8/lZvKwKAHd2DstWrMJmd8xtYXqbikoWY3M4iE5NIIRAKtOMJWbiuNyejFMFOg8jhMBmt6OUAqBm7Tq23XYHI6Egk2NhOg5+yFm1dWz54a3k5nsxUynQGnd2DkMDfUyOjSGERJqm2T86NMhCnz+tPinpam8jHovhK1lCQWER137vZr5x4038/Zkn+dufdmCaJv3dR/nNHbdhsVq49b7fUrv+PNzZORSXLaWttYV4LJq2Cq31+z2dh5fXffV8rFYrSilGQkH2texh20/vQEoDaRg8+LOb2PfOHgr9JQgEUhpMjY+x44G72fL9W/jx9kfo6+4iK8vDC0/+PkOblFK+1t3RnsjOzaPQX5JeQa35x3PPoLVmoc/PjvvvYt87e5CG8bFtE1KSiMd56qHttLW2ULVyNbtff5Xujo8QUs7pyTDeGB8Nf3SkbT9rGy7IIAd7jvHo3b9ksD+Af0k53kWFoDXKVHMy0yjTxGa3U1qxDJfHw66XnuPFpx5Dz83NsFgwyr2eiFbKPTo8dF7DZZtFMNDN6PAQUkpCfQGOtrfRcNmVXHTVtZRXrWA6FiXU20Pf0U5q1q7j6m0/oKH5Slp3/5udj9xLdGoqLTJg48WXY1QUZCOl7I5MTqzVWvsbmjdz6IN3mYnHEEIyHBygdc+bKNOktn4jFVXVPPHreyguW8o13/kRA4Funn7kPna9/DyzMzNpmzdNas6p58LN30zfTbXWaK03GYbxdPN1NxQs9BWz8+HtTIyNpvWhNUprchfkU7p0OcHeHrynLWJmJk7/sS5mZ2czOlLKpHpNHZdeu5WX//gHjK5whIqCbCxWa3cqlZzsPHRwXfGSCvuGpmZCfQHGRoYhvQ0kZuKE+gLEYzFGQkEmwiMZ31HKxGqzU3/hJTQ2b+alnY+zv2XvUQOgKxyhLN+tpTT2p2ZnRw8f+PBsw2K4vnb1dZxW5GM8PEIsMoVpmifcKvXc9VHjcLmoXLmar1+/jUJ/Kc8++jAdBz7cKw3jho9ZUWOlDyGlNFOpTVqr2wv9pTXrLmiSZcvPZHx0hEBnB8OhAeKxKFIaZOfl4StZQnFZBQDvvrWL995+IzYdjT5rWCx3aq17PnVXbKz0pa1ayhIzlfquEOJ676KivMqVX6K8agXeRUU4nE6UqYhGJgkGumnf9wFH29uIRaYOSEPeK6XxgtZ6WgjBfwHLArbgioJU+AAAAABJRU5ErkJggg==';
+
+const SFHS_LOGO_HORIZONTAL = 'data:image/png;base64,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';
+
+// ============================================================================
 // GOOGLE INTEGRATION CONFIG
 // ============================================================================
 
@@ -628,7 +634,7 @@ const GOOGLE_CONFIG = {
   scopes: 'https://www.googleapis.com/auth/drive.file',
   driveFileName: 'econ-debate-review-notes.json',
   allowedDomain: 'sfhs.com',
-  bugReportFormUrl: null, // Optional: Google Form URL for bug reports — if null, uses mailto fallback
+  bugReportWebhookUrl: 'https://script.google.com/macros/s/AKfycbyuhnpYr02XlAiTR5XsmuE-9SZ5_pU7T1efbBdzPTIbJmCQSGMUJkSB_K-TPhpJCi4/exec',
 };
 
 // ============================================================================
@@ -642,6 +648,7 @@ function DebateReview() {
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [playbackRate, setPlaybackRate] = useState(1);
+  const [volume, setVolume] = useState(100);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [notes, setNotes] = useState({});
@@ -722,6 +729,7 @@ function DebateReview() {
         events: {
           onReady: (e) => {
             e.target.setPlaybackRate(playbackRate);
+            e.target.setVolume(volume);
             // Resume from memory if available
             const memKey = segment.id;
             if (playbackMemory[memKey] && playbackMemory[memKey] > 2) {
@@ -917,6 +925,11 @@ function DebateReview() {
     if (playerRef.current?.setPlaybackRate) playerRef.current.setPlaybackRate(next);
   };
 
+  const changeVolume = (val) => {
+    setVolume(val);
+    if (playerRef.current?.setVolume) playerRef.current.setVolume(val);
+  };
+
   const goToSegment = (i) => {
     setSegIndex(i);
     setCurrentTime(0);
@@ -1060,6 +1073,20 @@ function DebateReview() {
       if (data.notes) setNotes(data.notes);
       if (data.playbackMemory) setPlaybackMemory(data.playbackMemory);
       if (data.freeNotes) setFreeNotes(data.freeNotes);
+      if (data.preferences) {
+        if (data.preferences.layout) setLayout(data.preferences.layout);
+        if (data.preferences.hSplit != null) setHSplit(data.preferences.hSplit);
+        if (data.preferences.vSplit != null) setVSplit(data.preferences.vSplit);
+        if (data.preferences.audioOnly != null) setAudioOnly(data.preferences.audioOnly);
+        if (data.preferences.playbackRate != null) {
+          setPlaybackRate(data.preferences.playbackRate);
+          if (playerRef.current?.setPlaybackRate) playerRef.current.setPlaybackRate(data.preferences.playbackRate);
+        }
+        if (data.preferences.volume != null) {
+          setVolume(data.preferences.volume);
+          if (playerRef.current?.setVolume) playerRef.current.setVolume(data.preferences.volume);
+        }
+      }
       setLastSaved(data.lastSaved || null);
     } catch (e) {
       console.error('Failed to load notes:', e);
@@ -1076,6 +1103,14 @@ function DebateReview() {
         notes,
         playbackMemory,
         freeNotes,
+        preferences: {
+          layout,
+          hSplit,
+          vSplit,
+          audioOnly,
+          playbackRate,
+          volume,
+        },
         lastSaved: new Date().toISOString(),
         userEmail: user.email,
       });
@@ -1120,23 +1155,56 @@ function DebateReview() {
       console.error('Failed to save notes:', e);
     }
     setIsSaving(false);
-  }, [user, notes, playbackMemory, driveFileId, findDriveFile]);
+  }, [user, notes, playbackMemory, freeNotes, layout, hSplit, vSplit, audioOnly, playbackRate, volume, driveFileId, findDriveFile]);
 
   // Load notes on sign-in
   useEffect(() => {
     if (user) loadNotesFromDrive();
   }, [user]);
 
-  // Auto-save notes every 30 seconds when signed in and notes have changed
+  // Auto-save notes every 15 seconds when signed in and data changes
   const autoSaveRef = useRef(null);
+  const hasUnsavedRef = useRef(false);
   useEffect(() => {
     if (!user) return;
+    hasUnsavedRef.current = true;
     if (autoSaveRef.current) clearTimeout(autoSaveRef.current);
     autoSaveRef.current = setTimeout(() => {
       saveNotesToDrive();
-    }, 30000);
+      hasUnsavedRef.current = false;
+    }, 15000);
     return () => { if (autoSaveRef.current) clearTimeout(autoSaveRef.current); };
-  }, [notes, playbackMemory, freeNotes, user, saveNotesToDrive]);
+  }, [notes, playbackMemory, freeNotes, layout, hSplit, vSplit, audioOnly, playbackRate, volume, user, saveNotesToDrive]);
+
+  // Save when user tabs away or minimizes
+  useEffect(() => {
+    const handleVisibility = () => {
+      if (document.visibilityState === 'hidden' && user && hasUnsavedRef.current) {
+        saveNotesToDrive();
+        hasUnsavedRef.current = false;
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
+    return () => document.removeEventListener('visibilitychange', handleVisibility);
+  }, [user, saveNotesToDrive]);
+
+  // Prompt before closing if there are unsaved changes
+  useEffect(() => {
+    const handleBeforeUnload = (e) => {
+      if (hasUnsavedRef.current && user) {
+        // Attempt a final save
+        saveNotesToDrive();
+      }
+      // Only show browser prompt if user has entered any notes at all
+      const hasContent = Object.keys(notes).length > 0 || freeNotes.trim().length > 0;
+      if (hasContent && hasUnsavedRef.current) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [user, notes, freeNotes, saveNotesToDrive]);
 
   // Bug report: take screenshot
   const takeBugScreenshot = useCallback(async () => {
@@ -1154,7 +1222,7 @@ function DebateReview() {
     }
   }, []);
 
-  // Bug report: submit
+  // Bug report: submit via webhook or fallback
   const submitBugReport = useCallback(async () => {
     if (!bugText.trim()) return;
     setIsSendingBug(true);
@@ -1165,27 +1233,63 @@ function DebateReview() {
     const report = {
       type: bugType,
       message: bugText,
-      user: user ? { name: user.name, email: user.email } : { name: 'Anonymous', email: 'unknown' },
+      userName: user ? user.name : 'Anonymous',
+      userEmail: user ? user.email : 'not signed in',
       page: view,
       segment: view === 'review' ? `${debate?.topic} — Seg ${segIndex + 1} (${segment?.label})` : 'Home',
       timestamp: new Date().toISOString(),
-      screenshot: screenshot || 'none',
+      screenshot: screenshot || '',
       userAgent: navigator.userAgent,
+      url: window.location.href,
     };
 
-    // Send via email as a fallback (works without any backend)
-    const subject = encodeURIComponent(`[${bugType === 'bug' ? 'Bug' : 'Idea'}] Debate Review — ${user?.name || 'Student'}`);
-    const body = encodeURIComponent(
-      `Type: ${bugType === 'bug' ? 'Bug Report' : 'Feature Idea'}\n` +
-      `From: ${report.user.name} (${report.user.email})\n` +
-      `Page: ${report.page}\n` +
-      `Segment: ${report.segment}\n` +
-      `Time: ${report.timestamp}\n\n` +
-      `Message:\n${bugText}\n\n` +
-      (screenshot ? `[Screenshot was captured but cannot be attached via email link. Student can paste it separately.]` : '[No screenshot captured]')
-    );
+    let sent = false;
 
-    window.open(`mailto:bcannon@snapfituniforms.com?subject=${subject}&body=${body}`, '_blank');
+    // Try Google Apps Script webhook first
+    if (GOOGLE_CONFIG.bugReportWebhookUrl) {
+      try {
+        await fetch(GOOGLE_CONFIG.bugReportWebhookUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(report),
+        });
+        sent = true;
+      } catch (e) {
+        console.error('Webhook failed, trying fallback:', e);
+      }
+    }
+
+    // Fallback: save report to student's Drive (if signed in)
+    if (!sent && user?.accessToken) {
+      try {
+        const fileName = `bug-report-${Date.now()}.json`;
+        const metadata = { name: fileName, mimeType: 'application/json' };
+        const form = new FormData();
+        form.append('metadata', new Blob([JSON.stringify(metadata)], { type: 'application/json' }));
+        form.append('file', new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' }));
+        await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id', {
+          method: 'POST',
+          headers: { Authorization: `Bearer ${user.accessToken}` },
+          body: form,
+        });
+        sent = true;
+      } catch (e) {
+        console.error('Drive fallback also failed:', e);
+      }
+    }
+
+    // Last resort fallback: mailto
+    if (!sent) {
+      const subject = encodeURIComponent(`[${bugType === 'bug' ? 'Bug' : 'Idea'}] Debate Review — ${user?.name || 'Student'}`);
+      const body = encodeURIComponent(
+        `Type: ${bugType === 'bug' ? 'Bug Report' : 'Feature Idea'}\n` +
+        `From: ${report.userName} (${report.userEmail})\n` +
+        `Page: ${report.page}\nSegment: ${report.segment}\n` +
+        `Time: ${report.timestamp}\n\nMessage:\n${bugText}`
+      );
+      window.open(`mailto:bcannon@snapfituniforms.com?subject=${subject}&body=${body}`, '_blank');
+    }
 
     setBugSent(true);
     setIsSendingBug(false);
@@ -1201,42 +1305,46 @@ function DebateReview() {
   if (view === 'home') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <header className="bg-white border-b shadow-sm">
-          <div className="max-w-6xl mx-auto px-6 py-5 flex items-start justify-between">
-            <div>
-              <h1 className="text-3xl font-headline text-gray-900">{SITE_CONFIG.courseTitle}</h1>
-              <p className="text-base text-gray-500 mt-1 font-body">{SITE_CONFIG.schoolName} — {SITE_CONFIG.instructorName}</p>
+        {/* SFHS Branded Banner */}
+        <header className="bg-leather shadow-md">
+          <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <img src={SFHS_LOGO_HORIZONTAL} alt="Saint Francis High School" className="h-10" />
+              <div className="border-l border-white/30 pl-4">
+                <h1 className="text-xl font-headline text-white leading-tight">{SITE_CONFIG.courseTitle}</h1>
+                <p className="text-sm text-white/70 font-body">{SITE_CONFIG.instructorName}</p>
+              </div>
             </div>
             <div className="flex items-center gap-3">
               {user ? (
                 <div className="flex items-center gap-2">
-                  {user.picture && <img src={user.picture} alt="" className="w-8 h-8 rounded-full" />}
+                  {user.picture && <img src={user.picture} alt="" className="w-7 h-7 rounded-full border border-white/30" />}
                   <div className="text-right">
-                    <p className="text-sm font-semibold text-gray-800 font-body">{user.name}</p>
-                    <button onClick={handleSignOut} className="text-xs text-gray-400 hover:text-gray-600 font-body">Sign out</button>
+                    <p className="text-sm font-semibold text-white font-body">{user.name}</p>
+                    <button onClick={handleSignOut} className="text-xs text-white/60 hover:text-white font-body">Sign out</button>
                   </div>
                   {lastSaved && (
-                    <span className="text-xs text-green-600 font-body ml-2">
+                    <span className="text-xs text-sunlight font-body ml-2">
                       Saved {new Date(lastSaved).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}
                     </span>
                   )}
-                  {isSaving && <span className="text-xs text-gray-400 font-body ml-2">Saving...</span>}
+                  {isSaving && <span className="text-xs text-white/50 font-body ml-2">Saving...</span>}
                 </div>
               ) : (
                 <button
                   onClick={handleGoogleSignIn}
                   disabled={isSigningIn}
-                  className="px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors flex items-center gap-2 font-body"
+                  className="px-4 py-1.5 bg-white/10 border border-white/30 rounded-lg text-sm font-medium text-white hover:bg-white/20 transition-colors flex items-center gap-2 font-body"
                 >
-                  <svg className="w-4 h-4" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  <svg className="w-4 h-4" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#fff"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#fff"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#fff"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#fff"/></svg>
                   {isSigningIn ? 'Signing in...' : 'Sign in with Google'}
                 </button>
               )}
             </div>
           </div>
           {authError && (
-            <div className="max-w-6xl mx-auto px-6 pb-3">
-              <p className="text-sm text-red-600 font-body">{authError}</p>
+            <div className="max-w-6xl mx-auto px-6 pb-2">
+              <p className="text-sm text-red-300 font-body">{authError}</p>
             </div>
           )}
         </header>
@@ -1559,6 +1667,18 @@ function DebateReview() {
                 <FastForward className="w-4 h-4" />
               </button>
               <span className="text-xs text-gray-400 font-mono">{formatTime(currentTime)} / {formatTime(segment.duration)}</span>
+              <div className="flex items-center gap-1 ml-2">
+                <Volume2 className="w-3.5 h-3.5 text-gray-400" />
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={volume}
+                  onChange={(e) => changeVolume(Number(e.target.value))}
+                  className="w-16 h-1 accent-white cursor-pointer"
+                  style={{ accentColor: '#fff' }}
+                />
+              </div>
             </div>
             <div className="flex items-center gap-2">
               <button onClick={changeRate} className="text-xs text-gray-400 hover:text-white border border-gray-600 rounded px-2 py-0.5">
@@ -1747,27 +1867,28 @@ function DebateReview() {
 
   return (
     <div className="h-screen bg-gray-100 flex flex-col overflow-hidden relative">
-      {/* Top Navigation Bar */}
-      <header className="bg-white border-b shadow-sm px-4 py-1.5 flex items-center justify-between shrink-0 z-30">
+      {/* SFHS Branded Banner — Review View */}
+      <header className="bg-leather px-4 py-1.5 flex items-center justify-between shrink-0 z-30 shadow-md">
         <div className="flex items-center gap-3">
-          <button onClick={() => setView('home')} className="text-gray-500 hover:text-gray-800 flex items-center gap-1 text-base font-body">
-            <ChevronLeft className="w-5 h-5" /> Home
+          <img src={SFHS_LOGO_SHIELD} alt="SFHS" className="h-7" />
+          <button onClick={() => setView('home')} className="text-white/70 hover:text-white flex items-center gap-1 text-sm font-body">
+            <ChevronLeft className="w-4 h-4" /> Home
           </button>
-          <span className="text-gray-300">|</span>
-          <h2 className="font-semibold text-gray-800 text-sm font-body">{debate.topic}</h2>
+          <span className="text-white/30">|</span>
+          <h2 className="font-semibold text-white text-sm font-body">{debate.topic}</h2>
         </div>
         <div className="relative w-56">
-          <Search className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400" />
+          <Search className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-white/50" />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => handleSearch(e.target.value)}
             placeholder="Search transcripts..."
-            className="w-full pl-8 pr-7 py-1 border rounded text-xs focus:outline-none focus:ring-1 focus:ring-blue-400 font-body"
+            className="w-full pl-8 pr-7 py-1 border border-white/20 rounded text-xs bg-white/10 text-white placeholder-white/40 focus:outline-none focus:ring-1 focus:ring-sunlight/50 font-body"
           />
           {searchQuery && (
             <button onClick={() => { setSearchQuery(''); setSearchResults([]); }} className="absolute right-2 top-1/2 -translate-y-1/2">
-              <X className="w-3 h-3 text-gray-400" />
+              <X className="w-3 h-3 text-white/50" />
             </button>
           )}
         </div>
@@ -1777,20 +1898,20 @@ function DebateReview() {
               <button
                 onClick={saveNotesToDrive}
                 disabled={isSaving}
-                className="px-3 py-1.5 rounded text-sm font-medium border border-green-300 text-green-700 hover:bg-green-50 transition-colors font-body"
+                className="px-3 py-1 rounded text-xs font-medium border border-sunlight/50 text-sunlight hover:bg-white/10 transition-colors font-body"
               >
                 {isSaving ? 'Saving...' : lastSaved ? `Saved ${new Date(lastSaved).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}` : 'Save Notes'}
               </button>
-              {user.picture && <img src={user.picture} alt="" className="w-6 h-6 rounded-full" />}
+              {user.picture && <img src={user.picture} alt="" className="w-6 h-6 rounded-full border border-white/30" />}
             </div>
           ) : (
             <button
               onClick={handleGoogleSignIn}
               disabled={isSigningIn}
-              className="px-3 py-1 rounded text-xs font-medium bg-leather text-white hover:bg-leather/90 transition-colors font-body flex items-center gap-1.5"
+              className="px-3 py-1 rounded text-xs font-medium bg-white/10 border border-white/30 text-white hover:bg-white/20 transition-colors font-body flex items-center gap-1.5"
             >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#fff"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#fff"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#fff"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#fff"/></svg>
-              Sign in to save notes
+              <svg width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#fff"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#fff"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#fff"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#fff"/></svg>
+              Sign in to save
             </button>
           )}
         </div>
