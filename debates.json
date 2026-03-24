@@ -1,0 +1,1831 @@
+{
+  "courseTitle": "Economics Debate Review",
+  "schoolName": "Saint Francis High School",
+  "instructorName": "Mr. Cannon",
+  "instructorNote": "Review each debate carefully. Pay attention to how teams use evidence, address counterarguments, and structure their reasoning. You will need to select who you believe won each debate and explain why on the exam.",
+  "debates": [
+    {
+      "id": "debate-1",
+      "period": "4th",
+      "debateTopic": "Homelessness",
+      "topic": "Addressing Homelessness",
+      "description": "Should California prioritize Housing First with treatment programs, or a step-by-step approach with housing centers then rehabilitation?",
+      "teamA": {
+        "name": "Group 1",
+        "members": [
+          "Trisha",
+          "Aidan",
+          "Coco",
+          "Charlie",
+          "Rosemary"
+        ],
+        "position": "Housing First + Mental Health/Substance Abuse Treatment + Financial Incentives",
+        "onePagerUrl": null,
+        "keyStats": [
+          "82% of homeless individuals have mental health conditions",
+          "90% Housing First tenant retention rate",
+          "73% effectiveness of financial incentives for treatment",
+          "187,000+ homeless people in California",
+          "44% of chronically homeless Americans are in California"
+        ]
+      },
+      "teamB": {
+        "name": "Group 2",
+        "members": [
+          "Finn",
+          "Brody",
+          "Sophie",
+          "Kayla",
+          "Chloe"
+        ],
+        "position": "Housing First with step-by-step approach: housing centers first, then expand to rehab facilities",
+        "onePagerUrl": null,
+        "keyStats": [
+          "9 out of 10 people remain housed after 1 year",
+          "Housing first increases engagement in job training and healthcare",
+          "90% retention rate (HUD data)",
+          "Step-by-step approach prevents overwhelming individuals"
+        ]
+      },
+      "segments": [
+        {
+          "id": "seg-1",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "A",
+          "youtubeId": "KZUd5-Yjxg0",
+          "duration": 95,
+          "prompts": [
+            "What is Group 1's core policy proposal? Identify the three components.",
+            "How does Group 1 define 'chronic homelessness' and why does this definition matter for their argument?"
+          ],
+          "transcript": [
+            {
+              "start": 2.9,
+              "end": 5.5,
+              "text": "Homelessness is a big problem in California."
+            },
+            {
+              "start": 5.5,
+              "end": 14,
+              "text": "California has the highest total homeless population in the nation, which is driven by unaffordable housing, mental illness, substance abuse, and more."
+            },
+            {
+              "start": 14,
+              "end": 19.7,
+              "text": "There are currently more than 187,000 homeless people in California, both sheltered and unsheltered."
+            },
+            {
+              "start": 19.7,
+              "end": 28.8,
+              "text": "These people do not have housing stability, which is the ability to maintain which is the ability to access and maintain safe, consistent, and affordable housing."
+            },
+            {
+              "start": 28.8,
+              "end": 35.8,
+              "text": "Moreover, almost a fourth of all homeless Americans in California, including 44% of Americans that are chronically homeless."
+            },
+            {
+              "start": 35.8,
+              "end": 47.3,
+              "text": "Chronic homelessness is when someone with a disabling condition has been homeless continuously for a year or more or has had four episodes of homelessness in the past three years, which total over a year."
+            },
+            {
+              "start": 47.3,
+              "end": 63.7,
+              "text": "Currently, California's approach to solving homelessness is housing first, which helps homeless people access housing without requiring sobriety or treatment participation as a precondition while offering voluntary supportive services in the long-term supporting house of C housing category."
+            },
+            {
+              "start": 63.7,
+              "end": 70.4,
+              "text": "This program makes housing affordable with long-term rental assistance with low no limit on how young people can stay."
+            },
+            {
+              "start": 70.4,
+              "end": 80.4,
+              "text": "We believe that the best policy to address the homelessness crisis in California is long-term supportive housing combined with mental health and substance use resources provided."
+            },
+            {
+              "start": 80.4,
+              "end": 91,
+              "text": "We are going to supplement California's current approach of housing first with financial incentives for treatment because it improves housing stability and addresses chronic homelessness."
+            },
+            {
+              "start": 91,
+              "end": 92.1,
+              "text": "Thank you very much."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o1-1",
+              "title": "Scale of Homelessness in California",
+              "startTime": 2.9,
+              "endTime": 19.7,
+              "bullets": [
+                "187,000+ homeless in California",
+                "Highest total homeless population nationally",
+                "Driven by unaffordable housing, mental illness, substance abuse"
+              ]
+            },
+            {
+              "id": "o1-2",
+              "title": "Defining Key Terms",
+              "startTime": 19.7,
+              "endTime": 47.3,
+              "bullets": [
+                "Housing stability: access safe, consistent, affordable housing",
+                "Chronic homelessness: disabling condition + homeless 1+ years",
+                "44% of chronically homeless Americans in California"
+              ]
+            },
+            {
+              "id": "o1-3",
+              "title": "Current Approach: Housing First",
+              "startTime": 47.3,
+              "endTime": 70.4,
+              "bullets": [
+                "No sobriety/treatment preconditions",
+                "Voluntary supportive services",
+                "Long-term rental assistance"
+              ]
+            },
+            {
+              "id": "o1-4",
+              "title": "Our Policy Proposal",
+              "startTime": 70.4,
+              "endTime": 91,
+              "bullets": [
+                "Supplement Housing First with financial incentives",
+                "Combined with mental health and substance use resources",
+                "Improves housing stability and addresses chronic homelessness"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-2",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "B",
+          "youtubeId": "OOLbGVWG2pM",
+          "duration": 77,
+          "prompts": [
+            "What is Group 2's main argument for why housing must come before other solutions?",
+            "What evidence does Group 2 cite to support the effectiveness of Housing First?"
+          ],
+          "transcript": [
+            {
+              "start": 8.6,
+              "end": 13.6,
+              "text": "Every night in Santa Clara County, over 10,000 people face the reality of homelessness."
+            },
+            {
+              "start": 13.6,
+              "end": 16.6,
+              "text": "But the real issue isn't just the lack of shelter."
+            },
+            {
+              "start": 16.6,
+              "end": 18.2,
+              "text": "It's the lack of stability."
+            },
+            {
+              "start": 18.2,
+              "end": 22.6,
+              "text": "Current approaches often try to fix addiction or employment before housing."
+            },
+            {
+              "start": 22.6,
+              "end": 26.5,
+              "text": "But without a stable place to live, those solutions rarely succeed."
+            },
+            {
+              "start": 26.5,
+              "end": 38.3,
+              "text": "Our policy proposes that Santa Clara County prioritize funding housing centers for individuals experiencing chronic homelessness first and then expand funding to rehab facilities for those with illnesses."
+            },
+            {
+              "start": 38.3,
+              "end": 43.7,
+              "text": "This housing first approach focuses on creating stability before addressing other challenges."
+            },
+            {
+              "start": 43.7,
+              "end": 45,
+              "text": "The evidence is clear."
+            },
+            {
+              "start": 45,
+              "end": 54.6,
+              "text": "According to the US Department of Housing and Urban Development, about nine out of 10 people remain housed one year after receiving housing housing first assistance."
+            },
+            {
+              "start": 54.6,
+              "end": 64.9,
+              "text": "In addition, providing immediate housing increases engagement in job training, health care, and rehabilitation programs, leading to long-term success rather than temporary fixes."
+            },
+            {
+              "start": 64.9,
+              "end": 76.1,
+              "text": "By by prioritizing stable housing first and then addressing underlying issues, this policy offers a more effective, humane, and economically sustainable solution to homelessness in our community."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o2-1",
+              "title": "The Crisis in Santa Clara County",
+              "startTime": 8.6,
+              "endTime": 18.2,
+              "bullets": [
+                "Over 10,000 people face homelessness nightly",
+                "Real issue is lack of stability, not just shelter"
+              ]
+            },
+            {
+              "id": "o2-2",
+              "title": "Current Approaches Fail",
+              "startTime": 18.2,
+              "endTime": 26.5,
+              "bullets": [
+                "Trying to fix addiction/employment before housing fails",
+                "Without stable housing, other solutions rarely succeed"
+              ]
+            },
+            {
+              "id": "o2-3",
+              "title": "Our Policy: Housing Centers First",
+              "startTime": 26.5,
+              "endTime": 43.7,
+              "bullets": [
+                "Prioritize funding housing centers for chronically homeless",
+                "Then expand to rehab facilities",
+                "Stability before addressing other challenges"
+              ]
+            },
+            {
+              "id": "o2-4",
+              "title": "Evidence: Housing First Works",
+              "startTime": 43.7,
+              "endTime": 76.1,
+              "bullets": [
+                "9/10 remain housed after 1 year (HUD)",
+                "Increases engagement in job training, healthcare, rehab",
+                "More effective, humane, and economically sustainable"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-3",
+          "type": "main",
+          "label": "Main Arguments",
+          "team": "A",
+          "youtubeId": "qHab0NEo9R0",
+          "duration": 304,
+          "prompts": [
+            "List the economic evidence Group 1 uses. How do they connect cost savings to their policy?",
+            "How does Group 1 argue that financial incentives improve treatment outcomes? What specific study do they cite?",
+            "What is the relationship between mental health treatment and housing stability in Group 1's argument?"
+          ],
+          "transcript": [
+            {
+              "start": 15.5,
+              "end": 19.9,
+              "text": "So connecting chronic homelessness with permanent housing is an effective solution."
+            },
+            {
+              "start": 19.9,
+              "end": 29.7,
+              "text": "The reason behind the success of our policy is contingent on California's current implementation of the housing first program and the impacts it has on addressing the homelessness crisis."
+            },
+            {
+              "start": 29.7,
+              "end": 38.3,
+              "text": "The program finds that those using housing first are able to move to permanent housing faster and 90% of housing first tenants were able to retain housing stability."
+            },
+            {
+              "start": 38.3,
+              "end": 50.8,
+              "text": "Additionally, in a larger scope to demonstrate the achievable nature of the plan, a pathways to housing program in 2004 highlighted how housing first produces a housing retention of 80% therefore causing a decrease in chronic homelessness."
+            },
+            {
+              "start": 50.8,
+              "end": 60.8,
+              "text": "Similar to the alternative policy, this policy concurs the housing first with long-term supportive housing is a necessary for addressing chronic homelessness and increasing housing stability."
+            },
+            {
+              "start": 60.8,
+              "end": 71.1,
+              "text": "Housing first works because stabil stable housing is the foundation that makes treatment and recovery more effective rather than requiring people to solve those issues before having a place to live."
+            },
+            {
+              "start": 71.1,
+              "end": 79.7,
+              "text": "Rather than treatment first, housing first and more specifically, our policy combats homelessness by providing stable housing and access to the resources they need."
+            },
+            {
+              "start": 79.7,
+              "end": 87.7,
+              "text": "Both based on evidence from California's approach and strategies across the country, housing first is demonstrated to help homeless homeless individuals."
+            },
+            {
+              "start": 87.7,
+              "end": 94,
+              "text": "Housing first is one of the most effective ways to offer support without sobriety or treatment as a prere prerequisite."
+            },
+            {
+              "start": 94,
+              "end": 97.8,
+              "text": "Services are voluntary and preser prefers self-guidance towards sobriety."
+            },
+            {
+              "start": 97.8,
+              "end": 108.9,
+              "text": "Therefore, by providing treatment to individuals who may need it in a stable source of housing, the plan actualized what a housing and human development study finds when comparing housing first to treatment first."
+            },
+            {
+              "start": 108.9,
+              "end": 116.9,
+              "text": "The policy could save $6,37 annually per homeless adult with a chronic medical condition and 9,89 per year for chronic chronically homeless individuals."
+            },
+            {
+              "start": 116.9,
+              "end": 123,
+              "text": "The predicted economic savings could be 5.5 billion over the next 10 years by providing stable housing and resources."
+            },
+            {
+              "start": 123,
+              "end": 126,
+              "text": "Housing first is a better more cost effective strategy."
+            },
+            {
+              "start": 126,
+              "end": 135.6,
+              "text": "In addition to providing housing, it is imperative that we provide treatment for the homeless, which is effect which is effective in addressing the struggles they face in staying home."
+            },
+            {
+              "start": 135.6,
+              "end": 145.5,
+              "text": "According to Proposition One, 82% of the homeless population in California experience mental health conditions and one in 10 Californians who meet the criteria for substance abuse disorders."
+            },
+            {
+              "start": 145.5,
+              "end": 151.8,
+              "text": "Homelessness cannot be effectively treated without treating the underlying problems that keep people from having stable."
+            },
+            {
+              "start": 151.8,
+              "end": 167.1,
+              "text": "The high rates of mental health conditions and substance abuse disorders present in homeless present in homeless populations makes it difficult for them to support themselves without receiving treatment and increases the likelihood of them being incarcerated and remaining chronically homeless."
+            },
+            {
+              "start": 167.1,
+              "end": 177.3,
+              "text": "With 82% of these individuals experiencing mental health challenges as previously stated, it is imperative that any policy addresses individuals who are at the highest risk of becoming homeless."
+            },
+            {
+              "start": 177.3,
+              "end": 183.1,
+              "text": "Providing treatment is actually key to reducing this chronic homelessness and it cannot be ignored at any rate."
+            },
+            {
+              "start": 183.1,
+              "end": 193.7,
+              "text": "The current rate for individuals returning to homeless populations that were only placed in temporary housing in California is around 23% according to the USC homelessness policy and research institute."
+            },
+            {
+              "start": 193.7,
+              "end": 210.1,
+              "text": "While this is undeniably a low number compared to other criminal populations, such as 39.1% for recidivism in general, according to the California Department of Corrections and Rehabilitation, there is still a long way to go, especially when the size of the homeless population in California is taken into account."
+            },
+            {
+              "start": 210.1,
+              "end": 215.8,
+              "text": "Providing more than just temporary subsidized housing will go a long way in lowering these rates even further."
+            },
+            {
+              "start": 215.8,
+              "end": 220.4,
+              "text": "And providing treatment will enable these homeless populations to live with stability."
+            },
+            {
+              "start": 220.4,
+              "end": 225.8,
+              "text": "In order to help homeless people go to and stay in treatment, we are going to have financial incentives."
+            },
+            {
+              "start": 225.8,
+              "end": 232.6,
+              "text": "Financial incentives such as subsidies for renting and covering groceries have statistically been linked with pursuing treatment."
+            },
+            {
+              "start": 232.6,
+              "end": 243.7,
+              "text": "A 2021 National Library of Medicine study concludes that financial incentives are 73% effective in getting people to treatment and improving health outcomes such as therapy adherence and substance use abstinence."
+            },
+            {
+              "start": 243.7,
+              "end": 250.7,
+              "text": "And the treatment specifically noted that it's majorly effective among people who are experiencing homelessness and or mental illness."
+            },
+            {
+              "start": 250.7,
+              "end": 254.8,
+              "text": "Mental illness and substance use are one of the biggest causes of homelessness."
+            },
+            {
+              "start": 254.8,
+              "end": 264.9,
+              "text": "Um a UCSF benny of homelessness and housing initiative study finds that four out of five unhoused people in California who were surveyed reported experiencing a serious mental health condition."
+            },
+            {
+              "start": 264.9,
+              "end": 273.3,
+              "text": "In order to help more people achieve housing stability and increased access to treatment, it is important to target these barriers through supportive treatment."
+            },
+            {
+              "start": 273.3,
+              "end": 280.9,
+              "text": "Financial incentives are the best way to ensure that as many people as possible go to treatment, get better, and are able to support themselves."
+            },
+            {
+              "start": 280.9,
+              "end": 285.6,
+              "text": "The impact of financial incentives is pervasive and necessary for addressing homelessness."
+            },
+            {
+              "start": 285.6,
+              "end": 293.5,
+              "text": "The same study finds that at least one in five unhoused individuals who struggle with mental health problems are unable to receive or access treatment."
+            },
+            {
+              "start": 293.5,
+              "end": 303.1,
+              "text": "By incentivizing and providing treatment to people living in long-term supportive housing, we are able to not only end the cycle of chronic homelessness, but provide necessary support."
+            },
+            {
+              "start": 303.1,
+              "end": 303.6,
+              "text": "Thank you."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o3-1",
+              "title": "Housing First Effectiveness",
+              "startTime": 15.5,
+              "endTime": 60.8,
+              "bullets": [
+                "90% retention rate for Housing First tenants",
+                "Pathways to Housing (2004): 80% retention",
+                "Long-term supportive housing is necessary"
+              ]
+            },
+            {
+              "id": "o3-2",
+              "title": "Why Housing First Over Treatment First",
+              "startTime": 60.8,
+              "endTime": 108.9,
+              "bullets": [
+                "Stable housing is the foundation for recovery",
+                "No sobriety prerequisite — voluntary services",
+                "Self-guidance towards sobriety preferred"
+              ]
+            },
+            {
+              "id": "o3-3",
+              "title": "Cost Savings Evidence",
+              "startTime": 108.9,
+              "endTime": 135.6,
+              "bullets": [
+                "$6,370/year savings per homeless adult",
+                "$9,890/year for chronically homeless",
+                "$5.5 billion projected savings over 10 years"
+              ]
+            },
+            {
+              "id": "o3-4",
+              "title": "Treatment is Imperative",
+              "startTime": 135.6,
+              "endTime": 220.4,
+              "bullets": [
+                "82% have mental health conditions (Prop 1)",
+                "1 in 10 Californians meet substance abuse criteria",
+                "23% return rate from temporary housing",
+                "Treatment key to reducing chronic homelessness"
+              ]
+            },
+            {
+              "id": "o3-5",
+              "title": "Financial Incentives for Treatment",
+              "startTime": 220.4,
+              "endTime": 303.6,
+              "bullets": [
+                "Subsidies for rent and groceries linked to treatment",
+                "73% effective getting people to treatment (NLM 2021)",
+                "4 out of 5 unhoused report serious mental health condition",
+                "1 in 5 unable to access treatment without help"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-4",
+          "type": "main",
+          "label": "Main Arguments",
+          "team": "B",
+          "youtubeId": "UF1qkRz7CuI",
+          "duration": 260,
+          "prompts": [
+            "How does Group 2 structure their argument around 'stability as foundation'?",
+            "What real-world program data does Group 2 present? How does it support their step-by-step approach?",
+            "How does Group 2 respond to the argument that 'housing alone is not enough'?"
+          ],
+          "transcript": [
+            {
+              "start": 9.6,
+              "end": 22,
+              "text": "The most effective way to address chronic homelessness in Santa Clara County is to prioritize a housing first approach because it creates stability, improves long-term outcomes, and ultimately reduces the overall public cost."
+            },
+            {
+              "start": 22,
+              "end": 27.4,
+              "text": "First, stable housing is the foundation for solving every other issue addressed with homelessness."
+            },
+            {
+              "start": 27.4,
+              "end": 29.2,
+              "text": "with a consistent place to live."
+            },
+            {
+              "start": 29.2,
+              "end": 38.5,
+              "text": "It is without a consistent place to live, it is nearly impossible for individuals to maintain employment, access health care, or participate in rehabilitation programs."
+            },
+            {
+              "start": 38.5,
+              "end": 50.2,
+              "text": "Our policy ensures that individuals experiencing chronic homelessness are given immediate access to housing centers that also provide supportive services such as job training, education, and healthcare navigation."
+            },
+            {
+              "start": 50.2,
+              "end": 57.9,
+              "text": "This creates a stable environment where individuals can begin to rebuild their lives rather than constantly focusing on day-to-day survival."
+            },
+            {
+              "start": 57.9,
+              "end": 62,
+              "text": "Second, the evidence strongly supports the effectiveness of this approach."
+            },
+            {
+              "start": 62,
+              "end": 71.3,
+              "text": "According to the US Department of Housing and Urban Development, approximately 90% of individuals remain housed after one year after receiving housing first assistance."
+            },
+            {
+              "start": 71.3,
+              "end": 79.9,
+              "text": "This demonstrates that when people are given stable housing without preconditions, they are significantly more likely to maintain their stability long term."
+            },
+            {
+              "start": 79.9,
+              "end": 90.9,
+              "text": "Additionally, research shows that time spent in housing first programs is associated with improved outcomes over multiple years, including increased participation in employment and treatment programs."
+            },
+            {
+              "start": 90.9,
+              "end": 100.1,
+              "text": "This directly refutes the argument that housing alone does not address underlying issues because in reality, it enables people to actually engage with these solutions."
+            },
+            {
+              "start": 100.1,
+              "end": 106.9,
+              "text": "Third, this policy benefits not only individuals experiencing homelessness, but also the broader community and the economy."
+            },
+            {
+              "start": 106.9,
+              "end": 113.3,
+              "text": "By reducing chronic homelessness, the strain on emergency services, shelters, and public healthare systems decreases."
+            },
+            {
+              "start": 113.3,
+              "end": 119.8,
+              "text": "While opponents could argue that housing first is too expensive, this perspective ignores the long-term cost savings."
+            },
+            {
+              "start": 119.8,
+              "end": 131,
+              "text": "Providing stable housing with supportive services is more coste effective than just repeatedly funding emergency interventions such as hospital visits, law enforcement involvement, and temporary shelters."
+            },
+            {
+              "start": 131,
+              "end": 137.1,
+              "text": "In other words, this policy is not just compassionate, but it's more financially responsible for the economy."
+            },
+            {
+              "start": 137.1,
+              "end": 147.8,
+              "text": "Finan or finally, our policy builds on this success by expanding into rehabilitation facilities for individuals with mental illness or substance use disorders after housing stability is achieved."
+            },
+            {
+              "start": 147.8,
+              "end": 154.8,
+              "text": "This step-by-step approach ensures that individuals are not overwhelmed and are more likely to successfully complete treatment."
+            },
+            {
+              "start": 154.8,
+              "end": 161.6,
+              "text": "By addressing both immediate needs and long-term challenges, this policy creates a sustainable pathway out of homelessness."
+            },
+            {
+              "start": 161.6,
+              "end": 172.2,
+              "text": "In conclusion, prioritizing housing centers first addresses the root cause of instability in is supported by strong evidence and leads to better outcomes for both individuals and the community."
+            },
+            {
+              "start": 172.2,
+              "end": 177.8,
+              "text": "This makes it the most effective and realistic solution to homelessness crisis in Santa Clair County."
+            },
+            {
+              "start": 177.8,
+              "end": 188.4,
+              "text": "Um and our evidence to back up um Chloe's statements is that first one of the strongest pieces of evidence is that nine out of 10 people get housed after one year in the housing first program."
+            },
+            {
+              "start": 188.4,
+              "end": 193.4,
+              "text": "This means that 90% of people who were given stable housing were able to keep it longterm."
+            },
+            {
+              "start": 193.4,
+              "end": 200.7,
+              "text": "That's important because it shows this policy doesn't just give temporary help, it actually works in keeping people off the streets."
+            },
+            {
+              "start": 200.7,
+              "end": 206.1,
+              "text": "Next, housing first doesn't just provide shelter, it also helps people improve overall well-being."
+            },
+            {
+              "start": 206.1,
+              "end": 213.9,
+              "text": "Study shows that longer that the longer someone stays in a housing first program, the more their alcohol use improves over a two-year period."
+            },
+            {
+              "start": 213.9,
+              "end": 219.1,
+              "text": "This means people are not only staying housed, but they are also making healthier life choices."
+            },
+            {
+              "start": 219.1,
+              "end": 225.8,
+              "text": "Instead of punishing people for struggling, this approach gives them stability first, which makes recovery more possible."
+            },
+            {
+              "start": 225.8,
+              "end": 238,
+              "text": "Finally, this policy has already helped thousands of people, over 5,545 people who have been contracted and enrolled in programs like PATH and provided employment support, housing assistance, and rapid rehousing services."
+            },
+            {
+              "start": 238,
+              "end": 243.7,
+              "text": "This shows that housing first is not just an idea is being used making a real impact on people's lives."
+            },
+            {
+              "start": 243.7,
+              "end": 256.6,
+              "text": "Overall, this evidence proves that housing first is effective because it keeps people housed, improves their health over time, and helps large numbers of people get back on their feet instead of cycling people through shelters or jails."
+            },
+            {
+              "start": 256.6,
+              "end": 259.3,
+              "text": "Gives them real chance at stability and recovery."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o4-1",
+              "title": "Housing as Foundation for All Solutions",
+              "startTime": 9.6,
+              "endTime": 57.9,
+              "bullets": [
+                "Without housing, impossible to maintain employment or healthcare",
+                "Housing centers with supportive services",
+                "Job training, education, healthcare navigation"
+              ]
+            },
+            {
+              "id": "o4-2",
+              "title": "Strong Evidence Base",
+              "startTime": 57.9,
+              "endTime": 100.1,
+              "bullets": [
+                "90% remain housed after 1 year (HUD)",
+                "Longer time in program = better outcomes",
+                "Housing enables people to engage with solutions"
+              ]
+            },
+            {
+              "id": "o4-3",
+              "title": "Community and Economic Benefits",
+              "startTime": 100.1,
+              "endTime": 161.6,
+              "bullets": [
+                "Reduces strain on emergency services",
+                "More cost-effective than emergency interventions",
+                "Step-by-step: housing first, then rehabilitation"
+              ]
+            },
+            {
+              "id": "o4-4",
+              "title": "Real-World Impact Evidence",
+              "startTime": 161.6,
+              "endTime": 259.3,
+              "bullets": [
+                "90% kept housing long-term",
+                "Alcohol use improves over 2-year period",
+                "5,545+ enrolled in PATH programs",
+                "Real impact on people's lives"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-5",
+          "type": "rebuttal",
+          "label": "Counter-Argument",
+          "team": "A",
+          "youtubeId": "Wc9j0hEoqgs",
+          "duration": 337,
+          "prompts": [
+            "What is Group 1's main critique of Group 2's approach? What gap do they identify?",
+            "How does Group 1 use the Santa Clara County study to strengthen their own position?",
+            "Why does Group 1 argue that simultaneous treatment is superior to sequential treatment?"
+          ],
+          "transcript": [
+            {
+              "start": 26.6,
+              "end": 39.4,
+              "text": "And something that we need to talk about today is that our policy is more effective and it's been implicated better because it can be scaled throughout California, provides the resources that addresses chronic homelessness and increases housing stability rates."
+            },
+            {
+              "start": 39.4,
+              "end": 50.9,
+              "text": "So when we look at the evidence, we need to talk about why preventing mental health and substance use support simultaneously is better rather than just providing housing first and waiting for that stability that's never going to come."
+            },
+            {
+              "start": 50.9,
+              "end": 61.1,
+              "text": "So 82% of homeless people experience mental health conditions and one out of 10 Californians meet the criteria for substance use disorders and this is based on Prop One that's been implemented in California."
+            },
+            {
+              "start": 61.1,
+              "end": 67.6,
+              "text": "Looking at Marggo Kushell who is the professor of medicine and director of the UCSF Benoff homelessness and housing in initiative."
+            },
+            {
+              "start": 67.6,
+              "end": 77.6,
+              "text": "A 2025 study finds that she explained that complex behavioral needs including substance and mental health problems increases the risk of becoming homeless and mental health and exacerbates these problems."
+            },
+            {
+              "start": 77.6,
+              "end": 82.6,
+              "text": "So the thing that we need to understand is that go going into homelessness makes these problem worse."
+            },
+            {
+              "start": 82.6,
+              "end": 84.8,
+              "text": "But these problems are also the cause of it."
+            },
+            {
+              "start": 84.8,
+              "end": 86.9,
+              "text": "So we don't address it in the first place."
+            },
+            {
+              "start": 86.9,
+              "end": 88.9,
+              "text": "Housing stability can never be reached."
+            },
+            {
+              "start": 88.9,
+              "end": 94.7,
+              "text": "And this situation is immediate as the California statewide study of people experiencing homelessness from 2023 fines."
+            },
+            {
+              "start": 94.7,
+              "end": 98.4,
+              "text": "48% of participants met the criteria for a complex behavioral health need."
+            },
+            {
+              "start": 98.4,
+              "end": 104.3,
+              "text": "And among participants who use drugs in the study, 42% began using more after the first time they became homelessness."
+            },
+            {
+              "start": 104.3,
+              "end": 110.9,
+              "text": "And finally, 28% of individuals who were participated in this study found that they struggled with heavy alcohol and regular drug use."
+            },
+            {
+              "start": 110.9,
+              "end": 113.3,
+              "text": "They could not access desired treatment homeless."
+            },
+            {
+              "start": 113.3,
+              "end": 122.8,
+              "text": "So even if they manage to provide housing and they don't act until later on, we can never guarantee that they're able to fully prosper and like engage in society after receiving this housing."
+            },
+            {
+              "start": 122.8,
+              "end": 129.5,
+              "text": "There's clearly a need for why the policy should focus on providing substance use and behavioral health support to homeless individuals."
+            },
+            {
+              "start": 129.5,
+              "end": 133.5,
+              "text": "Homelessness continues the cycle of substance abuse and mental health challenges."
+            },
+            {
+              "start": 133.5,
+              "end": 136.8,
+              "text": "exacerbating them and increasing the rates of chronic homelessness."
+            },
+            {
+              "start": 136.8,
+              "end": 142.1,
+              "text": "And moreover, we need to talk about why this treatment worked and why it should be provided simultaneously."
+            },
+            {
+              "start": 142.1,
+              "end": 150,
+              "text": "An NIH study in 2025 focused on the connection between homelessness and trorbid chronic medical conditions, serious mental illness and substance use disorders."
+            },
+            {
+              "start": 150,
+              "end": 158.2,
+              "text": "It found that by providing homeless individuals with health support, it decreased the use of emergency department resources and the severity of behavioral health syn."
+            },
+            {
+              "start": 158.2,
+              "end": 166.6,
+              "text": "This study is important for understanding our argument of how providing support and resources at the same time is necessary for increasing the success rate of this policy."
+            },
+            {
+              "start": 166.6,
+              "end": 183.3,
+              "text": "And finally, we talk about learning how we need to incentivize treatment because even if the alternative group and even if their policy argues that they provide that treatment, they have no way to incentivize that which means that treatment will never be like accessed and that means like loss of hundreds of thousands of taxpayer dollars."
+            },
+            {
+              "start": 183.3,
+              "end": 185.5,
+              "text": "So we are able to incentivize this treatment."
+            },
+            {
+              "start": 185.5,
+              "end": 198.3,
+              "text": "Going off what our main argument talked about, a 2021 National Library of Medicine study concludes that financial incentives are 73% effective in getting people to treatment and improving health outcomes such as therapy adherence and substance use abstinence."
+            },
+            {
+              "start": 198.3,
+              "end": 207,
+              "text": "It's also majorly effective specifically amongst people experiencing homelessness and mental illness by pursuing a housing first policy that combines both housing with support."
+            },
+            {
+              "start": 207,
+              "end": 213,
+              "text": "The policy does not make receiving housing on accessing treatment, but it does provide the resources to those who need it."
+            },
+            {
+              "start": 213,
+              "end": 223.1,
+              "text": "Therefore, to boost involvement in these support options, we aim to provide financial incentives such as reducing rental subsidies and providing additional financial support to ensuring stable employment."
+            },
+            {
+              "start": 223.1,
+              "end": 231.7,
+              "text": "Therefore, unlike our alternative policy, we're able to implicate our argument and talk how we're able to provide incentives for their treatment, how they're able to access it."
+            },
+            {
+              "start": 231.7,
+              "end": 236.2,
+              "text": "And finally, we're able to show how our treatment can be implemented and is more feasible."
+            },
+            {
+              "start": 236.2,
+              "end": 241.2,
+              "text": "Our policy is something that's not rooted in theory but actually been implemented in Santa CL County."
+            },
+            {
+              "start": 241.2,
+              "end": 253,
+              "text": "The study offers which a study that's been conducted in Santa Clara finds that it provides subsidized housing with intensive case management with support teams led by behavioral health professional and one staff member for every 15 clients."
+            },
+            {
+              "start": 253,
+              "end": 256.3,
+              "text": "It's very similar to the strategy that we're talking about today."
+            },
+            {
+              "start": 256.3,
+              "end": 265.5,
+              "text": "This strategy specifically resulted in 86% of participants remaining in housing for at least several years and 93% of all individuals in the study remaining house throughout its duration."
+            },
+            {
+              "start": 265.5,
+              "end": 273.7,
+              "text": "We're also able to prove that we've been able to implement in Santa CL County and has direct effects on increasing housing stability and reducing chronic homelessness."
+            },
+            {
+              "start": 273.7,
+              "end": 279,
+              "text": "Margaret Koshel again as the director of UCSF Benoff homelessness and housing initiatives echoed this idea."
+            },
+            {
+              "start": 279,
+              "end": 283.7,
+              "text": "She find the bottom line is that really high-risisk folks must be housed and key word is must."
+            },
+            {
+              "start": 283.7,
+              "end": 289.4,
+              "text": "We must be able to house them and we must be able to provide treatment in order to address the homelessness crisis."
+            },
+            {
+              "start": 289.4,
+              "end": 295.1,
+              "text": "And finally, regarding cost, they mention how they're able to provide economic benefits but don't exactly state how."
+            },
+            {
+              "start": 295.1,
+              "end": 301.8,
+              "text": "So we're able to show how we're able to directly pay put people into housing, how we're able to reduce the cost and add to the economy."
+            },
+            {
+              "start": 301.8,
+              "end": 314,
+              "text": "In a comprehensive analysis of cost from treatment first and housing first programs, the HUD adds that housing first would take 6,37 annually per homeless adult with a chronic medical condition at 9,89 per year for chronically homeless individuals."
+            },
+            {
+              "start": 314,
+              "end": 320.6,
+              "text": "The predicted economic savings will be 5.5 billion added to the economy, which means we've been able to scale and expand this program."
+            },
+            {
+              "start": 320.6,
+              "end": 334.8,
+              "text": "And this is why we were able to implicate how we're able to provide in we were able to provide incentives to make this program a reality and how we can end the cycle of homelessness by pro ending chronic homelessness and promoting housing stability in Santa Clara and the wider California."
+            },
+            {
+              "start": 334.8,
+              "end": 335.3,
+              "text": "Thank you."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o5-1",
+              "title": "Simultaneous Treatment is More Effective",
+              "startTime": 26.6,
+              "endTime": 61.1,
+              "bullets": [
+                "Policies similar but differ on timeline",
+                "Simultaneous mental health + housing is better",
+                "Can scale throughout California"
+              ]
+            },
+            {
+              "id": "o5-2",
+              "title": "Mental Health Crisis Data",
+              "startTime": 61.1,
+              "endTime": 113,
+              "bullets": [
+                "82% homeless have mental health conditions",
+                "UCSF: behavioral needs increase homelessness risk",
+                "48% met complex behavioral health criteria",
+                "42% increased drug use after becoming homeless"
+              ]
+            },
+            {
+              "id": "o5-3",
+              "title": "Why Treatment Must Be Simultaneous",
+              "startTime": 113,
+              "endTime": 186.6,
+              "bullets": [
+                "Recovery not guaranteed without treating during housing",
+                "NIH 2025: health support decreases ER use",
+                "Opposition has no mechanism to incentivize treatment"
+              ]
+            },
+            {
+              "id": "o5-4",
+              "title": "Implementation & Cost Evidence",
+              "startTime": 186.6,
+              "endTime": 335.3,
+              "bullets": [
+                "73% effective getting people to treatment (NLM 2021)",
+                "Santa Clara study: 86-93% remained housed",
+                "HUD: $6,370-$9,890 savings annually per person",
+                "$5.5 billion projected economic savings"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-6",
+          "type": "rebuttal",
+          "label": "Counter-Argument",
+          "team": "B",
+          "youtubeId": "DXU0lubtJPE",
+          "duration": 255,
+          "prompts": [
+            "What is Group 2's main critique of Group 1's financial incentive structure?",
+            "How does Group 2 use the 'free rider problem' to challenge Group 1's approach?",
+            "How does Group 2 use Maslow's hierarchy of needs to support their sequential approach?"
+          ],
+          "transcript": [
+            {
+              "start": 14.5,
+              "end": 30.3,
+              "text": "So, the first clarifications that I kind of want to make is obviously, you know, a lot of great points were made in that debate, but I think that our policies are really similar other than really the incentive structure that they talked about."
+            },
+            {
+              "start": 30.3,
+              "end": 39.6,
+              "text": "So, they mentioned that, you know, um they're planning to incentivize people financially to stay into the uh homeless shelters that they're in."
+            },
+            {
+              "start": 39.6,
+              "end": 51.5,
+              "text": "And um I was just kind of curious like how they would be able to financially support that because, you know, you know, funding housing in in and of itself is like incredibly expensive."
+            },
+            {
+              "start": 51.5,
+              "end": 58.9,
+              "text": "Um like it just it takes a lot it takes a lot of money to support you know multiple massive housing developments."
+            },
+            {
+              "start": 58.9,
+              "end": 61,
+              "text": "Um that alone is a lot of money."
+            },
+            {
+              "start": 61,
+              "end": 73.2,
+              "text": "I just wonder how they're going to get the money to then build off of that and uh support like you know funding groceries and funding like subsidies and funding all of these other things."
+            },
+            {
+              "start": 73.2,
+              "end": 84.6,
+              "text": "Like um also like our plan the idea is you know with the housing there's you know people are going to be able to get more jobs frequently which is stimulating for the economy."
+            },
+            {
+              "start": 84.6,
+              "end": 97.8,
+              "text": "Um and you'll see a real change start to pick up like quickly but with theirs like I just think it's going to take too long before like any real like economic benefits are are seen by the American people."
+            },
+            {
+              "start": 97.8,
+              "end": 101.6,
+              "text": "So, I think people are going to be kind of like restless."
+            },
+            {
+              "start": 101.6,
+              "end": 110.4,
+              "text": "Also, like um it says they said that like they wanted to use incentives, but that's really just like a a short-term like mini solution."
+            },
+            {
+              "start": 110.4,
+              "end": 117.1,
+              "text": "It doesn't really, you know, show any like real uh it doesn't get at the underlying issue essentially."
+            },
+            {
+              "start": 117.1,
+              "end": 131.9,
+              "text": "Um, also people who have chronic home who are chronically homeless who, you know, likely have like some sort of a mental illness or maybe are addicted or have trauma, they have less pred predictable like responses to incentives."
+            },
+            {
+              "start": 131.9,
+              "end": 140.4,
+              "text": "So, you think that like providing groceries and providing whatever it is is going to like help them kind of figure their stuff out."
+            },
+            {
+              "start": 140.4,
+              "end": 151.5,
+              "text": "And I just I think that that's kind of an a a big assumption to make considering that they don't, you know, operate under the same judgment as you might think they would."
+            },
+            {
+              "start": 151.5,
+              "end": 155.7,
+              "text": "Um, also it kind of allows for a lot of loopholes to be created."
+            },
+            {
+              "start": 155.7,
+              "end": 171.9,
+              "text": "Somebody could go into the system, they could reap the benefits, they could get the incentives, and then they could just jump out of it and go back to what they were doing before, and they can kind of, you know, free rider problem uh the whole thing."
+            },
+            {
+              "start": 171.9,
+              "end": 176.2,
+              "text": "Um and uh um so you know that that alone I think is is a problem."
+            },
+            {
+              "start": 176.2,
+              "end": 182.1,
+              "text": "Um yeah, so just financially like I don't really know where the money's going to come from."
+            },
+            {
+              "start": 182.1,
+              "end": 195.8,
+              "text": "Um also like I think that you know there's without having like a standard of admittance into housing, you kind of lose the incentive to quit because you can just get a house and you can just get your groceries."
+            },
+            {
+              "start": 195.8,
+              "end": 199.3,
+              "text": "You kind of don't need to quit whatever you're doing."
+            },
+            {
+              "start": 199.3,
+              "end": 204.9,
+              "text": "Um um uh uh like also stability like in housing is kind of I feel like a prerequisite."
+            },
+            {
+              "start": 204.9,
+              "end": 214.2,
+              "text": "I feel like you don't need you shouldn't you can't really rehab unless you have that prerequisite that housing to be able to build off of that."
+            },
+            {
+              "start": 214.2,
+              "end": 224.7,
+              "text": "If you get it all at once, the likelihood that you know you'll actually be able to rehab successfully is is is less according to a a study from Michigan in 2023."
+            },
+            {
+              "start": 224.7,
+              "end": 245.8,
+              "text": "Um, I also wanted to kind of if any any of you guys have ever taken AP psych before, I wanted to talk about Maslo's hierarchy of needs, uh, which has psy physiological and safety needs as the most base fundamental things, which is like physically you're sa you're safe and you're um, you know, you're good off in those needs."
+            },
+            {
+              "start": 245.8,
+              "end": 252.3,
+              "text": "And so I think that that should be kind of the baseline structure for what we're looking to support."
+            },
+            {
+              "start": 252.3,
+              "end": 254.5,
+              "text": "Um, and yeah, I think that's all I"
+            }
+          ],
+          "outline": [
+            {
+              "id": "o6-1",
+              "title": "Key Difference is Incentive Structure",
+              "startTime": 14.5,
+              "endTime": 51.5,
+              "bullets": [
+                "Both groups support housing first",
+                "Main difference is financial incentive structure",
+                "Where does funding for incentives come from?"
+              ]
+            },
+            {
+              "id": "o6-2",
+              "title": "Fiscal Sustainability Concerns",
+              "startTime": 51.5,
+              "endTime": 120.8,
+              "bullets": [
+                "Housing alone is incredibly expensive",
+                "Adding subsidies compounds costs",
+                "Economic benefits would take too long"
+              ]
+            },
+            {
+              "id": "o6-3",
+              "title": "Challenges with Incentivizing Chronically Homeless",
+              "startTime": 120.8,
+              "endTime": 172.3,
+              "bullets": [
+                "Unpredictable responses with mental illness",
+                "Loopholes: free rider problem",
+                "Could game the system without real recovery"
+              ]
+            },
+            {
+              "id": "o6-4",
+              "title": "Housing as Prerequisite for Rehab",
+              "startTime": 172.3,
+              "endTime": 254.5,
+              "bullets": [
+                "Need housing stability before rehab",
+                "Getting everything at once is less effective (Michigan 2023)",
+                "Maslow's hierarchy: safety/physiological needs first",
+                "Step-by-step approach is psychologically sound"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-7",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "A",
+          "youtubeId": "xlBO_z5pBNA",
+          "duration": 220,
+          "prompts": [
+            "What new evidence does Group 1 introduce in their closing? (Hint: meta-analysis)",
+            "How does Group 1 distinguish their policy from Group 2's in their final summary?"
+          ],
+          "transcript": [
+            {
+              "start": 7.5,
+              "end": 20.3,
+              "text": "We've said like we've said homelessness in California is an urgent crisis affecting over 187,000 people driven by mental illness, substance abuse, and most of all, high housing costs."
+            },
+            {
+              "start": 20.3,
+              "end": 24.7,
+              "text": "Nearly a quarter of the nation's homeless reside in California."
+            },
+            {
+              "start": 24.7,
+              "end": 36.4,
+              "text": "The statistics discussed in support of our policy demonstrate how there is a growing need among the homeless population to access stable housing and treatment options."
+            },
+            {
+              "start": 36.4,
+              "end": 54.3,
+              "text": "With 25% of homeless individuals facing severe mental illness and 24% experiences experiencing substance use disorders is imperative that we uh or that better policy housing first today provide or housing first provides for the needs of the most vulnerable."
+            },
+            {
+              "start": 54.3,
+              "end": 76.2,
+              "text": "Furthermore, with the opposition arguing against the prioritization of mental health and substance uh assistance, uh we argue that prioritizing these individuals will not generate a more sustainable impact by ensuring housing stability but will also lower rates or returning homeless or returning to homelessness."
+            },
+            {
+              "start": 76.2,
+              "end": 85.7,
+              "text": "Regarding the welfare of homelessness, a metaanalysis of 26 studies found by or found that housing first has reduced homelessness by 88%."
+            },
+            {
+              "start": 85.7,
+              "end": 88.5,
+              "text": "It increased housing stability by 41%."
+            },
+            {
+              "start": 88.5,
+              "end": 98.3,
+              "text": "Housing stability rates or housing stability decreased the rate of uh returning to homelessness, therefore bettering the welfare of society."
+            },
+            {
+              "start": 98.3,
+              "end": 110.4,
+              "text": "By improving support services, our policy empowers and guides individuals to access resources that support their mental health and allow them to more fully engage in society."
+            },
+            {
+              "start": 110.4,
+              "end": 123,
+              "text": "After being able to live in a h in stable housing, program participants will be able to engage in society by having the means to pursue employment and build up financial resources."
+            },
+            {
+              "start": 123,
+              "end": 137.9,
+              "text": "Therefore, our program is sustained by the incent by incentivizing treatment with uh financial means because more involvement in in treatment support in treatment support correlates to a higher rate of disability."
+            },
+            {
+              "start": 137.9,
+              "end": 156.8,
+              "text": "A 2023 NIH study echoes the concept that as it finds concept as it finds a direct connection between stable housing and access and participating in economic activities like employment by promoting employment and economic activities among individuals throughout California."
+            },
+            {
+              "start": 156.8,
+              "end": 169.7,
+              "text": "Our program creates activities among individuals or create sorry by promoting economic or sorry by promoting employment and economic activities among individuals throughout California."
+            },
+            {
+              "start": 169.7,
+              "end": 177.5,
+              "text": "Our program creates barriers to the cycle of homelessness and contributes to offsetting the cost of the policy."
+            },
+            {
+              "start": 177.5,
+              "end": 193.3,
+              "text": "In conclusion, by expanding access to affordable housing through combining long-term supportive housing, comprehensive support, and lasting solutions, our policy increases the rate of housing stability and chronic homelessness."
+            },
+            {
+              "start": 193.3,
+              "end": 212.3,
+              "text": "To clarify, we are still providing housing and treatment at the same time, while the alternative policy is waiting for individuals to achieve housing stability before accessing treatment, which is not how ending chronically or is not how ending chronic homelessness works."
+            },
+            {
+              "start": 212.3,
+              "end": 220,
+              "text": "Evidence shows that the treatment must be combined with incentives and housing to actualize benefits to society."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o7-1",
+              "title": "Urgency of the Crisis",
+              "startTime": 7.5,
+              "endTime": 36.4,
+              "bullets": [
+                "187,000+ affected in California",
+                "25% face severe mental illness",
+                "24% experiencing substance use disorders"
+              ]
+            },
+            {
+              "id": "o7-2",
+              "title": "Meta-Analysis Evidence",
+              "startTime": 36.4,
+              "endTime": 98,
+              "bullets": [
+                "26 studies: Housing First reduced homelessness by 88%",
+                "Increased housing stability by 41%",
+                "Policy empowers individuals to access resources"
+              ]
+            },
+            {
+              "id": "o7-3",
+              "title": "Economic Sustainability",
+              "startTime": 98,
+              "endTime": 165,
+              "bullets": [
+                "Incentivizing treatment sustains the program",
+                "NIH 2023: stable housing connected to employment",
+                "Creates barriers to cycle of homelessness"
+              ]
+            },
+            {
+              "id": "o7-4",
+              "title": "Key Distinction from Opposition",
+              "startTime": 165,
+              "endTime": 220,
+              "bullets": [
+                "We provide housing AND treatment simultaneously",
+                "Opposition waits for stability before treatment",
+                "Evidence: treatment must combine with housing"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-8",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "B",
+          "youtubeId": "r1rQqHJqZZY",
+          "duration": 169,
+          "prompts": [
+            "What cost-effectiveness evidence does Group 2 present in their closing?",
+            "How does Group 2 frame the debate as 'sequential vs. simultaneous' in their conclusion?"
+          ],
+          "transcript": [
+            {
+              "start": 2.5,
+              "end": 15.1,
+              "text": "Um, in conclusion, the most effective way to address chronic homelessness in Santa Clar County is to prioritize a housing first approach because it creates stability, improves long-term outcomes, and reduces overall public cost."
+            },
+            {
+              "start": 15.1,
+              "end": 22.2,
+              "text": "As our group has demonstrated throughout this presentation, the core issue behind homelessness is not just the lack of shelter."
+            },
+            {
+              "start": 22.2,
+              "end": 23.8,
+              "text": "It is the lack of stability."
+            },
+            {
+              "start": 23.8,
+              "end": 32,
+              "text": "Without a consistent place to live, individuals cannot reliably maintain employment, access health care, or fully engage in rehabilitation programs."
+            },
+            {
+              "start": 32,
+              "end": 35.7,
+              "text": "Housing must come first in order for every other solution to work."
+            },
+            {
+              "start": 35.7,
+              "end": 38.1,
+              "text": "Our evidence strongly supports this claim."
+            },
+            {
+              "start": 38.1,
+              "end": 47.5,
+              "text": "According to the US Department of Housing and Urban Development, approximately 90% of indivi individuals remain housed one year after receiving housing first assistance."
+            },
+            {
+              "start": 47.5,
+              "end": 55.8,
+              "text": "This shows that when people are given stable housing without preconditions, they are significantly more likely to maintain that stability over time."
+            },
+            {
+              "start": 55.8,
+              "end": 67.8,
+              "text": "In addition, we discussed how housing first programs increase participate participation in job training, education, healthcare, and treatment programs directly addressing the argument that housing alone is not enough."
+            },
+            {
+              "start": 67.8,
+              "end": 71.4,
+              "text": "In reality, housing is what makes these other solutions possible."
+            },
+            {
+              "start": 71.4,
+              "end": 80.7,
+              "text": "Further research from the National Alliance to End Homelessness shows that supportive housing can reduce emergency room visits and hospitalizations by up to 40 to 60%."
+            },
+            {
+              "start": 80.7,
+              "end": 88.2,
+              "text": "Demonstrating that without stable housing, individuals are forced into costly short-term crisis systems rather than long-term recovery."
+            },
+            {
+              "start": 88.2,
+              "end": 103.4,
+              "text": "Even more importantly, studies comparing out comparing approaches show that housing first models consistently outperform treatment first or simultaneous approaches with significantly higher long-term housing retention rates, often nearly double those of traditional models."
+            },
+            {
+              "start": 103.4,
+              "end": 113.3,
+              "text": "This proves that trying to solve housing and rehabilitation at the same time is less effective because it ignores the reality that stability must come before successful treatment."
+            },
+            {
+              "start": 113.3,
+              "end": 118.3,
+              "text": "We also demonstrated that this policy is not only effective but economically responsible."
+            },
+            {
+              "start": 118.3,
+              "end": 129.8,
+              "text": "A systematic review of US housing first program found that for every $1 spent, communities receive about $1.80 in economic benefits due to reduced use of emergency healthcare, shelters, and law enforcement."
+            },
+            {
+              "start": 129.8,
+              "end": 139,
+              "text": "This connects directly to our earlier point that current systems relying on temporary shelters but and emergency responses are actually more expensive in the long run."
+            },
+            {
+              "start": 139,
+              "end": 145.1,
+              "text": "By shifting resources towards stable housing, the county can reduce long-term costs while improving outcomes."
+            },
+            {
+              "start": 145.1,
+              "end": 151.4,
+              "text": "Ultimately, this policy offers a realistic, evidence-based, and sustainable solution to to chronic homelessness."
+            },
+            {
+              "start": 151.4,
+              "end": 158.4,
+              "text": "It addresses the root cause of instability, builds on proven outcomes, and benefits both individuals and the broader community."
+            },
+            {
+              "start": 158.4,
+              "end": 167,
+              "text": "By prioritizing housing first, Santa Clair County can move beyond temporary fixes, and take a meaningful step towards ending chronic homelessness for good."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o8-1",
+              "title": "Core Argument: Stability First",
+              "startTime": 2.5,
+              "endTime": 36.4,
+              "bullets": [
+                "Creates stability, improves outcomes, reduces cost",
+                "Core issue is lack of stability, not just shelter",
+                "Housing must come first for other solutions to work"
+              ]
+            },
+            {
+              "id": "o8-2",
+              "title": "Evidence Recap",
+              "startTime": 36.4,
+              "endTime": 71,
+              "bullets": [
+                "90% remain housed after 1 year (HUD)",
+                "Housing without preconditions works",
+                "Housing first increases participation in treatment"
+              ]
+            },
+            {
+              "id": "o8-3",
+              "title": "Cost-Effectiveness",
+              "startTime": 71,
+              "endTime": 117,
+              "bullets": [
+                "Reduces ER visits by 40-60%",
+                "Housing first outperforms treatment-first models",
+                "$1 spent = $1.80 in economic benefits"
+              ]
+            },
+            {
+              "id": "o8-4",
+              "title": "Sustainable Pathway Forward",
+              "startTime": 117,
+              "endTime": 167,
+              "bullets": [
+                "Step-by-step: housing then rehabilitation",
+                "Addresses root cause of instability",
+                "Evidence-based and realistic for Santa Clara County"
+              ]
+            }
+          ]
+        }
+      ],
+      "evaluationPrompts": [
+        {
+          "id": "eval-1",
+          "prompt": "Which team presented a more feasible policy? Consider funding, implementation, and scalability.",
+          "category": "Policy Analysis"
+        },
+        {
+          "id": "eval-2",
+          "prompt": "Which team used stronger evidence? Consider the quality, relevance, and recency of their sources.",
+          "category": "Evidence Quality"
+        },
+        {
+          "id": "eval-3",
+          "prompt": "Which team was more effective at countering the other's arguments? What made their rebuttal strong or weak?",
+          "category": "Counter-Arguments"
+        },
+        {
+          "id": "eval-4",
+          "prompt": "Who won this debate overall? Write 2-3 sentences explaining your reasoning using specific examples from the debate.",
+          "category": "Final Verdict"
+        }
+      ],
+      "keyMoments": [
+        {
+          "time": 14,
+          "segmentId": "seg-1",
+          "label": "Key statistic: 187,000+ homeless in CA",
+          "type": "evidence"
+        },
+        {
+          "time": 35.8,
+          "segmentId": "seg-1",
+          "label": "Defines chronic homelessness",
+          "type": "definition"
+        },
+        {
+          "time": 47.3,
+          "segmentId": "seg-1",
+          "label": "Explains current Housing First policy",
+          "type": "context"
+        },
+        {
+          "time": 80.4,
+          "segmentId": "seg-1",
+          "label": "Policy proposal: Housing First + financial incentives",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 8.6,
+          "segmentId": "seg-2",
+          "label": "Opens with local impact: 10,000 in Santa Clara",
+          "type": "rhetoric"
+        },
+        {
+          "time": 22.6,
+          "segmentId": "seg-2",
+          "label": "Critiques treatment-first approaches",
+          "type": "argument"
+        },
+        {
+          "time": 43.7,
+          "segmentId": "seg-2",
+          "label": "Key evidence: 9/10 remain housed (HUD)",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 64.9,
+          "segmentId": "seg-2",
+          "label": "Concludes: humane and economically sustainable",
+          "type": "rhetoric"
+        },
+        {
+          "time": 29.7,
+          "segmentId": "seg-3",
+          "label": "90% retention rate cited",
+          "type": "evidence"
+        },
+        {
+          "time": 108.9,
+          "segmentId": "seg-3",
+          "label": "Cost savings: $6,370-$9,890 per person annually",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 135.6,
+          "segmentId": "seg-3",
+          "label": "Pivot to mental health treatment argument",
+          "type": "structure"
+        },
+        {
+          "time": 183.1,
+          "segmentId": "seg-3",
+          "label": "23% return rate from temporary housing",
+          "type": "evidence"
+        },
+        {
+          "time": 232.6,
+          "segmentId": "seg-3",
+          "label": "73% financial incentive effectiveness (NLM)",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 264.9,
+          "segmentId": "seg-3",
+          "label": "4 of 5 unhoused report mental health conditions",
+          "type": "evidence"
+        },
+        {
+          "time": 22,
+          "segmentId": "seg-4",
+          "label": "Thesis: stability is the foundation",
+          "type": "argument"
+        },
+        {
+          "time": 62,
+          "segmentId": "seg-4",
+          "label": "90% retention evidence from HUD",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 100.1,
+          "segmentId": "seg-4",
+          "label": "Addresses community and economic benefits",
+          "type": "structure"
+        },
+        {
+          "time": 147.8,
+          "segmentId": "seg-4",
+          "label": "Step-by-step approach: housing then rehab",
+          "type": "argument"
+        },
+        {
+          "time": 213.9,
+          "segmentId": "seg-4",
+          "label": "Alcohol use improves over 2-year period",
+          "type": "evidence"
+        },
+        {
+          "time": 225.8,
+          "segmentId": "seg-4",
+          "label": "PATH program: 5,545 people helped",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 26.6,
+          "segmentId": "seg-5",
+          "label": "Opens with scalability argument",
+          "type": "argument"
+        },
+        {
+          "time": 50.9,
+          "segmentId": "seg-5",
+          "label": "82% mental health statistic (Prop 1)",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 67.6,
+          "segmentId": "seg-5",
+          "label": "Cites UCSF professor Margot Kushel",
+          "type": "evidence"
+        },
+        {
+          "time": 113.3,
+          "segmentId": "seg-5",
+          "label": "Challenges: stability alone is insufficient",
+          "type": "argument"
+        },
+        {
+          "time": 166.6,
+          "segmentId": "seg-5",
+          "label": "Critiques opposition: no mechanism to incentivize",
+          "type": "rhetoric"
+        },
+        {
+          "time": 186.6,
+          "segmentId": "seg-5",
+          "label": "Santa Clara study: 86-93% housed",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 301.8,
+          "segmentId": "seg-5",
+          "label": "HUD cost analysis reinforced",
+          "type": "evidence"
+        },
+        {
+          "time": 14.5,
+          "segmentId": "seg-6",
+          "label": "Acknowledges policy similarities",
+          "type": "rhetoric"
+        },
+        {
+          "time": 39.6,
+          "segmentId": "seg-6",
+          "label": "Questions funding feasibility of incentives",
+          "type": "argument"
+        },
+        {
+          "time": 120.8,
+          "segmentId": "seg-6",
+          "label": "Free rider problem argument",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 131.9,
+          "segmentId": "seg-6",
+          "label": "Unpredictable responses with mental illness",
+          "type": "argument"
+        },
+        {
+          "time": 172.3,
+          "segmentId": "seg-6",
+          "label": "Maslow's hierarchy argument",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 224.7,
+          "segmentId": "seg-6",
+          "label": "Michigan 2023 study: sequential is more effective",
+          "type": "evidence"
+        },
+        {
+          "time": 7.5,
+          "segmentId": "seg-7",
+          "label": "Restates crisis urgency",
+          "type": "rhetoric"
+        },
+        {
+          "time": 36.4,
+          "segmentId": "seg-7",
+          "label": "Meta-analysis: 88% homelessness reduction",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 85.7,
+          "segmentId": "seg-7",
+          "label": "41% increase in housing stability",
+          "type": "evidence"
+        },
+        {
+          "time": 137.9,
+          "segmentId": "seg-7",
+          "label": "NIH 2023: housing connected to employment",
+          "type": "evidence"
+        },
+        {
+          "time": 193.3,
+          "segmentId": "seg-7",
+          "label": "Key distinction: simultaneous vs. sequential",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 2.5,
+          "segmentId": "seg-8",
+          "label": "Thesis restated: stability, outcomes, cost",
+          "type": "rhetoric"
+        },
+        {
+          "time": 38.1,
+          "segmentId": "seg-8",
+          "label": "90% remain housed recap",
+          "type": "evidence"
+        },
+        {
+          "time": 71,
+          "segmentId": "seg-8",
+          "label": "ER visits reduced 40-60%",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 88.2,
+          "segmentId": "seg-8",
+          "label": "Housing first outperforms simultaneous approaches",
+          "type": "argument"
+        },
+        {
+          "time": 118.3,
+          "segmentId": "seg-8",
+          "label": "$1 = $1.80 in economic benefits",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 145.1,
+          "segmentId": "seg-8",
+          "label": "Final appeal: realistic and sustainable",
+          "type": "rhetoric"
+        }
+      ]
+    }
+  ]
+}
