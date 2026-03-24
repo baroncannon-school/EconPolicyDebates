@@ -1766,66 +1766,67 @@ function DebateReview() {
                   top: `${topH}%`, left: `${leftW}%`,
                   width: `${rightW}%`, height: `${bottomH}%`,
                 }}>
-                  <div className="mb-4">
-          <div className="mb-4">
-            <h3 className="text-sm font-bold text-gray-700 mb-1 font-body">Study Guide</h3>
-            <p className="text-xs text-gray-500 font-body">{segmentTypeLabel(segment.type)} — {segment.team === 'A' ? debate.teamA.name : debate.teamB.name}</p>
-          </div>
-
-          {/* Segment Prompts */}
-          {segment?.prompts && segment.prompts.length > 0 && (
-            <div className="mb-4">
-              <div className="flex items-center justify-between mb-2">
-                <h4 className="text-xs font-semibold text-gray-700 uppercase font-body">Segment Questions</h4>
-                <span className="text-xs text-gray-500 font-body">{countAnsweredPrompts()}/{segment.prompts.length} answered</span>
-              </div>
-              <div className="space-y-2">
-                {segment.prompts.map((prompt, pidx) => {
-                  const response = getGuidedResponse(pidx);
-                  const isAnswered = response.trim().length > 0;
-                  return (
-                    <div key={pidx} className="bg-gray-50 rounded border p-2">
-                      <p className="text-xs font-semibold text-gray-700 mb-1 font-body">{pidx + 1}. {prompt}</p>
-                      <textarea
-                        value={response}
-                        onChange={(e) => saveGuidedResponse(pidx, e.target.value)}
-                        placeholder="Your answer..."
-                        className="w-full text-xs p-2 border rounded resize-none h-16 focus:outline-none focus:ring-1 focus:ring-blue-400 font-body"
-                      />
-                      {isAnswered && <p className="text-xs text-green-600 mt-1 font-body">✓ Answered</p>}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* Evaluation Prompts */}
-          {debate?.evaluationPrompts && (
-            <div>
-              <div className="flex items-center justify-between mb-2">
-                <h4 className="text-xs font-semibold text-gray-700 uppercase font-body">Exam Prep</h4>
-                <span className="text-xs text-gray-500 font-body">{countAnsweredEvals()}/{debate.evaluationPrompts.length} answered</span>
-              </div>
-              <div className="space-y-2">
-                {debate.evaluationPrompts.map((evalPrompt) => {
-                  const response = getEvaluationResponse(evalPrompt.id);
-                  const isAnswered = response.trim().length > 0;
-                  return (
-                    <div key={evalPrompt.id} className="bg-amber-50 rounded border border-amber-200 p-2">
-                      <p className="text-xs font-semibold text-gray-700 mb-1 font-body">{evalPrompt.category}</p>
-                      <p className="text-xs text-gray-600 mb-1 font-body">{evalPrompt.prompt}</p>
-                      <textarea
-                        value={response}
-                        onChange={(e) => saveEvaluationResponse(evalPrompt.id, e.target.value)}
-                        placeholder="Your answer..."
-                        className="w-full text-xs p-2 border rounded resize-none h-12 focus:outline-none focus:ring-1 focus:ring-amber-400 font-body"
-                      />
-                      {isAnswered && <p className="text-xs text-green-600 mt-1 font-body">✓ Answered</p>}
-                    </div>
-                  );
-                })}
+                  <div className="mb-3">
+                    <h3 className="text-sm font-bold text-gray-700 mb-1 font-body">Study Guide</h3>
+                    <p className="text-xs text-gray-500 font-body">{segmentTypeLabel(segment.type)} — {segment.team === 'A' ? debate.teamA.name : debate.teamB.name}</p>
                   </div>
+
+                  {/* Segment Prompts */}
+                  {segment?.prompts && segment.prompts.length > 0 && (
+                    <div className="mb-4">
+                      <div className="flex items-center justify-between mb-2">
+                        <h4 className="text-xs font-semibold text-gray-700 uppercase font-body">Segment Questions</h4>
+                        <span className="text-xs text-gray-500 font-body">{countAnsweredPrompts()}/{segment.prompts.length} answered</span>
+                      </div>
+                      <div className="space-y-2">
+                        {segment.prompts.map((prompt, pidx) => {
+                          const response = getGuidedResponse(pidx);
+                          const isAnswered = response.trim().length > 0;
+                          return (
+                            <div key={pidx} className="bg-gray-50 rounded border p-2">
+                              <p className="text-xs font-semibold text-gray-700 mb-1 font-body">{pidx + 1}. {prompt}</p>
+                              <textarea
+                                value={response}
+                                onChange={(e) => saveGuidedResponse(pidx, e.target.value)}
+                                placeholder="Your answer..."
+                                className="w-full text-xs p-2 border rounded resize-none h-16 focus:outline-none focus:ring-1 focus:ring-blue-400 font-body"
+                              />
+                              {isAnswered && <p className="text-xs text-green-600 mt-1 font-body">✓ Answered</p>}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Evaluation Prompts */}
+                  {debate?.evaluationPrompts && (
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <h4 className="text-xs font-semibold text-gray-700 uppercase font-body">Exam Prep</h4>
+                        <span className="text-xs text-gray-500 font-body">{countAnsweredEvals()}/{debate.evaluationPrompts.length} answered</span>
+                      </div>
+                      <div className="space-y-2">
+                        {debate.evaluationPrompts.map((evalPrompt) => {
+                          const response = getEvaluationResponse(evalPrompt.id);
+                          const isAnswered = response.trim().length > 0;
+                          return (
+                            <div key={evalPrompt.id} className="bg-amber-50 rounded border border-amber-200 p-2">
+                              <p className="text-xs font-semibold text-gray-700 mb-1 font-body">{evalPrompt.category}</p>
+                              <p className="text-xs text-gray-600 mb-1 font-body">{evalPrompt.prompt}</p>
+                              <textarea
+                                value={response}
+                                onChange={(e) => saveEvaluationResponse(evalPrompt.id, e.target.value)}
+                                placeholder="Your answer..."
+                                className="w-full text-xs p-2 border rounded resize-none h-12 focus:outline-none focus:ring-1 focus:ring-amber-400 font-body"
+                              />
+                              {isAnswered && <p className="text-xs text-green-600 mt-1 font-body">✓ Answered</p>}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
 
