@@ -898,7 +898,7 @@ function DebateReview() {
         <header className="bg-leather shadow-md">
           <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <img src={SFHS_LOGO_SHIELD} alt="Saint Francis High School" className="h-10 w-auto object-contain shrink-0" />
+              <img src={SFHS_LOGO_SHIELD} alt="Saint Francis High School" className="h-10 w-auto object-contain shrink-0 rounded-sm" style={{ filter: 'drop-shadow(0 0 1px rgba(255,255,255,0.5))' }} />
               <div className="border-l border-white/30 pl-4">
                 <h1 className="text-xl font-headline text-white leading-tight">{SITE_CONFIG.courseTitle}</h1>
                 <p className="text-sm text-white/70 font-body">{SITE_CONFIG.instructorName}</p>
@@ -1459,7 +1459,7 @@ function DebateReview() {
       {/* SFHS Branded Banner — Review View */}
       <header className="bg-leather px-4 py-1.5 flex items-center justify-between shrink-0 z-30 shadow-md">
         <div className="flex items-center gap-3">
-          <img src={SFHS_LOGO_SHIELD} alt="SFHS" className="h-7 w-auto object-contain shrink-0" />
+          <img src={SFHS_LOGO_SHIELD} alt="SFHS" className="h-7 w-auto object-contain shrink-0" style={{ filter: 'drop-shadow(0 0 1px rgba(255,255,255,0.5))' }} />
           <button onClick={() => setView('home')} className="text-white/70 hover:text-white flex items-center gap-1 text-sm font-body">
             <ChevronLeft className="w-4 h-4" /> Home
           </button>
