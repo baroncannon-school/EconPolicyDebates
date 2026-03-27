@@ -8781,6 +8781,2272 @@
           "type": "rhetoric"
         }
       ]
+    },
+    {
+      "id": "debate-4",
+      "period": "1st",
+      "debateTopic": "Homelessness",
+      "topic": "Addressing Homelessness",
+      "description": "Should homelessness be addressed through personalized wraparound services focusing on mental health, rehabilitation, and employment support, or through a Housing First approach that provides stable housing immediately as a foundation for recovery?",
+      "teamA": {
+        "name": "Group 1",
+        "members": [],
+        "position": "Implement personalized wraparound care that addresses the root causes of homelessness — mental health disorders, addiction, and unemployment — through tailored services, temporary housing with onboarding, and support for long-term self-sufficiency.",
+        "onePagerUrl": null,
+        "keyStats": [
+          "67% of homeless population homeless due to mental health struggles (nonprofit survey)",
+          "Bay Area Community Service: mental health treatment improves long-term outcomes and confidence",
+          "Nonprofits report housing alone is not enough to end homelessness",
+          "Temporary housing + onboarding process ensures readiness for permanent housing",
+          "Job assistance and rehabilitation critical for maintaining financial stability"
+        ]
+      },
+      "teamB": {
+        "name": "Group 2",
+        "members": [],
+        "position": "Implement Housing First nationwide — provide rapid access to stable, permanent housing without preconditions, then offer voluntary support services. Housing is a precondition for recovery, and the data shows this approach is both more effective and more cost-efficient.",
+        "onePagerUrl": null,
+        "keyStats": [
+          "90%+ of Housing First participants remain stably housed (CA Dept of Housing)",
+          "Review of 26 studies: Housing First decreased homelessness by 88%, improved stability by 41%",
+          "Every $10 invested returns $9.60 in savings on emergency services (Canadian study)",
+          "Every $1 invested returns $144 in savings nationally",
+          "Denver: 40% reduction in arrests among Housing First participants",
+          "NYC: 80-90% of participants stayed housed long-term",
+          "Milwaukee: 92% reduction in homelessness with Housing First"
+        ]
+      },
+      "segments": [
+        {
+          "id": "seg-1",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "A",
+          "youtubeId": "aup9aGzt7LU",
+          "duration": 32,
+          "prompts": [
+            "What are the four main components of Group 1's homelessness policy solution?",
+            "According to Group 1, what percentage of homeless individuals have mental health disorders, and why is this statistic important to their argument?",
+            "Group 1 argues that policies should help people maintain 'financial stability' rather than just provide temporary housing. What evidence supports this claim?"
+          ],
+          "transcript": [
+            {
+              "start": 0.64,
+              "end": 4.32,
+              "text": "Um,"
+            },
+            {
+              "start": 2.24,
+              "end": 6.4,
+              "text": "our opening statement, uh, the most"
+            },
+            {
+              "start": 4.32,
+              "end": 8.08,
+              "text": "effective homeless policies are those"
+            },
+            {
+              "start": 6.4,
+              "end": 10.24,
+              "text": "that not only provide housing, but those"
+            },
+            {
+              "start": 8.08,
+              "end": 12.32,
+              "text": "that also offer mental health services,"
+            },
+            {
+              "start": 10.24,
+              "end": 14.64,
+              "text": "rehabilitation, and employment support"
+            },
+            {
+              "start": 12.32,
+              "end": 16.64,
+              "text": "tailored to each homeless individual's"
+            },
+            {
+              "start": 14.64,
+              "end": 18,
+              "text": "unique situations. A majority percentage"
+            },
+            {
+              "start": 16.64,
+              "end": 19.2,
+              "text": "of homeless individuals have mental"
+            },
+            {
+              "start": 18,
+              "end": 21.28,
+              "text": "health disorders, which cause them to"
+            },
+            {
+              "start": 19.2,
+              "end": 22.96,
+              "text": "struggle maintaining income and housing."
+            },
+            {
+              "start": 21.28,
+              "end": 25.12,
+              "text": "This should not go unrecognized as"
+            },
+            {
+              "start": 22.96,
+              "end": 26.64,
+              "text": "policies need to cater to the homeless"
+            },
+            {
+              "start": 25.12,
+              "end": 28.08,
+              "text": "specific needs to help them maintain"
+            },
+            {
+              "start": 26.64,
+              "end": 32.04,
+              "text": "financial stability rather than just"
+            },
+            {
+              "start": 28.08,
+              "end": 32.04,
+              "text": "supplying temporary housing."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o1-1",
+              "title": "Core Policy Components",
+              "startTime": 0.64,
+              "endTime": 12.32,
+              "bullets": [
+                "Housing + mental health services + rehabilitation + employment support",
+                "Services must be tailored to individual homeless person's unique situations",
+                "Majority of homeless have mental health disorders"
+              ]
+            },
+            {
+              "id": "o1-2",
+              "title": "Root Cause: Mental Health",
+              "startTime": 8.08,
+              "endTime": 22.96,
+              "bullets": [
+                "Mental health disorders cause struggle maintaining income and housing",
+                "Not just about lack of money or housing availability",
+                "Policies must address specific needs for financial stability"
+              ]
+            },
+            {
+              "id": "o1-3",
+              "title": "Why Not Just Temporary Housing",
+              "startTime": 19.2,
+              "endTime": 32.04,
+              "bullets": [
+                "Temporary housing alone insufficient",
+                "Must help maintain financial stability long-term",
+                "Personalized care addresses root causes"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-2",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "B",
+          "youtubeId": "NF5-yOjx_gA",
+          "duration": 47,
+          "prompts": [
+            "What is the fundamental difference between Housing First and traditional approaches to homelessness according to Group 2?",
+            "How does Group 2 use the concept of 'stable housing' as a foundation for addressing other problems like mental health and addiction?",
+            "What does Group 2 mean when they say the goal should be to 'reduce homelessness, not manage it'?"
+          ],
+          "transcript": [
+            {
+              "start": 0.08,
+              "end": 5.52,
+              "text": "opening arguments for group too."
+            },
+            {
+              "start": 3.04,
+              "end": 7.2,
+              "text": "Christian, but uh housing first is the"
+            },
+            {
+              "start": 5.52,
+              "end": 9.44,
+              "text": "most effective policy for addressing"
+            },
+            {
+              "start": 7.2,
+              "end": 11.6,
+              "text": "homelessness because it focuses on what"
+            },
+            {
+              "start": 9.44,
+              "end": 13.52,
+              "text": "people actually need first, a stable"
+            },
+            {
+              "start": 11.6,
+              "end": 16,
+              "text": "place to live. A lot of traditional"
+            },
+            {
+              "start": 13.52,
+              "end": 17.68,
+              "text": "approaches expect people uh expect"
+            },
+            {
+              "start": 16,
+              "end": 19.68,
+              "text": "people to fix things like mental health,"
+            },
+            {
+              "start": 17.68,
+              "end": 21.2,
+              "text": "addiction, or employment before they can"
+            },
+            {
+              "start": 19.68,
+              "end": 22.8,
+              "text": "get housing. But that doesn't really"
+            },
+            {
+              "start": 21.2,
+              "end": 24.24,
+              "text": "work because it's almost impossible to"
+            },
+            {
+              "start": 22.8,
+              "end": 26.48,
+              "text": "solve these problems while living on the"
+            },
+            {
+              "start": 24.24,
+              "end": 28.4,
+              "text": "street. Housing first flips that. It"
+            },
+            {
+              "start": 26.48,
+              "end": 29.84,
+              "text": "gives people stable housing upfront,"
+            },
+            {
+              "start": 28.4,
+              "end": 31.92,
+              "text": "which makes it way more realistic for"
+            },
+            {
+              "start": 29.84,
+              "end": 34.72,
+              "text": "them to improve other parts of their"
+            },
+            {
+              "start": 31.92,
+              "end": 36.56,
+              "text": "lives. And the data backs this up."
+            },
+            {
+              "start": 34.72,
+              "end": 38.16,
+              "text": "People in housing first programs are"
+            },
+            {
+              "start": 36.56,
+              "end": 39.76,
+              "text": "much more likely to stay housed long"
+            },
+            {
+              "start": 38.16,
+              "end": 41.92,
+              "text": "term. So, if the goal is to actually"
+            },
+            {
+              "start": 39.76,
+              "end": 43.76,
+              "text": "reduce homelessness, not to manage it,"
+            },
+            {
+              "start": 41.92,
+              "end": 46.8,
+              "text": "starting with housing first just makes"
+            },
+            {
+              "start": 43.76,
+              "end": 46.8,
+              "text": "the most sense."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o2-1",
+              "title": "Housing First Philosophy",
+              "startTime": 0.08,
+              "endTime": 13.52,
+              "bullets": [
+                "Focus on what people actually need first: stable housing",
+                "Stable housing is foundation for addressing other problems",
+                "Makes it realistic to improve mental health, addiction, employment"
+              ]
+            },
+            {
+              "id": "o2-2",
+              "title": "Traditional Approaches Don't Work",
+              "startTime": 9.44,
+              "endTime": 24.24,
+              "bullets": [
+                "Expecting people to fix issues before getting housing is unrealistic",
+                "Hard to solve problems while living on the street",
+                "Housing First flips the sequence"
+              ]
+            },
+            {
+              "id": "o2-3",
+              "title": "Evidence of Long-Term Success",
+              "startTime": 21.2,
+              "endTime": 46.8,
+              "bullets": [
+                "People more likely to stay housed long-term with Housing First",
+                "Goal is to reduce homelessness, not manage it",
+                "Data shows this approach works"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-3",
+          "type": "main",
+          "label": "Main Arguments",
+          "team": "A",
+          "youtubeId": "wO3S7z0bP64",
+          "duration": 97,
+          "prompts": [
+            "What specific evidence did Group 1 gather from nonprofit organizations, and how does this evidence support their position?",
+            "Explain the cause-and-effect relationship Group 1 describes between mental health treatment and job readiness.",
+            "Why does Group 1 argue that simply giving money to homeless people without mental health support may be ineffective?"
+          ],
+          "transcript": [
+            {
+              "start": 2.24,
+              "end": 7.12,
+              "text": "So me and my group uh went out and"
+            },
+            {
+              "start": 4.56,
+              "end": 8.56,
+              "text": "talked to nonprofit organizations that"
+            },
+            {
+              "start": 7.12,
+              "end": 10.64,
+              "text": "and we asked them what was the biggest"
+            },
+            {
+              "start": 8.56,
+              "end": 14.72,
+              "text": "issue they ran into. And their top"
+            },
+            {
+              "start": 10.64,
+              "end": 16.96,
+              "text": "response was that 67 uh 67% of the"
+            },
+            {
+              "start": 14.72,
+              "end": 18.56,
+              "text": "homeless population is because they're"
+            },
+            {
+              "start": 16.96,
+              "end": 20.8,
+              "text": "going through mental health struggles,"
+            },
+            {
+              "start": 18.56,
+              "end": 23.44,
+              "text": "not because they don't have money or"
+            },
+            {
+              "start": 20.8,
+              "end": 26.8,
+              "text": "like just can't find nowhere else to"
+            },
+            {
+              "start": 23.44,
+              "end": 28.72,
+              "text": "live. And we talked to this one"
+            },
+            {
+              "start": 26.8,
+              "end": 32.4,
+              "text": "organization called Bay Area Community"
+            },
+            {
+              "start": 28.72,
+              "end": 34.96,
+              "text": "Service and they said that uh helping"
+            },
+            {
+              "start": 32.4,
+              "end": 38,
+              "text": "homeless people not uh with their mental"
+            },
+            {
+              "start": 34.96,
+              "end": 39.68,
+              "text": "health not only like helps them"
+            },
+            {
+              "start": 38,
+              "end": 42,
+              "text": "throughout life, but it also helps long"
+            },
+            {
+              "start": 39.68,
+              "end": 44.32,
+              "text": "term because it improves their lifestyle"
+            },
+            {
+              "start": 42,
+              "end": 46.24,
+              "text": "and not just like giving someone money"
+            },
+            {
+              "start": 44.32,
+              "end": 47.6,
+              "text": "right away and just like, \"Hey, go use"
+            },
+            {
+              "start": 46.24,
+              "end": 48.96,
+              "text": "this with it.\" Because if they're not in"
+            },
+            {
+              "start": 47.6,
+              "end": 50.64,
+              "text": "the right mindset, they can't really"
+            },
+            {
+              "start": 48.96,
+              "end": 53.12,
+              "text": "like they might not know what to do."
+            },
+            {
+              "start": 50.64,
+              "end": 57.2,
+              "text": "They might go use it for something else."
+            },
+            {
+              "start": 53.12,
+              "end": 62.4,
+              "text": "And we based our research off of the"
+            },
+            {
+              "start": 57.2,
+              "end": 64.96,
+              "text": "backs and the program not only provides"
+            },
+            {
+              "start": 62.4,
+              "end": 66.8,
+              "text": "mental health services but also goes out"
+            },
+            {
+              "start": 64.96,
+              "end": 69.04,
+              "text": "of the way and helping them find"
+            },
+            {
+              "start": 66.8,
+              "end": 70.96,
+              "text": "housing. And we talked to people that do"
+            },
+            {
+              "start": 69.04,
+              "end": 73.28,
+              "text": "the outreach and they said once a"
+            },
+            {
+              "start": 70.96,
+              "end": 76.64,
+              "text": "homeless person um goes through that"
+            },
+            {
+              "start": 73.28,
+              "end": 78.08,
+              "text": "little training or like appointments of"
+            },
+            {
+              "start": 76.64,
+              "end": 81.6,
+              "text": "going like helping with their mental"
+            },
+            {
+              "start": 78.08,
+              "end": 83.52,
+              "text": "health, it's they become a lot more um"
+            },
+            {
+              "start": 81.6,
+              "end": 85.52,
+              "text": "more like confident of their decisions"
+            },
+            {
+              "start": 83.52,
+              "end": 86.88,
+              "text": "of like this is what I want to live,"
+            },
+            {
+              "start": 85.52,
+              "end": 89.28,
+              "text": "this is why I want to live and this"
+            },
+            {
+              "start": 86.88,
+              "end": 90.72,
+              "text": "could also help uh find jobs for them"
+            },
+            {
+              "start": 89.28,
+              "end": 92.48,
+              "text": "because once they get that confidence"
+            },
+            {
+              "start": 90.72,
+              "end": 93.92,
+              "text": "they believe they can do anything they"
+            },
+            {
+              "start": 92.48,
+              "end": 94.64,
+              "text": "want."
+            },
+            {
+              "start": 93.92,
+              "end": 97.44,
+              "text": "Thank you."
+            },
+            {
+              "start": 94.64,
+              "end": 97.44,
+              "text": "All right. Smell that."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o3-1",
+              "title": "Nonprofit Research: Mental Health Root Cause",
+              "startTime": 2.24,
+              "endTime": 26.8,
+              "bullets": [
+                "67% of homeless due to mental health struggles",
+                "Not primarily about money or housing availability",
+                "Direct research from nonprofit organizations"
+              ]
+            },
+            {
+              "id": "o3-2",
+              "title": "Bay Area Community Service Model",
+              "startTime": 20.8,
+              "endTime": 48.96,
+              "bullets": [
+                "Mental health treatment improves long-term lifestyle",
+                "Provides both mental health services and housing assistance",
+                "Money alone doesn't work without right mindset"
+              ]
+            },
+            {
+              "id": "o3-3",
+              "title": "Confidence Building Path to Employment",
+              "startTime": 46.24,
+              "endTime": 97.44,
+              "bullets": [
+                "Outreach workers: mental health appointments build confidence",
+                "Confidence leads to job readiness and self-belief",
+                "People believing in themselves can achieve employment"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-4",
+          "type": "main",
+          "label": "Main Arguments",
+          "team": "B",
+          "youtubeId": "MXigHZFcA3o",
+          "duration": 165,
+          "prompts": [
+            "Cite three specific statistics Group 2 provides about Housing First effectiveness and explain what each one measures.",
+            "According to Group 2, what is the cost-benefit ratio of investing in Housing First nationally, and how does this compare to emergency service costs?",
+            "Group 2 claims that housing is a 'precondition for recovery.' What evidence do they provide to support this claim?",
+            "How does Group 2's argument about Denver, NYC, and Milwaukee challenge Group 1's concerns about Housing First efficiency?"
+          ],
+          "transcript": [
+            {
+              "start": 2.48,
+              "end": 6.56,
+              "text": "So, we essentially said that housing"
+            },
+            {
+              "start": 4.4,
+              "end": 8.4,
+              "text": "first is the most um effective and"
+            },
+            {
+              "start": 6.56,
+              "end": 10.24,
+              "text": "economically efficient policy to address"
+            },
+            {
+              "start": 8.4,
+              "end": 12.08,
+              "text": "homelessness because it reduces"
+            },
+            {
+              "start": 10.24,
+              "end": 13.36,
+              "text": "long-term public costs while also"
+            },
+            {
+              "start": 12.08,
+              "end": 15.68,
+              "text": "producing better outcomes for"
+            },
+            {
+              "start": 13.36,
+              "end": 17.28,
+              "text": "individuals. Housing first is based on"
+            },
+            {
+              "start": 15.68,
+              "end": 18.8,
+              "text": "the idea that people need stable housing"
+            },
+            {
+              "start": 17.28,
+              "end": 20.4,
+              "text": "before they can realistically improve"
+            },
+            {
+              "start": 18.8,
+              "end": 22.24,
+              "text": "other products of their lives like"
+            },
+            {
+              "start": 20.4,
+              "end": 23.52,
+              "text": "employment, health, and recovery."
+            },
+            {
+              "start": 22.24,
+              "end": 26.16,
+              "text": "Instead of requiring people to meet"
+            },
+            {
+              "start": 23.52,
+              "end": 28.24,
+              "text": "certain conditions first, providing uh"
+            },
+            {
+              "start": 26.16,
+              "end": 29.52,
+              "text": "instead of requiring people to meet"
+            },
+            {
+              "start": 28.24,
+              "end": 31.28,
+              "text": "certain conditions first, it provides"
+            },
+            {
+              "start": 29.52,
+              "end": 33.2,
+              "text": "housing right away and then offer"
+            },
+            {
+              "start": 31.28,
+              "end": 35.84,
+              "text": "support or services to if they choose to"
+            },
+            {
+              "start": 33.2,
+              "end": 37.84,
+              "text": "use them. Housing first reduces overall"
+            },
+            {
+              "start": 35.84,
+              "end": 39.68,
+              "text": "public spending by lowering the use of"
+            },
+            {
+              "start": 37.84,
+              "end": 41.2,
+              "text": "emergency services. According to a"
+            },
+            {
+              "start": 39.68,
+              "end": 43.28,
+              "text": "national Canadian study by Laura"
+            },
+            {
+              "start": 41.2,
+              "end": 45.6,
+              "text": "McKinnon for high need individuals,"
+            },
+            {
+              "start": 43.28,
+              "end": 48,
+              "text": "every $10 invested in housing first"
+            },
+            {
+              "start": 45.6,
+              "end": 51.2,
+              "text": "resulted in about $9.60 60 cents saved"
+            },
+            {
+              "start": 48,
+              "end": 53.6,
+              "text": "in other public services like hospitals,"
+            },
+            {
+              "start": 51.2,
+              "end": 56.56,
+              "text": "shelters, and prisons. Other studies"
+            },
+            {
+              "start": 53.6,
+              "end": 59.52,
+              "text": "tell savings ranging from about $1.17 to"
+            },
+            {
+              "start": 56.56,
+              "end": 61.52,
+              "text": "$284 for every dollar spent. And on a"
+            },
+            {
+              "start": 59.52,
+              "end": 64.24,
+              "text": "broader scale, national data shows that"
+            },
+            {
+              "start": 61.52,
+              "end": 66.64,
+              "text": "every dollar invested returns about $144"
+            },
+            {
+              "start": 64.24,
+              "end": 68.32,
+              "text": "in savings. So instead of repeatedly"
+            },
+            {
+              "start": 66.64,
+              "end": 70.32,
+              "text": "paying for emergency responses,"
+            },
+            {
+              "start": 68.32,
+              "end": 71.92,
+              "text": "governments are spending more money more"
+            },
+            {
+              "start": 70.32,
+              "end": 74.16,
+              "text": "efficiently by reducing the need for"
+            },
+            {
+              "start": 71.92,
+              "end": 75.68,
+              "text": "those services in the first place."
+            },
+            {
+              "start": 74.16,
+              "end": 79.84,
+              "text": "Second, housing first is the most"
+            },
+            {
+              "start": 75.68,
+              "end": 81.44,
+              "text": "effective by reducing or sorry uh"
+            },
+            {
+              "start": 79.84,
+              "end": 83.2,
+              "text": "effective at actually keeping people"
+            },
+            {
+              "start": 81.44,
+              "end": 84.48,
+              "text": "housed. According to the California"
+            },
+            {
+              "start": 83.2,
+              "end": 86.56,
+              "text": "Department of Housing and Community"
+            },
+            {
+              "start": 84.48,
+              "end": 88.32,
+              "text": "Development, over 90% of people in"
+            },
+            {
+              "start": 86.56,
+              "end": 90.4,
+              "text": "housing first programs remain stably"
+            },
+            {
+              "start": 88.32,
+              "end": 92.48,
+              "text": "housed. We also see similar results in"
+            },
+            {
+              "start": 90.4,
+              "end": 94.64,
+              "text": "specific cities. In New York, around 80"
+            },
+            {
+              "start": 92.48,
+              "end": 96.96,
+              "text": "to 90% of participants stay housed long"
+            },
+            {
+              "start": 94.64,
+              "end": 98.64,
+              "text": "term. And in a larger review of 26"
+            },
+            {
+              "start": 96.96,
+              "end": 101.44,
+              "text": "different studies, housing percreased"
+            },
+            {
+              "start": 98.64,
+              "end": 104.16,
+              "text": "homelessness by 88% and improved housing"
+            },
+            {
+              "start": 101.44,
+              "end": 105.68,
+              "text": "stability by 41%. These numbers show"
+            },
+            {
+              "start": 104.16,
+              "end": 107.36,
+              "text": "that the policies consistently affect"
+            },
+            {
+              "start": 105.68,
+              "end": 109.28,
+              "text": "living across different locations and"
+            },
+            {
+              "start": 107.36,
+              "end": 111.36,
+              "text": "populations."
+            },
+            {
+              "start": 109.28,
+              "end": 113.52,
+              "text": "Third, housing first also reduces costs"
+            },
+            {
+              "start": 111.36,
+              "end": 115.68,
+              "text": "in other systems like healthcare and the"
+            },
+            {
+              "start": 113.52,
+              "end": 117.44,
+              "text": "criminal justice system. For example, in"
+            },
+            {
+              "start": 115.68,
+              "end": 119.44,
+              "text": "Denver, participants in a housing first"
+            },
+            {
+              "start": 117.44,
+              "end": 121.44,
+              "text": "program experienced a 40% reduction in"
+            },
+            {
+              "start": 119.44,
+              "end": 124.08,
+              "text": "arrests. There are also clear health"
+            },
+            {
+              "start": 121.44,
+              "end": 125.92,
+              "text": "benefits. Housing is first is associated"
+            },
+            {
+              "start": 124.08,
+              "end": 128.48,
+              "text": "with fewer emergency room visits, lower"
+            },
+            {
+              "start": 125.92,
+              "end": 130.24,
+              "text": "overdose rates, and reduced mortality."
+            },
+            {
+              "start": 128.48,
+              "end": 132.4,
+              "text": "Finally, housing first works because it"
+            },
+            {
+              "start": 130.24,
+              "end": 134.24,
+              "text": "addresses a basic issue. Without stable"
+            },
+            {
+              "start": 132.4,
+              "end": 136.32,
+              "text": "housing, it is very difficult for people"
+            },
+            {
+              "start": 134.24,
+              "end": 137.92,
+              "text": "to focus on long-term improvement. The"
+            },
+            {
+              "start": 136.32,
+              "end": 140.4,
+              "text": "research describes housing as a"
+            },
+            {
+              "start": 137.92,
+              "end": 142,
+              "text": "precondition for recovery and stability."
+            },
+            {
+              "start": 140.4,
+              "end": 143.28,
+              "text": "Once people have a consistent place to"
+            },
+            {
+              "start": 142,
+              "end": 145.92,
+              "text": "live, they're in a much better position"
+            },
+            {
+              "start": 143.28,
+              "end": 147.52,
+              "text": "to address other challenges. Overall,"
+            },
+            {
+              "start": 145.92,
+              "end": 149.12,
+              "text": "the evidence shows that housing first is"
+            },
+            {
+              "start": 147.52,
+              "end": 150.72,
+              "text": "not only the most effective at reducing"
+            },
+            {
+              "start": 149.12,
+              "end": 152.72,
+              "text": "homelessness, but also more cost"
+            },
+            {
+              "start": 150.72,
+              "end": 154.48,
+              "text": "effective over time. It keeps people"
+            },
+            {
+              "start": 152.72,
+              "end": 155.92,
+              "text": "housed, reduces the use of expensive"
+            },
+            {
+              "start": 154.48,
+              "end": 157.92,
+              "text": "public services, and leads to better"
+            },
+            {
+              "start": 155.92,
+              "end": 159.44,
+              "text": "outcomes across multiple systems. For"
+            },
+            {
+              "start": 157.92,
+              "end": 160.8,
+              "text": "those reasons, it is the strongest"
+            },
+            {
+              "start": 159.44,
+              "end": 161.84,
+              "text": "policy option for addressing"
+            },
+            {
+              "start": 160.8,
+              "end": 165.08,
+              "text": "homelessness."
+            },
+            {
+              "start": 161.84,
+              "end": 165.08,
+              "text": "There you go."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o4-1",
+              "title": "Housing First is Most Cost-Effective",
+              "startTime": 2.48,
+              "endTime": 22.24,
+              "bullets": [
+                "Reduces long-term public costs while improving outcomes",
+                "Canadian study: $10 invested = $9.60 saved in public services",
+                "Studies show savings from $1.17 to $284 per dollar spent"
+              ]
+            },
+            {
+              "id": "o4-2",
+              "title": "Housing First is Most Effective",
+              "startTime": 18.8,
+              "endTime": 59.52,
+              "bullets": [
+                "CA Dept Housing: 90%+ remain stably housed",
+                "NYC: 80-90% of participants stay housed long-term",
+                "26-study review: 88% decreased homelessness, 41% improved stability",
+                "Consistent results across different locations and populations"
+              ]
+            },
+            {
+              "id": "o4-3",
+              "title": "Health & Justice System Benefits",
+              "startTime": 53.6,
+              "endTime": 96.96,
+              "bullets": [
+                "Denver: 40% reduction in arrests",
+                "Fewer emergency room visits and lower overdose rates",
+                "Reduced mortality among housed populations",
+                "Housing is precondition for recovery and stability"
+              ]
+            },
+            {
+              "id": "o4-4",
+              "title": "Why Housing First Works",
+              "startTime": 92.48,
+              "endTime": 130.24,
+              "bullets": [
+                "Without stable housing, hard to focus on long-term improvement",
+                "Housing enables people to address other challenges",
+                "Once housed, people in better position for recovery"
+              ]
+            },
+            {
+              "id": "o4-5",
+              "title": "National Economic Impact",
+              "startTime": 125.92,
+              "endTime": 165.08,
+              "bullets": [
+                "Every $1 invested returns $144 in savings nationally",
+                "More efficient than repeatedly paying for emergency responses",
+                "Reduces use of expensive public services"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-5",
+          "type": "rebuttal",
+          "label": "Rebuttal",
+          "team": "A",
+          "youtubeId": "XDiIyLCr0L8",
+          "duration": 111,
+          "prompts": [
+            "What is Group 1's main criticism of Housing First programs, and what quote from nonprofits do they use to support this criticism?",
+            "Explain Group 1's argument about why an 'onboarding process' is necessary before people should receive permanent housing.",
+            "According to Group 1, what specific services (besides housing) are critical for preventing people from falling back into homelessness?"
+          ],
+          "transcript": [
+            {
+              "start": 0.08,
+              "end": 6.96,
+              "text": "H we just think that um housing first is"
+            },
+            {
+              "start": 3.68,
+              "end": 9.6,
+              "text": "inefficient because we had looked for um"
+            },
+            {
+              "start": 6.96,
+              "end": 11.76,
+              "text": "when we were searching different"
+            },
+            {
+              "start": 9.6,
+              "end": 13.44,
+              "text": "uh nonprofit companies it said that"
+            },
+            {
+              "start": 11.76,
+              "end": 15.76,
+              "text": "programs program set homeless"
+            },
+            {
+              "start": 13.44,
+              "end": 17.76,
+              "text": "individuals up for failure by providing"
+            },
+            {
+              "start": 15.76,
+              "end": 20.72,
+              "text": "housing without a way to financially"
+            },
+            {
+              "start": 17.76,
+              "end": 22.48,
+              "text": "support their lifestyle. Um quoted"
+            },
+            {
+              "start": 20.72,
+              "end": 24.88,
+              "text": "housing alone is not enough to end"
+            },
+            {
+              "start": 22.48,
+              "end": 26.72,
+              "text": "homelessness. Meaning you could give"
+            },
+            {
+              "start": 24.88,
+              "end": 29.36,
+              "text": "like a homeless person housing like"
+            },
+            {
+              "start": 26.72,
+              "end": 32.8,
+              "text": "first, but like will they want to"
+            },
+            {
+              "start": 29.36,
+              "end": 35.44,
+              "text": "continue or when you could just do make"
+            },
+            {
+              "start": 32.8,
+              "end": 38,
+              "text": "sure they're mentally stable and if"
+            },
+            {
+              "start": 35.44,
+              "end": 39.76,
+              "text": "they're if they like their programs and"
+            },
+            {
+              "start": 38,
+              "end": 43.68,
+              "text": "the appointments so they could"
+            },
+            {
+              "start": 39.76,
+              "end": 48,
+              "text": "like move on for their their life."
+            },
+            {
+              "start": 43.68,
+              "end": 51.84,
+              "text": "Yeah. Um I think that um the basis of"
+            },
+            {
+              "start": 48,
+              "end": 53.6,
+              "text": "our argument is just that um housing or"
+            },
+            {
+              "start": 51.84,
+              "end": 54.88,
+              "text": "shelter is important, but I don't think"
+            },
+            {
+              "start": 53.6,
+              "end": 56.24,
+              "text": "it's I think it's important for it not"
+            },
+            {
+              "start": 54.88,
+              "end": 58.16,
+              "text": "to be permanent housing because that's"
+            },
+            {
+              "start": 56.24,
+              "end": 59.76,
+              "text": "not as costefficient as just temporary"
+            },
+            {
+              "start": 58.16,
+              "end": 61.76,
+              "text": "housing and then an onboarding process"
+            },
+            {
+              "start": 59.76,
+              "end": 63.52,
+              "text": "for homelessness to actually go through"
+            },
+            {
+              "start": 61.76,
+              "end": 64.8,
+              "text": "with trying to make a change to their"
+            },
+            {
+              "start": 63.52,
+              "end": 66.4,
+              "text": "addiction issues or their mental health"
+            },
+            {
+              "start": 64.8,
+              "end": 70.08,
+              "text": "issues. And that and it just proves that"
+            },
+            {
+              "start": 66.4,
+              "end": 72.56,
+              "text": "they are um committed to actually um"
+            },
+            {
+              "start": 70.08,
+              "end": 74.08,
+              "text": "commit to being able to obtain a"
+            },
+            {
+              "start": 72.56,
+              "end": 75.6,
+              "text": "permanent housing and to actually be"
+            },
+            {
+              "start": 74.08,
+              "end": 77.2,
+              "text": "able to financially assist themselves"
+            },
+            {
+              "start": 75.6,
+              "end": 79.28,
+              "text": "themselves. So like job assistance,"
+            },
+            {
+              "start": 77.2,
+              "end": 81.2,
+              "text": "rehabilitation, I think that's very"
+            },
+            {
+              "start": 79.28,
+              "end": 84.08,
+              "text": "important even just for a couple weeks"
+            },
+            {
+              "start": 81.2,
+              "end": 85.36,
+              "text": "for a simple onboarding process at first"
+            },
+            {
+              "start": 84.08,
+              "end": 87.36,
+              "text": "just to make sure the homeless people"
+            },
+            {
+              "start": 85.36,
+              "end": 90.72,
+              "text": "are actually ready and actually feel"
+            },
+            {
+              "start": 87.36,
+              "end": 92.96,
+              "text": "prepared to um go through those steps"
+            },
+            {
+              "start": 90.72,
+              "end": 95.36,
+              "text": "and try and support themselves um"
+            },
+            {
+              "start": 92.96,
+              "end": 97.84,
+              "text": "themselves rather than just kind of use"
+            },
+            {
+              "start": 95.36,
+              "end": 99.68,
+              "text": "the housing first option as a way to"
+            },
+            {
+              "start": 97.84,
+              "end": 101.6,
+              "text": "just obtain housing and not try and keep"
+            },
+            {
+              "start": 99.68,
+              "end": 103.92,
+              "text": "it or support themselves and their"
+            },
+            {
+              "start": 101.6,
+              "end": 106.88,
+              "text": "lifestyle afterwards and maintain"
+            },
+            {
+              "start": 103.92,
+              "end": 106.88,
+              "text": "maintain financial"
+            },
+            {
+              "start": 108.16,
+              "end": 110.8,
+              "text": "All right."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o5-1",
+              "title": "Housing First is Inefficient",
+              "startTime": 0.08,
+              "endTime": 35.44,
+              "bullets": [
+                "Nonprofits: Housing First sets people up for failure",
+                "Quote: \"Housing alone is not enough to end homelessness\"",
+                "Providing housing without financial support is problematic"
+              ]
+            },
+            {
+              "id": "o5-2",
+              "title": "Shelter Should Be Temporary, Not Permanent",
+              "startTime": 29.36,
+              "endTime": 63.52,
+              "bullets": [
+                "Shelter important but not as permanent housing",
+                "Temporary housing more cost-efficient",
+                "Onboarding process needed before permanent housing"
+              ]
+            },
+            {
+              "id": "o5-3",
+              "title": "Onboarding: Proving Readiness",
+              "startTime": 59.76,
+              "endTime": 95.36,
+              "bullets": [
+                "Mental health and addiction treatment critical first",
+                "Job assistance and rehabilitation prove commitment",
+                "People must show readiness before permanent housing",
+                "Ensures ability to financially support themselves"
+              ]
+            },
+            {
+              "id": "o5-4",
+              "title": "Preventing Housing Without Maintenance",
+              "startTime": 90.72,
+              "endTime": 110.8,
+              "bullets": [
+                "Housing First can be used just to obtain housing",
+                "Without preparation, people fail to maintain it",
+                "Need support system to avoid falling back into homelessness"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-6",
+          "type": "rebuttal",
+          "label": "Rebuttal",
+          "team": "B",
+          "youtubeId": "M1IDO1H4AzY",
+          "duration": 112,
+          "prompts": [
+            "How does Group 2 respond to the claim that Housing First sets people up for failure without financial support?",
+            "Group 2 describes Housing First as a 'stepping stone' for mental health treatment. How does their explanation address Group 1's concerns about mental health?",
+            "What distinction does Group 2 make between 'policy flaws' and 'implementation issues,' and why is this distinction important to their argument?"
+          ],
+          "transcript": [
+            {
+              "start": 0.8,
+              "end": 4.56,
+              "text": "Okay. So, I know you guys are saying"
+            },
+            {
+              "start": 2.8,
+              "end": 7.04,
+              "text": "that Housing First isn't really"
+            },
+            {
+              "start": 4.56,
+              "end": 9.12,
+              "text": "effective at keeping people housed, but"
+            },
+            {
+              "start": 7.04,
+              "end": 10.8,
+              "text": "uh the National Low-Income Housing"
+            },
+            {
+              "start": 9.12,
+              "end": 13.6,
+              "text": "Coalition, which is a nonprofit"
+            },
+            {
+              "start": 10.8,
+              "end": 16.4,
+              "text": "organization, did an extensive review of"
+            },
+            {
+              "start": 13.6,
+              "end": 19.44,
+              "text": "26 studies uh which showed that housing"
+            },
+            {
+              "start": 16.4,
+              "end": 23.28,
+              "text": "first decreased homelessness by 88% but"
+            },
+            {
+              "start": 19.44,
+              "end": 24.88,
+              "text": "improved housing stability by 41%. And"
+            },
+            {
+              "start": 23.28,
+              "end": 27.12,
+              "text": "another statistic that I found helpful"
+            },
+            {
+              "start": 24.88,
+              "end": 30.08,
+              "text": "was with housing first in New York City,"
+            },
+            {
+              "start": 27.12,
+              "end": 32.96,
+              "text": "80 to 90% remained housed. So people are"
+            },
+            {
+              "start": 30.08,
+              "end": 36.8,
+              "text": "choosing to stay housed in that at at a"
+            },
+            {
+              "start": 32.96,
+              "end": 39.52,
+              "text": "really you know large scale. Um and then"
+            },
+            {
+              "start": 36.8,
+              "end": 41.6,
+              "text": "also I think like we're saying basically"
+            },
+            {
+              "start": 39.52,
+              "end": 42.96,
+              "text": "housing first is a stepping stone."
+            },
+            {
+              "start": 41.6,
+              "end": 44.8,
+              "text": "Mental health treatments are really"
+            },
+            {
+              "start": 42.96,
+              "end": 46.64,
+              "text": "important but they need to be housed"
+            },
+            {
+              "start": 44.8,
+              "end": 49.36,
+              "text": "first in order to receive treatments and"
+            },
+            {
+              "start": 46.64,
+              "end": 52.16,
+              "text": "for that treatment to be to be at most"
+            },
+            {
+              "start": 49.36,
+              "end": 54.88,
+              "text": "effective is when people are in stable"
+            },
+            {
+              "start": 52.16,
+              "end": 56.4,
+              "text": "housing. And also you mentioned um the"
+            },
+            {
+              "start": 54.88,
+              "end": 58.16,
+              "text": "cost effectiveness and while it's true"
+            },
+            {
+              "start": 56.4,
+              "end": 59.52,
+              "text": "that housing supply and funding are real"
+            },
+            {
+              "start": 58.16,
+              "end": 61.36,
+              "text": "challenges. Those are really"
+            },
+            {
+              "start": 59.52,
+              "end": 64.24,
+              "text": "implementation issues not flaws in the"
+            },
+            {
+              "start": 61.36,
+              "end": 66,
+              "text": "policy itself. Housing first is all has"
+            },
+            {
+              "start": 64.24,
+              "end": 68.96,
+              "text": "already been successfully implemented in"
+            },
+            {
+              "start": 66,
+              "end": 71.68,
+              "text": "many cities in Denver, New York City,"
+            },
+            {
+              "start": 68.96,
+              "end": 73.6,
+              "text": "Milwaukee, Wisconsin too with a 92%"
+            },
+            {
+              "start": 71.68,
+              "end": 75.6,
+              "text": "reduction in homelessness which shows"
+            },
+            {
+              "start": 73.6,
+              "end": 77.84,
+              "text": "that when properly funded and managed it"
+            },
+            {
+              "start": 75.6,
+              "end": 79.36,
+              "text": "works and challenges exist with any"
+            },
+            {
+              "start": 77.84,
+              "end": 80.96,
+              "text": "policy that doesn't mean the policy is"
+            },
+            {
+              "start": 79.36,
+              "end": 82.64,
+              "text": "ineffective. It means we need to"
+            },
+            {
+              "start": 80.96,
+              "end": 84.88,
+              "text": "implement it responsibly in each"
+            },
+            {
+              "start": 82.64,
+              "end": 86.72,
+              "text": "community. And ultimately, we're saving"
+            },
+            {
+              "start": 84.88,
+              "end": 88.96,
+              "text": "money because, as Chloe mentioned,"
+            },
+            {
+              "start": 86.72,
+              "end": 90.56,
+              "text": "reducing emergency services, including"
+            },
+            {
+              "start": 88.96,
+              "end": 92.48,
+              "text": "ER visits, jail stays, and"
+            },
+            {
+              "start": 90.56,
+              "end": 94.88,
+              "text": "hospitalizations are major costs that we"
+            },
+            {
+              "start": 92.48,
+              "end": 97.84,
+              "text": "could alleviate with housing first. And"
+            },
+            {
+              "start": 94.88,
+              "end": 99.44,
+              "text": "I think maybe the statistic I'll leave"
+            },
+            {
+              "start": 97.84,
+              "end": 102.96,
+              "text": "you with is that every dollar invested"
+            },
+            {
+              "start": 99.44,
+              "end": 104.96,
+              "text": "in housing first results in $144"
+            },
+            {
+              "start": 102.96,
+              "end": 108.8,
+              "text": "in savings nationally because of these"
+            },
+            {
+              "start": 104.96,
+              "end": 112.28,
+              "text": "reduced uh emergency services."
+            },
+            {
+              "start": 108.8,
+              "end": 112.28,
+              "text": "All right. Good."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o6-1",
+              "title": "Comprehensive Review of Housing First Studies",
+              "startTime": 0.8,
+              "endTime": 24.88,
+              "bullets": [
+                "National Low-Income Housing Coalition review of 26 studies",
+                "88% decreased homelessness, 41% improved housing stability",
+                "NYC data: 80-90% remained housed (large scale success)"
+              ]
+            },
+            {
+              "id": "o6-2",
+              "title": "Housing First as Stepping Stone for Treatment",
+              "startTime": 19.44,
+              "endTime": 56.4,
+              "bullets": [
+                "Housing First enables mental health treatment, not replaced by it",
+                "Mental health treatment most effective when people housed",
+                "Treatment adherence improves in stable housing"
+              ]
+            },
+            {
+              "id": "o6-3",
+              "title": "Implementation vs. Policy Effectiveness",
+              "startTime": 52.16,
+              "endTime": 86.72,
+              "bullets": [
+                "Housing supply and funding are implementation challenges",
+                "Not flaws in the policy itself",
+                "Already successfully implemented in Denver, NYC, Milwaukee"
+              ]
+            },
+            {
+              "id": "o6-4",
+              "title": "Real-World Success Stories & Cost Savings",
+              "startTime": 82.64,
+              "endTime": 112.28,
+              "bullets": [
+                "Milwaukee: 92% reduction in homelessness",
+                "Reduces ER visits, jail stays, hospitalizations",
+                "Every $1 invested returns $144 in savings nationally"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-7",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "A",
+          "youtubeId": "HbPHRrt29Sc",
+          "duration": 40,
+          "prompts": [
+            "What is Group 1's final argument about why homelessness cannot be solved by housing alone?",
+            "How do Group 1's closing statements tie back to their earlier evidence about mental health disorders among homeless populations?"
+          ],
+          "transcript": [
+            {
+              "start": 0.8,
+              "end": 4.32,
+              "text": "So in the end, our group shows that"
+            },
+            {
+              "start": 2.64,
+              "end": 6,
+              "text": "homelessness is not just from housing"
+            },
+            {
+              "start": 4.32,
+              "end": 8.32,
+              "text": "issues, but mental health and stability"
+            },
+            {
+              "start": 6,
+              "end": 10.8,
+              "text": "issues. Our main plan of unique"
+            },
+            {
+              "start": 8.32,
+              "end": 12.24,
+              "text": "personalized care is still seen as the"
+            },
+            {
+              "start": 10.8,
+              "end": 13.92,
+              "text": "best possible solution to ending"
+            },
+            {
+              "start": 12.24,
+              "end": 16.24,
+              "text": "homelessness long term by including"
+            },
+            {
+              "start": 13.92,
+              "end": 19.28,
+              "text": "mental health care, addiction help, job"
+            },
+            {
+              "start": 16.24,
+              "end": 20.96,
+              "text": "assistance, shelter, and etc. Asia"
+            },
+            {
+              "start": 19.28,
+              "end": 22.88,
+              "text": "pointed out, there's no long-term"
+            },
+            {
+              "start": 20.96,
+              "end": 24.72,
+              "text": "improvement just from quick housing or"
+            },
+            {
+              "start": 22.88,
+              "end": 26.32,
+              "text": "financial help. If the root cause of"
+            },
+            {
+              "start": 24.72,
+              "end": 27.6,
+              "text": "them homelessness is not solved, then"
+            },
+            {
+              "start": 26.32,
+              "end": 29.6,
+              "text": "they may likely fall back into"
+            },
+            {
+              "start": 27.6,
+              "end": 31.2,
+              "text": "homelessness. We would like to see more"
+            },
+            {
+              "start": 29.6,
+              "end": 33.12,
+              "text": "policies implementing housing and"
+            },
+            {
+              "start": 31.2,
+              "end": 35.2,
+              "text": "ongoing support for individuals so they"
+            },
+            {
+              "start": 33.12,
+              "end": 37.2,
+              "text": "can rebuild and m maintain their lives"
+            },
+            {
+              "start": 35.2,
+              "end": 39.52,
+              "text": "independently long term."
+            },
+            {
+              "start": 37.2,
+              "end": 39.52,
+              "text": "Hey"
+            }
+          ],
+          "outline": [
+            {
+              "id": "o7-1",
+              "title": "Root Causes: Mental Health & Stability",
+              "startTime": 0.8,
+              "endTime": 26.32,
+              "bullets": [
+                "Homelessness not just from housing issues",
+                "Mental health and stability issues are root causes",
+                "Addresses multiple problem domains"
+              ]
+            },
+            {
+              "id": "o7-2",
+              "title": "Personalized Care: Best Long-Term Solution",
+              "startTime": 22.88,
+              "endTime": 39.52,
+              "bullets": [
+                "Mental health care, addiction help, job assistance critical",
+                "Shelter + comprehensive support needed",
+                "Solves root cause prevents falling back into homelessness",
+                "Enables independent living long-term"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-8",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "B",
+          "youtubeId": "_dg442CfXy8",
+          "duration": 24,
+          "prompts": [
+            "What specific national policy does Group 2 advocate for, and what outcomes do they predict if this policy is implemented?",
+            "How does Group 2 frame Housing First as addressing the 'general welfare' rather than just individual outcomes?"
+          ],
+          "transcript": [
+            {
+              "start": 1.2,
+              "end": 5.84,
+              "text": "He said the government should implement"
+            },
+            {
+              "start": 3.04,
+              "end": 7.84,
+              "text": "housing first nationwide because it will"
+            },
+            {
+              "start": 5.84,
+              "end": 10.08,
+              "text": "reduce chronic homelessness by providing"
+            },
+            {
+              "start": 7.84,
+              "end": 11.76,
+              "text": "rapid access to stable housing without"
+            },
+            {
+              "start": 10.08,
+              "end": 14.16,
+              "text": "requirements by ensuring everyone has"
+            },
+            {
+              "start": 11.76,
+              "end": 15.92,
+              "text": "access to stable housing. This policy"
+            },
+            {
+              "start": 14.16,
+              "end": 17.84,
+              "text": "promotes general welfare by creating"
+            },
+            {
+              "start": 15.92,
+              "end": 19.92,
+              "text": "safer communities, reducing strain on"
+            },
+            {
+              "start": 17.84,
+              "end": 23.72,
+              "text": "public services and helping more people"
+            },
+            {
+              "start": 19.92,
+              "end": 23.72,
+              "text": "be healthy."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o8-1",
+              "title": "Housing First National Policy",
+              "startTime": 1.2,
+              "endTime": 17.84,
+              "bullets": [
+                "Implement Housing First nationwide",
+                "Rapid access to stable housing without requirements",
+                "Reduces chronic homelessness"
+              ]
+            },
+            {
+              "id": "o8-2",
+              "title": "Public Welfare & Community Benefits",
+              "startTime": 14.16,
+              "endTime": 23.72,
+              "bullets": [
+                "Promotes general welfare",
+                "Creates safer communities",
+                "Reduces strain on public services",
+                "Helps people be healthier"
+              ]
+            }
+          ]
+        }
+      ],
+      "keyMoments": [
+        {
+          "id": "s1-m1",
+          "type": "argument",
+          "timestamp": 0.64,
+          "endTime": 14.64,
+          "description": "Core claim: effective policies need housing + mental health + rehabilitation + employment"
+        },
+        {
+          "id": "s1-m2",
+          "type": "evidence",
+          "timestamp": 10.24,
+          "endTime": 22.96,
+          "description": "Mental health disorders: major cause of homelessness"
+        },
+        {
+          "id": "s1-m3",
+          "type": "structure",
+          "timestamp": 19.2,
+          "endTime": 32.04,
+          "description": "Transition: policies must address specific needs, not just provide temporary housing"
+        },
+        {
+          "id": "s2-m1",
+          "type": "argument",
+          "timestamp": 0.08,
+          "endTime": 16,
+          "description": "Housing First premise: stable housing is the first and necessary need"
+        },
+        {
+          "id": "s2-m2",
+          "type": "mr-cannon",
+          "timestamp": 11.6,
+          "endTime": 28.4,
+          "description": "Critiques traditional approaches: expect people to fix issues before housing (unrealistic)"
+        },
+        {
+          "id": "s2-m3",
+          "type": "argument",
+          "timestamp": 24.24,
+          "endTime": 36.56,
+          "description": "Housing First flips sequence: housing upfront enables other improvements"
+        },
+        {
+          "id": "s2-m4",
+          "type": "evidence",
+          "timestamp": 31.92,
+          "endTime": 43.76,
+          "description": "People more likely to stay housed long-term with Housing First"
+        },
+        {
+          "id": "s2-m5",
+          "type": "rhetoric",
+          "timestamp": 39.76,
+          "endTime": 46.8,
+          "description": "Goal reframe: \"reduce homelessness, not manage it\""
+        },
+        {
+          "id": "s3-m1",
+          "type": "evidence",
+          "timestamp": 4.56,
+          "endTime": 26.8,
+          "description": "67% of homeless due to mental health struggles (nonprofit research)"
+        },
+        {
+          "id": "s3-m2",
+          "type": "mr-cannon",
+          "timestamp": 2.24,
+          "endTime": 10.64,
+          "description": "Empirical research from nonprofits directly, not theoretical"
+        },
+        {
+          "id": "s3-m3",
+          "type": "argument",
+          "timestamp": 20.8,
+          "endTime": 46.24,
+          "description": "Bay Area Community Service: mental health treatment improves long-term lifestyle"
+        },
+        {
+          "id": "s3-m4",
+          "type": "evidence",
+          "timestamp": 42,
+          "endTime": 57.2,
+          "description": "Quote: money without mental support fails - wrong mindset prevents proper use"
+        },
+        {
+          "id": "s3-m5",
+          "type": "structure",
+          "timestamp": 50.64,
+          "endTime": 85.52,
+          "description": "Cause-effect: outreach workers say mental health appointments build confidence"
+        },
+        {
+          "id": "s3-m6",
+          "type": "argument",
+          "timestamp": 81.6,
+          "endTime": 94.64,
+          "description": "Confidence building leads to job readiness and self-belief"
+        },
+        {
+          "id": "s3-m7",
+          "type": "rhetoric",
+          "timestamp": 89.28,
+          "endTime": 97.44,
+          "description": "Personal agency frame: \"they believe they can do anything they want\""
+        },
+        {
+          "id": "s4-m1",
+          "type": "evidence",
+          "timestamp": 15.68,
+          "endTime": 29.52,
+          "description": "Canadian study: $10 invested = $9.60 saved in public services"
+        },
+        {
+          "id": "s4-m2",
+          "type": "evidence",
+          "timestamp": 26.16,
+          "endTime": 39.68,
+          "description": "Studies show savings range $1.17 to $284 per dollar spent"
+        },
+        {
+          "id": "s4-m3",
+          "type": "evidence",
+          "timestamp": 35.84,
+          "endTime": 51.2,
+          "description": "National data: $1 invested = $144 returned in savings"
+        },
+        {
+          "id": "s4-m4",
+          "type": "mr-cannon",
+          "timestamp": 45.6,
+          "endTime": 64.24,
+          "description": "Economic efficiency argument: public spending reduced via emergency service decrease"
+        },
+        {
+          "id": "s4-m5",
+          "type": "evidence",
+          "timestamp": 59.52,
+          "endTime": 79.84,
+          "description": "CA Dept Housing: 90%+ remain stably housed (official state data)"
+        },
+        {
+          "id": "s4-m6",
+          "type": "evidence",
+          "timestamp": 74.16,
+          "endTime": 88.32,
+          "description": "NYC Housing First: 80-90% participants stay housed long-term"
+        },
+        {
+          "id": "s4-m7",
+          "type": "evidence",
+          "timestamp": 84.48,
+          "endTime": 104.16,
+          "description": "Meta-analysis: 26-study review shows 88% decreased homelessness, 41% improved stability"
+        },
+        {
+          "id": "s4-m8",
+          "type": "structure",
+          "timestamp": 98.64,
+          "endTime": 113.52,
+          "description": "Consistency across locations demonstrates generalizability of policy"
+        },
+        {
+          "id": "s4-m9",
+          "type": "evidence",
+          "timestamp": 117.44,
+          "endTime": 125.92,
+          "description": "Denver: 40% reduction in arrests (criminal justice system benefits)"
+        },
+        {
+          "id": "s4-m10",
+          "type": "evidence",
+          "timestamp": 121.44,
+          "endTime": 134.24,
+          "description": "Health benefits: fewer ER visits, lower overdose rates, reduced mortality"
+        },
+        {
+          "id": "s4-m11",
+          "type": "argument",
+          "timestamp": 130.24,
+          "endTime": 145.92,
+          "description": "Housing as precondition for recovery: foundational claim"
+        },
+        {
+          "id": "s4-m12",
+          "type": "mr-cannon",
+          "timestamp": 142,
+          "endTime": 152.72,
+          "description": "Sequencing matters: housing enables focus on long-term improvement"
+        },
+        {
+          "id": "s4-m13",
+          "type": "rhetoric",
+          "timestamp": 149.12,
+          "endTime": 160.8,
+          "description": "Efficiency framing: \"spending money more efficiently\" vs. emergency responses"
+        },
+        {
+          "id": "s4-m14",
+          "type": "evidence",
+          "timestamp": 157.92,
+          "endTime": 165.08,
+          "description": "Comprehensive effectiveness across multiple sectors (health, justice, economic)"
+        },
+        {
+          "id": "s5-m1",
+          "type": "argument",
+          "timestamp": 0.08,
+          "endTime": 24.88,
+          "description": "Housing First is inefficient (direct contradiction)"
+        },
+        {
+          "id": "s5-m2",
+          "type": "evidence",
+          "timestamp": 20.72,
+          "endTime": 43.68,
+          "description": "Nonprofit quote: \"Housing alone is not enough to end homelessness\""
+        },
+        {
+          "id": "s5-m3",
+          "type": "evidence",
+          "timestamp": 38,
+          "endTime": 61.76,
+          "description": "Housing without financial support sets people up for failure"
+        },
+        {
+          "id": "s5-m4",
+          "type": "argument",
+          "timestamp": 58.16,
+          "endTime": 70.08,
+          "description": "Shelter should be temporary, not permanent housing"
+        },
+        {
+          "id": "s5-m5",
+          "type": "structure",
+          "timestamp": 64.8,
+          "endTime": 85.36,
+          "description": "Onboarding process as key requirement before permanent housing"
+        },
+        {
+          "id": "s5-m6",
+          "type": "argument",
+          "timestamp": 81.2,
+          "endTime": 95.36,
+          "description": "Proves commitment: mental health + job assistance required upfront"
+        },
+        {
+          "id": "s5-m7",
+          "type": "mr-cannon",
+          "timestamp": 90.72,
+          "endTime": 106.88,
+          "description": "Readiness requirement: must demonstrate ability to maintain housing"
+        },
+        {
+          "id": "s5-m8",
+          "type": "rhetoric",
+          "timestamp": 101.6,
+          "endTime": 110.8,
+          "description": "Warning against Housing First misuse: obtain housing without maintaining it"
+        },
+        {
+          "id": "s6-m1",
+          "type": "evidence",
+          "timestamp": 4.56,
+          "endTime": 24.88,
+          "description": "National Low-Income Housing Coalition: 26-study meta-analysis cited"
+        },
+        {
+          "id": "s6-m2",
+          "type": "evidence",
+          "timestamp": 19.44,
+          "endTime": 39.52,
+          "description": "88% decreased homelessness, 41% improved housing stability (study results)"
+        },
+        {
+          "id": "s6-m3",
+          "type": "evidence",
+          "timestamp": 32.96,
+          "endTime": 49.36,
+          "description": "NYC: 80-90% remained housed (large-scale real-world success)"
+        },
+        {
+          "id": "s6-m4",
+          "type": "mr-cannon",
+          "timestamp": 44.8,
+          "endTime": 58.16,
+          "description": "Reframing: Housing First enables treatment, not replaces it"
+        },
+        {
+          "id": "s6-m5",
+          "type": "argument",
+          "timestamp": 54.88,
+          "endTime": 68.96,
+          "description": "Mental health treatment most effective when housed"
+        },
+        {
+          "id": "s6-m6",
+          "type": "structure",
+          "timestamp": 64.24,
+          "endTime": 84.88,
+          "description": "Distinguishes implementation challenges from policy flaws"
+        },
+        {
+          "id": "s6-m7",
+          "type": "evidence",
+          "timestamp": 80.96,
+          "endTime": 94.88,
+          "description": "Milwaukee: 92% reduction in homelessness (concrete success)"
+        },
+        {
+          "id": "s6-m8",
+          "type": "evidence",
+          "timestamp": 90.56,
+          "endTime": 104.96,
+          "description": "Cost savings summary: reduces ER, jail, hospitalizations"
+        },
+        {
+          "id": "s6-m9",
+          "type": "evidence",
+          "timestamp": 99.44,
+          "endTime": 112.28,
+          "description": "$144 return on every $1 invested nationally"
+        },
+        {
+          "id": "s7-m1",
+          "type": "argument",
+          "timestamp": 2.64,
+          "endTime": 26.32,
+          "description": "Homelessness caused by mental health AND stability issues, not just housing"
+        },
+        {
+          "id": "s7-m2",
+          "type": "structure",
+          "timestamp": 22.88,
+          "endTime": 39.52,
+          "description": "Personalized care described as \"best possible solution\""
+        },
+        {
+          "id": "s7-m3",
+          "type": "mr-cannon",
+          "timestamp": 22.88,
+          "endTime": 37.2,
+          "description": "Root cause argument: without solving underlying issues, people fall back into homelessness"
+        },
+        {
+          "id": "s7-m4",
+          "type": "rhetoric",
+          "timestamp": 33.12,
+          "endTime": 39.52,
+          "description": "Vision: policies enabling rebuild and maintain lives independently long-term"
+        },
+        {
+          "id": "s8-m1",
+          "type": "argument",
+          "timestamp": 3.04,
+          "endTime": 17.84,
+          "description": "National policy call: implement Housing First nationwide"
+        },
+        {
+          "id": "s8-m2",
+          "type": "rhetoric",
+          "timestamp": 14.16,
+          "endTime": 23.72,
+          "description": "Outcome framing: \"reduce chronic homelessness\" (positive goal)"
+        },
+        {
+          "id": "s8-m3",
+          "type": "mr-cannon",
+          "timestamp": 14.16,
+          "endTime": 23.72,
+          "description": "General welfare + community benefits: safer communities, healthier people"
+        }
+      ]
     }
   ]
 }
