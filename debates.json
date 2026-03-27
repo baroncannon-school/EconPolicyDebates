@@ -1826,6 +1826,3298 @@
           "type": "rhetoric"
         }
       ]
+    },
+    {
+      "id": "debate-2",
+      "period": "4th",
+      "debateTopic": "Opioid Crisis",
+      "topic": "Addressing the Opioid Crisis",
+      "description": "Should the U.S. combat the opioid epidemic through stricter prescription regulation and harsher penalties for illegal sales, or by expanding drug courts and treatment-based alternatives to incarceration?",
+      "teamA": {
+        "name": "Group 1",
+        "members": [],
+        "position": "Regulate legal opioid prescriptions (limiting to severe/cancer pain, following Japan's model) and increase prison sentences for illegal opioid trafficking to attack the crisis from both the supply and demand sides.",
+        "onePagerUrl": null,
+        "keyStats": [
+          "Over 1 million US drug overdose deaths, 500,000+ from opioids",
+          "150-220 opioid overdose deaths per day",
+          "Fentanyl involved in nearly 90% of opioid deaths",
+          "Japan has 26x lower opioid addiction rates due to prescription-only-for-cancer policy",
+          "56% of patients aged 13-30 filled opioid prescriptions after wisdom teeth removal (JAMA)",
+          "Offenders with 60+ month sentences were 18% less likely to reoffend (US Sentencing Commission)"
+        ]
+      },
+      "teamB": {
+        "name": "Group 2",
+        "members": [],
+        "position": "Expand drug courts and treatment-based rehabilitation programs as alternatives to incarceration, treating substance abuse as a public health issue rather than a criminal one to reduce recidivism and promote recovery.",
+        "onePagerUrl": null,
+        "keyStats": [
+          "564,000 opioid deaths in California in two decades",
+          "7.1 million US adults under criminal justice supervision; nearly half struggle with drug abuse",
+          "Drug court participants had significantly lower rearrest rates 5+ years later (NIJ study of 6,500+)",
+          "Treatment courts: 40% vs 53% crime rates, 56% vs 76% drug use rates vs traditional sentencing",
+          "Formerly incarcerated were 40x more likely to die of opioid overdose within 2 weeks of release (North Carolina)"
+        ]
+      },
+      "segments": [
+        {
+          "id": "seg-1",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "A",
+          "youtubeId": "tzVy9IQtazw",
+          "duration": 153,
+          "prompts": [
+            "What is Group 1's core policy proposal for addressing the opioid crisis? Identify the two main components.",
+            "How does Group 1 connect prescription regulation to preventing first-time opioid exposure?",
+            "According to Group 1, why did the crisis escalate after 2010?"
+          ],
+          "transcript": [
+            {
+              "start": 0.24,
+              "end": 3.4,
+              "text": "a joke."
+            },
+            {
+              "start": 7.6,
+              "end": 11.12,
+              "text": "Okay. The opioid crisis in the United"
+            },
+            {
+              "start": 10,
+              "end": 13.04,
+              "text": "States is something that has been"
+            },
+            {
+              "start": 11.12,
+              "end": 14.64,
+              "text": "building for decades. It all began in"
+            },
+            {
+              "start": 13.04,
+              "end": 16.56,
+              "text": "the 1990s when doctors started"
+            },
+            {
+              "start": 14.64,
+              "end": 18.8,
+              "text": "prescribing opioid medications at very"
+            },
+            {
+              "start": 16.56,
+              "end": 20.32,
+              "text": "high rates to treat chronic pain. These"
+            },
+            {
+              "start": 18.8,
+              "end": 21.76,
+              "text": "drugs were meant to help, but instead"
+            },
+            {
+              "start": 20.32,
+              "end": 24.56,
+              "text": "they opened the door to widespread"
+            },
+            {
+              "start": 21.76,
+              "end": 26.08,
+              "text": "addiction. By around 2010, many people"
+            },
+            {
+              "start": 24.56,
+              "end": 27.6,
+              "text": "who had become dependent on prescription"
+            },
+            {
+              "start": 26.08,
+              "end": 29.52,
+              "text": "opioids turned to cheaper illegal"
+            },
+            {
+              "start": 27.6,
+              "end": 31.28,
+              "text": "alternatives. This shift made the"
+            },
+            {
+              "start": 29.52,
+              "end": 34,
+              "text": "problem even more dangerous. Then"
+            },
+            {
+              "start": 31.28,
+              "end": 35.92,
+              "text": "starting in 2013, overdose deaths began"
+            },
+            {
+              "start": 34,
+              "end": 38.16,
+              "text": "to spike dramatically. A major reason"
+            },
+            {
+              "start": 35.92,
+              "end": 40.24,
+              "text": "for this is fentanyl, a synthetic opioid"
+            },
+            {
+              "start": 38.16,
+              "end": 42.4,
+              "text": "that is 50 to 100 times more powerful"
+            },
+            {
+              "start": 40.24,
+              "end": 45.04,
+              "text": "than morphine. Because it's so strong,"
+            },
+            {
+              "start": 42.4,
+              "end": 47.28,
+              "text": "even a tiny amount can be deadly. Today,"
+            },
+            {
+              "start": 45.04,
+              "end": 49.36,
+              "text": "the numbers Today, the numbers are"
+            },
+            {
+              "start": 47.28,
+              "end": 51.36,
+              "text": "staggering. Over 1 million people in the"
+            },
+            {
+              "start": 49.36,
+              "end": 53.04,
+              "text": "US have died from drug overdoses with"
+            },
+            {
+              "start": 51.36,
+              "end": 55.28,
+              "text": "opioids responsible for more than"
+            },
+            {
+              "start": 53.04,
+              "end": 58.16,
+              "text": "500,000 of those deaths. That means that"
+            },
+            {
+              "start": 55.28,
+              "end": 59.76,
+              "text": "every single day roughly 150 to 220"
+            },
+            {
+              "start": 58.16,
+              "end": 61.92,
+              "text": "people lose their lives to opioid"
+            },
+            {
+              "start": 59.76,
+              "end": 64.16,
+              "text": "overdoses. Fentanyl has now taken over"
+            },
+            {
+              "start": 61.92,
+              "end": 66.24,
+              "text": "the crisis, playing a role in nearly 90%"
+            },
+            {
+              "start": 64.16,
+              "end": 67.92,
+              "text": "of opioid related deaths. Because of how"
+            },
+            {
+              "start": 66.24,
+              "end": 69.36,
+              "text": "severe this epidemic became, the US"
+            },
+            {
+              "start": 67.92,
+              "end": 70.96,
+              "text": "government officially declared opioid"
+            },
+            {
+              "start": 69.36,
+              "end": 73.6,
+              "text": "addiction a public health emergency in"
+            },
+            {
+              "start": 70.96,
+              "end": 75.36,
+              "text": "2017. This isn't just a a statistic."
+            },
+            {
+              "start": 73.6,
+              "end": 77.2,
+              "text": "It's an ongoing crisis affecting"
+            },
+            {
+              "start": 75.36,
+              "end": 79.04,
+              "text": "families, communities, and the entire"
+            },
+            {
+              "start": 77.2,
+              "end": 81.28,
+              "text": "country. What makes this crisis"
+            },
+            {
+              "start": 79.04,
+              "end": 82.88,
+              "text": "especially heartbreaking that is that it"
+            },
+            {
+              "start": 81.28,
+              "end": 85.84,
+              "text": "often begins in places that are supposed"
+            },
+            {
+              "start": 82.88,
+              "end": 88.08,
+              "text": "to heal us like hospitals and clinics. A"
+            },
+            {
+              "start": 85.84,
+              "end": 90.16,
+              "text": "simple prescription meth meant to manage"
+            },
+            {
+              "start": 88.08,
+              "end": 92.64,
+              "text": "pain after surgeries can lead to"
+            },
+            {
+              "start": 90.16,
+              "end": 94.88,
+              "text": "addiction. And for many the per first"
+            },
+            {
+              "start": 92.64,
+              "end": 97.28,
+              "text": "prescription is the one that starts off"
+            },
+            {
+              "start": 94.88,
+              "end": 99.04,
+              "text": "a devastating cycle. That's why our"
+            },
+            {
+              "start": 97.28,
+              "end": 100.8,
+              "text": "policy matters. We believe the best way"
+            },
+            {
+              "start": 99.04,
+              "end": 103.36,
+              "text": "to fight the opioid crisis is to"
+            },
+            {
+              "start": 100.8,
+              "end": 106.08,
+              "text": "regulate both legal opioid prescriptions"
+            },
+            {
+              "start": 103.36,
+              "end": 108.32,
+              "text": "and illegal opioid sales. By tightening"
+            },
+            {
+              "start": 106.08,
+              "end": 110.72,
+              "text": "prescription rules, like for example,"
+            },
+            {
+              "start": 108.32,
+              "end": 113.36,
+              "text": "limiting opioids to people with severe"
+            },
+            {
+              "start": 110.72,
+              "end": 115.44,
+              "text": "or cancer related pain, we will prevent"
+            },
+            {
+              "start": 113.36,
+              "end": 117.68,
+              "text": "unnecessary first-time exposures and"
+            },
+            {
+              "start": 115.44,
+              "end": 120.24,
+              "text": "reduce the risk of addiction. At the"
+            },
+            {
+              "start": 117.68,
+              "end": 122.64,
+              "text": "same time, by increasing prison"
+            },
+            {
+              "start": 120.24,
+              "end": 125.52,
+              "text": "sentences for illegal opioid sales and"
+            },
+            {
+              "start": 122.64,
+              "end": 127.92,
+              "text": "trafficking, we target the uh supply as"
+            },
+            {
+              "start": 125.52,
+              "end": 130.24,
+              "text": "aspect, stopping the distribution of"
+            },
+            {
+              "start": 127.92,
+              "end": 132.32,
+              "text": "deadly synthetic drugs like fentanyl."
+            },
+            {
+              "start": 130.24,
+              "end": 134.48,
+              "text": "Our policy attacks the crisis from both"
+            },
+            {
+              "start": 132.32,
+              "end": 136.16,
+              "text": "ends, stopping new addiction before they"
+            },
+            {
+              "start": 134.48,
+              "end": 139.28,
+              "text": "start, and cracking down on the spread"
+            },
+            {
+              "start": 136.16,
+              "end": 141.2,
+              "text": "of elicit opioids in our community. It's"
+            },
+            {
+              "start": 139.28,
+              "end": 142.96,
+              "text": "about preventing and enforcing by"
+            },
+            {
+              "start": 141.2,
+              "end": 144.8,
+              "text": "protecting the people at a personal"
+            },
+            {
+              "start": 142.96,
+              "end": 146.72,
+              "text": "level while also addressing the larger"
+            },
+            {
+              "start": 144.8,
+              "end": 148.48,
+              "text": "system that fuels the addiction. Because"
+            },
+            {
+              "start": 146.72,
+              "end": 150.08,
+              "text": "in the end, the opio crisis is not just"
+            },
+            {
+              "start": 148.48,
+              "end": 153.04,
+              "text": "a public health issue. It's a human"
+            },
+            {
+              "start": 150.08,
+              "end": 153.04,
+              "text": "issue."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o1-1",
+              "title": "Crisis History Since 1990s",
+              "startTime": 0.24,
+              "endTime": 30.8,
+              "bullets": [
+                "1M+ overdose deaths since 1990s",
+                "500K+ specifically from opioids",
+                "Opioid epidemic building for decades"
+              ]
+            },
+            {
+              "id": "o1-2",
+              "title": "Scale of Deaths Today",
+              "startTime": 30.8,
+              "endTime": 61.36,
+              "bullets": [
+                "150-220 opioid deaths per day",
+                "90% of opioid deaths from fentanyl",
+                "Fentanyl primary driver of crisis"
+              ]
+            },
+            {
+              "id": "o1-3",
+              "title": "Public Health Response",
+              "startTime": 61.36,
+              "endTime": 91.92,
+              "bullets": [
+                "Public health emergency declared 2017",
+                "Federal recognition of crisis scope"
+              ]
+            },
+            {
+              "id": "o1-4",
+              "title": "Dual Policy Approach",
+              "startTime": 91.92,
+              "endTime": 122.48,
+              "bullets": [
+                "Regulate prescriptions strictly",
+                "Increase prison sentences for illegal sales",
+                "Two-pronged attack on crisis"
+              ]
+            },
+            {
+              "id": "o1-5",
+              "title": "Why This Matters",
+              "startTime": 122.48,
+              "endTime": 153.04,
+              "bullets": [
+                "Crisis requires coordinated response",
+                "Supply reduction + prescription control",
+                "Addresses both legal and illegal drugs"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-2",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "B",
+          "youtubeId": "8S06W8ApnwM",
+          "duration": 68,
+          "prompts": [
+            "What is Group 2's alternative to traditional incarceration for opioid-related offenses?",
+            "How does Group 2 define the root cause of addiction, and why does this matter for their policy?",
+            "What benefits does Group 2 claim drug courts provide compared to criminal punishment?"
+          ],
+          "transcript": [
+            {
+              "start": 2,
+              "end": 5.68,
+              "text": "The opiate crisis has quickly become one"
+            },
+            {
+              "start": 4.24,
+              "end": 7.28,
+              "text": "of the most urgent public health"
+            },
+            {
+              "start": 5.68,
+              "end": 9.12,
+              "text": "challenges in the United States,"
+            },
+            {
+              "start": 7.28,
+              "end": 11.44,
+              "text": "affecting millions of individuals,"
+            },
+            {
+              "start": 9.12,
+              "end": 14,
+              "text": "families, and communities. In the last"
+            },
+            {
+              "start": 11.44,
+              "end": 15.6,
+              "text": "two decades, in California alone, almost"
+            },
+            {
+              "start": 14,
+              "end": 18.08,
+              "text": "564,000"
+            },
+            {
+              "start": 15.6,
+              "end": 19.76,
+              "text": "have died due to opioids. Traditionally,"
+            },
+            {
+              "start": 18.08,
+              "end": 22,
+              "text": "the response to this situation has"
+            },
+            {
+              "start": 19.76,
+              "end": 24,
+              "text": "largely been reliant on incarceration,"
+            },
+            {
+              "start": 22,
+              "end": 26.48,
+              "text": "treating substance abuse as a criminal"
+            },
+            {
+              "start": 24,
+              "end": 28.4,
+              "text": "issue rather than a medical condition."
+            },
+            {
+              "start": 26.48,
+              "end": 30.56,
+              "text": "This approach often fails to address,"
+            },
+            {
+              "start": 28.4,
+              "end": 32.56,
+              "text": "however, the root causes of addiction,"
+            },
+            {
+              "start": 30.56,
+              "end": 35.28,
+              "text": "contributing to cycles of relapse and"
+            },
+            {
+              "start": 32.56,
+              "end": 36.96,
+              "text": "reaffending. Instead, we are offering a"
+            },
+            {
+              "start": 35.28,
+              "end": 39.36,
+              "text": "solution to expand the use of drug"
+            },
+            {
+              "start": 36.96,
+              "end": 41.04,
+              "text": "courts and increase their accessibility,"
+            },
+            {
+              "start": 39.36,
+              "end": 43.44,
+              "text": "which prioritizes treatment and"
+            },
+            {
+              "start": 41.04,
+              "end": 46,
+              "text": "rehabilitation over punishment for an"
+            },
+            {
+              "start": 43.44,
+              "end": 48.4,
+              "text": "addiction people are unable to control."
+            },
+            {
+              "start": 46,
+              "end": 50.88,
+              "text": "This approach reduces recidivism, which"
+            },
+            {
+              "start": 48.4,
+              "end": 52.88,
+              "text": "is which is repeat offenses, and treats"
+            },
+            {
+              "start": 50.88,
+              "end": 54.88,
+              "text": "substance use as a health issue rather"
+            },
+            {
+              "start": 52.88,
+              "end": 56.8,
+              "text": "than a criminal one. By directing"
+            },
+            {
+              "start": 54.88,
+              "end": 58.96,
+              "text": "individuals with substance use disorders"
+            },
+            {
+              "start": 56.8,
+              "end": 61.36,
+              "text": "into a more structured court-supervised"
+            },
+            {
+              "start": 58.96,
+              "end": 64,
+              "text": "re rehabilitation program instead of"
+            },
+            {
+              "start": 61.36,
+              "end": 68.28,
+              "text": "jail, recovery can be promoted and crime"
+            },
+            {
+              "start": 64,
+              "end": 68.28,
+              "text": "can be reduced. Thank you."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o2-1",
+              "title": "Scale of Crisis in California",
+              "startTime": 2,
+              "endTime": 24.09,
+              "bullets": [
+                "564,000 California deaths from opioids",
+                "Urgent health challenge"
+              ]
+            },
+            {
+              "id": "o2-2",
+              "title": "Why Incarceration Fails",
+              "startTime": 24.09,
+              "endTime": 46.19,
+              "bullets": [
+                "Traditional incarceration fails root causes",
+                "Punishment-only approach ineffective"
+              ]
+            },
+            {
+              "id": "o2-3",
+              "title": "Drug Courts as Solution",
+              "startTime": 46.19,
+              "endTime": 68.28,
+              "bullets": [
+                "Expand drug courts",
+                "Treatment prioritized over punishment",
+                "Treats substance use as health issue"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-3",
+          "type": "main",
+          "label": "Main Arguments",
+          "team": "A",
+          "youtubeId": "-Q16Cy0hlpE",
+          "duration": 220,
+          "prompts": [
+            "What evidence does Group 1 provide about the effectiveness of opioid prescription regulation?",
+            "How does Group 1 connect prescription guidelines from other countries to their policy proposal?",
+            "What statistics does Group 1 use to support the severity of the opioid crisis?"
+          ],
+          "transcript": [
+            {
+              "start": 0.72,
+              "end": 4,
+              "text": "regular. So basically harsher"
+            },
+            {
+              "start": 2.32,
+              "end": 6.24,
+              "text": "punishments is the second component and"
+            },
+            {
+              "start": 4,
+              "end": 8.64,
+              "text": "the first first component is trying to"
+            },
+            {
+              "start": 6.24,
+              "end": 10.08,
+              "text": "deal with like um prescription"
+            },
+            {
+              "start": 8.64,
+              "end": 12.16,
+              "text": "medications right from the get- go."
+            },
+            {
+              "start": 10.08,
+              "end": 14.48,
+              "text": "Let's see what you have to say."
+            },
+            {
+              "start": 12.16,
+              "end": 16.24,
+              "text": "Best policy to address the opioid crisis"
+            },
+            {
+              "start": 14.48,
+              "end": 18.56,
+              "text": "is to regulate legal opioid"
+            },
+            {
+              "start": 16.24,
+              "end": 20.56,
+              "text": "prescriptions and to regulate illegal"
+            },
+            {
+              "start": 18.56,
+              "end": 22.32,
+              "text": "opioid sales. This will combat"
+            },
+            {
+              "start": 20.56,
+              "end": 24.56,
+              "text": "first-time exposure and potential"
+            },
+            {
+              "start": 22.32,
+              "end": 26.24,
+              "text": "addiction from prescription opioids and"
+            },
+            {
+              "start": 24.56,
+              "end": 28.64,
+              "text": "also attack the source of the illicit"
+            },
+            {
+              "start": 26.24,
+              "end": 30.56,
+              "text": "opioid markup. By addressing the opioid"
+            },
+            {
+              "start": 28.64,
+              "end": 32.64,
+              "text": "crisis on a personal level by trying to"
+            },
+            {
+              "start": 30.56,
+              "end": 34.56,
+              "text": "limit people from getting home and on"
+            },
+            {
+              "start": 32.64,
+              "end": 36.8,
+              "text": "the large scale by deterring illicit"
+            },
+            {
+              "start": 34.56,
+              "end": 38.8,
+              "text": "sale, our policy attacks the opioid"
+            },
+            {
+              "start": 36.8,
+              "end": 41.44,
+              "text": "crisis from both sides, increasing its"
+            },
+            {
+              "start": 38.8,
+              "end": 43.2,
+              "text": "impact. Logistically, we propose"
+            },
+            {
+              "start": 41.44,
+              "end": 46,
+              "text": "increasing regulations on prescription"
+            },
+            {
+              "start": 43.2,
+              "end": 47.84,
+              "text": "and refill policies on opioids. We think"
+            },
+            {
+              "start": 46,
+              "end": 50,
+              "text": "implementing more policies in hospitals"
+            },
+            {
+              "start": 47.84,
+              "end": 51.76,
+              "text": "and clinics can help prevent people from"
+            },
+            {
+              "start": 50,
+              "end": 54,
+              "text": "being sent home with more opioids than"
+            },
+            {
+              "start": 51.76,
+              "end": 56.08,
+              "text": "they need. We also think increasing"
+            },
+            {
+              "start": 54,
+              "end": 58.8,
+              "text": "prison sentences for opioid drug sale"
+            },
+            {
+              "start": 56.08,
+              "end": 60.96,
+              "text": "will decrease the illicit sale. Right"
+            },
+            {
+              "start": 58.8,
+              "end": 62.8,
+              "text": "now in the US, young and healthy people"
+            },
+            {
+              "start": 60.96,
+              "end": 65.04,
+              "text": "are being sent home from surgeries as"
+            },
+            {
+              "start": 62.8,
+              "end": 66.64,
+              "text": "small as wisdom teeth removal with"
+            },
+            {
+              "start": 65.04,
+              "end": 69.12,
+              "text": "prescriptions for opioids such as"
+            },
+            {
+              "start": 66.64,
+              "end": 70.8,
+              "text": "hydrocodone and oxycodone."
+            },
+            {
+              "start": 69.12,
+              "end": 73.92,
+              "text": "As the Journal of American Medical"
+            },
+            {
+              "start": 70.8,
+              "end": 76.64,
+              "text": "Association found in a study, 56% of"
+            },
+            {
+              "start": 73.92,
+              "end": 78.24,
+              "text": "patients aged 13 to 30 who received"
+            },
+            {
+              "start": 76.64,
+              "end": 80.96,
+              "text": "wisdom teeth removal filled their"
+            },
+            {
+              "start": 78.24,
+              "end": 82.88,
+              "text": "post-operation prescription. That is a"
+            },
+            {
+              "start": 80.96,
+              "end": 85.44,
+              "text": "lot of people, young people, to be"
+            },
+            {
+              "start": 82.88,
+              "end": 87.12,
+              "text": "exposed to highly addictive opioids. The"
+            },
+            {
+              "start": 85.44,
+              "end": 89.04,
+              "text": "study also found that people who filled"
+            },
+            {
+              "start": 87.12,
+              "end": 92,
+              "text": "their prescription for post-wd teeth"
+            },
+            {
+              "start": 89.04,
+              "end": 93.84,
+              "text": "opioid rem opioids were more likely to"
+            },
+            {
+              "start": 92,
+              "end": 96.08,
+              "text": "refill that prescription later on,"
+            },
+            {
+              "start": 93.84,
+              "end": 98.24,
+              "text": "representing persistent opioid use or"
+            },
+            {
+              "start": 96.08,
+              "end": 100.08,
+              "text": "addiction. It is clear that first time"
+            },
+            {
+              "start": 98.24,
+              "end": 101.84,
+              "text": "exposure to opioids from a prescription"
+            },
+            {
+              "start": 100.08,
+              "end": 104,
+              "text": "can lead to tolerance and seeking out"
+            },
+            {
+              "start": 101.84,
+              "end": 105.44,
+              "text": "more drugs in the future. We believe"
+            },
+            {
+              "start": 104,
+              "end": 107.28,
+              "text": "that stricter regulations on"
+            },
+            {
+              "start": 105.44,
+              "end": 110.24,
+              "text": "prescription opioids can combat this"
+            },
+            {
+              "start": 107.28,
+              "end": 112.24,
+              "text": "problem. An example of a tangible policy"
+            },
+            {
+              "start": 110.24,
+              "end": 114.72,
+              "text": "is only prescribing opioids for very"
+            },
+            {
+              "start": 112.24,
+              "end": 116.32,
+              "text": "serious surgeries or for cancer. As"
+            },
+            {
+              "start": 114.72,
+              "end": 118.88,
+              "text": "detailed in a national library of"
+            },
+            {
+              "start": 116.32,
+              "end": 121.28,
+              "text": "medicine article, Japan has 26 times"
+            },
+            {
+              "start": 118.88,
+              "end": 122.96,
+              "text": "lower opioid addiction rates. This is"
+            },
+            {
+              "start": 121.28,
+              "end": 125.36,
+              "text": "largely attributable to the fact that"
+            },
+            {
+              "start": 122.96,
+              "end": 127.2,
+              "text": "Japan's national health insurance only"
+            },
+            {
+              "start": 125.36,
+              "end": 129.36,
+              "text": "covers the prescription of opioids for"
+            },
+            {
+              "start": 127.2,
+              "end": 131.2,
+              "text": "pain related to cancer. By only"
+            },
+            {
+              "start": 129.36,
+              "end": 133.84,
+              "text": "prescribing these drugs for cancer"
+            },
+            {
+              "start": 131.2,
+              "end": 135.84,
+              "text": "related pain and not routine surgeries,"
+            },
+            {
+              "start": 133.84,
+              "end": 137.52,
+              "text": "Japan greatly reduces the exposure of"
+            },
+            {
+              "start": 135.84,
+              "end": 139.76,
+              "text": "young people to these highly addictive"
+            },
+            {
+              "start": 137.52,
+              "end": 142.24,
+              "text": "drugs. Though some argue that other"
+            },
+            {
+              "start": 139.76,
+              "end": 143.6,
+              "text": "non-opioid drugs are not as effective"
+            },
+            {
+              "start": 142.24,
+              "end": 145.84,
+              "text": "and would leave some patients with"
+            },
+            {
+              "start": 143.6,
+              "end": 148.72,
+              "text": "inadequate pain relief, the Center of"
+            },
+            {
+              "start": 145.84,
+              "end": 150.96,
+              "text": "Disease Control says that nonopioid"
+            },
+            {
+              "start": 148.72,
+              "end": 153.44,
+              "text": "therapies are at least as effective, if"
+            },
+            {
+              "start": 150.96,
+              "end": 156.32,
+              "text": "not more effective for pain management"
+            },
+            {
+              "start": 153.44,
+              "end": 158.56,
+              "text": "for acute pain as some chronic pain."
+            },
+            {
+              "start": 156.32,
+              "end": 161.12,
+              "text": "These non-opioid therapies are very"
+            },
+            {
+              "start": 158.56,
+              "end": 163.12,
+              "text": "commonly used in Japan. Japan's opioid"
+            },
+            {
+              "start": 161.12,
+              "end": 165.2,
+              "text": "policies could serve as a model for US"
+            },
+            {
+              "start": 163.12,
+              "end": 166.8,
+              "text": "hospitals. hospitals could raise the"
+            },
+            {
+              "start": 165.2,
+              "end": 168.56,
+              "text": "amount of pain or the condition a"
+            },
+            {
+              "start": 166.8,
+              "end": 170.72,
+              "text": "patient needs to be prescribed opioids"
+            },
+            {
+              "start": 168.56,
+              "end": 173.6,
+              "text": "in the first place and certainly to have"
+            },
+            {
+              "start": 170.72,
+              "end": 175.92,
+              "text": "that prescription refilled. As for"
+            },
+            {
+              "start": 173.6,
+              "end": 177.76,
+              "text": "combating the illicit opioid market, we"
+            },
+            {
+              "start": 175.92,
+              "end": 179.92,
+              "text": "argue that increasing prison sentences"
+            },
+            {
+              "start": 177.76,
+              "end": 182,
+              "text": "for opioid sale will lower sale rates"
+            },
+            {
+              "start": 179.92,
+              "end": 184.8,
+              "text": "and thus reduce supply and addiction"
+            },
+            {
+              "start": 182,
+              "end": 186.8,
+              "text": "rates. In a study from the United States"
+            },
+            {
+              "start": 184.8,
+              "end": 188.96,
+              "text": "Sentencing Commission, it found that"
+            },
+            {
+              "start": 186.8,
+              "end": 192.16,
+              "text": "offenders with sentences of 60 months or"
+            },
+            {
+              "start": 188.96,
+              "end": 194.32,
+              "text": "more were 18% less likely to reoffend."
+            },
+            {
+              "start": 192.16,
+              "end": 195.6,
+              "text": "If we implemented a policy like this, it"
+            },
+            {
+              "start": 194.32,
+              "end": 197.76,
+              "text": "would help to deter people from"
+            },
+            {
+              "start": 195.6,
+              "end": 199.36,
+              "text": "offending in the first place and also if"
+            },
+            {
+              "start": 197.76,
+              "end": 201.04,
+              "text": "they did offend, it would decrease the"
+            },
+            {
+              "start": 199.36,
+              "end": 203.68,
+              "text": "likelihood that they would sell opioids"
+            },
+            {
+              "start": 201.04,
+              "end": 205.44,
+              "text": "again. By regulating the conditions"
+            },
+            {
+              "start": 203.68,
+              "end": 207.92,
+              "text": "under which opioids can be legally"
+            },
+            {
+              "start": 205.44,
+              "end": 210.08,
+              "text": "prescribed and also increasing sentences"
+            },
+            {
+              "start": 207.92,
+              "end": 211.92,
+              "text": "for opioid sale, we attack the issue"
+            },
+            {
+              "start": 210.08,
+              "end": 214.08,
+              "text": "from the source and also at the personal"
+            },
+            {
+              "start": 211.92,
+              "end": 216.64,
+              "text": "level, increasing the impact more than"
+            },
+            {
+              "start": 214.08,
+              "end": 220.2,
+              "text": "any policy more than any other policy"
+            },
+            {
+              "start": 216.64,
+              "end": 220.2,
+              "text": "could. Thank you."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o3-1",
+              "title": "Prescription Overuse Problem",
+              "startTime": 0.72,
+              "endTime": 37.3,
+              "bullets": [
+                "JAMA study: 56% of ages 13-30 fill opioids post-wisdom teeth",
+                "Over-prescription drives epidemic"
+              ]
+            },
+            {
+              "id": "o3-2",
+              "title": "International Model: Japan",
+              "startTime": 37.3,
+              "endTime": 73.88,
+              "bullets": [
+                "Japan has 26x lower addiction rate",
+                "Prescriptions limited to cancer patients",
+                "Viable model for US implementation"
+              ]
+            },
+            {
+              "id": "o3-3",
+              "title": "Non-Opioid Therapies Work",
+              "startTime": 73.88,
+              "endTime": 110.46,
+              "bullets": [
+                "CDC: non-opioid therapies equally effective",
+                "Alternative pain management available",
+                "Reduces need for addictive prescriptions"
+              ]
+            },
+            {
+              "id": "o3-4",
+              "title": "Increasing Sentences for Sellers",
+              "startTime": 110.46,
+              "endTime": 147.04,
+              "bullets": [
+                "US Sentencing Commission: 60+ months = 18% lower reoffending",
+                "Longer sentences deter sellers"
+              ]
+            },
+            {
+              "id": "o3-5",
+              "title": "Reducing Supply Through Penalties",
+              "startTime": 147.04,
+              "endTime": 183.62,
+              "bullets": [
+                "Increased consequences reduce supply",
+                "Targets distribution, not users",
+                "Decreases drug availability"
+              ]
+            },
+            {
+              "id": "o3-6",
+              "title": "Two-Part Policy Detail",
+              "startTime": 183.62,
+              "endTime": 220.2,
+              "bullets": [
+                "Regulate prescriptions + increase penalties",
+                "Attack problem from both angles",
+                "Supply reduction + legal prescribing reform"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-4",
+          "type": "main",
+          "label": "Main Arguments",
+          "team": "B",
+          "youtubeId": "9z1j7TzxSiI",
+          "duration": 142,
+          "prompts": [
+            "What data does Group 2 present about drug court success rates and recidivism?",
+            "How does Group 2 argue that treating addiction as a health issue is more cost-effective than incarceration?",
+            "What is Group 2's response to the concern that treatment-based approaches are too lenient?"
+          ],
+          "transcript": [
+            {
+              "start": 3.2,
+              "end": 6.88,
+              "text": "The opioid crisis is an ongoing problem"
+            },
+            {
+              "start": 5.28,
+              "end": 8.88,
+              "text": "impacting millions throughout the United"
+            },
+            {
+              "start": 6.88,
+              "end": 10.64,
+              "text": "States with little working solutions."
+            },
+            {
+              "start": 8.88,
+              "end": 12.96,
+              "text": "Our policy's main goal is to reduce"
+            },
+            {
+              "start": 10.64,
+              "end": 14.96,
+              "text": "opioid addiction and repeat offenders by"
+            },
+            {
+              "start": 12.96,
+              "end": 17.84,
+              "text": "treating substance abuse as a public"
+            },
+            {
+              "start": 14.96,
+              "end": 20.24,
+              "text": "health issue. Today in the US justice"
+            },
+            {
+              "start": 17.84,
+              "end": 22,
+              "text": "system, they focus primarily on the"
+            },
+            {
+              "start": 20.24,
+              "end": 23.52,
+              "text": "incarceration of individuals without"
+            },
+            {
+              "start": 22,
+              "end": 26.56,
+              "text": "actually addressing the root cause,"
+            },
+            {
+              "start": 23.52,
+              "end": 28.16,
+              "text": "failing to discover a viable solution."
+            },
+            {
+              "start": 26.56,
+              "end": 30.16,
+              "text": "Drug courts offered a more effective"
+            },
+            {
+              "start": 28.16,
+              "end": 31.68,
+              "text": "alternative to imprisonment. Instead of"
+            },
+            {
+              "start": 30.16,
+              "end": 33.76,
+              "text": "just sending individuals with substance"
+            },
+            {
+              "start": 31.68,
+              "end": 36.08,
+              "text": "abuse issues right to jail, they were"
+            },
+            {
+              "start": 33.76,
+              "end": 38,
+              "text": "placed into structured court supervised"
+            },
+            {
+              "start": 36.08,
+              "end": 39.84,
+              "text": "treatment programs. These programs"
+            },
+            {
+              "start": 38,
+              "end": 41.2,
+              "text": "provide essential rehabilitation while"
+            },
+            {
+              "start": 39.84,
+              "end": 43.44,
+              "text": "still holding them accountable for their"
+            },
+            {
+              "start": 41.2,
+              "end": 45.2,
+              "text": "actions. Addiction isn't just a choice"
+            },
+            {
+              "start": 43.44,
+              "end": 46.8,
+              "text": "that people make. It's a condition that"
+            },
+            {
+              "start": 45.2,
+              "end": 48.64,
+              "text": "affects the way your mind works."
+            },
+            {
+              "start": 46.8,
+              "end": 50.56,
+              "text": "Punishment via incarceration will only"
+            },
+            {
+              "start": 48.64,
+              "end": 52.56,
+              "text": "lead to relapse and a continued criminal"
+            },
+            {
+              "start": 50.56,
+              "end": 54.88,
+              "text": "record. With the recovery of these"
+            },
+            {
+              "start": 52.56,
+              "end": 56.96,
+              "text": "people, they are like less likely to"
+            },
+            {
+              "start": 54.88,
+              "end": 58.48,
+              "text": "reaffend. more likely to contribute to"
+            },
+            {
+              "start": 56.96,
+              "end": 60.64,
+              "text": "their communities and less likely to"
+            },
+            {
+              "start": 58.48,
+              "end": 62.64,
+              "text": "rely on the prison system. Drug courts"
+            },
+            {
+              "start": 60.64,
+              "end": 64.08,
+              "text": "give hope for long-term solutions on"
+            },
+            {
+              "start": 62.64,
+              "end": 66.64,
+              "text": "issues that have been present in our"
+            },
+            {
+              "start": 64.08,
+              "end": 67.92,
+              "text": "country for decades."
+            },
+            {
+              "start": 66.64,
+              "end": 69.68,
+              "text": "Highlighting treatment through drug"
+            },
+            {
+              "start": 67.92,
+              "end": 71.84,
+              "text": "courts can bring an end to the cycle of"
+            },
+            {
+              "start": 69.68,
+              "end": 73.2,
+              "text": "addiction in the United States."
+            },
+            {
+              "start": 71.84,
+              "end": 74.64,
+              "text": "First, the scale of the issue is"
+            },
+            {
+              "start": 73.2,
+              "end": 76.88,
+              "text": "massive. According to the National"
+            },
+            {
+              "start": 74.64,
+              "end": 78.64,
+              "text": "Library of Medicine, about 7.1 million"
+            },
+            {
+              "start": 76.88,
+              "end": 80.16,
+              "text": "adults in the United States are under"
+            },
+            {
+              "start": 78.64,
+              "end": 82.08,
+              "text": "some form of criminal justice"
+            },
+            {
+              "start": 80.16,
+              "end": 84,
+              "text": "supervision, and nearly half of all"
+            },
+            {
+              "start": 82.08,
+              "end": 86.08,
+              "text": "prisoners struggle with drug abuse or"
+            },
+            {
+              "start": 84,
+              "end": 87.6,
+              "text": "dependence. This shows that addiction is"
+            },
+            {
+              "start": 86.08,
+              "end": 90.24,
+              "text": "a central issue within the justice"
+            },
+            {
+              "start": 87.6,
+              "end": 92.32,
+              "text": "system. Second, drug courts are proven"
+            },
+            {
+              "start": 90.24,
+              "end": 94.08,
+              "text": "to work. A long-term study by the"
+            },
+            {
+              "start": 92.32,
+              "end": 97.12,
+              "text": "National Institute of Justice followed"
+            },
+            {
+              "start": 94.08,
+              "end": 98.88,
+              "text": "over 6,500 individuals and found that"
+            },
+            {
+              "start": 97.12,
+              "end": 101.2,
+              "text": "participants in drug courts had"
+            },
+            {
+              "start": 98.88,
+              "end": 102.8,
+              "text": "significantly lower rearrest rates even"
+            },
+            {
+              "start": 101.2,
+              "end": 105.2,
+              "text": "more than 5 years later while also"
+            },
+            {
+              "start": 102.8,
+              "end": 107.04,
+              "text": "reducing overall cost. Additionally,"
+            },
+            {
+              "start": 105.2,
+              "end": 109.04,
+              "text": "treatment courts reduced both crime and"
+            },
+            {
+              "start": 107.04,
+              "end": 112.4,
+              "text": "drug use. participants were less likely"
+            },
+            {
+              "start": 109.04,
+              "end": 115.6,
+              "text": "to commit crimes 40% compared to 53% and"
+            },
+            {
+              "start": 112.4,
+              "end": 117.12,
+              "text": "less likely to use drugs 56% versus 76%"
+            },
+            {
+              "start": 115.6,
+              "end": 119.76,
+              "text": "than those who went through traditional"
+            },
+            {
+              "start": 117.12,
+              "end": 121.6,
+              "text": "sentencing. Finally, incarceration can"
+            },
+            {
+              "start": 119.76,
+              "end": 123.84,
+              "text": "actually increase risk. In North"
+            },
+            {
+              "start": 121.6,
+              "end": 125.84,
+              "text": "Carolina, formerly formerly incarcerated"
+            },
+            {
+              "start": 123.84,
+              "end": 128.16,
+              "text": "individuals were 40 times more likely to"
+            },
+            {
+              "start": 125.84,
+              "end": 130.08,
+              "text": "die of an opioid over overdose within"
+            },
+            {
+              "start": 128.16,
+              "end": 131.76,
+              "text": "just two weeks of release, showing how"
+            },
+            {
+              "start": 130.08,
+              "end": 133.84,
+              "text": "prison fails to address addiction and"
+            },
+            {
+              "start": 131.76,
+              "end": 135.28,
+              "text": "can make outcomes worse. Together, this"
+            },
+            {
+              "start": 133.84,
+              "end": 137.52,
+              "text": "evidence shows that treatment based"
+            },
+            {
+              "start": 135.28,
+              "end": 142.12,
+              "text": "approaches are safer and mo more"
+            },
+            {
+              "start": 137.52,
+              "end": 142.12,
+              "text": "costefficient than inc incarceration."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o4-1",
+              "title": "Scale of Problem",
+              "startTime": 3.2,
+              "endTime": 30.98,
+              "bullets": [
+                "7.1M adults under criminal justice supervision",
+                "Half struggle with drug issues"
+              ]
+            },
+            {
+              "id": "o4-2",
+              "title": "Drug Court Success Rates",
+              "startTime": 30.98,
+              "endTime": 58.77,
+              "bullets": [
+                "NIJ study of 6,500+: lower rearrest rates 5+ years",
+                "Long-term positive outcomes measured"
+              ]
+            },
+            {
+              "id": "o4-3",
+              "title": "Treatment vs. Crime Reduction",
+              "startTime": 58.77,
+              "endTime": 86.55,
+              "bullets": [
+                "Treatment courts: 40% crime vs 53% with incarceration",
+                "56% drug use vs 76% with imprisonment",
+                "Significant improvements with treatment-focused courts"
+              ]
+            },
+            {
+              "id": "o4-4",
+              "title": "Overdose Risk in Prison",
+              "startTime": 86.55,
+              "endTime": 114.34,
+              "bullets": [
+                "NC data: formerly incarcerated 40x more likely to overdose within 2 weeks",
+                "Incarceration increases overdose mortality"
+              ]
+            },
+            {
+              "id": "o4-5",
+              "title": "Cost & Safety Benefits",
+              "startTime": 114.34,
+              "endTime": 142.12,
+              "bullets": [
+                "Treatment courts cheaper than incarceration",
+                "Safer outcomes for participants",
+                "Effective alternative to traditional justice system"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-5",
+          "type": "rebuttal",
+          "label": "Rebuttal",
+          "team": "A",
+          "youtubeId": "h5ZclBxyQQA",
+          "duration": 139,
+          "prompts": [
+            "How does Group 1 refute Group 2's claim that drug courts reduce recidivism?",
+            "What counterargument does Group 1 make about the supply-side problem of illegal opioids?"
+          ],
+          "transcript": [
+            {
+              "start": 0.08,
+              "end": 4.56,
+              "text": "recording."
+            },
+            {
+              "start": 1.12,
+              "end": 5.04,
+              "text": "All right, group one, rebuttal/argument."
+            },
+            {
+              "start": 4.56,
+              "end": 6.8,
+              "text": "Go."
+            },
+            {
+              "start": 5.04,
+              "end": 8.8,
+              "text": "Okay. According to the National Library"
+            },
+            {
+              "start": 6.8,
+              "end": 11.2,
+              "text": "of Medicine, 1.5 to 2 million people"
+            },
+            {
+              "start": 8.8,
+              "end": 12.8,
+              "text": "initiate prescription opioid use misuse"
+            },
+            {
+              "start": 11.2,
+              "end": 14.24,
+              "text": "annually with a portion of those"
+            },
+            {
+              "start": 12.8,
+              "end": 16.16,
+              "text": "developing addictions and then"
+            },
+            {
+              "start": 14.24,
+              "end": 17.92,
+              "text": "eventually using elicit opioids."
+            },
+            {
+              "start": 16.16,
+              "end": 19.36,
+              "text": "Improving drug courts for users may help"
+            },
+            {
+              "start": 17.92,
+              "end": 20.8,
+              "text": "individuals struggling with addiction,"
+            },
+            {
+              "start": 19.36,
+              "end": 22.32,
+              "text": "but it does nothing to disrupt the"
+            },
+            {
+              "start": 20.8,
+              "end": 24,
+              "text": "supply side networks that keep drugs"
+            },
+            {
+              "start": 22.32,
+              "end": 25.04,
+              "text": "flowing into communities. So, we need to"
+            },
+            {
+              "start": 24,
+              "end": 26.96,
+              "text": "target the sellers. We're not"
+            },
+            {
+              "start": 25.04,
+              "end": 29.76,
+              "text": "criminalizing users. We're criminalizing"
+            },
+            {
+              "start": 26.96,
+              "end": 30.96,
+              "text": "sellers. The DOJ's own inspector general"
+            },
+            {
+              "start": 29.76,
+              "end": 32.48,
+              "text": "makes clear that confidential"
+            },
+            {
+              "start": 30.96,
+              "end": 34.56,
+              "text": "informants, many of whom began at"
+            },
+            {
+              "start": 32.48,
+              "end": 37.52,
+              "text": "low-level offenders facing sentence"
+            },
+            {
+              "start": 34.56,
+              "end": 39.44,
+              "text": "exposure, are the the with a capital T,"
+            },
+            {
+              "start": 37.52,
+              "end": 40.96,
+              "text": "the most effective tool in law"
+            },
+            {
+              "start": 39.44,
+              "end": 42.48,
+              "text": "enforcement today because they provide"
+            },
+            {
+              "start": 40.96,
+              "end": 43.6,
+              "text": "access to criminal organizations that"
+            },
+            {
+              "start": 42.48,
+              "end": 46,
+              "text": "cannot be reached through treatment"
+            },
+            {
+              "start": 43.6,
+              "end": 47.84,
+              "text": "courts or user focused interventions."
+            },
+            {
+              "start": 46,
+              "end": 49.6,
+              "text": "When you remove or weaken sentencing"
+            },
+            {
+              "start": 47.84,
+              "end": 51.36,
+              "text": "leverage on sellers, you eliminate the"
+            },
+            {
+              "start": 49.6,
+              "end": 53.28,
+              "text": "primary mechanism that turns them into"
+            },
+            {
+              "start": 51.36,
+              "end": 54.88,
+              "text": "informants, and you effectively protect"
+            },
+            {
+              "start": 53.28,
+              "end": 57.52,
+              "text": "the very networks that drug courts"
+            },
+            {
+              "start": 54.88,
+              "end": 59.2,
+              "text": "cannot touch. And then these opioids"
+            },
+            {
+              "start": 57.52,
+              "end": 61.04,
+              "text": "that they are selling are also illicit"
+            },
+            {
+              "start": 59.2,
+              "end": 62.96,
+              "text": "using fentinol or other deadly"
+            },
+            {
+              "start": 61.04,
+              "end": 64.48,
+              "text": "substances that cause these overdoses."
+            },
+            {
+              "start": 62.96,
+              "end": 66.08,
+              "text": "By attacking these organizations, it"
+            },
+            {
+              "start": 64.48,
+              "end": 68.56,
+              "text": "will cause less elicit opioids on the"
+            },
+            {
+              "start": 66.08,
+              "end": 71.6,
+              "text": "market, helping new user new users and"
+            },
+            {
+              "start": 68.56,
+              "end": 73.68,
+              "text": "existing users not use elicit drugs."
+            },
+            {
+              "start": 71.6,
+              "end": 75.68,
+              "text": "The FBI's internal data shows exactly"
+            },
+            {
+              "start": 73.68,
+              "end": 78,
+              "text": "why flipping sellers matters. Because"
+            },
+            {
+              "start": 75.68,
+              "end": 79.28,
+              "text": "according to the OIG report,"
+            },
+            {
+              "start": 78,
+              "end": 81.12,
+              "text": "confidential informants have been"
+            },
+            {
+              "start": 79.28,
+              "end": 82.72,
+              "text": "pivotal in dismantling major criminal"
+            },
+            {
+              "start": 81.12,
+              "end": 84.8,
+              "text": "enterprises, including a three-year"
+            },
+            {
+              "start": 82.72,
+              "end": 86.32,
+              "text": "grand jury investigation that resulted"
+            },
+            {
+              "start": 84.8,
+              "end": 88.56,
+              "text": "in the dismantlement of a criminal"
+            },
+            {
+              "start": 86.32,
+              "end": 90.48,
+              "text": "enterprise in the conviction of a career"
+            },
+            {
+              "start": 88.56,
+              "end": 93.04,
+              "text": "criminal and five of his criminal"
+            },
+            {
+              "start": 90.48,
+              "end": 95.28,
+              "text": "associates. Informants also enabled a"
+            },
+            {
+              "start": 93.04,
+              "end": 96.88,
+              "text": "series of uh prosecutions that brought"
+            },
+            {
+              "start": 95.28,
+              "end": 98.56,
+              "text": "about a dramatic reduction in acts of"
+            },
+            {
+              "start": 96.88,
+              "end": 99.92,
+              "text": "violence in that city. These outcomes"
+            },
+            {
+              "start": 98.56,
+              "end": 100.96,
+              "text": "were not achieved by treating users."
+            },
+            {
+              "start": 99.92,
+              "end": 103.36,
+              "text": "They were treated by leveraging"
+            },
+            {
+              "start": 100.96,
+              "end": 105.28,
+              "text": "individuals embedded in the drug trade."
+            },
+            {
+              "start": 103.36,
+              "end": 106.96,
+              "text": "Sellers sit at the operational center of"
+            },
+            {
+              "start": 105.28,
+              "end": 108.72,
+              "text": "distribution networks and when they face"
+            },
+            {
+              "start": 106.96,
+              "end": 110.48,
+              "text": "real sentencing consequences, many"
+            },
+            {
+              "start": 108.72,
+              "end": 112.72,
+              "text": "cooperate to avoid prison. That"
+            },
+            {
+              "start": 110.48,
+              "end": 114.08,
+              "text": "cooperation produces indicates, search"
+            },
+            {
+              "start": 112.72,
+              "end": 115.84,
+              "text": "warrants and intelligence that drug"
+            },
+            {
+              "start": 114.08,
+              "end": 119.04,
+              "text": "courts simply cannot generate by"
+            },
+            {
+              "start": 115.84,
+              "end": 120.56,
+              "text": "targeting uh the users of the drugs. So"
+            },
+            {
+              "start": 119.04,
+              "end": 122.08,
+              "text": "overall, we need to target the sellers"
+            },
+            {
+              "start": 120.56,
+              "end": 123.84,
+              "text": "of the drugs and get drugs off the"
+            },
+            {
+              "start": 122.08,
+              "end": 125.6,
+              "text": "market in general. By using these"
+            },
+            {
+              "start": 123.84,
+              "end": 129.12,
+              "text": "informants, we can build our way up"
+            },
+            {
+              "start": 125.6,
+              "end": 132,
+              "text": "using the DEA to hire up uh people in"
+            },
+            {
+              "start": 129.12,
+              "end": 134.56,
+              "text": "like the in cartels and drug trafficking"
+            },
+            {
+              "start": 132,
+              "end": 138.88,
+              "text": "rings and that overall will help the"
+            },
+            {
+              "start": 134.56,
+              "end": 138.88,
+              "text": "opioid crisis. Thank you."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o5-1",
+              "title": "Drug Courts Help Users Only",
+              "startTime": 0.08,
+              "endTime": 27.84,
+              "bullets": [
+                "Drug courts help individual users",
+                "Do not disrupt supply networks"
+              ]
+            },
+            {
+              "id": "o5-2",
+              "title": "Target Sellers Not Users",
+              "startTime": 27.84,
+              "endTime": 55.6,
+              "bullets": [
+                "Need to target SELLERS not users",
+                "Supply reduction more effective",
+                "Stop distribution at source"
+              ]
+            },
+            {
+              "id": "o5-3",
+              "title": "Law Enforcement Tools Work",
+              "startTime": 55.6,
+              "endTime": 83.36,
+              "bullets": [
+                "DOJ inspector general: confidential informants most effective",
+                "Sentencing leverage converts sellers to informants",
+                "FBI data shows informants dismantle criminal enterprises"
+              ]
+            },
+            {
+              "id": "o5-4",
+              "title": "Sellers Control Distribution",
+              "startTime": 83.36,
+              "endTime": 111.12,
+              "bullets": [
+                "Sellers at operational center of distribution",
+                "Targeting sellers stops flow of drugs",
+                "Supply reduction necessary"
+              ]
+            },
+            {
+              "id": "o5-5",
+              "title": "Overall Strategy",
+              "startTime": 111.12,
+              "endTime": 138.88,
+              "bullets": [
+                "Get drugs off market through enforcement",
+                "Reduce supply alongside prescription regulation",
+                "Complete approach to crisis"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-6",
+          "type": "rebuttal",
+          "label": "Rebuttal",
+          "team": "B",
+          "youtubeId": "dYTSfQpCffU",
+          "duration": 120,
+          "prompts": [
+            "What does Group 2 say about the limitations of enforcement-based approaches to reducing drug use?",
+            "How does Group 2 respond to Group 1's proposal to increase prison sentences?"
+          ],
+          "transcript": [
+            {
+              "start": 5.84,
+              "end": 10.56,
+              "text": "Um, the first point we want to uh bring"
+            },
+            {
+              "start": 8.16,
+              "end": 12,
+              "text": "up is that uh criminalization is just"
+            },
+            {
+              "start": 10.56,
+              "end": 13.84,
+              "text": "not like the right way to go about"
+            },
+            {
+              "start": 12,
+              "end": 15.6,
+              "text": "dealing with this opioid crisis. Um,"
+            },
+            {
+              "start": 13.84,
+              "end": 18.08,
+              "text": "according to an article from the"
+            },
+            {
+              "start": 15.6,
+              "end": 19.44,
+              "text": "University of Indiana, a disease is a"
+            },
+            {
+              "start": 18.08,
+              "end": 20.88,
+              "text": "condition that changes the way an organ"
+            },
+            {
+              "start": 19.44,
+              "end": 22.4,
+              "text": "functions. Chronic disease can be"
+            },
+            {
+              "start": 20.88,
+              "end": 24.56,
+              "text": "treated and managed but can't be cured."
+            },
+            {
+              "start": 22.4,
+              "end": 27.36,
+              "text": "Addiction is a chronic disease of the"
+            },
+            {
+              "start": 24.56,
+              "end": 28.88,
+              "text": "way the brain wait of the of the brain."
+            },
+            {
+              "start": 27.36,
+              "end": 30.56,
+              "text": "the way diabetes is a chronic disease of"
+            },
+            {
+              "start": 28.88,
+              "end": 32.16,
+              "text": "the pancreas and the disease and a heart"
+            },
+            {
+              "start": 30.56,
+              "end": 33.6,
+              "text": "disease is one of the heart. Everyone"
+            },
+            {
+              "start": 32.16,
+              "end": 35.12,
+              "text": "makes a choice about using drugs or"
+            },
+            {
+              "start": 33.6,
+              "end": 36.32,
+              "text": "taking a drink for the first time. You"
+            },
+            {
+              "start": 35.12,
+              "end": 37.92,
+              "text": "don't have to choose how your brain"
+            },
+            {
+              "start": 36.32,
+              "end": 39.6,
+              "text": "reacts. However, willpower and shaming"
+            },
+            {
+              "start": 37.92,
+              "end": 41.44,
+              "text": "won't undo the changes in the brain and"
+            },
+            {
+              "start": 39.6,
+              "end": 42.64,
+              "text": "cure addiction. There is no cure, but"
+            },
+            {
+              "start": 41.44,
+              "end": 45.52,
+              "text": "treatment helps you manage and"
+            },
+            {
+              "start": 42.64,
+              "end": 47.84,
+              "text": "successfully live with the disease. Um,"
+            },
+            {
+              "start": 45.52,
+              "end": 49.6,
+              "text": "so criminalization doesn't really target"
+            },
+            {
+              "start": 47.84,
+              "end": 51.12,
+              "text": "the issue. It really just punishes the"
+            },
+            {
+              "start": 49.6,
+              "end": 52.72,
+              "text": "sick and punishes these people that"
+            },
+            {
+              "start": 51.12,
+              "end": 55.36,
+              "text": "really just do need treatment and need"
+            },
+            {
+              "start": 52.72,
+              "end": 57.84,
+              "text": "help. Also, um increasing"
+            },
+            {
+              "start": 55.36,
+              "end": 60.8,
+              "text": "criminalization like rates and arresting"
+            },
+            {
+              "start": 57.84,
+              "end": 62.96,
+              "text": "more people for um drug charges will"
+            },
+            {
+              "start": 60.8,
+              "end": 64.96,
+              "text": "lead to prison overcrowding, which is a"
+            },
+            {
+              "start": 62.96,
+              "end": 68,
+              "text": "really really big issue in California"
+            },
+            {
+              "start": 64.96,
+              "end": 71.04,
+              "text": "and is extremely expensive."
+            },
+            {
+              "start": 68,
+              "end": 72.64,
+              "text": "Um also, if they limit when opioids can"
+            },
+            {
+              "start": 71.04,
+              "end": 74.32,
+              "text": "be described, a blacken market will be"
+            },
+            {
+              "start": 72.64,
+              "end": 76.32,
+              "text": "formed and it is extremely hard to crack"
+            },
+            {
+              "start": 74.32,
+              "end": 78,
+              "text": "down on illegal markets. As we see with"
+            },
+            {
+              "start": 76.32,
+              "end": 79.68,
+              "text": "the drug crisis from Central America,"
+            },
+            {
+              "start": 78,
+              "end": 80.96,
+              "text": "traffickers adapt and end up bringing it"
+            },
+            {
+              "start": 79.68,
+              "end": 84.08,
+              "text": "into the country and causing an"
+            },
+            {
+              "start": 80.96,
+              "end": 85.6,
+              "text": "unregulated, potentially deadly market."
+            },
+            {
+              "start": 84.08,
+              "end": 87.28,
+              "text": "Another point we wanted to bring up is"
+            },
+            {
+              "start": 85.6,
+              "end": 89.2,
+              "text": "that companies usually find ways to"
+            },
+            {
+              "start": 87.28,
+              "end": 90.96,
+              "text": "circumvent stricter rules. Companies"
+            },
+            {
+              "start": 89.2,
+              "end": 92.4,
+              "text": "whose profit decreases as a result of"
+            },
+            {
+              "start": 90.96,
+              "end": 94,
+              "text": "this policy change have adapted to"
+            },
+            {
+              "start": 92.4,
+              "end": 95.76,
+              "text": "regulations in the past and do not have"
+            },
+            {
+              "start": 94,
+              "end": 97.36,
+              "text": "the customer's best interest in mind,"
+            },
+            {
+              "start": 95.76,
+              "end": 99.28,
+              "text": "which is what began this entire crisis"
+            },
+            {
+              "start": 97.36,
+              "end": 100.64,
+              "text": "in the first place. They will"
+            },
+            {
+              "start": 99.28,
+              "end": 102.24,
+              "text": "reformulate drugs with slightly"
+            },
+            {
+              "start": 100.64,
+              "end": 104.72,
+              "text": "different opioids that are less tightly"
+            },
+            {
+              "start": 102.24,
+              "end": 106.32,
+              "text": "regulated or market abuse deterrent"
+            },
+            {
+              "start": 104.72,
+              "end": 108.08,
+              "text": "formulations that still carry high"
+            },
+            {
+              "start": 106.32,
+              "end": 111.04,
+              "text": "profit margins but don't meaningfully"
+            },
+            {
+              "start": 108.08,
+              "end": 112.72,
+              "text": "reduce misuse. As unfortunate as it is,"
+            },
+            {
+              "start": 111.04,
+              "end": 114.4,
+              "text": "targeting the sellers will only reshape"
+            },
+            {
+              "start": 112.72,
+              "end": 116,
+              "text": "the crisis. Our policy reaches the"
+            },
+            {
+              "start": 114.4,
+              "end": 117.12,
+              "text": "people the opioid crisis attacks the"
+            },
+            {
+              "start": 116,
+              "end": 120.12,
+              "text": "most, addicts and their greater"
+            },
+            {
+              "start": 117.12,
+              "end": 120.12,
+              "text": "communities."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o6-1",
+              "title": "Criminalization Is Wrong",
+              "startTime": 5.84,
+              "endTime": 28.7,
+              "bullets": [
+                "Addiction is chronic brain disease (Univ of Indiana)",
+                "Similar to diabetes or heart disease",
+                "Willpower alone cannot cure it"
+              ]
+            },
+            {
+              "id": "o6-2",
+              "title": "Prison Overcrowding Problem",
+              "startTime": 28.7,
+              "endTime": 51.55,
+              "bullets": [
+                "More arrests cause prison overcrowding",
+                "Expensive solution in California",
+                "Burden on criminal justice system"
+              ]
+            },
+            {
+              "id": "o6-3",
+              "title": "Prescription Restrictions Create Black Markets",
+              "startTime": 51.55,
+              "endTime": 74.41,
+              "bullets": [
+                "Restricting prescriptions creates illegal markets",
+                "Central America drug crisis example",
+                "Supply shift, not elimination"
+              ]
+            },
+            {
+              "id": "o6-4",
+              "title": "Pharma Companies Circumvent Rules",
+              "startTime": 74.41,
+              "endTime": 97.26,
+              "bullets": [
+                "Pharma companies reformulate drugs to avoid regulations",
+                "Abuse-deterrent formulations remain profitable",
+                "Regulation enforcement challenging"
+              ]
+            },
+            {
+              "id": "o6-5",
+              "title": "Seller-Focused Approach Incomplete",
+              "startTime": 97.26,
+              "endTime": 120.12,
+              "bullets": [
+                "Targeting sellers reshapes crisis, not solves it",
+                "Must address underlying disease model",
+                "Treatment-first approach needed"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-7",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "A",
+          "youtubeId": "fmZavQNnfHU",
+          "duration": 132,
+          "prompts": [
+            "What is the strongest claim made in this closing argument?",
+            "How does this team summarize the key differences between the two policy approaches?"
+          ],
+          "transcript": [
+            {
+              "start": 3.52,
+              "end": 8.24,
+              "text": "The opioid crisis is a devastating"
+            },
+            {
+              "start": 5.92,
+              "end": 9.68,
+              "text": "public health emergency. Much of this"
+            },
+            {
+              "start": 8.24,
+              "end": 11.92,
+              "text": "epidemic is driven by the"
+            },
+            {
+              "start": 9.68,
+              "end": 13.84,
+              "text": "overprescription of pain medication,"
+            },
+            {
+              "start": 11.92,
+              "end": 16.8,
+              "text": "which leads to dependency, then to"
+            },
+            {
+              "start": 13.84,
+              "end": 18.72,
+              "text": "addiction, and ultimately to elicit use."
+            },
+            {
+              "start": 16.8,
+              "end": 20.96,
+              "text": "Indeed, individuals who struggle with"
+            },
+            {
+              "start": 18.72,
+              "end": 23.2,
+              "text": "chronic opioid use disorder are not at"
+            },
+            {
+              "start": 20.96,
+              "end": 25.68,
+              "text": "fault for their addiction. The ones that"
+            },
+            {
+              "start": 23.2,
+              "end": 28.16,
+              "text": "should be held criminally liable for the"
+            },
+            {
+              "start": 25.68,
+              "end": 29.84,
+              "text": "opioid crisis are the pharmacies and"
+            },
+            {
+              "start": 28.16,
+              "end": 31.36,
+              "text": "hospitals that disproportionately"
+            },
+            {
+              "start": 29.84,
+              "end": 34.08,
+              "text": "prescribe extremely addictive"
+            },
+            {
+              "start": 31.36,
+              "end": 35.76,
+              "text": "medication. The opioid crisis is a"
+            },
+            {
+              "start": 34.08,
+              "end": 38.08,
+              "text": "complex issue with many contributing"
+            },
+            {
+              "start": 35.76,
+              "end": 41.2,
+              "text": "factors, which is why our dual policy is"
+            },
+            {
+              "start": 38.08,
+              "end": 43.44,
+              "text": "the best approach. In 2017, the Mayo"
+            },
+            {
+              "start": 41.2,
+              "end": 45.36,
+              "text": "Clinic reported that one in three US"
+            },
+            {
+              "start": 43.44,
+              "end": 47.68,
+              "text": "adults in their lifetime had been"
+            },
+            {
+              "start": 45.36,
+              "end": 51.12,
+              "text": "prescribed opioids for pain, ranging"
+            },
+            {
+              "start": 47.68,
+              "end": 53.68,
+              "text": "from dental procedures to major trauma."
+            },
+            {
+              "start": 51.12,
+              "end": 55.68,
+              "text": "Additionally, a 2024 study by the Mayo"
+            },
+            {
+              "start": 53.68,
+              "end": 58.8,
+              "text": "Clinic found that over 80% of"
+            },
+            {
+              "start": 55.68,
+              "end": 60.8,
+              "text": "individuals with OUD who engage in the"
+            },
+            {
+              "start": 58.8,
+              "end": 63.44,
+              "text": "illicit use of opioids were initially"
+            },
+            {
+              "start": 60.8,
+              "end": 65.44,
+              "text": "exposed through prescription. This shows"
+            },
+            {
+              "start": 63.44,
+              "end": 67.44,
+              "text": "that overprescription plays a massive"
+            },
+            {
+              "start": 65.44,
+              "end": 70,
+              "text": "role in the opioid crisis. Therefore,"
+            },
+            {
+              "start": 67.44,
+              "end": 72.72,
+              "text": "reducing it as much as possible is a top"
+            },
+            {
+              "start": 70,
+              "end": 75.12,
+              "text": "priority for our policy. The first part"
+            },
+            {
+              "start": 72.72,
+              "end": 76.96,
+              "text": "of our policy focuses on limiting over"
+            },
+            {
+              "start": 75.12,
+              "end": 79.36,
+              "text": "prescription by implementing stricter"
+            },
+            {
+              "start": 76.96,
+              "end": 81.68,
+              "text": "regulations on opioid prescriptions and"
+            },
+            {
+              "start": 79.36,
+              "end": 83.68,
+              "text": "by shifting towards a non-opioid"
+            },
+            {
+              "start": 81.68,
+              "end": 86.4,
+              "text": "treatment approach to acute and chronic"
+            },
+            {
+              "start": 83.68,
+              "end": 88.24,
+              "text": "pain. And given how successful the"
+            },
+            {
+              "start": 86.4,
+              "end": 90.56,
+              "text": "system has been in Japan where opioid"
+            },
+            {
+              "start": 88.24,
+              "end": 93.04,
+              "text": "addiction rates are 26 times lower than"
+            },
+            {
+              "start": 90.56,
+              "end": 96.88,
+              "text": "the US, it is certainly feasible at a"
+            },
+            {
+              "start": 93.04,
+              "end": 98.88,
+              "text": "state or local level um financially. And"
+            },
+            {
+              "start": 96.88,
+              "end": 101.04,
+              "text": "this part of our policy helps prevent"
+            },
+            {
+              "start": 98.88,
+              "end": 103.2,
+              "text": "unnecessary exposure, stopping addiction"
+            },
+            {
+              "start": 101.04,
+              "end": 105.52,
+              "text": "before it starts. The second part of our"
+            },
+            {
+              "start": 103.2,
+              "end": 107.76,
+              "text": "policy addresses the elicit market by"
+            },
+            {
+              "start": 105.52,
+              "end": 109.36,
+              "text": "increasing the consequences for not"
+            },
+            {
+              "start": 107.76,
+              "end": 111.52,
+              "text": "possession but the distribution of"
+            },
+            {
+              "start": 109.36,
+              "end": 113.2,
+              "text": "opioids. In doing so, we can limit"
+            },
+            {
+              "start": 111.52,
+              "end": 115.12,
+              "text": "access to life-threatening sub"
+            },
+            {
+              "start": 113.2,
+              "end": 117.6,
+              "text": "substances like fentinel and deter"
+            },
+            {
+              "start": 115.12,
+              "end": 119.12,
+              "text": "trafficking. In conclusion, our dual"
+            },
+            {
+              "start": 117.6,
+              "end": 121.44,
+              "text": "policy is more effective than a"
+            },
+            {
+              "start": 119.12,
+              "end": 123.2,
+              "text": "one-sided solution. By attacking the"
+            },
+            {
+              "start": 121.44,
+              "end": 125.04,
+              "text": "source of the opioid crisis from both"
+            },
+            {
+              "start": 123.2,
+              "end": 127.76,
+              "text": "ends, we can prevent exposure-based"
+            },
+            {
+              "start": 125.04,
+              "end": 132.36,
+              "text": "addiction while also reducing access to"
+            },
+            {
+              "start": 127.76,
+              "end": 132.36,
+              "text": "elicit substances. Thank you."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o7-1",
+              "title": "Public Health Emergency Status",
+              "startTime": 3.52,
+              "endTime": 24.99,
+              "bullets": [
+                "Opioid crisis is public health emergency",
+                "Overprescription drives epidemic"
+              ]
+            },
+            {
+              "id": "o7-2",
+              "title": "Prescription Crisis Statistics",
+              "startTime": 24.99,
+              "endTime": 46.47,
+              "bullets": [
+                "Mayo Clinic: 1 in 3 US adults prescribed opioids",
+                "Widespread prescription culture"
+              ]
+            },
+            {
+              "id": "o7-3",
+              "title": "Opioid Use Disorder Origins",
+              "startTime": 46.47,
+              "endTime": 67.94,
+              "bullets": [
+                "2024 Mayo study: 80%+ of OUD initially exposed through prescription",
+                "Prescriptions gateway to addiction",
+                "Legal market drives epidemic"
+              ]
+            },
+            {
+              "id": "o7-4",
+              "title": "Limit Prescriptions & Shift Treatment",
+              "startTime": 67.94,
+              "endTime": 89.41,
+              "bullets": [
+                "Limit opioid prescriptions strictly",
+                "Shift to non-opioid treatment options",
+                "Japan model feasible for US"
+              ]
+            },
+            {
+              "id": "o7-5",
+              "title": "Increase Consequences for Distribution",
+              "startTime": 89.41,
+              "endTime": 110.89,
+              "bullets": [
+                "Increase penalties for DISTRIBUTION not possession",
+                "Target illegal supply chains",
+                "Protect users from criminalization"
+              ]
+            },
+            {
+              "id": "o7-6",
+              "title": "Comprehensive Dual Strategy",
+              "startTime": 110.89,
+              "endTime": 132.36,
+              "bullets": [
+                "Dual policy attacks crisis from both ends",
+                "Prescription control + enforcement",
+                "Complete solution to epidemic"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-8",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "B",
+          "youtubeId": "FyfXSckEm-o",
+          "duration": 66,
+          "prompts": [
+            "What is the strongest claim made in this closing argument?",
+            "How does this team summarize the key differences between the two policy approaches?"
+          ],
+          "transcript": [
+            {
+              "start": 2.08,
+              "end": 6.24,
+              "text": "The opioid crisis isn't just a health"
+            },
+            {
+              "start": 4,
+              "end": 8,
+              "text": "crisis. It's a public health emergency."
+            },
+            {
+              "start": 6.24,
+              "end": 9.6,
+              "text": "As said earlier, the National Institute"
+            },
+            {
+              "start": 8,
+              "end": 11.92,
+              "text": "of Justice's research claims that"
+            },
+            {
+              "start": 9.6,
+              "end": 14.16,
+              "text": "participants are significantly less"
+            },
+            {
+              "start": 11.92,
+              "end": 16.48,
+              "text": "likely to commit crimes by 13% and less"
+            },
+            {
+              "start": 14.16,
+              "end": 18.48,
+              "text": "likely to use drugs by 20% compared to"
+            },
+            {
+              "start": 16.48,
+              "end": 20,
+              "text": "traditional approaches. Punishing"
+            },
+            {
+              "start": 18.48,
+              "end": 22.32,
+              "text": "addiction with incarceration has"
+            },
+            {
+              "start": 20,
+              "end": 24.56,
+              "text": "repeatedly failed to reduce drug use,"
+            },
+            {
+              "start": 22.32,
+              "end": 26.88,
+              "text": "lower crime, or protect lives. The"
+            },
+            {
+              "start": 24.56,
+              "end": 28.64,
+              "text": "evidence is clear. People leaving prison"
+            },
+            {
+              "start": 26.88,
+              "end": 30.24,
+              "text": "are far more likely to overdose, and"
+            },
+            {
+              "start": 28.64,
+              "end": 32.48,
+              "text": "many continue cycling through the same"
+            },
+            {
+              "start": 30.24,
+              "end": 35.2,
+              "text": "system without ever receiving real"
+            },
+            {
+              "start": 32.48,
+              "end": 36.64,
+              "text": "life-changing help. Drug courts offer a"
+            },
+            {
+              "start": 35.2,
+              "end": 38.56,
+              "text": "better path by focusing on treatment"
+            },
+            {
+              "start": 36.64,
+              "end": 40.56,
+              "text": "instead of punishment. They reduce"
+            },
+            {
+              "start": 38.56,
+              "end": 42.8,
+              "text": "recidivism, lower drug use, and save"
+            },
+            {
+              "start": 40.56,
+              "end": 44.56,
+              "text": "taxpayer money. More importantly, they"
+            },
+            {
+              "start": 42.8,
+              "end": 46.8,
+              "text": "recognize addiction for what it is, what"
+            },
+            {
+              "start": 44.56,
+              "end": 49.2,
+              "text": "it truly is, a chronic disease that"
+            },
+            {
+              "start": 46.8,
+              "end": 51.12,
+              "text": "requires care. If our goal is safer"
+            },
+            {
+              "start": 49.2,
+              "end": 52.88,
+              "text": "communities and fewer lives lost, then"
+            },
+            {
+              "start": 51.12,
+              "end": 55.92,
+              "text": "we must support solutions that actually"
+            },
+            {
+              "start": 52.88,
+              "end": 58,
+              "text": "work. Drug courts don't just punish past"
+            },
+            {
+              "start": 55.92,
+              "end": 59.76,
+              "text": "behavior, they change future outcomes."
+            },
+            {
+              "start": 58,
+              "end": 61.12,
+              "text": "Instead of asking how we can lock people"
+            },
+            {
+              "start": 59.76,
+              "end": 63.28,
+              "text": "up, we should be asking how we can help"
+            },
+            {
+              "start": 61.12,
+              "end": 66.28,
+              "text": "them recover. Drug courts are the only"
+            },
+            {
+              "start": 63.28,
+              "end": 66.28,
+              "text": "way."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o8-1",
+              "title": "Drug Courts Work",
+              "startTime": 2.08,
+              "endTime": 23.48,
+              "bullets": [
+                "NIJ: 13% less crime, 20% less drug use",
+                "Proven effectiveness with evidence"
+              ]
+            },
+            {
+              "id": "o8-2",
+              "title": "Incarceration Repeatedly Fails",
+              "startTime": 23.48,
+              "endTime": 44.88,
+              "bullets": [
+                "Prison increases overdose risk",
+                "Incarceration doesn't reduce recidivism",
+                "Harmful approach"
+              ]
+            },
+            {
+              "id": "o8-3",
+              "title": "Treatment Saves Lives & Money",
+              "startTime": 44.88,
+              "endTime": 66.28,
+              "bullets": [
+                "Drug courts focus on treatment",
+                "Reduce recidivism and costs",
+                "Addiction requires care, not punishment",
+                "Drug courts change future outcomes"
+              ]
+            }
+          ]
+        }
+      ],
+      "keyMoments": [
+        {
+          "time": 40.24,
+          "segmentId": "seg-1",
+          "label": "than morphine. Because it's so strong,",
+          "type": "argument"
+        },
+        {
+          "time": 47.28,
+          "segmentId": "seg-1",
+          "label": "Key statistic: 1 million",
+          "type": "evidence"
+        },
+        {
+          "time": 61.92,
+          "segmentId": "seg-1",
+          "label": "Key statistic: 90%",
+          "type": "evidence"
+        },
+        {
+          "time": 64.16,
+          "segmentId": "seg-1",
+          "label": "of opioid related deaths. Because of how",
+          "type": "argument"
+        },
+        {
+          "time": 97.28,
+          "segmentId": "seg-1",
+          "label": "policy matters. We believe the best way",
+          "type": "argument"
+        },
+        {
+          "time": 144.8,
+          "segmentId": "seg-1",
+          "label": "system that fuels the addiction. Because",
+          "type": "argument"
+        },
+        {
+          "time": 26.48,
+          "segmentId": "seg-2",
+          "label": "Policy point: This approach often fails to addres",
+          "type": "structure"
+        },
+        {
+          "time": 28.4,
+          "segmentId": "seg-2",
+          "label": "however, the root causes of addiction,",
+          "type": "argument"
+        },
+        {
+          "time": 32.56,
+          "segmentId": "seg-2",
+          "label": "reaffending. Instead, we are offering a",
+          "type": "argument"
+        },
+        {
+          "time": 35.28,
+          "segmentId": "seg-2",
+          "label": "Policy point: solution to expand the use of drug",
+          "type": "structure"
+        },
+        {
+          "time": 46,
+          "segmentId": "seg-2",
+          "label": "Policy point: This approach reduces recidivism, w",
+          "type": "structure"
+        },
+        {
+          "time": 58.96,
+          "segmentId": "seg-2",
+          "label": "re rehabilitation program instead of",
+          "type": "argument"
+        },
+        {
+          "time": 12.16,
+          "segmentId": "seg-3",
+          "label": "Policy point: Best policy to address the opioid c",
+          "type": "structure"
+        },
+        {
+          "time": 34.56,
+          "segmentId": "seg-3",
+          "label": "Policy point: sale, our policy attacks the opioid",
+          "type": "structure"
+        },
+        {
+          "time": 38.8,
+          "segmentId": "seg-3",
+          "label": "impact. Logistically, we propose",
+          "type": "argument"
+        },
+        {
+          "time": 70.8,
+          "segmentId": "seg-3",
+          "label": "Key statistic: 56%",
+          "type": "evidence"
+        },
+        {
+          "time": 101.84,
+          "segmentId": "seg-3",
+          "label": "more drugs in the future. We believe",
+          "type": "argument"
+        },
+        {
+          "time": 188.96,
+          "segmentId": "seg-3",
+          "label": "Key statistic: 18%",
+          "type": "evidence"
+        },
+        {
+          "time": 74.64,
+          "segmentId": "seg-4",
+          "label": "Key statistic: 7",
+          "type": "evidence"
+        },
+        {
+          "time": 84,
+          "segmentId": "seg-4",
+          "label": "dependence. This shows that addiction is",
+          "type": "argument"
+        },
+        {
+          "time": 94.08,
+          "segmentId": "seg-4",
+          "label": "Key statistic: 6,500",
+          "type": "evidence"
+        },
+        {
+          "time": 109.04,
+          "segmentId": "seg-4",
+          "label": "Key statistic: 40%",
+          "type": "evidence"
+        },
+        {
+          "time": 112.4,
+          "segmentId": "seg-4",
+          "label": "Key statistic: 56%",
+          "type": "evidence"
+        },
+        {
+          "time": 133.84,
+          "segmentId": "seg-4",
+          "label": "evidence shows that treatment based",
+          "type": "argument"
+        },
+        {
+          "time": 6.8,
+          "segmentId": "seg-5",
+          "label": "Key statistic: 1",
+          "type": "evidence"
+        },
+        {
+          "time": 16.16,
+          "segmentId": "seg-5",
+          "label": "Policy point: Improving drug courts for users may",
+          "type": "structure"
+        },
+        {
+          "time": 39.44,
+          "segmentId": "seg-5",
+          "label": "enforcement today because they provide",
+          "type": "argument"
+        },
+        {
+          "time": 71.6,
+          "segmentId": "seg-5",
+          "label": "The FBI's internal data shows exactly",
+          "type": "argument"
+        },
+        {
+          "time": 73.68,
+          "segmentId": "seg-5",
+          "label": "why flipping sellers matters. Because",
+          "type": "argument"
+        },
+        {
+          "time": 134.56,
+          "segmentId": "seg-5",
+          "label": "opioid crisis. Thank you.",
+          "type": "rhetoric"
+        },
+        {
+          "time": 12,
+          "segmentId": "seg-6",
+          "label": "dealing with this opioid crisis. Um,",
+          "type": "rhetoric"
+        },
+        {
+          "time": 36.32,
+          "segmentId": "seg-6",
+          "label": "reacts. However, willpower and shaming",
+          "type": "argument"
+        },
+        {
+          "time": 76.32,
+          "segmentId": "seg-6",
+          "label": "the drug crisis from Central America,",
+          "type": "rhetoric"
+        },
+        {
+          "time": 90.96,
+          "segmentId": "seg-6",
+          "label": "Policy point: this policy change have adapted to",
+          "type": "structure"
+        },
+        {
+          "time": 95.76,
+          "segmentId": "seg-6",
+          "label": "which is what began this entire crisis",
+          "type": "rhetoric"
+        },
+        {
+          "time": 112.72,
+          "segmentId": "seg-6",
+          "label": "Policy point: the crisis. Our policy reaches the",
+          "type": "structure"
+        },
+        {
+          "time": 23.2,
+          "segmentId": "seg-7",
+          "label": "should be held criminally liable for the",
+          "type": "argument"
+        },
+        {
+          "time": 35.76,
+          "segmentId": "seg-7",
+          "label": "Policy point: factors, which is why our dual poli",
+          "type": "structure"
+        },
+        {
+          "time": 38.08,
+          "segmentId": "seg-7",
+          "label": "Policy point: the best approach. In 2017, the May",
+          "type": "structure"
+        },
+        {
+          "time": 53.68,
+          "segmentId": "seg-7",
+          "label": "Key statistic: 80%",
+          "type": "evidence"
+        },
+        {
+          "time": 60.8,
+          "segmentId": "seg-7",
+          "label": "exposed through prescription. This shows",
+          "type": "argument"
+        },
+        {
+          "time": 65.44,
+          "segmentId": "seg-7",
+          "label": "role in the opioid crisis. Therefore,",
+          "type": "argument"
+        },
+        {
+          "time": 11.92,
+          "segmentId": "seg-8",
+          "label": "Key statistic: 13%",
+          "type": "evidence"
+        },
+        {
+          "time": 14.16,
+          "segmentId": "seg-8",
+          "label": "Key statistic: 20%",
+          "type": "evidence"
+        },
+        {
+          "time": 16.48,
+          "segmentId": "seg-8",
+          "label": "Policy point: traditional approaches. Punishing",
+          "type": "structure"
+        }
+      ]
     }
   ]
 }
