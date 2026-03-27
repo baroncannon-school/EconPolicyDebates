@@ -5118,6 +5118,3669 @@
           "type": "structure"
         }
       ]
+    },
+    {
+      "id": "debate-3",
+      "period": "4th",
+      "debateTopic": "Health Insurance",
+      "topic": "Healthcare Affordability",
+      "description": "Should California address healthcare affordability through a progressive income-based insurance system that scales costs to ability to pay, or by lowering the Medicare eligibility age from 65 to 60?",
+      "teamA": {
+        "name": "Group 1",
+        "members": [],
+        "position": "Implement a progressive income-based health insurance system that restructures costs based on ability to pay, expands subsidies through existing programs like ACA and Medicaid, and strengthens the private insurance market while prioritizing preventive care.",
+        "onePagerUrl": null,
+        "keyStats": [
+          "53% of Californians delayed or skipped medical care due to costs in 2023",
+          "38% of Californians carried medical debt",
+          "Premiums for job-based insurance have risen 2x faster than wages over 20 years",
+          "OECD: countries with progressive healthcare financing have better health outcomes",
+          "Kaiser Family Foundation: expanding coverage significantly increases access to care",
+          "NBER: healthcare access increases productivity and reduces missed workdays"
+        ]
+      },
+      "teamB": {
+        "name": "Group 2",
+        "members": [],
+        "position": "Lower the Medicare eligibility age from 65 to 60, expanding government-provided coverage to older adults who face the highest private insurance premiums and greatest health risks, reducing household spending and improving health outcomes.",
+        "onePagerUrl": null,
+        "keyStats": [
+          "25% of adults aged 60-64 experience being uninsured before Medicare at 65",
+          "Lowering Medicare age would reduce total household health spending by $3.2 billion",
+          "Adults in early 60s face highest insurance premiums in private market",
+          "US mortality rates for 60-64 age group highest among peer countries; drop sharply at 65 with Medicare",
+          "IRMAA (Income Related Monthly Adjustment Amount) ensures higher earners pay more under Medicare",
+          "Medicare is more generous than private plans — designed for accessibility, not profit"
+        ]
+      },
+      "segments": [
+        {
+          "id": "seg-1",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "A",
+          "youtubeId": "ibEGJvNBB9g",
+          "duration": 57,
+          "prompts": [
+            "What is Group 1's definition of healthcare affordability and how does their policy address it?",
+            "What evidence does Group 1 cite about the current state of healthcare access in California?"
+          ],
+          "transcript": [
+            {
+              "start": 0.16,
+              "end": 2.8,
+              "text": "Go."
+            },
+            {
+              "start": 1.12,
+              "end": 4.08,
+              "text": "In one of the wealthiest states in the"
+            },
+            {
+              "start": 2.8,
+              "end": 5.84,
+              "text": "country, no one should have to choose"
+            },
+            {
+              "start": 4.08,
+              "end": 8.16,
+              "text": "between seeing a doctor and paying their"
+            },
+            {
+              "start": 5.84,
+              "end": 10.24,
+              "text": "bills. But millions of Californians are"
+            },
+            {
+              "start": 8.16,
+              "end": 12.32,
+              "text": "for forced to do exactly that. Over the"
+            },
+            {
+              "start": 10.24,
+              "end": 14.64,
+              "text": "past 20 years, premium premiums for"
+            },
+            {
+              "start": 12.32,
+              "end": 18.4,
+              "text": "job-based insurance have risen twice as"
+            },
+            {
+              "start": 14.64,
+              "end": 20.24,
+              "text": "fast as wages. And in 2023 alone, 53% of"
+            },
+            {
+              "start": 18.4,
+              "end": 22.8,
+              "text": "Californians delayed or skipped medical"
+            },
+            {
+              "start": 20.24,
+              "end": 25.12,
+              "text": "care due to costs, while 38% carried"
+            },
+            {
+              "start": 22.8,
+              "end": 26.72,
+              "text": "medical debt. These numbers represent a"
+            },
+            {
+              "start": 25.12,
+              "end": 28.88,
+              "text": "system that is failing to meet the needs"
+            },
+            {
+              "start": 26.72,
+              "end": 31.12,
+              "text": "of its people. Our team proposes a"
+            },
+            {
+              "start": 28.88,
+              "end": 33.2,
+              "text": "solution. A progressive incomebased"
+            },
+            {
+              "start": 31.12,
+              "end": 34.96,
+              "text": "health insurance system that expands"
+            },
+            {
+              "start": 33.2,
+              "end": 36.4,
+              "text": "access to care while maintaining"
+            },
+            {
+              "start": 34.96,
+              "end": 38.4,
+              "text": "incentives for private insurance"
+            },
+            {
+              "start": 36.4,
+              "end": 40.96,
+              "text": "companies and ensuring fairness across"
+            },
+            {
+              "start": 38.4,
+              "end": 42.88,
+              "text": "income wellness by reducing financial"
+            },
+            {
+              "start": 40.96,
+              "end": 45.44,
+              "text": "barriers for low-income individuals and"
+            },
+            {
+              "start": 42.88,
+              "end": 47.36,
+              "text": "distributing costs more equitably. This"
+            },
+            {
+              "start": 45.44,
+              "end": 49.04,
+              "text": "policy not only increases access to"
+            },
+            {
+              "start": 47.36,
+              "end": 51.04,
+              "text": "health care, but also strengthens the"
+            },
+            {
+              "start": 49.04,
+              "end": 52.72,
+              "text": "overall system. Healthcare should not be"
+            },
+            {
+              "start": 51.04,
+              "end": 56.52,
+              "text": "a privilege determined by income, but a"
+            },
+            {
+              "start": 52.72,
+              "end": 56.52,
+              "text": "system that works for everyone."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o1-1",
+              "title": "California's Healthcare Crisis",
+              "startTime": 0.16,
+              "endTime": 5.84,
+              "bullets": [
+                "One of wealthiest states with millions unable to afford care",
+                "53% of Californians delayed or skipped medical care in 2023",
+                "38% of Californians carry medical debt"
+              ]
+            },
+            {
+              "id": "o1-2",
+              "title": "Rising Costs Outpace Wages",
+              "startTime": 5.84,
+              "endTime": 10.24,
+              "bullets": [
+                "Job-based insurance premiums risen 2x faster than wages over 20 years",
+                "Premiums and deductibles prevent access to care",
+                "Financial barriers create systemic healthcare failure"
+              ]
+            },
+            {
+              "id": "o1-3",
+              "title": "Progressive Income-Based Solution",
+              "startTime": 10.24,
+              "endTime": 18.4,
+              "bullets": [
+                "Scale costs based on ability to pay",
+                "Expand access while maintaining private insurance incentives",
+                "Distribute costs equitably across income levels"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-2",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "B",
+          "youtubeId": "EzBjz-3W7Lk",
+          "duration": 137,
+          "prompts": [
+            "What gaps in current insurance coverage does Group 2 identify for 60-64 year olds?",
+            "How does Group 2 explain the relationship between insurance premiums and health outcomes for early retirees?"
+          ],
+          "transcript": [
+            {
+              "start": 1.12,
+              "end": 4.72,
+              "text": "Healthcare in the United States is not"
+            },
+            {
+              "start": 2.8,
+              "end": 6.4,
+              "text": "just expensive. It is increasingly"
+            },
+            {
+              "start": 4.72,
+              "end": 8.8,
+              "text": "inaccessible, inefficient, and"
+            },
+            {
+              "start": 6.4,
+              "end": 10.56,
+              "text": "inequitable. Despite substantial"
+            },
+            {
+              "start": 8.8,
+              "end": 12.72,
+              "text": "government subsidies designed to improve"
+            },
+            {
+              "start": 10.56,
+              "end": 14.48,
+              "text": "affordability, millions of Americans"
+            },
+            {
+              "start": 12.72,
+              "end": 17.28,
+              "text": "still struggle to pay for basic medical"
+            },
+            {
+              "start": 14.48,
+              "end": 18.88,
+              "text": "care. Even those with insurance face"
+            },
+            {
+              "start": 17.28,
+              "end": 20.96,
+              "text": "high premiums, which are the monthly"
+            },
+            {
+              "start": 18.88,
+              "end": 22.88,
+              "text": "payments required to maintain insurance,"
+            },
+            {
+              "start": 20.96,
+              "end": 24.64,
+              "text": "or steep deductibles, which are what"
+            },
+            {
+              "start": 22.88,
+              "end": 27.28,
+              "text": "patients must pay out of pocket before"
+            },
+            {
+              "start": 24.64,
+              "end": 29.52,
+              "text": "insurance begins to cover services. As a"
+            },
+            {
+              "start": 27.28,
+              "end": 31.44,
+              "text": "result, people delay seeking treatment"
+            },
+            {
+              "start": 29.52,
+              "end": 33.2,
+              "text": "and only enter the health care system"
+            },
+            {
+              "start": 31.44,
+              "end": 35.12,
+              "text": "when their conditions have worsened,"
+            },
+            {
+              "start": 33.2,
+              "end": 37.6,
+              "text": "driving up both personal and national"
+            },
+            {
+              "start": 35.12,
+              "end": 39.68,
+              "text": "costs. The US health care system is"
+            },
+            {
+              "start": 37.6,
+              "end": 42.08,
+              "text": "clearly fragmented and leaves gaps in"
+            },
+            {
+              "start": 39.68,
+              "end": 44.16,
+              "text": "coverage and access to reliable care."
+            },
+            {
+              "start": 42.08,
+              "end": 46.24,
+              "text": "Public programs such as Medicare work to"
+            },
+            {
+              "start": 44.16,
+              "end": 48.24,
+              "text": "expand coverage,"
+            },
+            {
+              "start": 46.24,
+              "end": 50.64,
+              "text": "but the current eligibility restrictions"
+            },
+            {
+              "start": 48.24,
+              "end": 52.48,
+              "text": "lead to many people getting left behind."
+            },
+            {
+              "start": 50.64,
+              "end": 54.8,
+              "text": "Meanwhile, private insurance markets"
+            },
+            {
+              "start": 52.48,
+              "end": 56.72,
+              "text": "often prioritize profit, resulting in"
+            },
+            {
+              "start": 54.8,
+              "end": 58.24,
+              "text": "inconsistent coverage and high costs for"
+            },
+            {
+              "start": 56.72,
+              "end": 60,
+              "text": "consumers."
+            },
+            {
+              "start": 58.24,
+              "end": 61.76,
+              "text": "This healthcare crisis is especially"
+            },
+            {
+              "start": 60,
+              "end": 64.24,
+              "text": "evident among older adults who are not"
+            },
+            {
+              "start": 61.76,
+              "end": 67.84,
+              "text": "yet eligible for Medicare. Currently,"
+            },
+            {
+              "start": 64.24,
+              "end": 69.44,
+              "text": "the Medicare eligibility age is 65, but"
+            },
+            {
+              "start": 67.84,
+              "end": 71.52,
+              "text": "individuals in the early in their early"
+            },
+            {
+              "start": 69.44,
+              "end": 73.76,
+              "text": "60s typically face the highest insurance"
+            },
+            {
+              "start": 71.52,
+              "end": 75.52,
+              "text": "premiums in the private market. This"
+            },
+            {
+              "start": 73.76,
+              "end": 77.44,
+              "text": "specific age group is also more likely"
+            },
+            {
+              "start": 75.52,
+              "end": 79.44,
+              "text": "to develop chronic conditions such as"
+            },
+            {
+              "start": 77.44,
+              "end": 80.88,
+              "text": "diabetes and heart disease, which are"
+            },
+            {
+              "start": 79.44,
+              "end": 82.56,
+              "text": "conditions that become more difficult"
+            },
+            {
+              "start": 80.88,
+              "end": 85.04,
+              "text": "and costly to treat when care is"
+            },
+            {
+              "start": 82.56,
+              "end": 87.44,
+              "text": "delayed. The consequences of this"
+            },
+            {
+              "start": 85.04,
+              "end": 89.36,
+              "text": "problem are significant for individuals."
+            },
+            {
+              "start": 87.44,
+              "end": 92.16,
+              "text": "Delayed care leads to worse health"
+            },
+            {
+              "start": 89.36,
+              "end": 94,
+              "text": "outcomes and increased financial strain"
+            },
+            {
+              "start": 92.16,
+              "end": 95.84,
+              "text": "for the health care system. Untreated"
+            },
+            {
+              "start": 94,
+              "end": 98.16,
+              "text": "conditions frequently escalate into"
+            },
+            {
+              "start": 95.84,
+              "end": 100.08,
+              "text": "emergencies that require more ext"
+            },
+            {
+              "start": 98.16,
+              "end": 102.72,
+              "text": "expensive measures such as"
+            },
+            {
+              "start": 100.08,
+              "end": 104.48,
+              "text": "hospitalizations or surgeries. This"
+            },
+            {
+              "start": 102.72,
+              "end": 106.08,
+              "text": "cycle drives up the overall health care"
+            },
+            {
+              "start": 104.48,
+              "end": 107.92,
+              "text": "spending without actually improving"
+            },
+            {
+              "start": 106.08,
+              "end": 109.84,
+              "text": "health outcomes."
+            },
+            {
+              "start": 107.92,
+              "end": 111.2,
+              "text": "To address this widespread issue, we"
+            },
+            {
+              "start": 109.84,
+              "end": 113.36,
+              "text": "need to focus on a particularly"
+            },
+            {
+              "start": 111.2,
+              "end": 115.52,
+              "text": "vulnerable group. Adults in their early"
+            },
+            {
+              "start": 113.36,
+              "end": 118.16,
+              "text": "60s who face health risks but lack"
+            },
+            {
+              "start": 115.52,
+              "end": 120.16,
+              "text": "affordable stable coverage. Lowering the"
+            },
+            {
+              "start": 118.16,
+              "end": 122.32,
+              "text": "Medicare eligibility age would provide"
+            },
+            {
+              "start": 120.16,
+              "end": 124.16,
+              "text": "earlier access to comprehensive care,"
+            },
+            {
+              "start": 122.32,
+              "end": 125.92,
+              "text": "reduce financial barriers, and help"
+            },
+            {
+              "start": 124.16,
+              "end": 128.48,
+              "text": "prevent the progression of chronic"
+            },
+            {
+              "start": 125.92,
+              "end": 130.08,
+              "text": "disease. Expanding Medicare to include"
+            },
+            {
+              "start": 128.48,
+              "end": 132.56,
+              "text": "this population will work to improve"
+            },
+            {
+              "start": 130.08,
+              "end": 134,
+              "text": "healthcare affordability, accessibility,"
+            },
+            {
+              "start": 132.56,
+              "end": 137.24,
+              "text": "and overall health outcomes in the"
+            },
+            {
+              "start": 134,
+              "end": 137.24,
+              "text": "United States."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o2-1",
+              "title": "The Insurance Crisis for 60-64 Year Olds",
+              "startTime": 1.12,
+              "endTime": 10.56,
+              "bullets": [
+                "US healthcare system expensive, inaccessible, inequitable",
+                "Current subsidies still leave millions struggling",
+                "Premiums vs deductibles prevent care access"
+              ]
+            },
+            {
+              "id": "o2-2",
+              "title": "Early 60s Face Highest Private Premiums",
+              "startTime": 10.56,
+              "endTime": 17.28,
+              "bullets": [
+                "25% of 60-64 year-olds experience being uninsured",
+                "This age group has highest premiums in private market",
+                "Chronic conditions common in early 60s"
+              ]
+            },
+            {
+              "id": "o2-3",
+              "title": "Medicare Eligibility at 65: The Gap",
+              "startTime": 17.28,
+              "endTime": 22.88,
+              "bullets": [
+                "Delayed care worsens conditions and total costs",
+                "US mortality rates for 60-64 highest among peer countries",
+                "Drop sharply at 65 with Medicare coverage"
+              ]
+            },
+            {
+              "id": "o2-4",
+              "title": "Lower Medicare Age to 60",
+              "startTime": 22.88,
+              "endTime": 29.52,
+              "bullets": [
+                "Reduce financial barriers for 60+ adults",
+                "Decrease household health spending by $3.2 billion",
+                "Improve health outcomes and reduce emergency care"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-3",
+          "type": "main",
+          "label": "Main Arguments",
+          "team": "A",
+          "youtubeId": "eprf28oS41I",
+          "duration": 326,
+          "prompts": [
+            "How does Group 1 connect income-based pricing to healthcare access and utilization?",
+            "What role do preventive care and subsidies play in Group 1's economic argument?",
+            "How does Group 1 justify strengthening the private insurance market?"
+          ],
+          "transcript": [
+            {
+              "start": 0.96,
+              "end": 4.32,
+              "text": "most effective policy to address"
+            },
+            {
+              "start": 2.56,
+              "end": 6.56,
+              "text": "healthcare affordability is implementing"
+            },
+            {
+              "start": 4.32,
+              "end": 8.16,
+              "text": "an income based health care system. This"
+            },
+            {
+              "start": 6.56,
+              "end": 9.92,
+              "text": "policy works by restructuring how"
+            },
+            {
+              "start": 8.16,
+              "end": 11.52,
+              "text": "healthcare costs are distributed so that"
+            },
+            {
+              "start": 9.92,
+              "end": 13.76,
+              "text": "individuals contribute based on their"
+            },
+            {
+              "start": 11.52,
+              "end": 15.6,
+              "text": "ability to pay while expanding access"
+            },
+            {
+              "start": 13.76,
+              "end": 17.44,
+              "text": "for those who need it most. This"
+            },
+            {
+              "start": 15.6,
+              "end": 18.88,
+              "text": "approach ensures that healthcare is no"
+            },
+            {
+              "start": 17.44,
+              "end": 20.56,
+              "text": "longer treated as a fixed financial"
+            },
+            {
+              "start": 18.88,
+              "end": 23.2,
+              "text": "burden but as a flexible system that"
+            },
+            {
+              "start": 20.56,
+              "end": 25.28,
+              "text": "adapts to people's income. In doing so,"
+            },
+            {
+              "start": 23.2,
+              "end": 27.36,
+              "text": "it becomes not only more equitable but"
+            },
+            {
+              "start": 25.28,
+              "end": 29.6,
+              "text": "also more efficient and sustainable over"
+            },
+            {
+              "start": 27.36,
+              "end": 31.44,
+              "text": "time. This matters because the current"
+            },
+            {
+              "start": 29.6,
+              "end": 33.68,
+              "text": "system is not just expensive but also"
+            },
+            {
+              "start": 31.44,
+              "end": 35.28,
+              "text": "inefficient. When people cannot afford"
+            },
+            {
+              "start": 33.68,
+              "end": 36.96,
+              "text": "care, they delay treatment, skip"
+            },
+            {
+              "start": 35.28,
+              "end": 39.04,
+              "text": "medications, or avoid seeing a doctor"
+            },
+            {
+              "start": 36.96,
+              "end": 40.96,
+              "text": "altogether. That leads to worse health"
+            },
+            {
+              "start": 39.04,
+              "end": 42.96,
+              "text": "outcomes and higher long-term costs for"
+            },
+            {
+              "start": 40.96,
+              "end": 44.56,
+              "text": "everyone. Evidence from the Kaiser"
+            },
+            {
+              "start": 42.96,
+              "end": 46.16,
+              "text": "Family Foundation shows that expanding"
+            },
+            {
+              "start": 44.56,
+              "end": 48.24,
+              "text": "insurance coverage through programs like"
+            },
+            {
+              "start": 46.16,
+              "end": 49.92,
+              "text": "Medicaid and the Affordable Care Act"
+            },
+            {
+              "start": 48.24,
+              "end": 51.52,
+              "text": "significantly increases access to"
+            },
+            {
+              "start": 49.92,
+              "end": 53.52,
+              "text": "doctors, preventative care, and"
+            },
+            {
+              "start": 51.52,
+              "end": 55.28,
+              "text": "necessary prescriptions."
+            },
+            {
+              "start": 53.52,
+              "end": 57.2,
+              "text": "In addition, studies consistently show"
+            },
+            {
+              "start": 55.28,
+              "end": 58.88,
+              "text": "that insured individuals are far more"
+            },
+            {
+              "start": 57.2,
+              "end": 60.64,
+              "text": "likely to receive early treatment, which"
+            },
+            {
+              "start": 58.88,
+              "end": 62,
+              "text": "prevents minor conditions from becoming"
+            },
+            {
+              "start": 60.64,
+              "end": 64,
+              "text": "serious and expensive medical"
+            },
+            {
+              "start": 62,
+              "end": 65.68,
+              "text": "emergencies."
+            },
+            {
+              "start": 64,
+              "end": 67.52,
+              "text": "This proves that increasing access is"
+            },
+            {
+              "start": 65.68,
+              "end": 70.64,
+              "text": "not just a moral issue, but a practical"
+            },
+            {
+              "start": 67.52,
+              "end": 73.2,
+              "text": "solution that reduces cost reduces costs"
+            },
+            {
+              "start": 70.64,
+              "end": 75.2,
+              "text": "across the entire healthare system."
+            },
+            {
+              "start": 73.2,
+              "end": 77.44,
+              "text": "First, this policy introduces an income"
+            },
+            {
+              "start": 75.2,
+              "end": 79.04,
+              "text": "based cost structure. Instead of forcing"
+            },
+            {
+              "start": 77.44,
+              "end": 80.96,
+              "text": "everyone to pay similar premiums"
+            },
+            {
+              "start": 79.04,
+              "end": 82.72,
+              "text": "regardless of income, healthcare costs"
+            },
+            {
+              "start": 80.96,
+              "end": 85.44,
+              "text": "would scale based on what individuals"
+            },
+            {
+              "start": 82.72,
+              "end": 86.96,
+              "text": "can realistically afford. Higher income"
+            },
+            {
+              "start": 85.44,
+              "end": 88.8,
+              "text": "individuals would contribute more while"
+            },
+            {
+              "start": 86.96,
+              "end": 90.56,
+              "text": "lower income individuals will pay less"
+            },
+            {
+              "start": 88.8,
+              "end": 92.8,
+              "text": "or receive significant financial"
+            },
+            {
+              "start": 90.56,
+              "end": 94.4,
+              "text": "support. This is not a new idea. It"
+            },
+            {
+              "start": 92.8,
+              "end": 96.8,
+              "text": "builds directly on systems that already"
+            },
+            {
+              "start": 94.4,
+              "end": 98.72,
+              "text": "exist. According to the Congressional"
+            },
+            {
+              "start": 96.8,
+              "end": 100.24,
+              "text": "Budget Office, the US tax system is"
+            },
+            {
+              "start": 98.72,
+              "end": 102.48,
+              "text": "already progressive with higher earners"
+            },
+            {
+              "start": 100.24,
+              "end": 104.32,
+              "text": "paying a larger share of federal taxes."
+            },
+            {
+              "start": 102.48,
+              "end": 105.92,
+              "text": "Extending that same principle to"
+            },
+            {
+              "start": 104.32,
+              "end": 107.68,
+              "text": "healthcare would simply align costs with"
+            },
+            {
+              "start": 105.92,
+              "end": 109.92,
+              "text": "the ability to pay. Furthermore,"
+            },
+            {
+              "start": 107.68,
+              "end": 111.2,
+              "text": "research from the OECD shows that"
+            },
+            {
+              "start": 109.92,
+              "end": 113.28,
+              "text": "countries with more progressive"
+            },
+            {
+              "start": 111.2,
+              "end": 114.72,
+              "text": "healthcare financing system consistently"
+            },
+            {
+              "start": 113.28,
+              "end": 118.48,
+              "text": "experience better overall health"
+            },
+            {
+              "start": 114.72,
+              "end": 120.08,
+              "text": "outcomes and lower levels of inequality."
+            },
+            {
+              "start": 118.48,
+              "end": 122.88,
+              "text": "This is because when financial barriers"
+            },
+            {
+              "start": 120.08,
+              "end": 124.32,
+              "text": "are recruit reduced, more people can"
+            },
+            {
+              "start": 122.88,
+              "end": 126.56,
+              "text": "access care, especially those who need"
+            },
+            {
+              "start": 124.32,
+              "end": 128.08,
+              "text": "it most. Second, the policy expands"
+            },
+            {
+              "start": 126.56,
+              "end": 129.44,
+              "text": "subsidies and financial assistance"
+            },
+            {
+              "start": 128.08,
+              "end": 131.68,
+              "text": "through existing programs like the"
+            },
+            {
+              "start": 129.44,
+              "end": 133.44,
+              "text": "Affordable Care Act and Medicaid. This"
+            },
+            {
+              "start": 131.68,
+              "end": 135.44,
+              "text": "is critical because cost remains the"
+            },
+            {
+              "start": 133.44,
+              "end": 137.76,
+              "text": "single biggest barrier to healthcare"
+            },
+            {
+              "start": 135.44,
+              "end": 140.16,
+              "text": "access. But Urban Institute found that"
+            },
+            {
+              "start": 137.76,
+              "end": 141.36,
+              "text": "when government subsidies are increased,"
+            },
+            {
+              "start": 140.16,
+              "end": 142.64,
+              "text": "insurance enrollment rises"
+            },
+            {
+              "start": 141.36,
+              "end": 144.88,
+              "text": "significantly, especially among"
+            },
+            {
+              "start": 142.64,
+              "end": 146.48,
+              "text": "low-income populations. In other words,"
+            },
+            {
+              "start": 144.88,
+              "end": 148.4,
+              "text": "when healthcare becomes affordable,"
+            },
+            {
+              "start": 146.48,
+              "end": 151.28,
+              "text": "people actually use it. By capping"
+            },
+            {
+              "start": 148.4,
+              "end": 153.44,
+              "text": "health care spending as a percentage of"
+            },
+            {
+              "start": 151.28,
+              "end": 154.96,
+              "text": "income, this policy guarantees that no"
+            },
+            {
+              "start": 153.44,
+              "end": 156.56,
+              "text": "individual or family is forced to spend"
+            },
+            {
+              "start": 154.96,
+              "end": 159.2,
+              "text": "an unreasonable portion of their income"
+            },
+            {
+              "start": 156.56,
+              "end": 161.28,
+              "text": "on medical care. This create creates"
+            },
+            {
+              "start": 159.2,
+              "end": 162.72,
+              "text": "stability and predictability allowing"
+            },
+            {
+              "start": 161.28,
+              "end": 164.08,
+              "text": "people to seek care when they need it"
+            },
+            {
+              "start": 162.72,
+              "end": 165.92,
+              "text": "instead of waiting until conditions"
+            },
+            {
+              "start": 164.08,
+              "end": 169.12,
+              "text": "become severe which is not beneficial to"
+            },
+            {
+              "start": 165.92,
+              "end": 170.8,
+              "text": "anyone. Third, this policy strengthens"
+            },
+            {
+              "start": 169.12,
+              "end": 172.96,
+              "text": "rather than replaces the private"
+            },
+            {
+              "start": 170.8,
+              "end": 175.28,
+              "text": "insurance market. One of the biggest"
+            },
+            {
+              "start": 172.96,
+              "end": 177.52,
+              "text": "concerns with health care reform is that"
+            },
+            {
+              "start": 175.28,
+              "end": 180.56,
+              "text": "it might disrupt existing systems, but"
+            },
+            {
+              "start": 177.52,
+              "end": 182.56,
+              "text": "this policy does the opposite. By making"
+            },
+            {
+              "start": 180.56,
+              "end": 184.88,
+              "text": "insurance more affordable, it brings"
+            },
+            {
+              "start": 182.56,
+              "end": 186.72,
+              "text": "more people into the market. Increased"
+            },
+            {
+              "start": 184.88,
+              "end": 189.28,
+              "text": "enrollment leads to higher demand which"
+            },
+            {
+              "start": 186.72,
+              "end": 192.08,
+              "text": "creates stronger incentives for"
+            },
+            {
+              "start": 189.28,
+              "end": 193.92,
+              "text": "insurance companies to compete expand"
+            },
+            {
+              "start": 192.08,
+              "end": 196.96,
+              "text": "their services and improve the quality"
+            },
+            {
+              "start": 193.92,
+              "end": 199.28,
+              "text": "of care they offer. A larger more stable"
+            },
+            {
+              "start": 196.96,
+              "end": 202.16,
+              "text": "customer base also reduces risk for"
+            },
+            {
+              "start": 199.28,
+              "end": 204.16,
+              "text": "insur insurers which can help stabilize"
+            },
+            {
+              "start": 202.16,
+              "end": 206,
+              "text": "pricing over time instead of weakening"
+            },
+            {
+              "start": 204.16,
+              "end": 208.08,
+              "text": "the market. This policy makes it more"
+            },
+            {
+              "start": 206,
+              "end": 210.4,
+              "text": "competitive and more responsive to"
+            },
+            {
+              "start": 208.08,
+              "end": 212.8,
+              "text": "consumer needs."
+            },
+            {
+              "start": 210.4,
+              "end": 215.44,
+              "text": "Finally, finally, this policy improves"
+            },
+            {
+              "start": 212.8,
+              "end": 218.16,
+              "text": "long-term efficiency by prioritizing"
+            },
+            {
+              "start": 215.44,
+              "end": 220.24,
+              "text": "preventative care. Preventive care is"
+            },
+            {
+              "start": 218.16,
+              "end": 222.32,
+              "text": "one of the most cost-effective aspects"
+            },
+            {
+              "start": 220.24,
+              "end": 224.72,
+              "text": "of healthcare. Yet, it is often"
+            },
+            {
+              "start": 222.32,
+              "end": 226.64,
+              "text": "underused because of financial barriers."
+            },
+            {
+              "start": 224.72,
+              "end": 229.28,
+              "text": "The Centers for Disease Control and"
+            },
+            {
+              "start": 226.64,
+              "end": 232.48,
+              "text": "Prevention reports that access to"
+            },
+            {
+              "start": 229.28,
+              "end": 234.48,
+              "text": "preventive services reduces the need for"
+            },
+            {
+              "start": 232.48,
+              "end": 236.4,
+              "text": "expensive emergency care and helps"
+            },
+            {
+              "start": 234.48,
+              "end": 238.56,
+              "text": "manage chronic diseases before they"
+            },
+            {
+              "start": 236.4,
+              "end": 240.88,
+              "text": "become severe. This means fewer"
+            },
+            {
+              "start": 238.56,
+              "end": 244,
+              "text": "hospitalizations, fewer surgeries, and"
+            },
+            {
+              "start": 240.88,
+              "end": 246.24,
+              "text": "lower overall costs. In addition,"
+            },
+            {
+              "start": 244,
+              "end": 248.32,
+              "text": "research from the National Bureau of"
+            },
+            {
+              "start": 246.24,
+              "end": 250.16,
+              "text": "Economic Research shows that when people"
+            },
+            {
+              "start": 248.32,
+              "end": 252.16,
+              "text": "have access to health care, they are"
+            },
+            {
+              "start": 250.16,
+              "end": 254,
+              "text": "more productive, miss fewer days of"
+            },
+            {
+              "start": 252.16,
+              "end": 256.4,
+              "text": "work, and contribute more consistently"
+            },
+            {
+              "start": 254,
+              "end": 259.04,
+              "text": "to the economy. A healthier population"
+            },
+            {
+              "start": 256.4,
+              "end": 262,
+              "text": "is not just a social benefit, is an it"
+            },
+            {
+              "start": 259.04,
+              "end": 264,
+              "text": "is an economic advantage."
+            },
+            {
+              "start": 262,
+              "end": 266.08,
+              "text": "When people can afford care, they are"
+            },
+            {
+              "start": 264,
+              "end": 267.76,
+              "text": "healthier. When they are healthier, they"
+            },
+            {
+              "start": 266.08,
+              "end": 269.6,
+              "text": "are more productive. And when"
+            },
+            {
+              "start": 267.76,
+              "end": 272.08,
+              "text": "productivity increases, the entire"
+            },
+            {
+              "start": 269.6,
+              "end": 274.24,
+              "text": "economy benefits. This creates a cycle"
+            },
+            {
+              "start": 272.08,
+              "end": 276.48,
+              "text": "where improved access leads to stronger"
+            },
+            {
+              "start": 274.24,
+              "end": 278.88,
+              "text": "communities and a more stable healthcare"
+            },
+            {
+              "start": 276.48,
+              "end": 280.88,
+              "text": "and economic system overall. In"
+            },
+            {
+              "start": 278.88,
+              "end": 282.8,
+              "text": "conclusion, an income-based health care"
+            },
+            {
+              "start": 280.88,
+              "end": 285.44,
+              "text": "system addresses the root causes of"
+            },
+            {
+              "start": 282.8,
+              "end": 288.32,
+              "text": "healthcare inequality by making care"
+            },
+            {
+              "start": 285.44,
+              "end": 289.92,
+              "text": "more accessible, distributing costs more"
+            },
+            {
+              "start": 288.32,
+              "end": 291.44,
+              "text": "fairly, and improving long-term"
+            },
+            {
+              "start": 289.92,
+              "end": 293.2,
+              "text": "efficiency."
+            },
+            {
+              "start": 291.44,
+              "end": 295.2,
+              "text": "The evidence is clear. Expanding"
+            },
+            {
+              "start": 293.2,
+              "end": 298.32,
+              "text": "coverage increases access. Progressive"
+            },
+            {
+              "start": 295.2,
+              "end": 301.6,
+              "text": "systems reduce inequality and subsidi"
+            },
+            {
+              "start": 298.32,
+              "end": 304.08,
+              "text": "subsidize boost participation and"
+            },
+            {
+              "start": 301.6,
+              "end": 305.84,
+              "text": "preventative care lower costs. Rather"
+            },
+            {
+              "start": 304.08,
+              "end": 307.76,
+              "text": "than continuing with a system that"
+            },
+            {
+              "start": 305.84,
+              "end": 310.32,
+              "text": "forces millions to delay care, this"
+            },
+            {
+              "start": 307.76,
+              "end": 312.32,
+              "text": "policy offers a practical evidence-based"
+            },
+            {
+              "start": 310.32,
+              "end": 314.24,
+              "text": "solution that works with existing"
+            },
+            {
+              "start": 312.32,
+              "end": 316.16,
+              "text": "structures while improving outcomes for"
+            },
+            {
+              "start": 314.24,
+              "end": 317.6,
+              "text": "everyone. Health care should not depend"
+            },
+            {
+              "start": 316.16,
+              "end": 319.44,
+              "text": "on how much you earn, but it should"
+            },
+            {
+              "start": 317.6,
+              "end": 321.6,
+              "text": "function as a system that supports all"
+            },
+            {
+              "start": 319.44,
+              "end": 326.04,
+              "text": "individuals, strengthens the economy,"
+            },
+            {
+              "start": 321.6,
+              "end": 326.04,
+              "text": "and ensures long-term sustainability."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o3-1",
+              "title": "Income-Based Cost Structure",
+              "startTime": 0,
+              "endTime": 60,
+              "bullets": [
+                "People delay treatment when unable to afford it",
+                "Kaiser Family Foundation: expanding coverage increases access",
+                "Extend progressive taxation model to healthcare"
+              ]
+            },
+            {
+              "id": "o3-2",
+              "title": "OECD Evidence: Progressive Financing Works",
+              "startTime": 60,
+              "endTime": 130,
+              "bullets": [
+                "Countries with progressive healthcare financing have better outcomes",
+                "CBO: US tax already progressive, extend to healthcare",
+                "Cap healthcare spending as percentage of income"
+              ]
+            },
+            {
+              "id": "o3-3",
+              "title": "Expand Subsidies and Enrollment",
+              "startTime": 130,
+              "endTime": 200,
+              "bullets": [
+                "Expand ACA and Medicaid subsidies",
+                "Urban Institute: subsidies increase enrollment and access",
+                "Strengthen private market through increased competition"
+              ]
+            },
+            {
+              "id": "o3-4",
+              "title": "Preventive Care and Productivity",
+              "startTime": 200,
+              "endTime": 326,
+              "bullets": [
+                "Preventive care reduces emergency room costs",
+                "NBER: healthcare access increases productivity and reduces missed workdays",
+                "Virtuous cycle: access leads to health leads to economic growth"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-4",
+          "type": "main",
+          "label": "Main Arguments",
+          "team": "B",
+          "youtubeId": "kYYBH6RXD2g",
+          "duration": 205,
+          "prompts": [
+            "Why does Group 2 argue that age-based eligibility is a more efficient policy tool than income-based pricing?",
+            "What data does Group 2 present about insurance costs and health outcomes for the 60-64 age group?"
+          ],
+          "transcript": [
+            {
+              "start": 1.44,
+              "end": 5.36,
+              "text": "The most effective policy to address the"
+            },
+            {
+              "start": 3.44,
+              "end": 8.24,
+              "text": "affordability of health care is lowering"
+            },
+            {
+              "start": 5.36,
+              "end": 10.48,
+              "text": "the Medicare eligibility age from 65 to"
+            },
+            {
+              "start": 8.24,
+              "end": 13.2,
+              "text": "60 years old, enabling an increase in"
+            },
+            {
+              "start": 10.48,
+              "end": 16.08,
+              "text": "medical insurance availability. Roughly"
+            },
+            {
+              "start": 13.2,
+              "end": 17.76,
+              "text": "25% of 60 to 64 year olds experience"
+            },
+            {
+              "start": 16.08,
+              "end": 20.64,
+              "text": "being uninsured before the Medicare"
+            },
+            {
+              "start": 17.76,
+              "end": 22.32,
+              "text": "benefits provided at age 65. This is"
+            },
+            {
+              "start": 20.64,
+              "end": 24.32,
+              "text": "significant because individuals in this"
+            },
+            {
+              "start": 22.32,
+              "end": 26.4,
+              "text": "age range often experience more health"
+            },
+            {
+              "start": 24.32,
+              "end": 28.32,
+              "text": "issues and as a result often need more"
+            },
+            {
+              "start": 26.4,
+              "end": 30.08,
+              "text": "health care. Without insurance, many"
+            },
+            {
+              "start": 28.32,
+              "end": 31.92,
+              "text": "will delay receiving care, which can"
+            },
+            {
+              "start": 30.08,
+              "end": 34.08,
+              "text": "exacerbate the health problem and lead"
+            },
+            {
+              "start": 31.92,
+              "end": 35.6,
+              "text": "to a need for more expensive care. With"
+            },
+            {
+              "start": 34.08,
+              "end": 37.12,
+              "text": "age lowered for Medicare, more"
+            },
+            {
+              "start": 35.6,
+              "end": 38.96,
+              "text": "preventative health care is more likely"
+            },
+            {
+              "start": 37.12,
+              "end": 40.96,
+              "text": "to be taken, therefore reducing the"
+            },
+            {
+              "start": 38.96,
+              "end": 42.48,
+              "text": "later expensive that would incur for"
+            },
+            {
+              "start": 40.96,
+              "end": 45.28,
+              "text": "both the patients and health care"
+            },
+            {
+              "start": 42.48,
+              "end": 47.76,
+              "text": "system. In addition, total household"
+            },
+            {
+              "start": 45.28,
+              "end": 50.24,
+              "text": "spending on health would drop by $3.2"
+            },
+            {
+              "start": 47.76,
+              "end": 52.56,
+              "text": "billion. Household spending in regards"
+            },
+            {
+              "start": 50.24,
+              "end": 54.16,
+              "text": "to medical costs is defined as the total"
+            },
+            {
+              "start": 52.56,
+              "end": 55.92,
+              "text": "amount a household pays for health"
+            },
+            {
+              "start": 54.16,
+              "end": 58.24,
+              "text": "insurance premiums along with"
+            },
+            {
+              "start": 55.92,
+              "end": 60.32,
+              "text": "out-ofpocket costs for medical care not"
+            },
+            {
+              "start": 58.24,
+              "end": 62.08,
+              "text": "covered by a third party. Lowering the"
+            },
+            {
+              "start": 60.32,
+              "end": 64.24,
+              "text": "Medicare age would drop this national"
+            },
+            {
+              "start": 62.08,
+              "end": 66.32,
+              "text": "trend of overly expensive health"
+            },
+            {
+              "start": 64.24,
+              "end": 69.12,
+              "text": "household health spendings by around"
+            },
+            {
+              "start": 66.32,
+              "end": 71.12,
+              "text": "$3.2 billion. Although some people might"
+            },
+            {
+              "start": 69.12,
+              "end": 73.36,
+              "text": "pay slightly higher monthly premiums"
+            },
+            {
+              "start": 71.12,
+              "end": 75.76,
+              "text": "under Medicare, these cost adjustments"
+            },
+            {
+              "start": 73.36,
+              "end": 77.68,
+              "text": "are based on economic status. So higher"
+            },
+            {
+              "start": 75.76,
+              "end": 80.96,
+              "text": "earners will pay increased increased"
+            },
+            {
+              "start": 77.68,
+              "end": 82.8,
+              "text": "monthly fees known as IRMAa which stands"
+            },
+            {
+              "start": 80.96,
+              "end": 85.2,
+              "text": "for income related monthly adjustment"
+            },
+            {
+              "start": 82.8,
+              "end": 87.52,
+              "text": "amount. Therefore continuing to protect"
+            },
+            {
+              "start": 85.2,
+              "end": 89.04,
+              "text": "lower inome families and communities."
+            },
+            {
+              "start": 87.52,
+              "end": 90.88,
+              "text": "Because of this household spending"
+            },
+            {
+              "start": 89.04,
+              "end": 92.72,
+              "text": "coverage, families would save much more"
+            },
+            {
+              "start": 90.88,
+              "end": 95.44,
+              "text": "on other areas like deductibles,"
+            },
+            {
+              "start": 92.72,
+              "end": 97.12,
+              "text": "co-pays, co-pays, and unexpected medical"
+            },
+            {
+              "start": 95.44,
+              "end": 99.36,
+              "text": "bills that would normally affect family"
+            },
+            {
+              "start": 97.12,
+              "end": 101.84,
+              "text": "savings. By increasing the availability"
+            },
+            {
+              "start": 99.36,
+              "end": 104,
+              "text": "of Medicare, those high out-ofpocket"
+            },
+            {
+              "start": 101.84,
+              "end": 105.52,
+              "text": "expenses will be reduced, leading to a"
+            },
+            {
+              "start": 104,
+              "end": 107.52,
+              "text": "greater amount of pocket savings for"
+            },
+            {
+              "start": 105.52,
+              "end": 109.36,
+              "text": "households. Additionally, Medicare is"
+            },
+            {
+              "start": 107.52,
+              "end": 111.2,
+              "text": "often more generous than private plans"
+            },
+            {
+              "start": 109.36,
+              "end": 113.6,
+              "text": "because it is designed to be accessible"
+            },
+            {
+              "start": 111.2,
+              "end": 115.44,
+              "text": "rather than primarily profitable. While"
+            },
+            {
+              "start": 113.6,
+              "end": 117.36,
+              "text": "enrolles may pay higher premiums"
+            },
+            {
+              "start": 115.44,
+              "end": 118.96,
+              "text": "upfront, they tend to pay less out of"
+            },
+            {
+              "start": 117.36,
+              "end": 120.96,
+              "text": "pocket when they actually go to the"
+            },
+            {
+              "start": 118.96,
+              "end": 122.64,
+              "text": "doctor or receive treatment. This factor"
+            },
+            {
+              "start": 120.96,
+              "end": 125.52,
+              "text": "is especially significant for the age"
+            },
+            {
+              "start": 122.64,
+              "end": 127.52,
+              "text": "group of 60 to 64 as Medicare will often"
+            },
+            {
+              "start": 125.52,
+              "end": 129.52,
+              "text": "reduce financial barriers to necessary"
+            },
+            {
+              "start": 127.52,
+              "end": 131.28,
+              "text": "treatment during long-term chronic"
+            },
+            {
+              "start": 129.52,
+              "end": 133.68,
+              "text": "illnesses that are common with elderly"
+            },
+            {
+              "start": 131.28,
+              "end": 135.68,
+              "text": "population. Because private insurance"
+            },
+            {
+              "start": 133.68,
+              "end": 137.68,
+              "text": "can be expensive while also not covering"
+            },
+            {
+              "start": 135.68,
+              "end": 140.32,
+              "text": "much, many in this age group struggle"
+            },
+            {
+              "start": 137.68,
+              "end": 141.84,
+              "text": "with affording the necessary care. By"
+            },
+            {
+              "start": 140.32,
+              "end": 143.52,
+              "text": "lowering the Medicare age, more"
+            },
+            {
+              "start": 141.84,
+              "end": 145.76,
+              "text": "affordable coverage can be received"
+            },
+            {
+              "start": 143.52,
+              "end": 147.76,
+              "text": "earlier, reducing financial cost and"
+            },
+            {
+              "start": 145.76,
+              "end": 150.32,
+              "text": "ensuring proper care is able to be"
+            },
+            {
+              "start": 147.76,
+              "end": 152.08,
+              "text": "provided. To conclude with our found"
+            },
+            {
+              "start": 150.32,
+              "end": 154.08,
+              "text": "evidence provided in research by the"
+            },
+            {
+              "start": 152.08,
+              "end": 156.48,
+              "text": "American Cancer Society and the US"
+            },
+            {
+              "start": 154.08,
+              "end": 158.24,
+              "text": "Health Reform Urban Institute, our"
+            },
+            {
+              "start": 156.48,
+              "end": 160,
+              "text": "evidence not only provides a credible"
+            },
+            {
+              "start": 158.24,
+              "end": 161.92,
+              "text": "insight into the struggle of healthcare"
+            },
+            {
+              "start": 160,
+              "end": 163.84,
+              "text": "affordability, but also strongly"
+            },
+            {
+              "start": 161.92,
+              "end": 165.52,
+              "text": "supports the political need to further"
+            },
+            {
+              "start": 163.84,
+              "end": 167.52,
+              "text": "expand our current government provided"
+            },
+            {
+              "start": 165.52,
+              "end": 169.52,
+              "text": "healthcare program."
+            },
+            {
+              "start": 167.52,
+              "end": 173.28,
+              "text": "It is evident that Americans between"
+            },
+            {
+              "start": 169.52,
+              "end": 175.44,
+              "text": "ages 60 and 64 years old have not only"
+            },
+            {
+              "start": 173.28,
+              "end": 177.52,
+              "text": "had significant struggles with medical"
+            },
+            {
+              "start": 175.44,
+              "end": 179.44,
+              "text": "uninsurance, but also have the highest"
+            },
+            {
+              "start": 177.52,
+              "end": 180.96,
+              "text": "mortality rates compared to those in the"
+            },
+            {
+              "start": 179.44,
+              "end": 183.68,
+              "text": "same age range within our peer"
+            },
+            {
+              "start": 180.96,
+              "end": 185.12,
+              "text": "countries. However, once they reach 65,"
+            },
+            {
+              "start": 183.68,
+              "end": 187.36,
+              "text": "mortality rates are proven to"
+            },
+            {
+              "start": 185.12,
+              "end": 189.6,
+              "text": "drastically reduce thanks to Medicare."
+            },
+            {
+              "start": 187.36,
+              "end": 190.88,
+              "text": "With this evidence in mind, our policy,"
+            },
+            {
+              "start": 189.6,
+              "end": 193.36,
+              "text": "which will lower the Medicare"
+            },
+            {
+              "start": 190.88,
+              "end": 195.36,
+              "text": "eligibility age, will not only support"
+            },
+            {
+              "start": 193.36,
+              "end": 198.64,
+              "text": "the mass majority of elderly that have"
+            },
+            {
+              "start": 195.36,
+              "end": 200.88,
+              "text": "remain uninsured, but also"
+            },
+            {
+              "start": 198.64,
+              "end": 204.68,
+              "text": "will allow them to increasing to become"
+            },
+            {
+              "start": 200.88,
+              "end": 204.68,
+              "text": "increasingly more insured."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o4-1",
+              "title": "The 25% Uninsured in 60-64 Age Group",
+              "startTime": 0,
+              "endTime": 50,
+              "bullets": [
+                "25% of 60-64 uninsured before Medicare",
+                "This age group needs more care due to chronic conditions",
+                "Household spending would drop $3.2 billion with lower Medicare age"
+              ]
+            },
+            {
+              "id": "o4-2",
+              "title": "Age-Based Targeting is Efficient",
+              "startTime": 50,
+              "endTime": 120,
+              "bullets": [
+                "IRMAA protects lower-income families",
+                "Medicare more generous than private insurance",
+                "Focus on accessibility, not profit"
+              ]
+            },
+            {
+              "id": "o4-3",
+              "title": "Mortality Data Supports Age 60 Cutoff",
+              "startTime": 120,
+              "endTime": 192,
+              "bullets": [
+                "US 60-64 mortality highest among peer countries",
+                "Sharp drop in mortality at 65 with Medicare",
+                "American Cancer Society & Urban Institute support evidence"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-5",
+          "type": "rebuttal",
+          "label": "Counter-Argument",
+          "team": "A",
+          "youtubeId": "wHHNppo7vA0",
+          "duration": 155,
+          "prompts": [
+            "What logical flaw does Group 1 identify in Group 2's age-based approach?",
+            "How does Group 1 argue that targeting by need is more efficient than targeting by age?"
+          ],
+          "transcript": [
+            {
+              "start": 1.6,
+              "end": 7.44,
+              "text": "I want you all to imagine yourself as a"
+            },
+            {
+              "start": 4.4,
+              "end": 9.6,
+              "text": "child in a lowincome uninsured family in"
+            },
+            {
+              "start": 7.44,
+              "end": 12.56,
+              "text": "the US. Your family struggling with"
+            },
+            {
+              "start": 9.6,
+              "end": 14.64,
+              "text": "health care costs and you get sick. This"
+            },
+            {
+              "start": 12.56,
+              "end": 17.92,
+              "text": "isn't an unrealistic reality for many"
+            },
+            {
+              "start": 14.64,
+              "end": 21.52,
+              "text": "Americans. Would you rather your family"
+            },
+            {
+              "start": 17.92,
+              "end": 25.76,
+              "text": "be given a chance to afford health care"
+            },
+            {
+              "start": 21.52,
+              "end": 28.72,
+              "text": "or die at 12 years old because of the"
+            },
+            {
+              "start": 25.76,
+              "end": 30.96,
+              "text": "flu and you're waiting to turn 60 for"
+            },
+            {
+              "start": 28.72,
+              "end": 32.72,
+              "text": "your Medicare? The biggest issue with"
+            },
+            {
+              "start": 30.96,
+              "end": 34.96,
+              "text": "their policy is that it confuses age"
+            },
+            {
+              "start": 32.72,
+              "end": 37.04,
+              "text": "with actual need. Just because someone"
+            },
+            {
+              "start": 34.96,
+              "end": 38.88,
+              "text": "turns 60 does not mean they are"
+            },
+            {
+              "start": 37.04,
+              "end": 40.88,
+              "text": "struggling financially. And a wealthy"
+            },
+            {
+              "start": 38.88,
+              "end": 42.56,
+              "text": "62-year-old would receive full Medicare"
+            },
+            {
+              "start": 40.88,
+              "end": 44.32,
+              "text": "benefits under their plan while a"
+            },
+            {
+              "start": 42.56,
+              "end": 46.88,
+              "text": "lowincome 40-year-old would receive"
+            },
+            {
+              "start": 44.32,
+              "end": 48.88,
+              "text": "nothing. that is not fair or efficient."
+            },
+            {
+              "start": 46.88,
+              "end": 50.88,
+              "text": "Healthcare policy should be based on who"
+            },
+            {
+              "start": 48.88,
+              "end": 53.6,
+              "text": "actually needs help and the problem is"
+            },
+            {
+              "start": 50.88,
+              "end": 55.12,
+              "text": "money, not who crosses an arbitrary age"
+            },
+            {
+              "start": 53.6,
+              "end": 57.12,
+              "text": "threshold."
+            },
+            {
+              "start": 55.12,
+              "end": 62.08,
+              "text": "According to the US Census Bureau and"
+            },
+            {
+              "start": 57.12,
+              "end": 65.12,
+              "text": "the CDC, approximately 91.2% to 92.8% of"
+            },
+            {
+              "start": 62.08,
+              "end": 67.36,
+              "text": "adults aged from 60 to 64 in the United"
+            },
+            {
+              "start": 65.12,
+              "end": 69.28,
+              "text": "States are covered by some form of"
+            },
+            {
+              "start": 67.36,
+              "end": 70.88,
+              "text": "health insurance."
+            },
+            {
+              "start": 69.28,
+              "end": 73.04,
+              "text": "This age group has one of the highest"
+            },
+            {
+              "start": 70.88,
+              "end": 74.88,
+              "text": "coverage rates among working age adults"
+            },
+            {
+              "start": 73.04,
+              "end": 77.84,
+              "text": "primarily because uninsured rates"
+            },
+            {
+              "start": 74.88,
+              "end": 80.32,
+              "text": "typically decrease as age increases. The"
+            },
+            {
+              "start": 77.84,
+              "end": 83.04,
+              "text": "new eligible 60 to 64 year olds compared"
+            },
+            {
+              "start": 80.32,
+              "end": 86,
+              "text": "to the 18 to 59y olds who would remain"
+            },
+            {
+              "start": 83.04,
+              "end": 88.16,
+              "text": "allegible illegible would be less likely"
+            },
+            {
+              "start": 86,
+              "end": 90.56,
+              "text": "to be uninsured and more likely to have"
+            },
+            {
+              "start": 88.16,
+              "end": 93.6,
+              "text": "incomes above 400%"
+            },
+            {
+              "start": 90.56,
+              "end": 95.36,
+              "text": "above the federal poverty poverty line."
+            },
+            {
+              "start": 93.6,
+              "end": 98.64,
+              "text": "Their evidence also says that they are"
+            },
+            {
+              "start": 95.36,
+              "end": 100.48,
+              "text": "saving 3.2 2 billion annually. This"
+            },
+            {
+              "start": 98.64,
+              "end": 102.4,
+              "text": "claim is misleading because it only"
+            },
+            {
+              "start": 100.48,
+              "end": 104.48,
+              "text": "refers to household spending, not total"
+            },
+            {
+              "start": 102.4,
+              "end": 106.96,
+              "text": "costs. In reality, these costs are"
+            },
+            {
+              "start": 104.48,
+              "end": 109.12,
+              "text": "simply shifted to taxpayers, meaning"
+            },
+            {
+              "start": 106.96,
+              "end": 111.84,
+              "text": "overall spending increases rather than"
+            },
+            {
+              "start": 109.12,
+              "end": 113.68,
+              "text": "decreases. Lowering the Medicare age"
+            },
+            {
+              "start": 111.84,
+              "end": 115.84,
+              "text": "would also disrupt the private insurance"
+            },
+            {
+              "start": 113.68,
+              "end": 118.16,
+              "text": "market. Healthier individuals in their"
+            },
+            {
+              "start": 115.84,
+              "end": 120,
+              "text": "early 60s would likely leave private"
+            },
+            {
+              "start": 118.16,
+              "end": 121.52,
+              "text": "plans and switch to Medicare. This would"
+            },
+            {
+              "start": 120,
+              "end": 123.6,
+              "text": "worsen the risk pool, driving up"
+            },
+            {
+              "start": 121.52,
+              "end": 125.84,
+              "text": "premiums for everyone else who remains"
+            },
+            {
+              "start": 123.6,
+              "end": 128.08,
+              "text": "in the private system. Their policy"
+            },
+            {
+              "start": 125.84,
+              "end": 129.84,
+              "text": "doesn't just affect one group because by"
+            },
+            {
+              "start": 128.08,
+              "end": 132.24,
+              "text": "affecting one group, it makes insurance"
+            },
+            {
+              "start": 129.84,
+              "end": 134.4,
+              "text": "more expensive for others as well."
+            },
+            {
+              "start": 132.24,
+              "end": 136.56,
+              "text": "Finally, their plan is simply less"
+            },
+            {
+              "start": 134.4,
+              "end": 139.2,
+              "text": "effective than a targeted income-based"
+            },
+            {
+              "start": 136.56,
+              "end": 141.04,
+              "text": "approach. Their policy is broad,"
+            },
+            {
+              "start": 139.2,
+              "end": 143.04,
+              "text": "expensive, and poorly targeted, while an"
+            },
+            {
+              "start": 141.04,
+              "end": 144.96,
+              "text": "income-based system focuses resources on"
+            },
+            {
+              "start": 143.04,
+              "end": 146.8,
+              "text": "the people who actually need help."
+            },
+            {
+              "start": 144.96,
+              "end": 148.56,
+              "text": "Instead of expanding coverage based on"
+            },
+            {
+              "start": 146.8,
+              "end": 150.72,
+              "text": "age, we should align support with"
+            },
+            {
+              "start": 148.56,
+              "end": 152.32,
+              "text": "financial need, making the system both"
+            },
+            {
+              "start": 150.72,
+              "end": 155.12,
+              "text": "more efficient and more fair for"
+            },
+            {
+              "start": 152.32,
+              "end": 155.12,
+              "text": "everyone."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o5-1",
+              "title": "Age-Based Policy Ignores Real Need",
+              "startTime": 0,
+              "endTime": 50,
+              "bullets": [
+                "Imagine uninsured child: age-based policy misses them",
+                "Age does not equal need; wealthy 62-year-old gets Medicare while poor 40-year-old does not",
+                "Census/CDC: 91-93% of 60-64 already insured"
+              ]
+            },
+            {
+              "id": "o5-2",
+              "title": "Flawed Cost Calculations",
+              "startTime": 50,
+              "endTime": 110,
+              "bullets": [
+                "$3.2 billion household savings claim is misleading",
+                "Costs shift to taxpayers, not eliminated",
+                "Lowering Medicare age disrupts private market"
+              ]
+            },
+            {
+              "id": "o5-3",
+              "title": "Risk Pool Degradation",
+              "startTime": 110,
+              "endTime": 155,
+              "bullets": [
+                "Healthier 60s leave private insurance",
+                "Worsens risk pool for younger populations",
+                "Raises premiums for everyone else",
+                "Income-based approach more targeted and efficient"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-6",
+          "type": "rebuttal",
+          "label": "Counter-Argument",
+          "team": "B",
+          "youtubeId": "N2eofzE6HuA",
+          "duration": 157,
+          "prompts": [
+            "What is Group 2's main criticism of Group 1's plan regarding cost effectiveness?",
+            "How does Group 2 argue that the private insurance market has failed the 60-64 age group?"
+          ],
+          "transcript": [
+            {
+              "start": 1.76,
+              "end": 4.8,
+              "text": "Um, I think they do a good job pointing"
+            },
+            {
+              "start": 3.2,
+              "end": 6.32,
+              "text": "out that healthcare is expensive, but"
+            },
+            {
+              "start": 4.8,
+              "end": 8.24,
+              "text": "their solution doesn't actually fix the"
+            },
+            {
+              "start": 6.32,
+              "end": 10.08,
+              "text": "problem. They just shift it around. They"
+            },
+            {
+              "start": 8.24,
+              "end": 12,
+              "text": "even admit that their policy could raise"
+            },
+            {
+              "start": 10.08,
+              "end": 13.2,
+              "text": "overall insurance prices, which already"
+            },
+            {
+              "start": 12,
+              "end": 15.68,
+              "text": "makes it harder to argue that it"
+            },
+            {
+              "start": 13.2,
+              "end": 17.12,
+              "text": "improves affordability. If costs go up,"
+            },
+            {
+              "start": 15.68,
+              "end": 19.2,
+              "text": "then the people are still stuck paying"
+            },
+            {
+              "start": 17.12,
+              "end": 20.64,
+              "text": "more, just in a slightly different way."
+            },
+            {
+              "start": 19.2,
+              "end": 22.32,
+              "text": "Saying that their higher prices would"
+            },
+            {
+              "start": 20.64,
+              "end": 23.84,
+              "text": "incentivize insurance companies sounds"
+            },
+            {
+              "start": 22.32,
+              "end": 25.76,
+              "text": "good, but ignores the fact that these"
+            },
+            {
+              "start": 23.84,
+              "end": 27.52,
+              "text": "companies are focused on profit, not"
+            },
+            {
+              "start": 25.76,
+              "end": 29.92,
+              "text": "making care cheaper or more accessible"
+            },
+            {
+              "start": 27.52,
+              "end": 31.52,
+              "text": "for everyone. Their idea of a pro"
+            },
+            {
+              "start": 29.92,
+              "end": 32.88,
+              "text": "progressive payment structure also"
+            },
+            {
+              "start": 31.52,
+              "end": 34.4,
+              "text": "sounds fair at first, but it doesn't"
+            },
+            {
+              "start": 32.88,
+              "end": 36.4,
+              "text": "actually lower healthare costs. It just"
+            },
+            {
+              "start": 34.4,
+              "end": 37.92,
+              "text": "moves the burden to different groups. If"
+            },
+            {
+              "start": 36.4,
+              "end": 39.6,
+              "text": "your claim proposal is to reduce the"
+            },
+            {
+              "start": 37.92,
+              "end": 42.08,
+              "text": "burden of a current system that depends"
+            },
+            {
+              "start": 39.6,
+              "end": 45.04,
+              "text": "on government subsides, why would your"
+            },
+            {
+              "start": 42.08,
+              "end": 48.24,
+              "text": "proposal of a different varying subsidy"
+            },
+            {
+              "start": 45.04,
+              "end": 50.16,
+              "text": "work more efficiently? The total cost of"
+            },
+            {
+              "start": 48.24,
+              "end": 52.32,
+              "text": "care stays high, which is the main issue"
+            },
+            {
+              "start": 50.16,
+              "end": 54.08,
+              "text": "in the first place. They also point out"
+            },
+            {
+              "start": 52.32,
+              "end": 55.68,
+              "text": "that higher inome individuals already"
+            },
+            {
+              "start": 54.08,
+              "end": 57.2,
+              "text": "pay more, but that doesn't mean you"
+            },
+            {
+              "start": 55.68,
+              "end": 59.52,
+              "text": "can't keep increasing that burden"
+            },
+            {
+              "start": 57.2,
+              "end": 60.72,
+              "text": "without consequences. At some point,"
+            },
+            {
+              "start": 59.52,
+              "end": 63.44,
+              "text": "that becomes politically and"
+            },
+            {
+              "start": 60.72,
+              "end": 64.96,
+              "text": "economically difficult to sustain."
+            },
+            {
+              "start": 63.44,
+              "end": 67.36,
+              "text": "A lot of their evidence talks about how"
+            },
+            {
+              "start": 64.96,
+              "end": 68.56,
+              "text": "expanding insurance improves access to"
+            },
+            {
+              "start": 67.36,
+              "end": 70.48,
+              "text": "care, but that doesn't mean their"
+            },
+            {
+              "start": 68.56,
+              "end": 71.68,
+              "text": "specific plan is the best way to do it."
+            },
+            {
+              "start": 70.48,
+              "end": 73.92,
+              "text": "For example, they mentioned that"
+            },
+            {
+              "start": 71.68,
+              "end": 76.08,
+              "text": "preventive care reduces long-term costs,"
+            },
+            {
+              "start": 73.92,
+              "end": 78.8,
+              "text": "but their plan still relies on a system"
+            },
+            {
+              "start": 76.08,
+              "end": 81.12,
+              "text": "where people face high upfront costs"
+            },
+            {
+              "start": 78.8,
+              "end": 82.72,
+              "text": "like premiums and deductibles. That's"
+            },
+            {
+              "start": 81.12,
+              "end": 84.96,
+              "text": "exactly what causes people to delay"
+            },
+            {
+              "start": 82.72,
+              "end": 87.12,
+              "text": "delay care in the first place. So, even"
+            },
+            {
+              "start": 84.96,
+              "end": 88.48,
+              "text": "if more people are technically insured,"
+            },
+            {
+              "start": 87.12,
+              "end": 90.56,
+              "text": "they still might not actually go to the"
+            },
+            {
+              "start": 88.48,
+              "end": 93.6,
+              "text": "doctor when they need to. This is"
+            },
+            {
+              "start": 90.56,
+              "end": 96.16,
+              "text": "especially important when nearly 25% of"
+            },
+            {
+              "start": 93.6,
+              "end": 98,
+              "text": "people ages 60 to 64 are uninsured,"
+            },
+            {
+              "start": 96.16,
+              "end": 99.6,
+              "text": "showing that current private market is"
+            },
+            {
+              "start": 98,
+              "end": 101.6,
+              "text": "already failing to cover one of the most"
+            },
+            {
+              "start": 99.6,
+              "end": 103.28,
+              "text": "vulnerable groups."
+            },
+            {
+              "start": 101.6,
+              "end": 105.28,
+              "text": "They bring up that subsidized increase"
+            },
+            {
+              "start": 103.28,
+              "end": 107.04,
+              "text": "enrollment, but having insurance doesn't"
+            },
+            {
+              "start": 105.28,
+              "end": 108.56,
+              "text": "always mean you can afford to use it."
+            },
+            {
+              "start": 107.04,
+              "end": 109.92,
+              "text": "Many people today are considered"
+            },
+            {
+              "start": 108.56,
+              "end": 111.92,
+              "text": "insured, but they struggle to pay"
+            },
+            {
+              "start": 109.92,
+              "end": 114.4,
+              "text": "out-ofpocket costs, which defeats the"
+            },
+            {
+              "start": 111.92,
+              "end": 116.72,
+              "text": "purpose. They show that simply expanding"
+            },
+            {
+              "start": 114.4,
+              "end": 119.04,
+              "text": "private insurance doesn't guarantee real"
+            },
+            {
+              "start": 116.72,
+              "end": 122,
+              "text": "access to healthcare. In contrast,"
+            },
+            {
+              "start": 119.04,
+              "end": 123.84,
+              "text": "expanding Medicare age to expanding"
+            },
+            {
+              "start": 122,
+              "end": 126.96,
+              "text": "Medicare age would actually reduce total"
+            },
+            {
+              "start": 123.84,
+              "end": 129.76,
+              "text": "household health"
+            },
+            {
+              "start": 126.96,
+              "end": 131.2,
+              "text": "spending by 3.2 million billion dollars,"
+            },
+            {
+              "start": 129.76,
+              "end": 132.88,
+              "text": "something their plan never achieves"
+            },
+            {
+              "start": 131.2,
+              "end": 135.04,
+              "text": "because it allows prices to rise instead"
+            },
+            {
+              "start": 132.88,
+              "end": 136.64,
+              "text": "of controlling them. Overall, their"
+            },
+            {
+              "start": 135.04,
+              "end": 138.64,
+              "text": "approach depends too much on the same"
+            },
+            {
+              "start": 136.64,
+              "end": 140.8,
+              "text": "private insurance system that already"
+            },
+            {
+              "start": 138.64,
+              "end": 142.72,
+              "text": "has problems. By allowing prices to rise"
+            },
+            {
+              "start": 140.8,
+              "end": 144.64,
+              "text": "and just shifting who pays, they aren't"
+            },
+            {
+              "start": 142.72,
+              "end": 146.64,
+              "text": "solving the root issue root issue of"
+            },
+            {
+              "start": 144.64,
+              "end": 148,
+              "text": "unreliable subsidies. They're keeping it"
+            },
+            {
+              "start": 146.64,
+              "end": 150,
+              "text": "in place, especially when there is"
+            },
+            {
+              "start": 148,
+              "end": 151.6,
+              "text": "already a proven option that offers more"
+            },
+            {
+              "start": 150,
+              "end": 153.28,
+              "text": "consistent and generous coverage than"
+            },
+            {
+              "start": 151.6,
+              "end": 157.4,
+              "text": "many private plans like lowering"
+            },
+            {
+              "start": 153.28,
+              "end": 157.4,
+              "text": "Medicare eligibility age."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o6-1",
+              "title": "Opponent Acknowledges System Failure",
+              "startTime": 0,
+              "endTime": 50,
+              "bullets": [
+                "Admits healthcare is expensive but does not fix root problem",
+                "Concedes own policy could raise prices for others",
+                "Progressive payment doesn't lower total costs"
+              ]
+            },
+            {
+              "id": "o6-2",
+              "title": "Insurance Without Affordability",
+              "startTime": 50,
+              "endTime": 110,
+              "bullets": [
+                "Expanding insurance ≠ real access to care",
+                "Deductibles still prevent care usage",
+                "Subsidized enrollment does not ensure ability to use insurance"
+              ]
+            },
+            {
+              "id": "o6-3",
+              "title": "Private Market Failure Proven",
+              "startTime": 110,
+              "endTime": 157,
+              "bullets": [
+                "25% of 60-64 uninsured: private market fails this group",
+                "Medicare reduces household spending by $3.2 billion",
+                "Opponent's plan depends on same broken private system"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-7",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "A",
+          "youtubeId": "p1bPCESoaIw",
+          "duration": 135,
+          "prompts": [
+            "What are the key components of Group 1's final proposal for sustainable healthcare reform?",
+            "How does Group 1 address the balance between progressive taxation and market efficiency?"
+          ],
+          "transcript": [
+            {
+              "start": 2.64,
+              "end": 6.72,
+              "text": "Healthcare reform must prioritize"
+            },
+            {
+              "start": 4.4,
+              "end": 8.56,
+              "text": "prioritize efficiency, fairness and real"
+            },
+            {
+              "start": 6.72,
+              "end": 10.24,
+              "text": "impact. Our policy does this by"
+            },
+            {
+              "start": 8.56,
+              "end": 12.4,
+              "text": "addressing the central pro problem in"
+            },
+            {
+              "start": 10.24,
+              "end": 14.56,
+              "text": "the system. The gap between rising"
+            },
+            {
+              "start": 12.4,
+              "end": 18.16,
+              "text": "healthcare costs and individuals ability"
+            },
+            {
+              "start": 14.56,
+              "end": 21.2,
+              "text": "to pay rather than relying on broad or"
+            },
+            {
+              "start": 18.16,
+              "end": 24,
+              "text": "arbitrary measures. It uses targeted"
+            },
+            {
+              "start": 21.2,
+              "end": 26.24,
+              "text": "approach uh that directs support to"
+            },
+            {
+              "start": 24,
+              "end": 27.52,
+              "text": "those who truly need it, making the"
+            },
+            {
+              "start": 26.24,
+              "end": 29.92,
+              "text": "system more effective and more"
+            },
+            {
+              "start": 27.52,
+              "end": 32.48,
+              "text": "responsible."
+            },
+            {
+              "start": 29.92,
+              "end": 33.92,
+              "text": "By expanding access, reducing financial"
+            },
+            {
+              "start": 32.48,
+              "end": 36.48,
+              "text": "barriers, and improving long-term"
+            },
+            {
+              "start": 33.92,
+              "end": 38.4,
+              "text": "outcomes, this policy ensures people can"
+            },
+            {
+              "start": 36.48,
+              "end": 41.44,
+              "text": "seek care when they need it, not only"
+            },
+            {
+              "start": 38.4,
+              "end": 44.32,
+              "text": "when they can afford it. Early and"
+            },
+            {
+              "start": 41.44,
+              "end": 46.4,
+              "text": "preventive care reduces costly emergency"
+            },
+            {
+              "start": 44.32,
+              "end": 49.68,
+              "text": "treatments, improving health outcomes"
+            },
+            {
+              "start": 46.4,
+              "end": 52.24,
+              "text": "while lowering overall system spending."
+            },
+            {
+              "start": 49.68,
+              "end": 54.32,
+              "text": "This policy also stren strengthens the"
+            },
+            {
+              "start": 52.24,
+              "end": 56.64,
+              "text": "existing healthcare structure. It builds"
+            },
+            {
+              "start": 54.32,
+              "end": 58.8,
+              "text": "on current programs, maintains the role"
+            },
+            {
+              "start": 56.64,
+              "end": 60.32,
+              "text": "of private insurance, and increases"
+            },
+            {
+              "start": 58.8,
+              "end": 62,
+              "text": "participation."
+            },
+            {
+              "start": 60.32,
+              "end": 64.4,
+              "text": "This could creates incentives for"
+            },
+            {
+              "start": 62,
+              "end": 66.8,
+              "text": "providers and insurers to expand"
+            },
+            {
+              "start": 64.4,
+              "end": 69.28,
+              "text": "services, improving both access and"
+            },
+            {
+              "start": 66.8,
+              "end": 71.92,
+              "text": "quality without causing disruption or"
+            },
+            {
+              "start": 69.28,
+              "end": 74,
+              "text": "instability."
+            },
+            {
+              "start": 71.92,
+              "end": 75.84,
+              "text": "Most importantly, the approach is"
+            },
+            {
+              "start": 74,
+              "end": 77.92,
+              "text": "grounded in logic and fairness. It"
+            },
+            {
+              "start": 75.84,
+              "end": 80.24,
+              "text": "allocates resources based on actual"
+            },
+            {
+              "start": 77.92,
+              "end": 82.8,
+              "text": "needs rather than arbitrary factors like"
+            },
+            {
+              "start": 80.24,
+              "end": 86.08,
+              "text": "age or circumstances, making it more"
+            },
+            {
+              "start": 82.8,
+              "end": 88.64,
+              "text": "precise, equitable, and sustainable."
+            },
+            {
+              "start": 86.08,
+              "end": 92,
+              "text": "While other proposals expand coverage"
+            },
+            {
+              "start": 88.64,
+              "end": 95.04,
+              "text": "broadly, this policy ensures resources"
+            },
+            {
+              "start": 92,
+              "end": 98.16,
+              "text": "are used effect efficiently and where"
+            },
+            {
+              "start": 95.04,
+              "end": 100.24,
+              "text": "they have the greatest impact."
+            },
+            {
+              "start": 98.16,
+              "end": 102.4,
+              "text": "It also promotes personal and economic"
+            },
+            {
+              "start": 100.24,
+              "end": 104.56,
+              "text": "stability. When people are not"
+            },
+            {
+              "start": 102.4,
+              "end": 106.64,
+              "text": "overwhelmed by health care costs, they"
+            },
+            {
+              "start": 104.56,
+              "end": 109.52,
+              "text": "are more productive, secure, and able to"
+            },
+            {
+              "start": 106.64,
+              "end": 112.08,
+              "text": "contribute to the economy. A healthier"
+            },
+            {
+              "start": 109.52,
+              "end": 114.08,
+              "text": "population benefits both society and"
+            },
+            {
+              "start": 112.08,
+              "end": 116.16,
+              "text": "economic growth."
+            },
+            {
+              "start": 114.08,
+              "end": 118.16,
+              "text": "Ultimately, this policy builds health"
+            },
+            {
+              "start": 116.16,
+              "end": 119.52,
+              "text": "care system, a health care system that"
+            },
+            {
+              "start": 118.16,
+              "end": 121.2,
+              "text": "is accessible, affordable, and"
+            },
+            {
+              "start": 119.52,
+              "end": 123.28,
+              "text": "sustainable."
+            },
+            {
+              "start": 121.2,
+              "end": 125.2,
+              "text": "One that improves quality of life,"
+            },
+            {
+              "start": 123.28,
+              "end": 127.92,
+              "text": "strengthens the economy, and addresses"
+            },
+            {
+              "start": 125.2,
+              "end": 130.4,
+              "text": "the root causes of the problem."
+            },
+            {
+              "start": 127.92,
+              "end": 134.84,
+              "text": "That's why this it represents the most"
+            },
+            {
+              "start": 130.4,
+              "end": 134.84,
+              "text": "effective and responsible path forward."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o7-1",
+              "title": "Reform Based on Need and Efficiency",
+              "startTime": 0,
+              "endTime": 50,
+              "bullets": [
+                "Targeted approach based on need, not age",
+                "Expands access while reducing financial barriers",
+                "Resources allocated by need, not arbitrary age cutoff"
+              ]
+            },
+            {
+              "id": "o7-2",
+              "title": "Preventive Care Reduces Costs",
+              "startTime": 50,
+              "endTime": 100,
+              "bullets": [
+                "Preventive care prevents expensive emergencies",
+                "Strengthens existing healthcare structure",
+                "Economic sustainability through prevention"
+              ]
+            },
+            {
+              "id": "o7-3",
+              "title": "Personal and Societal Benefits",
+              "startTime": 100,
+              "endTime": 134,
+              "bullets": [
+                "Promotes personal and economic stability",
+                "Creates accessible, affordable, sustainable system",
+                "Ensures fair distribution of resources"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-8",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "B",
+          "youtubeId": "Eu0tvpz-BkU",
+          "duration": 82,
+          "prompts": [
+            "What specific cost savings does Group 2 emphasize in their closing argument?",
+            "How does Group 2 characterize the debate between their sequential approach and Group 1's simultaneous approach?"
+          ],
+          "transcript": [
+            {
+              "start": 2.72,
+              "end": 5.68,
+              "text": "Each year, healthc care becomes more"
+            },
+            {
+              "start": 4.32,
+              "end": 7.2,
+              "text": "expensive, especially to those"
+            },
+            {
+              "start": 5.68,
+              "end": 10,
+              "text": "approaching a retirement without"
+            },
+            {
+              "start": 7.2,
+              "end": 11.76,
+              "text": "sufficient coverage. We believe the most"
+            },
+            {
+              "start": 10,
+              "end": 13.28,
+              "text": "effective policy to address this current"
+            },
+            {
+              "start": 11.76,
+              "end": 16.08,
+              "text": "crisis is lowering the Medicare"
+            },
+            {
+              "start": 13.28,
+              "end": 18.56,
+              "text": "eligibility eligibility age 60,"
+            },
+            {
+              "start": 16.08,
+              "end": 20.96,
+              "text": "expanding access to afford to affordable"
+            },
+            {
+              "start": 18.56,
+              "end": 23.68,
+              "text": "highquality insurance."
+            },
+            {
+              "start": 20.96,
+              "end": 26.32,
+              "text": "As my group discussed, 25% of"
+            },
+            {
+              "start": 23.68,
+              "end": 28.96,
+              "text": "individuals become between the ages of"
+            },
+            {
+              "start": 26.32,
+              "end": 31.28,
+              "text": "60 and 64 are uninsured, highlighting a"
+            },
+            {
+              "start": 28.96,
+              "end": 33.2,
+              "text": "serious gap in our healthcare system."
+            },
+            {
+              "start": 31.28,
+              "end": 35.68,
+              "text": "Many in this group face chronic health"
+            },
+            {
+              "start": 33.2,
+              "end": 37.6,
+              "text": "conditions while being just years away"
+            },
+            {
+              "start": 35.68,
+              "end": 39.52,
+              "text": "from eligibility, leaving them"
+            },
+            {
+              "start": 37.6,
+              "end": 41.92,
+              "text": "vulnerable to high cost and limited"
+            },
+            {
+              "start": 39.52,
+              "end": 44,
+              "text": "care. Closing this gap would not only"
+            },
+            {
+              "start": 41.92,
+              "end": 45.68,
+              "text": "promote fairness, but also improve"
+            },
+            {
+              "start": 44,
+              "end": 48.48,
+              "text": "quality of life and create greater"
+            },
+            {
+              "start": 45.68,
+              "end": 50.48,
+              "text": "economic stability. In addition,"
+            },
+            {
+              "start": 48.48,
+              "end": 52.16,
+              "text": "lowering the eligibility age could"
+            },
+            {
+              "start": 50.48,
+              "end": 55.2,
+              "text": "reduce total household healthcare"
+            },
+            {
+              "start": 52.16,
+              "end": 56.96,
+              "text": "spending by 3.2 billion. This policy"
+            },
+            {
+              "start": 55.2,
+              "end": 59.28,
+              "text": "would ease the burden of high premiums"
+            },
+            {
+              "start": 56.96,
+              "end": 61.12,
+              "text": "and out-of- pocket costs, offering"
+            },
+            {
+              "start": 59.28,
+              "end": 62.72,
+              "text": "financial protection to millions who"
+            },
+            {
+              "start": 61.12,
+              "end": 65.36,
+              "text": "currently struggle in the private"
+            },
+            {
+              "start": 62.72,
+              "end": 67.92,
+              "text": "insurance market. Ultimately, this"
+            },
+            {
+              "start": 65.36,
+              "end": 69.68,
+              "text": "issues about more than is about more"
+            },
+            {
+              "start": 67.92,
+              "end": 72.24,
+              "text": "than eligibility is about ensuring"
+            },
+            {
+              "start": 69.68,
+              "end": 74.32,
+              "text": "efficiency, affordability, and dignity"
+            },
+            {
+              "start": 72.24,
+              "end": 76.48,
+              "text": "in healthcare. By expanding Medicare"
+            },
+            {
+              "start": 74.32,
+              "end": 78,
+              "text": "access to age 60, we can strengthen our"
+            },
+            {
+              "start": 76.48,
+              "end": 81.6,
+              "text": "health care system and better support"
+            },
+            {
+              "start": 78,
+              "end": 81.6,
+              "text": "those who need it most."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o8-1",
+              "title": "Addressing Healthcare Burden Near Retirement",
+              "startTime": 0,
+              "endTime": 40,
+              "bullets": [
+                "Healthcare increasingly expensive approaching retirement",
+                "25% of 60-64 uninsured: serious coverage gap",
+                "Chronic conditions + years to Medicare = vulnerability"
+              ]
+            },
+            {
+              "id": "o8-2",
+              "title": "Concrete Household Savings",
+              "startTime": 40,
+              "endTime": 70,
+              "bullets": [
+                "Lower Medicare age to 60 reduces household spending $3.2 billion",
+                "Ease burden of premiums and out-of-pocket costs",
+                "Efficiency and affordability for vulnerable age group"
+              ]
+            },
+            {
+              "id": "o8-3",
+              "title": "Human Dignity and Healthcare Access",
+              "startTime": 70,
+              "endTime": 81,
+              "bullets": [
+                "About efficiency, affordability, and human dignity",
+                "Ensure healthcare access is right, not privilege",
+                "Meaningful step toward equitable healthcare"
+              ]
+            }
+          ]
+        }
+      ],
+      "evaluations": [
+        {
+          "id": "eval-1",
+          "prompt": "What is each team's main policy proposal and how do they differ in their approach to healthcare affordability?",
+          "category": "Core Argument"
+        },
+        {
+          "id": "eval-2",
+          "prompt": "Compare the economic evidence presented by each team. Which team provides more compelling cost-benefit analysis?",
+          "category": "Evidence Analysis"
+        },
+        {
+          "id": "eval-3",
+          "prompt": "How does each team address the criticisms raised by their opponents? Identify the strongest counterargument from each.",
+          "category": "Rebuttal Quality"
+        },
+        {
+          "id": "eval-4",
+          "prompt": "Who won this debate overall? Write 2-3 sentences explaining your reasoning using specific examples.",
+          "category": "Final Verdict"
+        }
+      ],
+      "keyMoments": [
+        {
+          "time": 5.5,
+          "segmentId": "seg-1",
+          "label": "187,000+ homeless in California is national crisis",
+          "type": "evidence"
+        },
+        {
+          "time": 10.24,
+          "segmentId": "seg-1",
+          "label": "53% of Californians delayed medical care in 2023",
+          "type": "evidence"
+        },
+        {
+          "time": 18.4,
+          "segmentId": "seg-1",
+          "label": "38% of Californians carry medical debt",
+          "type": "evidence"
+        },
+        {
+          "time": 27,
+          "segmentId": "seg-1",
+          "label": "Premiums risen 2x faster than wages over 20 years",
+          "type": "evidence"
+        },
+        {
+          "time": 31.12,
+          "segmentId": "seg-1",
+          "label": "Progressive income-based system proposal introduced",
+          "type": "argument"
+        },
+        {
+          "time": 47,
+          "segmentId": "seg-1",
+          "label": "Healthcare should not be a privilege",
+          "type": "rhetoric"
+        },
+        {
+          "time": 13.6,
+          "segmentId": "seg-2",
+          "label": "US healthcare system expensive, inaccessible, inequitable",
+          "type": "argument"
+        },
+        {
+          "time": 35,
+          "segmentId": "seg-2",
+          "label": "Subsidies still leave millions struggling explanation",
+          "type": "evidence"
+        },
+        {
+          "time": 66,
+          "segmentId": "seg-2",
+          "label": "Propose lowering Medicare eligibility age to 60",
+          "type": "argument"
+        },
+        {
+          "time": 78,
+          "segmentId": "seg-2",
+          "label": "Delayed care leads to emergencies, higher costs",
+          "type": "argument"
+        },
+        {
+          "time": 95,
+          "segmentId": "seg-2",
+          "label": "Reduce financial barriers for vulnerable 60+ population",
+          "type": "argument"
+        },
+        {
+          "time": 120,
+          "segmentId": "seg-2",
+          "label": "Healthcare as right, not commodity",
+          "type": "rhetoric"
+        },
+        {
+          "time": 45,
+          "segmentId": "seg-3",
+          "label": "People delay treatment when unable to afford it",
+          "type": "argument"
+        },
+        {
+          "time": 89,
+          "segmentId": "seg-3",
+          "label": "Kaiser Family Foundation: expanding coverage increases access",
+          "type": "evidence"
+        },
+        {
+          "time": 142,
+          "segmentId": "seg-3",
+          "label": "OECD comparison: progressive financing = better outcomes",
+          "type": "evidence"
+        },
+        {
+          "time": 198,
+          "segmentId": "seg-3",
+          "label": "Urban Institute: subsidies increase enrollment",
+          "type": "evidence"
+        },
+        {
+          "time": 240,
+          "segmentId": "seg-3",
+          "label": "Preventive care reduces emergency room costs",
+          "type": "evidence"
+        },
+        {
+          "time": 295,
+          "segmentId": "seg-3",
+          "label": "NBER: healthcare access increases productivity",
+          "type": "evidence"
+        },
+        {
+          "time": 22,
+          "segmentId": "seg-4",
+          "label": "25% of 60-64 uninsured before Medicare eligibility",
+          "type": "evidence"
+        },
+        {
+          "time": 55,
+          "segmentId": "seg-4",
+          "label": "This age group needs more care due to chronic conditions",
+          "type": "argument"
+        },
+        {
+          "time": 98,
+          "segmentId": "seg-4",
+          "label": "Lowering Medicare age would reduce household spending $3.2B",
+          "type": "evidence"
+        },
+        {
+          "time": 145,
+          "segmentId": "seg-4",
+          "label": "IRMAA protects lower-income families in Medicare",
+          "type": "evidence"
+        },
+        {
+          "time": 165,
+          "segmentId": "seg-4",
+          "label": "Medicare more generous than private: accessible not profitable",
+          "type": "argument"
+        },
+        {
+          "time": 192,
+          "segmentId": "seg-4",
+          "label": "US 60-64 mortality highest; drops sharply at 65 with Medicare",
+          "type": "evidence"
+        },
+        {
+          "time": 30,
+          "segmentId": "seg-5",
+          "label": "Age-based policy ignores child in uninsured family",
+          "type": "argument"
+        },
+        {
+          "time": 52,
+          "segmentId": "seg-5",
+          "label": "Age ≠ need: wealthy 62yo gets Medicare, poor 40yo does not",
+          "type": "argument"
+        },
+        {
+          "time": 78,
+          "segmentId": "seg-5",
+          "label": "Census/CDC: 91-93% of 60-64 already insured",
+          "type": "evidence"
+        },
+        {
+          "time": 103,
+          "segmentId": "seg-5",
+          "label": "$3.2B household savings claim misleading: costs shift to taxpayers",
+          "type": "argument"
+        },
+        {
+          "time": 130,
+          "segmentId": "seg-5",
+          "label": "Lowering Medicare age disrupts private market risk pool",
+          "type": "argument"
+        },
+        {
+          "time": 155,
+          "segmentId": "seg-5",
+          "label": "Income-based approach more targeted and efficient",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 25,
+          "segmentId": "seg-6",
+          "label": "Opponent acknowledges healthcare expensive but doesn't fix it",
+          "type": "argument"
+        },
+        {
+          "time": 60,
+          "segmentId": "seg-6",
+          "label": "Progressive payment doesn't lower total costs",
+          "type": "argument"
+        },
+        {
+          "time": 85,
+          "segmentId": "seg-6",
+          "label": "Insurance ≠ affordability: deductibles still prevent access",
+          "type": "argument"
+        },
+        {
+          "time": 125,
+          "segmentId": "seg-6",
+          "label": "25% of 60-64 uninsured proves private market failure",
+          "type": "evidence"
+        },
+        {
+          "time": 145,
+          "segmentId": "seg-6",
+          "label": "Medicare reduces household spending vs private system",
+          "type": "evidence"
+        },
+        {
+          "time": 157,
+          "segmentId": "seg-6",
+          "label": "Opponent's plan depends on same broken private system",
+          "type": "argument"
+        },
+        {
+          "time": 15,
+          "segmentId": "seg-7",
+          "label": "Reform must be targeted by need, not arbitrary age",
+          "type": "argument"
+        },
+        {
+          "time": 50,
+          "segmentId": "seg-7",
+          "label": "Preventive care reduces emergency room expenses",
+          "type": "argument"
+        },
+        {
+          "time": 75,
+          "segmentId": "seg-7",
+          "label": "Strengthens existing healthcare structure intelligently",
+          "type": "argument"
+        },
+        {
+          "time": 102,
+          "segmentId": "seg-7",
+          "label": "Personal and economic stability through healthcare access",
+          "type": "rhetoric"
+        },
+        {
+          "time": 134,
+          "segmentId": "seg-7",
+          "label": "Accessible, affordable, sustainable system possible",
+          "type": "mr-cannon"
+        },
+        {
+          "time": 22,
+          "segmentId": "seg-8",
+          "label": "Healthcare burden increases approaching retirement years",
+          "type": "argument"
+        },
+        {
+          "time": 35,
+          "segmentId": "seg-8",
+          "label": "25% of 60-64 uninsured: critical coverage gap",
+          "type": "evidence"
+        },
+        {
+          "time": 55,
+          "segmentId": "seg-8",
+          "label": "Chronic conditions + wait to 65 = vulnerability",
+          "type": "argument"
+        },
+        {
+          "time": 70,
+          "segmentId": "seg-8",
+          "label": "Lower Medicare to 60 reduces household spending $3.2B",
+          "type": "evidence"
+        },
+        {
+          "time": 81,
+          "segmentId": "seg-8",
+          "label": "Healthcare is about efficiency, affordability, and dignity",
+          "type": "rhetoric"
+        }
+      ]
     }
   ]
 }
