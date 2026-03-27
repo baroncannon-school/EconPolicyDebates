@@ -563,6 +563,9 @@ function DebateReview() {
   }, []);
 
   const periodOrder = ['1st', '4th'];
+  const periodLabels = { '1st': 'Period 1', '4th': 'Period 4' };
+  const availablePeriods = periodOrder.filter(p => debatesByPeriod[p]);
+  const [activePeriod, setActivePeriod] = useState(availablePeriods[0] || '4th');
 
   // Topic badge colors
   const topicBadge = (topic) => {
@@ -960,15 +963,34 @@ function DebateReview() {
             </div>
           )}
 
-          {/* Debates grouped by period */}
-          {periodOrder.filter(p => debatesByPeriod[p]).map((period) => (
-            <div key={period} className="mb-10">
-              <div className="flex items-center gap-3 mb-4">
-                <h2 className="text-2xl font-headline text-leather">{period} Period</h2>
-                <span className="text-base text-ash-3 font-body">({debatesByPeriod[period].length} {debatesByPeriod[period].length === 1 ? 'debate' : 'debates'})</span>
+          {/* Period Switcher */}
+          {availablePeriods.length > 1 && (
+            <div className="mb-8">
+              <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-1.5 flex">
+                {availablePeriods.map((p) => (
+                  <button
+                    key={p}
+                    onClick={() => setActivePeriod(p)}
+                    className={`flex-1 py-3 px-4 rounded-lg text-base font-semibold font-body transition-all duration-200 ${
+                      activePeriod === p
+                        ? 'bg-leather text-white shadow-md'
+                        : 'text-gray-500 hover:text-leather hover:bg-leather/5'
+                    }`}
+                  >
+                    {periodLabels[p] || `${p} Period`}
+                    <span className={`ml-2 text-sm font-normal ${activePeriod === p ? 'text-white/70' : 'text-gray-400'}`}>
+                      {debatesByPeriod[p].length} {debatesByPeriod[p].length === 1 ? 'debate' : 'debates'}
+                    </span>
+                  </button>
+                ))}
               </div>
+            </div>
+          )}
 
-              {debatesByPeriod[period].map((d) => (
+          {/* Debates for active period */}
+          {debatesByPeriod[activePeriod] && (
+            <div className="mb-10">
+              {debatesByPeriod[activePeriod].map((d) => (
                 <div key={d.id} className="bg-white rounded-xl shadow-sm border mb-6 overflow-hidden">
                   <div className="px-6 py-4 border-b bg-gray-50">
                     <div className="flex items-center gap-3 mb-1">
@@ -1031,7 +1053,7 @@ function DebateReview() {
                 </div>
               ))}
             </div>
-          ))}
+          )}
 
           {/* Handle any debates without a recognized period */}
           {Object.keys(debatesByPeriod).filter(p => !periodOrder.includes(p)).map((period) => (
