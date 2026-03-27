@@ -11047,6 +11047,2635 @@
           "description": "General welfare + community benefits: safer communities, healthier people"
         }
       ]
+    },
+    {
+      "id": "debate-5",
+      "period": "1st",
+      "debateTopic": "Opioid Crisis",
+      "topic": "Addressing the Opioid Crisis",
+      "description": "Should the opioid crisis be addressed by expanding universal access to naloxone (Narcan) combined with treatment programs, or by investing primarily in rehabilitation centers as the main solution?",
+      "teamA": {
+        "name": "Group 1",
+        "members": [],
+        "position": "Increase universal access to naloxone (Narcan) and expand treatment resources including rehabilitation centers and medication-assisted treatment (MAT), starting in California and expanding nationwide. Saving lives first through naloxone, then supporting long-term recovery through treatment.",
+        "onePagerUrl": null,
+        "keyStats": [
+          "CA Dept of Public Health: naloxone distribution has reversed nearly 400,000 overdoses",
+          "National Library of Medicine: 84.3% of people alive 1 year after receiving naloxone from EMS",
+          "Journal of Addiction Medicine: MAT produces 60% reduction in relapse rates within first year",
+          "CDC: increased naloxone access linked to significant reduction in overdose deaths, not higher misuse",
+          "NIH: overdose education and naloxone distribution do not lead to riskier behavior",
+          "SAMHSA: harm reduction strategies like naloxone distribution are crucial first steps"
+        ]
+      },
+      "teamB": {
+        "name": "Group 2",
+        "members": [],
+        "position": "Invest primarily in rehabilitation centers as the main solution — providing structured, supervised environments for treatment, medical care, counseling, and behavioral therapy. Naloxone should be distributed within rehab centers, not widely without supervision.",
+        "onePagerUrl": null,
+        "keyStats": [
+          "NIDA: structured treatment programs significantly improve recovery outcomes and reduce relapse",
+          "CDC: timely administration of overdose reversal medications prevents death in overdose cases",
+          "Addiction is a complex condition affecting both brain and behavior (NIDA)",
+          "Rehab centers provide immediate overdose care from trained professionals",
+          "Argues unsupervised naloxone distribution may incentivize riskier doses",
+          "Rehab centers address root cause of addiction, not just symptoms"
+        ]
+      },
+      "segments": [
+        {
+          "id": "seg-1",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "A",
+          "youtubeId": "YB_7tkSUgSQ",
+          "duration": 122,
+          "prompts": [
+            "What is Group 1's main policy proposal for addressing the opioid crisis?",
+            "How does Group 1 define the core problem they're trying to solve?",
+            "What statistics or evidence does Group 1 use to establish the severity of the crisis?"
+          ],
+          "transcript": [
+            {
+              "start": 0.1,
+              "end": 4.2,
+              "text": "is going."
+            },
+            {
+              "start": 2.6,
+              "end": 4.8,
+              "text": "No."
+            },
+            {
+              "start": 4.2,
+              "end": 7.9,
+              "text": "Anything?"
+            },
+            {
+              "start": 4.8,
+              "end": 10.1,
+              "text": "Okay. Um, I want everyone to quickly"
+            },
+            {
+              "start": 7.9,
+              "end": 12.4,
+              "text": "think about something. If someone near"
+            },
+            {
+              "start": 10.1,
+              "end": 14,
+              "text": "you stopped breathing due an opioid"
+            },
+            {
+              "start": 12.4,
+              "end": 16.2,
+              "text": "overdose, would you guys know what to do"
+            },
+            {
+              "start": 14,
+              "end": 18.8,
+              "text": "and how to help? Because in this"
+            },
+            {
+              "start": 16.2,
+              "end": 21,
+              "text": "situation, every second matters. And"
+            },
+            {
+              "start": 18.8,
+              "end": 22.6,
+              "text": "having treatment could be the difference"
+            },
+            {
+              "start": 21,
+              "end": 25.3,
+              "text": "between someone living and someone"
+            },
+            {
+              "start": 22.6,
+              "end": 27.8,
+              "text": "dying. So, currently, one of the most"
+            },
+            {
+              "start": 25.3,
+              "end": 30.7,
+              "text": "serious crisises in the United States is"
+            },
+            {
+              "start": 27.8,
+              "end": 32.8,
+              "text": "the opioid epidemic. And millions of"
+            },
+            {
+              "start": 30.7,
+              "end": 35.1,
+              "text": "people struggle with opioid addiction"
+            },
+            {
+              "start": 32.8,
+              "end": 36.9,
+              "text": "and thousands of people die each year"
+            },
+            {
+              "start": 35.1,
+              "end": 39.8,
+              "text": "from overdoses."
+            },
+            {
+              "start": 36.9,
+              "end": 42,
+              "text": "Often these deaths are preventable and"
+            },
+            {
+              "start": 39.8,
+              "end": 43.5,
+              "text": "this crisis affects all communities in"
+            },
+            {
+              "start": 42,
+              "end": 45.8,
+              "text": "the United States but it especially"
+            },
+            {
+              "start": 43.5,
+              "end": 48,
+              "text": "affects California."
+            },
+            {
+              "start": 45.8,
+              "end": 49.8,
+              "text": "So our policy is pretty simple and our"
+            },
+            {
+              "start": 48,
+              "end": 51.7,
+              "text": "policy is to increase the availability"
+            },
+            {
+              "start": 49.8,
+              "end": 54.3,
+              "text": "of nlloxxone which is also known as"
+            },
+            {
+              "start": 51.7,
+              "end": 56.2,
+              "text": "Narcam and to expand treatment"
+            },
+            {
+              "start": 54.3,
+              "end": 58.2,
+              "text": "resources."
+            },
+            {
+              "start": 56.2,
+              "end": 60.7,
+              "text": "We want to start by implementing this in"
+            },
+            {
+              "start": 58.2,
+              "end": 62.2,
+              "text": "California, but we hope to eventually"
+            },
+            {
+              "start": 60.7,
+              "end": 64.9,
+              "text": "implement it throughout the entire"
+            },
+            {
+              "start": 62.2,
+              "end": 67.1,
+              "text": "United States. So, Nlloxxone is a"
+            },
+            {
+              "start": 64.9,
+              "end": 69.8,
+              "text": "life-saving medication and it can"
+            },
+            {
+              "start": 67.1,
+              "end": 72.1,
+              "text": "reverse an overdose within minutes."
+            },
+            {
+              "start": 69.8,
+              "end": 73.9,
+              "text": "Increasing the availability is the most"
+            },
+            {
+              "start": 72.1,
+              "end": 76.2,
+              "text": "important step in our policy because it"
+            },
+            {
+              "start": 73.9,
+              "end": 78.9,
+              "text": "saves lives and we believe that saving"
+            },
+            {
+              "start": 76.2,
+              "end": 80.6,
+              "text": "lives is the most important thing. The"
+            },
+            {
+              "start": 78.9,
+              "end": 83.6,
+              "text": "next part of our policy would be"
+            },
+            {
+              "start": 80.6,
+              "end": 85.3,
+              "text": "expanding resources to treatments. So, a"
+            },
+            {
+              "start": 83.6,
+              "end": 86.7,
+              "text": "lot of people struggling with opioid"
+            },
+            {
+              "start": 85.3,
+              "end": 89,
+              "text": "addiction need help and a lot of them"
+            },
+            {
+              "start": 86.7,
+              "end": 91.5,
+              "text": "actually want help. And so, by opening"
+            },
+            {
+              "start": 89,
+              "end": 93.7,
+              "text": "these additional rehabilitation centers"
+            },
+            {
+              "start": 91.5,
+              "end": 96,
+              "text": "and increasing medication assistant"
+            },
+            {
+              "start": 93.7,
+              "end": 97.8,
+              "text": "treatment, which is also known as Matt,"
+            },
+            {
+              "start": 96,
+              "end": 100.1,
+              "text": "it will help people start to become"
+            },
+            {
+              "start": 97.8,
+              "end": 103,
+              "text": "clean. And it will contribute to our"
+            },
+            {
+              "start": 100.1,
+              "end": 105,
+              "text": "goal of saving the most lives. And when"
+            },
+            {
+              "start": 103,
+              "end": 107,
+              "text": "we focus on treating people instead of"
+            },
+            {
+              "start": 105,
+              "end": 109.6,
+              "text": "punishing them, it will help slowly to"
+            },
+            {
+              "start": 107,
+              "end": 111.8,
+              "text": "solve this crisis we're facing. and"
+            },
+            {
+              "start": 109.6,
+              "end": 113.9,
+              "text": "expanding access to these resources will"
+            },
+            {
+              "start": 111.8,
+              "end": 115.6,
+              "text": "also continue to save lives. And not"
+            },
+            {
+              "start": 113.9,
+              "end": 117.3,
+              "text": "only that, but it will give these people"
+            },
+            {
+              "start": 115.6,
+              "end": 121.6,
+              "text": "struggling a second chance to rebuild"
+            },
+            {
+              "start": 117.3,
+              "end": 121.6,
+              "text": "their life. Thank you. Thank you."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o1-1",
+              "title": "Opening Scenario & Crisis Scale",
+              "startTime": 4.8,
+              "endTime": 39.84,
+              "bullets": [
+                "Rhetorical question: would you know what to do in an overdose?",
+                "Millions struggle with opioid addiction in the US",
+                "Thousands die yearly from preventable overdoses"
+              ]
+            },
+            {
+              "id": "o1-2",
+              "title": "Policy Overview: Naloxone + Treatment",
+              "startTime": 39.84,
+              "endTime": 74.88,
+              "bullets": [
+                "Increase availability of naloxone (Narcan)",
+                "Expand treatment resources including MAT",
+                "Start in California, eventually expand nationwide"
+              ]
+            },
+            {
+              "id": "o1-3",
+              "title": "Naloxone as Life-Saving Tool",
+              "startTime": 74.88,
+              "endTime": 97.92,
+              "bullets": [
+                "Naloxone reverses overdoses within minutes",
+                "Increasing availability is most important policy step",
+                "Saving lives is the top priority"
+              ]
+            },
+            {
+              "id": "o1-4",
+              "title": "Treatment for Long-Term Recovery",
+              "startTime": 97.92,
+              "endTime": 120.96,
+              "bullets": [
+                "Many addicted people want help but lack access",
+                "Rehab centers + MAT help people get clean",
+                "Treat instead of punish; give people a second chance"
+              ]
+            },
+            {
+              "id": "o1-5",
+              "title": "Combined Approach",
+              "startTime": 120.96,
+              "endTime": 121.64,
+              "bullets": [
+                "Naloxone saves lives immediately",
+                "Treatment resources support long-term recovery",
+                "Both components work together to solve the crisis"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-2",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "B",
+          "youtubeId": "36WTSBHUqvs",
+          "duration": 108,
+          "prompts": [
+            "What is Group 2's main policy proposal for addressing the opioid crisis?",
+            "How does Group 2 define the core problem they're trying to solve?",
+            "What statistics or evidence does Group 2 use to support their position?"
+          ],
+          "transcript": [
+            {
+              "start": 0.2,
+              "end": 3.2,
+              "text": "See?"
+            },
+            {
+              "start": 4.3,
+              "end": 8.3,
+              "text": "Okay."
+            },
+            {
+              "start": 6.4,
+              "end": 10.4,
+              "text": "So, the opioid crisis is one of the most"
+            },
+            {
+              "start": 8.3,
+              "end": 12.6,
+              "text": "devastating public health emergencies in"
+            },
+            {
+              "start": 10.4,
+              "end": 14.6,
+              "text": "modern America, affecting millions of"
+            },
+            {
+              "start": 12.6,
+              "end": 16.9,
+              "text": "individuals, families, and communities"
+            },
+            {
+              "start": 14.6,
+              "end": 18.3,
+              "text": "across the country. Every year,"
+            },
+            {
+              "start": 16.9,
+              "end": 20.4,
+              "text": "thousands of people lose their lives to"
+            },
+            {
+              "start": 18.3,
+              "end": 21.8,
+              "text": "opioid overdoses"
+            },
+            {
+              "start": 20.4,
+              "end": 24.1,
+              "text": "and many of which could have been"
+            },
+            {
+              "start": 21.8,
+              "end": 26.5,
+              "text": "preventable. The crisis is not about"
+            },
+            {
+              "start": 24.1,
+              "end": 29.5,
+              "text": "drug use. It is about addiction, mental"
+            },
+            {
+              "start": 26.5,
+              "end": 32.9,
+              "text": "health and fail failure of the community"
+            },
+            {
+              "start": 29.5,
+              "end": 35,
+              "text": "to support those who are struggling. Um,"
+            },
+            {
+              "start": 32.9,
+              "end": 36.9,
+              "text": "this issue matters because it impacts"
+            },
+            {
+              "start": 35,
+              "end": 39.4,
+              "text": "not only those who are addicted but also"
+            },
+            {
+              "start": 36.9,
+              "end": 42.2,
+              "text": "their families, health care systems and"
+            },
+            {
+              "start": 39.4,
+              "end": 43.9,
+              "text": "society as a whole."
+            },
+            {
+              "start": 42.2,
+              "end": 46.5,
+              "text": "Communities face increased health care"
+            },
+            {
+              "start": 43.9,
+              "end": 48.9,
+              "text": "costs, strained emergency services, and"
+            },
+            {
+              "start": 46.5,
+              "end": 51.3,
+              "text": "long-term economic consequences. Most"
+            },
+            {
+              "start": 48.9,
+              "end": 53.1,
+              "text": "importantly, people are suffering people"
+            },
+            {
+              "start": 51.3,
+              "end": 55.6,
+              "text": "who often want help but do not have"
+            },
+            {
+              "start": 53.1,
+              "end": 58.1,
+              "text": "access to safe uh or like effective"
+            },
+            {
+              "start": 55.6,
+              "end": 59.9,
+              "text": "resources. A major problem within this"
+            },
+            {
+              "start": 58.1,
+              "end": 62.2,
+              "text": "crisis is that many individuals use"
+            },
+            {
+              "start": 59.9,
+              "end": 64.4,
+              "text": "opioids and unsafe unsupervised"
+            },
+            {
+              "start": 62.2,
+              "end": 66.4,
+              "text": "environments. And this dramatically"
+            },
+            {
+              "start": 64.4,
+              "end": 67.9,
+              "text": "increases the risk of overdose"
+            },
+            {
+              "start": 66.4,
+              "end": 70.7,
+              "text": "especially with the risk of dangerous"
+            },
+            {
+              "start": 67.9,
+              "end": 73.4,
+              "text": "substances like fentanyl. Without proper"
+            },
+            {
+              "start": 70.7,
+              "end": 76.2,
+              "text": "medical supervision, even one mistake"
+            },
+            {
+              "start": 73.4,
+              "end": 78.5,
+              "text": "can be faded. Uh that is why"
+            },
+            {
+              "start": 76.2,
+              "end": 81.2,
+              "text": "rehabilitation centers are such"
+            },
+            {
+              "start": 78.5,
+              "end": 83.4,
+              "text": "important is such an important solution."
+            },
+            {
+              "start": 81.2,
+              "end": 85.7,
+              "text": "Um these centers provide a structured"
+            },
+            {
+              "start": 83.4,
+              "end": 88.1,
+              "text": "supervised environment where individuals"
+            },
+            {
+              "start": 85.7,
+              "end": 90.5,
+              "text": "can receive treatment, reduce harm and"
+            },
+            {
+              "start": 88.1,
+              "end": 92.2,
+              "text": "begin the process of recovery. Instead"
+            },
+            {
+              "start": 90.5,
+              "end": 94,
+              "text": "of ignoring the problem or punishing"
+            },
+            {
+              "start": 92.2,
+              "end": 95.9,
+              "text": "those who are struggling, uh"
+            },
+            {
+              "start": 94,
+              "end": 98.2,
+              "text": "rehabilitation centers address the root"
+            },
+            {
+              "start": 95.9,
+              "end": 101,
+              "text": "of the issue, addiction itself, and"
+            },
+            {
+              "start": 98.2,
+              "end": 104,
+              "text": "offer pathways uh towards healing and"
+            },
+            {
+              "start": 101,
+              "end": 104,
+              "text": "survival."
+            },
+            {
+              "start": 104.7,
+              "end": 107.8,
+              "text": "All right."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o2-1",
+              "title": "Crisis as Public Health Emergency",
+              "startTime": 6.4,
+              "endTime": 43.92,
+              "bullets": [
+                "Opioid crisis is devastating public health emergency",
+                "About addiction and mental health, not just drug use",
+                "Communities face increased costs and strained services"
+              ]
+            },
+            {
+              "id": "o2-2",
+              "title": "Unsafe Use Environments",
+              "startTime": 43.92,
+              "endTime": 71.44,
+              "bullets": [
+                "Many use opioids in unsafe, unsupervised settings",
+                "Fentanyl dramatically increases overdose risk",
+                "Without medical supervision, one mistake can be fatal"
+              ]
+            },
+            {
+              "id": "o2-3",
+              "title": "Rehabilitation Centers as Solution",
+              "startTime": 71.44,
+              "endTime": 107.76,
+              "bullets": [
+                "Provide structured, supervised treatment environment",
+                "Address the root cause: addiction itself",
+                "Offer pathways toward healing and recovery"
+              ]
+            },
+            {
+              "id": "o2-4",
+              "title": "Treatment Over Punishment",
+              "startTime": 107.76,
+              "endTime": 143.96,
+              "bullets": [
+                "Ignoring or punishing those struggling is ineffective",
+                "Rehab centers focus on recovery, not criminalization"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-3",
+          "type": "main",
+          "label": "Main Arguments",
+          "team": "A",
+          "youtubeId": "ArhiFgG6xGc",
+          "duration": 153,
+          "prompts": [
+            "What key evidence does Group 1 provide about naloxone's effectiveness?",
+            "How does Group 1 explain the relationship between naloxone access and treatment programs?",
+            "What role does Group 1 assign to both short-term and long-term solutions?"
+          ],
+          "transcript": [
+            {
+              "start": 1.5,
+              "end": 6.9,
+              "text": "Okay. So, we believe the best way to"
+            },
+            {
+              "start": 4.1,
+              "end": 10,
+              "text": "address the opioid crisis in California"
+            },
+            {
+              "start": 6.9,
+              "end": 12.6,
+              "text": "is to increase like universal access to"
+            },
+            {
+              "start": 10,
+              "end": 14.6,
+              "text": "nlloxxone while also expanding access to"
+            },
+            {
+              "start": 12.6,
+              "end": 16.6,
+              "text": "treatment plans. Like Lizzie said,"
+            },
+            {
+              "start": 14.6,
+              "end": 19.6,
+              "text": "nlloxxone is a life-saving medication"
+            },
+            {
+              "start": 16.6,
+              "end": 21.9,
+              "text": "that reverses opioid overdoses and"
+            },
+            {
+              "start": 19.6,
+              "end": 23.4,
+              "text": "expanding its availability can directly"
+            },
+            {
+              "start": 21.9,
+              "end": 26.5,
+              "text": "prevent deaths while creating"
+            },
+            {
+              "start": 23.4,
+              "end": 28.3,
+              "text": "opportunities for long-term recovery."
+            },
+            {
+              "start": 26.5,
+              "end": 30.6,
+              "text": "According to the California Department"
+            },
+            {
+              "start": 28.3,
+              "end": 32.6,
+              "text": "of Public Health, its nlloxxone"
+            },
+            {
+              "start": 30.6,
+              "end": 35.7,
+              "text": "distribution project has already helped"
+            },
+            {
+              "start": 32.6,
+              "end": 37.4,
+              "text": "reverse nearly 400,000 overdoses,"
+            },
+            {
+              "start": 35.7,
+              "end": 39.1,
+              "text": "meaning hundreds of thousands of people"
+            },
+            {
+              "start": 37.4,
+              "end": 41.4,
+              "text": "survive situations that could have"
+            },
+            {
+              "start": 39.1,
+              "end": 43.3,
+              "text": "otherwise been fatal."
+            },
+            {
+              "start": 41.4,
+              "end": 45.7,
+              "text": "Nlloxxone is one of the most important"
+            },
+            {
+              "start": 43.3,
+              "end": 48.2,
+              "text": "tools in preventing deaths during the"
+            },
+            {
+              "start": 45.7,
+              "end": 50,
+              "text": "opioid crisis. And according to the"
+            },
+            {
+              "start": 48.2,
+              "end": 53,
+              "text": "National Library of Medicine, a study"
+            },
+            {
+              "start": 50,
+              "end": 55.4,
+              "text": "they conducted found that 84.3% of"
+            },
+            {
+              "start": 53,
+              "end": 56.9,
+              "text": "people were alive one year after they"
+            },
+            {
+              "start": 55.4,
+              "end": 60.6,
+              "text": "received"
+            },
+            {
+              "start": 56.9,
+              "end": 62.1,
+              "text": "nlloxxone by EMS. When naxone is widely"
+            },
+            {
+              "start": 60.6,
+              "end": 64.4,
+              "text": "available and affordable, it can"
+            },
+            {
+              "start": 62.1,
+              "end": 67,
+              "text": "directly lead to more lives saved. This"
+            },
+            {
+              "start": 64.4,
+              "end": 69.5,
+              "text": "is because overdoses of often happen in"
+            },
+            {
+              "start": 67,
+              "end": 71.4,
+              "text": "homes or public spaces where medical"
+            },
+            {
+              "start": 69.5,
+              "end": 73.6,
+              "text": "professionals are not immediately"
+            },
+            {
+              "start": 71.4,
+              "end": 75.7,
+              "text": "present. So having nlloxxone in the"
+            },
+            {
+              "start": 73.6,
+              "end": 78.2,
+              "text": "hands of everyday people allows for a"
+            },
+            {
+              "start": 75.7,
+              "end": 79.8,
+              "text": "faster response. So the more nlloxxone"
+            },
+            {
+              "start": 78.2,
+              "end": 81.7,
+              "text": "available every life save creates"
+            },
+            {
+              "start": 79.8,
+              "end": 85,
+              "text": "another opportunity for that person to"
+            },
+            {
+              "start": 81.7,
+              "end": 88,
+              "text": "seek help. However, while nlloxxone is"
+            },
+            {
+              "start": 85,
+              "end": 89.7,
+              "text": "critical for emergency situations,"
+            },
+            {
+              "start": 88,
+              "end": 91.7,
+              "text": "it does not address the underlying"
+            },
+            {
+              "start": 89.7,
+              "end": 93.4,
+              "text": "addiction. That is why increasing access"
+            },
+            {
+              "start": 91.7,
+              "end": 95.7,
+              "text": "to treatment programs is equally"
+            },
+            {
+              "start": 93.4,
+              "end": 98,
+              "text": "important. Treatments such as counseling"
+            },
+            {
+              "start": 95.7,
+              "end": 100.2,
+              "text": "and medicationass assisted therapy help"
+            },
+            {
+              "start": 98,
+              "end": 102.8,
+              "text": "individuals manage addiction and reduce"
+            },
+            {
+              "start": 100.2,
+              "end": 104.8,
+              "text": "the likelihood of future overdoses."
+            },
+            {
+              "start": 102.8,
+              "end": 107.4,
+              "text": "According to a study published in the"
+            },
+            {
+              "start": 104.8,
+              "end": 109.9,
+              "text": "journal of addict of addiction medicine,"
+            },
+            {
+              "start": 107.4,
+              "end": 112.3,
+              "text": "patients under undergoing"
+            },
+            {
+              "start": 109.9,
+              "end": 115.4,
+              "text": "medication assisted therapy experiences"
+            },
+            {
+              "start": 112.3,
+              "end": 117.3,
+              "text": "60% reduction in relapse rates within"
+            },
+            {
+              "start": 115.4,
+              "end": 119.1,
+              "text": "the first year of treatment. The"
+            },
+            {
+              "start": 117.3,
+              "end": 121.9,
+              "text": "programs work by addressing both the"
+            },
+            {
+              "start": 119.1,
+              "end": 124,
+              "text": "physical dependence on opioids and the"
+            },
+            {
+              "start": 121.9,
+              "end": 126.4,
+              "text": "mental health factors that contribute to"
+            },
+            {
+              "start": 124,
+              "end": 129.3,
+              "text": "substance use, which makes recovery more"
+            },
+            {
+              "start": 126.4,
+              "end": 131.4,
+              "text": "sustainable over time. Without"
+            },
+            {
+              "start": 129.3,
+              "end": 133,
+              "text": "treatment, individuals who survive an"
+            },
+            {
+              "start": 131.4,
+              "end": 135.2,
+              "text": "overdose are at high risk of"
+            },
+            {
+              "start": 133,
+              "end": 138.2,
+              "text": "experiencing another one, meaning the"
+            },
+            {
+              "start": 135.2,
+              "end": 140.2,
+              "text": "cycle continues. By combining universal"
+            },
+            {
+              "start": 138.2,
+              "end": 142.5,
+              "text": "access to nlloxxone and effective"
+            },
+            {
+              "start": 140.2,
+              "end": 144.5,
+              "text": "treatment plans, California can save"
+            },
+            {
+              "start": 142.5,
+              "end": 147,
+              "text": "lives in the short term and reduce the"
+            },
+            {
+              "start": 144.5,
+              "end": 149.7,
+              "text": "number of overdoses in the future,"
+            },
+            {
+              "start": 147,
+              "end": 152.8,
+              "text": "creating a more longlasting solution to"
+            },
+            {
+              "start": 149.7,
+              "end": 152.8,
+              "text": "the crisis."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o3-1",
+              "title": "Naloxone Saves Lives at Scale",
+              "startTime": 1.52,
+              "endTime": 43.28,
+              "bullets": [
+                "CA Dept of Public Health: naloxone reversed nearly 400,000 overdoses",
+                "NLM study: 84.3% alive 1 year after receiving naloxone from EMS",
+                "Naloxone is most important tool for preventing overdose deaths"
+              ]
+            },
+            {
+              "id": "o3-2",
+              "title": "Empowering Everyday People",
+              "startTime": 43.28,
+              "endTime": 75.04,
+              "bullets": [
+                "Overdoses happen in homes and public spaces",
+                "No medical professionals immediately present",
+                "Naloxone in everyday peoples hands enables faster response"
+              ]
+            },
+            {
+              "id": "o3-3",
+              "title": "Treatment Addresses Root Cause",
+              "startTime": 75.04,
+              "endTime": 116.8,
+              "bullets": [
+                "Naloxone alone does not address underlying addiction",
+                "Counseling + MAT help manage addiction long-term",
+                "Journal of Addiction Medicine: MAT produces 60% reduction in relapse rates"
+              ]
+            },
+            {
+              "id": "o3-4",
+              "title": "Physical and Mental Health Factors",
+              "startTime": 116.8,
+              "endTime": 148.56,
+              "bullets": [
+                "Programs address both physical dependence and mental health",
+                "Recovery becomes more sustainable over time",
+                "Without treatment, overdose survivors at high risk of another overdose"
+              ]
+            },
+            {
+              "id": "o3-5",
+              "title": "Combined Short and Long-Term Solution",
+              "startTime": 148.56,
+              "endTime": 162.84,
+              "bullets": [
+                "Universal naloxone access saves lives in short term",
+                "Effective treatment plans reduce future overdoses",
+                "Creates long-lasting solution to the crisis"
+              ]
+            },
+            {
+              "id": "o3-6",
+              "title": "California as Model",
+              "startTime": 148.56,
+              "endTime": 162.84,
+              "bullets": [
+                "California can lead by combining both approaches",
+                "Model for nationwide implementation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-4",
+          "type": "main",
+          "label": "Main Arguments",
+          "team": "B",
+          "youtubeId": "DrEMZd8E_-c",
+          "duration": 92,
+          "prompts": [
+            "Why does Group 2 prioritize rehabilitation centers as the primary solution?",
+            "What evidence does Group 2 cite about structured treatment programs?",
+            "How does Group 2 address the issue of overdose prevention in their model?"
+          ],
+          "transcript": [
+            {
+              "start": 0.1,
+              "end": 3.7,
+              "text": "groups. Main arguments number two."
+            },
+            {
+              "start": 1.8,
+              "end": 5.4,
+              "text": "Okay. We believe that rehabilitation"
+            },
+            {
+              "start": 3.7,
+              "end": 7.8,
+              "text": "centers are the main solution to the"
+            },
+            {
+              "start": 5.4,
+              "end": 9.5,
+              "text": "opioid crisis. Rehabilitation centers"
+            },
+            {
+              "start": 7.8,
+              "end": 11,
+              "text": "allow opioid users to be treated and"
+            },
+            {
+              "start": 9.5,
+              "end": 13,
+              "text": "heal in a safe and supervised"
+            },
+            {
+              "start": 11,
+              "end": 15.4,
+              "text": "environment. According to the National"
+            },
+            {
+              "start": 13,
+              "end": 16.7,
+              "text": "Institute of Drug Youth of Drug Abuse,"
+            },
+            {
+              "start": 15.4,
+              "end": 18.9,
+              "text": "structure treatment programs that"
+            },
+            {
+              "start": 16.7,
+              "end": 20.6,
+              "text": "include medical supervision, counseling,"
+            },
+            {
+              "start": 18.9,
+              "end": 22.9,
+              "text": "and behavioral therapy significantly"
+            },
+            {
+              "start": 20.6,
+              "end": 25.4,
+              "text": "improve recovery outcomes and reduce"
+            },
+            {
+              "start": 22.9,
+              "end": 26.9,
+              "text": "relapse rates. Addiction is a complex"
+            },
+            {
+              "start": 25.4,
+              "end": 28.6,
+              "text": "condition that affects both the brain"
+            },
+            {
+              "start": 26.9,
+              "end": 31.1,
+              "text": "and behavior, making it difficult to"
+            },
+            {
+              "start": 28.6,
+              "end": 32.9,
+              "text": "overcome alone. Rehabilitation centers"
+            },
+            {
+              "start": 31.1,
+              "end": 34.9,
+              "text": "provide structured care, medical"
+            },
+            {
+              "start": 32.9,
+              "end": 37,
+              "text": "support, and therapy to help individuals"
+            },
+            {
+              "start": 34.9,
+              "end": 38.4,
+              "text": "manage man manage withdrawal, understand"
+            },
+            {
+              "start": 37,
+              "end": 41,
+              "text": "their addiction, and build healthier"
+            },
+            {
+              "start": 38.4,
+              "end": 42.5,
+              "text": "habits. By offering a stable, controlled"
+            },
+            {
+              "start": 41,
+              "end": 43.9,
+              "text": "environment, they reduce relapse and"
+            },
+            {
+              "start": 42.5,
+              "end": 46.8,
+              "text": "improve the chances of long-term"
+            },
+            {
+              "start": 43.9,
+              "end": 48.3,
+              "text": "recovery. Additionally, rehabilitation"
+            },
+            {
+              "start": 46.8,
+              "end": 50.3,
+              "text": "centers provide immediate care for"
+            },
+            {
+              "start": 48.3,
+              "end": 52.5,
+              "text": "opioid overdoses that could save many"
+            },
+            {
+              "start": 50.3,
+              "end": 54.1,
+              "text": "lives. The Centers for Disease Control"
+            },
+            {
+              "start": 52.5,
+              "end": 56,
+              "text": "and Prevention report that the timely"
+            },
+            {
+              "start": 54.1,
+              "end": 59,
+              "text": "administration of overdose reversal"
+            },
+            {
+              "start": 56,
+              "end": 61.4,
+              "text": "medications like Nlloxxon can prevent"
+            },
+            {
+              "start": 59,
+              "end": 63.3,
+              "text": "death in opioid overdose cases. One of"
+            },
+            {
+              "start": 61.4,
+              "end": 65.1,
+              "text": "the most dangerous aspects of opioid use"
+            },
+            {
+              "start": 63.3,
+              "end": 67.2,
+              "text": "is how quickly an overdose can become"
+            },
+            {
+              "start": 65.1,
+              "end": 69.5,
+              "text": "fatal, especially when no one is present"
+            },
+            {
+              "start": 67.2,
+              "end": 71,
+              "text": "to help. Rehabilitation centers address"
+            },
+            {
+              "start": 69.5,
+              "end": 72.8,
+              "text": "this by providing trained professionals"
+            },
+            {
+              "start": 71,
+              "end": 74.2,
+              "text": "who can recognize overdose symptoms and"
+            },
+            {
+              "start": 72.8,
+              "end": 76.9,
+              "text": "immediately provide life-saving"
+            },
+            {
+              "start": 74.2,
+              "end": 79,
+              "text": "treatments like Noxon. This prov this"
+            },
+            {
+              "start": 76.9,
+              "end": 81,
+              "text": "quick response can save lives and turns"
+            },
+            {
+              "start": 79,
+              "end": 83.6,
+              "text": "a dangerous situation into an important"
+            },
+            {
+              "start": 81,
+              "end": 85.3,
+              "text": "opport into an opportunity for recovery."
+            },
+            {
+              "start": 83.6,
+              "end": 87.1,
+              "text": "Overall, these centers not only prevent"
+            },
+            {
+              "start": 85.3,
+              "end": 89.1,
+              "text": "deaths but also support long-term"
+            },
+            {
+              "start": 87.1,
+              "end": 91.9,
+              "text": "change. All"
+            },
+            {
+              "start": 89.1,
+              "end": 91.9,
+              "text": "right, round of applause."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o4-1",
+              "title": "Rehab Centers as Primary Solution",
+              "startTime": 0.08,
+              "endTime": 26.88,
+              "bullets": [
+                "Rehabilitation centers are THE main solution",
+                "NIDA: structured programs improve recovery outcomes",
+                "Addiction is complex condition affecting brain and behavior"
+              ]
+            },
+            {
+              "id": "o4-2",
+              "title": "Structured Care Environment",
+              "startTime": 26.88,
+              "endTime": 48.32,
+              "bullets": [
+                "Medical support, counseling, and behavioral therapy",
+                "Help manage withdrawal and build healthier habits",
+                "Stable, controlled environment reduces relapse"
+              ]
+            },
+            {
+              "id": "o4-3",
+              "title": "Immediate Overdose Response",
+              "startTime": 48.32,
+              "endTime": 72.96,
+              "bullets": [
+                "CDC: timely naloxone administration prevents death",
+                "Rehab has trained professionals who recognize symptoms",
+                "Quick response turns dangerous situations into recovery opportunities"
+              ]
+            },
+            {
+              "id": "o4-4",
+              "title": "Long-Term Change",
+              "startTime": 72.96,
+              "endTime": 91.92,
+              "bullets": [
+                "Centers prevent deaths AND support lasting recovery",
+                "Not just emergency response but sustained treatment",
+                "Addresses addiction at its root"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-5",
+          "type": "rebuttal",
+          "label": "Rebuttal & Counter",
+          "team": "A",
+          "youtubeId": "m54b0j4wk34",
+          "duration": 129,
+          "prompts": [
+            "How does Group 1 respond to concerns about naloxone encouraging riskier behavior?",
+            "What evidence does Group 1 cite to challenge the opposing view?",
+            "How does Group 1 connect naloxone access to treatment pathways?"
+          ],
+          "transcript": [
+            {
+              "start": 0.7,
+              "end": 5.1,
+              "text": "Um, while some people argue that making"
+            },
+            {
+              "start": 2.8,
+              "end": 7,
+              "text": "nlloxxone widely available may act as a"
+            },
+            {
+              "start": 5.1,
+              "end": 8.7,
+              "text": "safety net and encourage more reckless"
+            },
+            {
+              "start": 7,
+              "end": 11,
+              "text": "drug use, there's no credible evidence"
+            },
+            {
+              "start": 8.7,
+              "end": 13.6,
+              "text": "to support this claim. According to the"
+            },
+            {
+              "start": 11,
+              "end": 15.7,
+              "text": "CDC, increased access to nlloxxone is"
+            },
+            {
+              "start": 13.6,
+              "end": 17.8,
+              "text": "linked to significant reduction in"
+            },
+            {
+              "start": 15.7,
+              "end": 20.4,
+              "text": "overdose deaths, not higher rates of"
+            },
+            {
+              "start": 17.8,
+              "end": 23.9,
+              "text": "opioid misuse. Communities that that"
+            },
+            {
+              "start": 20.4,
+              "end": 26.1,
+              "text": "distribute nlloxxone widely consistently"
+            },
+            {
+              "start": 23.9,
+              "end": 28.8,
+              "text": "report fewer fatalities without a rise"
+            },
+            {
+              "start": 26.1,
+              "end": 31.2,
+              "text": "in drug use. Research from the National"
+            },
+            {
+              "start": 28.8,
+              "end": 33.2,
+              "text": "Institutes of Health show that overdose"
+            },
+            {
+              "start": 31.2,
+              "end": 35,
+              "text": "educations and the laxone distributation"
+            },
+            {
+              "start": 33.2,
+              "end": 37.8,
+              "text": "programs do not lead to riskier"
+            },
+            {
+              "start": 35,
+              "end": 39.2,
+              "text": "behavior. Instead, these programs often"
+            },
+            {
+              "start": 37.8,
+              "end": 42,
+              "text": "connect individuals with treatment"
+            },
+            {
+              "start": 39.2,
+              "end": 45,
+              "text": "resources and recovery systems. They"
+            },
+            {
+              "start": 42,
+              "end": 46.7,
+              "text": "often they provide opportunities for"
+            },
+            {
+              "start": 45,
+              "end": 48.5,
+              "text": "interventions at critical moments when"
+            },
+            {
+              "start": 46.7,
+              "end": 50.6,
+              "text": "people are most vulnerable and more"
+            },
+            {
+              "start": 48.5,
+              "end": 52.3,
+              "text": "willing to seek help. It is also"
+            },
+            {
+              "start": 50.6,
+              "end": 54.4,
+              "text": "important to recognize that addiction is"
+            },
+            {
+              "start": 52.3,
+              "end": 57,
+              "text": "not a simple choice. It is a chronic"
+            },
+            {
+              "start": 54.4,
+              "end": 58.6,
+              "text": "medical condition that affects the brain"
+            },
+            {
+              "start": 57,
+              "end": 62.3,
+              "text": "that affects brain chemistry and"
+            },
+            {
+              "start": 58.6,
+              "end": 65.1,
+              "text": "decision-m. People with o opioid use do"
+            },
+            {
+              "start": 62.3,
+              "end": 67.7,
+              "text": "not rate do not weigh risk in a rational"
+            },
+            {
+              "start": 65.1,
+              "end": 70.8,
+              "text": "way. They face dependency. Thinking that"
+            },
+            {
+              "start": 67.7,
+              "end": 72.7,
+              "text": "a rescue medication makes people use"
+            },
+            {
+              "start": 70.8,
+              "end": 75.4,
+              "text": "more drugs ignores how complicated"
+            },
+            {
+              "start": 72.7,
+              "end": 77.8,
+              "text": "addiction really is. Most importantly,"
+            },
+            {
+              "start": 75.4,
+              "end": 80.6,
+              "text": "nlloxxone saves lives. Without it, many"
+            },
+            {
+              "start": 77.8,
+              "end": 82.6,
+              "text": "overdoses may be fatal within minutes."
+            },
+            {
+              "start": 80.6,
+              "end": 85.2,
+              "text": "With it, individuals are given a second"
+            },
+            {
+              "start": 82.6,
+              "end": 87.8,
+              "text": "chance, one that can that can lead to"
+            },
+            {
+              "start": 85.2,
+              "end": 89.4,
+              "text": "recovery and long-term change. If naxin"
+            },
+            {
+              "start": 87.8,
+              "end": 91.5,
+              "text": "was not distributed, how would people"
+            },
+            {
+              "start": 89.4,
+              "end": 93.4,
+              "text": "even get the chance to make the to make"
+            },
+            {
+              "start": 91.5,
+              "end": 95.8,
+              "text": "the decision to go to these re"
+            },
+            {
+              "start": 93.4,
+              "end": 98.1,
+              "text": "rehabilitation centers? In fact, the"
+            },
+            {
+              "start": 95.8,
+              "end": 100.2,
+              "text": "substance abuse and mental health ser"
+            },
+            {
+              "start": 98.1,
+              "end": 103.1,
+              "text": "services administration highlights that"
+            },
+            {
+              "start": 100.2,
+              "end": 105.3,
+              "text": "harm reduction strategies like nlloxxone"
+            },
+            {
+              "start": 103.1,
+              "end": 107.3,
+              "text": "distributation are cru crucial first"
+            },
+            {
+              "start": 105.3,
+              "end": 109.4,
+              "text": "steps in tackling the opioid crisis"
+            },
+            {
+              "start": 107.3,
+              "end": 111.9,
+              "text": "because they keep people alive long"
+            },
+            {
+              "start": 109.4,
+              "end": 113.8,
+              "text": "enough to get care. Denying access to"
+            },
+            {
+              "start": 111.9,
+              "end": 116.1,
+              "text": "this life-saving medication does not"
+            },
+            {
+              "start": 113.8,
+              "end": 118.3,
+              "text": "stop addiction. It only leads to more"
+            },
+            {
+              "start": 116.1,
+              "end": 120.5,
+              "text": "deaths. Evidence shows that increasing"
+            },
+            {
+              "start": 118.3,
+              "end": 122.6,
+              "text": "nlloxxone access cuts fatalities while"
+            },
+            {
+              "start": 120.5,
+              "end": 124.7,
+              "text": "supporting pathways to recovery, making"
+            },
+            {
+              "start": 122.6,
+              "end": 128.8,
+              "text": "it an an essential and effective"
+            },
+            {
+              "start": 124.7,
+              "end": 128.8,
+              "text": "response to the opioid crisis."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o5-1",
+              "title": "Debunking Safety Net Myth",
+              "startTime": 0.72,
+              "endTime": 23.92,
+              "bullets": [
+                "No credible evidence naloxone encourages reckless use",
+                "CDC: naloxone access reduces deaths, not increases misuse",
+                "Communities distributing naloxone report fewer fatalities without rise in use"
+              ]
+            },
+            {
+              "id": "o5-2",
+              "title": "Naloxone Connects to Treatment",
+              "startTime": 23.92,
+              "endTime": 48.48,
+              "bullets": [
+                "NIH: naloxone programs do not lead to riskier behavior",
+                "Programs connect individuals with treatment resources",
+                "Intervention at critical moments when people most willing to seek help"
+              ]
+            },
+            {
+              "id": "o5-3",
+              "title": "Addiction Is a Medical Condition",
+              "startTime": 48.48,
+              "endTime": 72.56,
+              "bullets": [
+                "Addiction is chronic medical condition affecting brain chemistry",
+                "People with OUD do not weigh risk rationally",
+                "Thinking rescue medication increases use ignores complexity of addiction"
+              ]
+            },
+            {
+              "id": "o5-4",
+              "title": "Naloxone as Gateway to Recovery",
+              "startTime": 72.56,
+              "endTime": 98.56,
+              "bullets": [
+                "Without naloxone, people cant get to rehab — theyd be dead",
+                "SAMHSA: harm reduction strategies are crucial first steps",
+                "Keeps people alive long enough to get care"
+              ]
+            },
+            {
+              "id": "o5-5",
+              "title": "Evidence Is Clear",
+              "startTime": 98.56,
+              "endTime": 128.84,
+              "bullets": [
+                "Denying naloxone access only leads to more deaths",
+                "Increasing naloxone access cuts fatalities",
+                "Supports pathways to recovery — essential response to crisis"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-6",
+          "type": "rebuttal",
+          "label": "Rebuttal & Counter",
+          "team": "B",
+          "youtubeId": "6umMFVKR500",
+          "duration": 88,
+          "prompts": [
+            "How does Group 2 address the argument that limited resources would discourage treatment?",
+            "What is Group 2's view on the relationship between rehabilitation centers and harm reduction?",
+            "How does Group 2 rebut the claim that naloxone is a necessary first step?"
+          ],
+          "transcript": [
+            {
+              "start": 0.6,
+              "end": 5,
+              "text": "Well, they didn't even talk about ours."
+            },
+            {
+              "start": 3,
+              "end": 5.5,
+              "text": "I'm I'm just gonna talk to the air, I"
+            },
+            {
+              "start": 5,
+              "end": 6.2,
+              "text": "guess."
+            },
+            {
+              "start": 5.5,
+              "end": 8.8,
+              "text": "There you go."
+            },
+            {
+              "start": 6.2,
+              "end": 10.6,
+              "text": "Um, while some people may argue that"
+            },
+            {
+              "start": 8.8,
+              "end": 12.6,
+              "text": "rehabilitation centers could actually"
+            },
+            {
+              "start": 10.6,
+              "end": 14.9,
+              "text": "encourage opioid use or make the problem"
+            },
+            {
+              "start": 12.6,
+              "end": 16.7,
+              "text": "worse by normalizing it, they may"
+            },
+            {
+              "start": 14.9,
+              "end": 18.3,
+              "text": "believe that providing supervised"
+            },
+            {
+              "start": 16.7,
+              "end": 20.2,
+              "text": "environments enables individuals to"
+            },
+            {
+              "start": 18.3,
+              "end": 22.6,
+              "text": "continue their addiction instead of"
+            },
+            {
+              "start": 20.2,
+              "end": 24.9,
+              "text": "stopping it. However, this argument"
+            },
+            {
+              "start": 22.6,
+              "end": 26.6,
+              "text": "overlooks a critical reality."
+            },
+            {
+              "start": 24.9,
+              "end": 28.4,
+              "text": "Individuals struggling with addiction"
+            },
+            {
+              "start": 26.6,
+              "end": 30.2,
+              "text": "are not simply going to stop using"
+            },
+            {
+              "start": 28.4,
+              "end": 33.4,
+              "text": "substances just because resources are"
+            },
+            {
+              "start": 30.2,
+              "end": 35.1,
+              "text": "limited. In fact, without support,"
+            },
+            {
+              "start": 33.4,
+              "end": 37,
+              "text": "they're far more likely to continue"
+            },
+            {
+              "start": 35.1,
+              "end": 39.2,
+              "text": "using in unsafe conditions, which"
+            },
+            {
+              "start": 37,
+              "end": 42.6,
+              "text": "increases the risk of overdose, exposure"
+            },
+            {
+              "start": 39.2,
+              "end": 44.9,
+              "text": "to contaminated substances, and death."
+            },
+            {
+              "start": 42.6,
+              "end": 47.1,
+              "text": "Rehabil rehabilitation centers do not"
+            },
+            {
+              "start": 44.9,
+              "end": 48.9,
+              "text": "promote drug use. They provide a safer"
+            },
+            {
+              "start": 47.1,
+              "end": 51.2,
+              "text": "alternative for people who are already"
+            },
+            {
+              "start": 48.9,
+              "end": 53.4,
+              "text": "using and need help. These facilities"
+            },
+            {
+              "start": 51.2,
+              "end": 55.9,
+              "text": "focus on treatment, recovery, and harm"
+            },
+            {
+              "start": 53.4,
+              "end": 57.8,
+              "text": "reduction. Their goal is not to enable"
+            },
+            {
+              "start": 55.9,
+              "end": 59.8,
+              "text": "addiction, but to manage it in a way"
+            },
+            {
+              "start": 57.8,
+              "end": 61.8,
+              "text": "that prevents immediate harm while"
+            },
+            {
+              "start": 59.8,
+              "end": 64.7,
+              "text": "guiding individuals toward long-term"
+            },
+            {
+              "start": 61.8,
+              "end": 66.9,
+              "text": "recovery. By offering supervision,"
+            },
+            {
+              "start": 64.7,
+              "end": 68.8,
+              "text": "medical care, and access to treatment,"
+            },
+            {
+              "start": 66.9,
+              "end": 71.3,
+              "text": "rehabilitation centers reduce the"
+            },
+            {
+              "start": 68.8,
+              "end": 73,
+              "text": "dangers associated with opioid use."
+            },
+            {
+              "start": 71.3,
+              "end": 75.2,
+              "text": "Instead of turning a blind eye to the"
+            },
+            {
+              "start": 73,
+              "end": 77,
+              "text": "problem, they actively work to save"
+            },
+            {
+              "start": 75.2,
+              "end": 80.2,
+              "text": "lives and create opportunities for"
+            },
+            {
+              "start": 77,
+              "end": 82.2,
+              "text": "change. In reality, ignoring the issue"
+            },
+            {
+              "start": 80.2,
+              "end": 87.2,
+              "text": "or denying support is what allows the"
+            },
+            {
+              "start": 82.2,
+              "end": 87.2,
+              "text": "crisis to person, not providing help."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o6-1",
+              "title": "Rehab Does Not Normalize Use",
+              "startTime": 6.16,
+              "endTime": 33.44,
+              "bullets": [
+                "People wont stop using just because resources are limited",
+                "Without support, unsafe conditions continue",
+                "Removing resources increases risk of overdose and death"
+              ]
+            },
+            {
+              "id": "o6-2",
+              "title": "Rehab Provides Safer Alternative",
+              "startTime": 33.44,
+              "endTime": 59.76,
+              "bullets": [
+                "Centers dont promote use — they provide safer alternative",
+                "Focus on treatment, recovery, and harm reduction",
+                "Goal is to manage addiction and prevent immediate harm"
+              ]
+            },
+            {
+              "id": "o6-3",
+              "title": "Ignoring the Problem Is Worse",
+              "startTime": 59.76,
+              "endTime": 87.24,
+              "bullets": [
+                "Supervision + medical care + treatment access reduces dangers",
+                "Ignoring the issue is what allows crisis to persist",
+                "Providing help is the solution, not the problem"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-7",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "A",
+          "youtubeId": "Qwr92WK_wtU",
+          "duration": 79,
+          "prompts": [
+            "What is the core message of Group 1's closing argument about saving lives?",
+            "How does Group 1 frame their policy as the most effective solution?"
+          ],
+          "transcript": [
+            {
+              "start": 3.4,
+              "end": 9.1,
+              "text": "Uh in conclusion, the opioid epidemic is"
+            },
+            {
+              "start": 6.4,
+              "end": 10.6,
+              "text": "a fast growing certain crisis. It"
+            },
+            {
+              "start": 9.1,
+              "end": 12.2,
+              "text": "affects families, communities, and"
+            },
+            {
+              "start": 10.6,
+              "end": 14.6,
+              "text": "people across California and the entire"
+            },
+            {
+              "start": 12.2,
+              "end": 15.9,
+              "text": "United States. The biggest issue is"
+            },
+            {
+              "start": 14.6,
+              "end": 19,
+              "text": "finding out how we can save the most"
+            },
+            {
+              "start": 15.9,
+              "end": 21.8,
+              "text": "lives. Our policy will save the most. By"
+            },
+            {
+              "start": 19,
+              "end": 23.7,
+              "text": "increasing access to Malone, we ensure"
+            },
+            {
+              "start": 21.8,
+              "end": 25.8,
+              "text": "that overdoses no longer have to result"
+            },
+            {
+              "start": 23.7,
+              "end": 28.6,
+              "text": "in only death."
+            },
+            {
+              "start": 25.8,
+              "end": 30.5,
+              "text": "We know that uh Mazone is a main tool in"
+            },
+            {
+              "start": 28.6,
+              "end": 32.6,
+              "text": "saving lives as survival rate can be as"
+            },
+            {
+              "start": 30.5,
+              "end": 34.3,
+              "text": "high as 90%."
+            },
+            {
+              "start": 32.6,
+              "end": 36.8,
+              "text": "Thousands of lives have already been"
+            },
+            {
+              "start": 34.3,
+              "end": 39,
+              "text": "saved and more can continue to be saved."
+            },
+            {
+              "start": 36.8,
+              "end": 40.3,
+              "text": "These numbers are real numbers. Real"
+            },
+            {
+              "start": 39,
+              "end": 42.2,
+              "text": "people who have been given a second"
+            },
+            {
+              "start": 40.3,
+              "end": 45,
+              "text": "chance."
+            },
+            {
+              "start": 42.2,
+              "end": 47.3,
+              "text": "But saving life is only the first step"
+            },
+            {
+              "start": 45,
+              "end": 48.9,
+              "text": "in our policy. That's why spending"
+            },
+            {
+              "start": 47.3,
+              "end": 52.7,
+              "text": "treatment resources is also so"
+            },
+            {
+              "start": 48.9,
+              "end": 55.1,
+              "text": "important. Addiction is a disease,"
+            },
+            {
+              "start": 52.7,
+              "end": 57.7,
+              "text": "not a choice. Recovery requires support"
+            },
+            {
+              "start": 55.1,
+              "end": 60.6,
+              "text": "and help. By increasing access to"
+            },
+            {
+              "start": 57.7,
+              "end": 62.7,
+              "text": "rehabilitation centers and medication"
+            },
+            {
+              "start": 60.6,
+              "end": 64.1,
+              "text": "assisted treatment, we are not only"
+            },
+            {
+              "start": 62.7,
+              "end": 65.8,
+              "text": "preventing deaths today, but also"
+            },
+            {
+              "start": 64.1,
+              "end": 69.3,
+              "text": "reducing addiction and overdoses in the"
+            },
+            {
+              "start": 65.8,
+              "end": 70.5,
+              "text": "future. By expanding access to melazone"
+            },
+            {
+              "start": 69.3,
+              "end": 73.8,
+              "text": "and treatment, we are not just"
+            },
+            {
+              "start": 70.5,
+              "end": 78.2,
+              "text": "responding to opio opioid epidemic. We"
+            },
+            {
+              "start": 73.8,
+              "end": 78.2,
+              "text": "are taking action to end it. Thank you."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o7-1",
+              "title": "Crisis Demands Action",
+              "startTime": 3.44,
+              "endTime": 28.64,
+              "bullets": [
+                "Opioid epidemic is fast-growing crisis affecting all of US",
+                "Key question: how to save the most lives",
+                "Naloxone survival rate can be as high as 90%"
+              ]
+            },
+            {
+              "id": "o7-2",
+              "title": "Saving Lives Is First Step",
+              "startTime": 28.64,
+              "endTime": 55.12,
+              "bullets": [
+                "Thousands already saved, more can be saved",
+                "Addiction is a disease, not a choice",
+                "Recovery requires support and help"
+              ]
+            },
+            {
+              "id": "o7-3",
+              "title": "Taking Action to End It",
+              "startTime": 55.12,
+              "endTime": 78.2,
+              "bullets": [
+                "Expanding MAT and rehab prevents future overdoses",
+                "Not just responding to epidemic — taking action to end it",
+                "Combined approach addresses both immediate and long-term needs"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-8",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "B",
+          "youtubeId": "Mm57wJ1OHsc",
+          "duration": 78,
+          "prompts": [
+            "What is Group 2's final argument about rehabilitation centers?",
+            "How does Group 2 conclude their position on unsupervised naloxone distribution?"
+          ],
+          "transcript": [
+            {
+              "start": 6.2,
+              "end": 10,
+              "text": "Rehabilitation centers are critical and"
+            },
+            {
+              "start": 8.2,
+              "end": 12.6,
+              "text": "life-saving solutions to the opioid"
+            },
+            {
+              "start": 10,
+              "end": 14.6,
+              "text": "crisis. This epidemic continues to take"
+            },
+            {
+              "start": 12.6,
+              "end": 15.9,
+              "text": "thousands of lives each year, but many"
+            },
+            {
+              "start": 14.6,
+              "end": 17.9,
+              "text": "of these deaths are preventable with the"
+            },
+            {
+              "start": 15.9,
+              "end": 20.5,
+              "text": "right support system in place."
+            },
+            {
+              "start": 17.9,
+              "end": 22.2,
+              "text": "Rehabilitation centers uh provide safe,"
+            },
+            {
+              "start": 20.5,
+              "end": 24.1,
+              "text": "supervised environments where"
+            },
+            {
+              "start": 22.2,
+              "end": 26.9,
+              "text": "individuals can receive medical care,"
+            },
+            {
+              "start": 24.1,
+              "end": 29.4,
+              "text": "avoid fatal overdoses, and begin the"
+            },
+            {
+              "start": 26.9,
+              "end": 31.7,
+              "text": "journey towards recovery. By investing"
+            },
+            {
+              "start": 29.4,
+              "end": 33.8,
+              "text": "in these centers, we are choosing to"
+            },
+            {
+              "start": 31.7,
+              "end": 36.3,
+              "text": "address the addiction with compassion,"
+            },
+            {
+              "start": 33.8,
+              "end": 38.2,
+              "text": "science, and responsibility. We are not"
+            },
+            {
+              "start": 36.3,
+              "end": 40,
+              "text": "only saving individual lives, but also"
+            },
+            {
+              "start": 38.2,
+              "end": 42,
+              "text": "protecting families, strengthening"
+            },
+            {
+              "start": 40,
+              "end": 44.3,
+              "text": "communities, and improving public health"
+            },
+            {
+              "start": 42,
+              "end": 46.8,
+              "text": "as a whole. If we truly care about the"
+            },
+            {
+              "start": 44.3,
+              "end": 49,
+              "text": "well-being of our society, then re then"
+            },
+            {
+              "start": 46.8,
+              "end": 51.5,
+              "text": "supporting rehabilitation centers is not"
+            },
+            {
+              "start": 49,
+              "end": 53.9,
+              "text": "just an opinion, but it is a necessity."
+            },
+            {
+              "start": 51.5,
+              "end": 56,
+              "text": "Distributing nlloxxone without"
+            },
+            {
+              "start": 53.9,
+              "end": 58.6,
+              "text": "supervision may actually increase the"
+            },
+            {
+              "start": 56,
+              "end": 60.7,
+              "text": "addiction in the long term incentivizing"
+            },
+            {
+              "start": 58.6,
+              "end": 63,
+              "text": "people to take riskier doses thinking"
+            },
+            {
+              "start": 60.7,
+              "end": 64.8,
+              "text": "that they are invincible. Therefore,"
+            },
+            {
+              "start": 63,
+              "end": 66.9,
+              "text": "distributing nlloxxone outside of these"
+            },
+            {
+              "start": 64.8,
+              "end": 68.3,
+              "text": "rehabilitation centers will only amplify"
+            },
+            {
+              "start": 66.9,
+              "end": 70.2,
+              "text": "the crisis and should only be"
+            },
+            {
+              "start": 68.3,
+              "end": 74.2,
+              "text": "distributed within the rehabilitation"
+            },
+            {
+              "start": 70.2,
+              "end": 74.2,
+              "text": "center. Thank you so much."
+            },
+            {
+              "start": 74.7,
+              "end": 77.4,
+              "text": "H baby."
+            }
+          ],
+          "outline": [
+            {
+              "id": "o8-1",
+              "title": "Rehab Centers Are Life-Saving",
+              "startTime": 6.24,
+              "endTime": 31.68,
+              "bullets": [
+                "Critical solution to opioid crisis",
+                "Many deaths preventable with right support system",
+                "Safe, supervised environments for treatment and recovery"
+              ]
+            },
+            {
+              "id": "o8-2",
+              "title": "Compassion and Community Impact",
+              "startTime": 31.68,
+              "endTime": 53.92,
+              "bullets": [
+                "Address addiction with compassion, science, responsibility",
+                "Saving lives, protecting families, strengthening communities",
+                "Supporting rehab centers is a necessity, not just an option"
+              ]
+            },
+            {
+              "id": "o8-3",
+              "title": "Naloxone Should Stay in Rehab",
+              "startTime": 53.92,
+              "endTime": 77.44,
+              "bullets": [
+                "Unsupervised naloxone distribution may incentivize riskier doses",
+                "People may think they are invincible with naloxone available",
+                "Naloxone should only be distributed within rehabilitation centers"
+              ]
+            }
+          ]
+        }
+      ],
+      "keyMoments": [
+        {
+          "time": 0.1,
+          "segmentId": "seg-1",
+          "label": "is going.",
+          "type": "rhetoric"
+        },
+        {
+          "time": 22.6,
+          "segmentId": "seg-1",
+          "label": "dying. So, currently, one of the most",
+          "type": "rhetoric"
+        },
+        {
+          "time": 48,
+          "segmentId": "seg-1",
+          "label": "policy is to increase the availability",
+          "type": "rhetoric"
+        },
+        {
+          "time": 72.1,
+          "segmentId": "seg-1",
+          "label": "important step in our policy because it",
+          "type": "structure"
+        },
+        {
+          "time": 96,
+          "segmentId": "seg-1",
+          "label": "it will help people start to become",
+          "type": "evidence"
+        },
+        {
+          "time": 0.2,
+          "segmentId": "seg-2",
+          "label": "See?",
+          "type": "rhetoric"
+        },
+        {
+          "time": 21.8,
+          "segmentId": "seg-2",
+          "label": "preventable. The crisis is not about",
+          "type": "rhetoric"
+        },
+        {
+          "time": 46.5,
+          "segmentId": "seg-2",
+          "label": "long-term economic consequences. Most",
+          "type": "rhetoric"
+        },
+        {
+          "time": 67.9,
+          "segmentId": "seg-2",
+          "label": "substances like fentanyl. Without proper",
+          "type": "structure"
+        },
+        {
+          "time": 92.2,
+          "segmentId": "seg-2",
+          "label": "those who are struggling, uh",
+          "type": "evidence"
+        },
+        {
+          "time": 1.5,
+          "segmentId": "seg-3",
+          "label": "Okay. So, we believe the best way to",
+          "type": "evidence"
+        },
+        {
+          "time": 32.6,
+          "segmentId": "seg-3",
+          "label": "reverse nearly 400,000 overdoses,",
+          "type": "evidence"
+        },
+        {
+          "time": 62.1,
+          "segmentId": "seg-3",
+          "label": "directly lead to more lives saved. This",
+          "type": "rhetoric"
+        },
+        {
+          "time": 91.7,
+          "segmentId": "seg-3",
+          "label": "to treatment programs is equally",
+          "type": "structure"
+        },
+        {
+          "time": 121.9,
+          "segmentId": "seg-3",
+          "label": "mental health factors that contribute to",
+          "type": "evidence"
+        },
+        {
+          "time": 0.1,
+          "segmentId": "seg-4",
+          "label": "groups. Main arguments number two.",
+          "type": "evidence"
+        },
+        {
+          "time": 18.9,
+          "segmentId": "seg-4",
+          "label": "and behavioral therapy significantly",
+          "type": "argument"
+        },
+        {
+          "time": 38.4,
+          "segmentId": "seg-4",
+          "label": "habits. By offering a stable, controlled",
+          "type": "rhetoric"
+        },
+        {
+          "time": 59,
+          "segmentId": "seg-4",
+          "label": "death in opioid overdose cases. One of",
+          "type": "structure"
+        },
+        {
+          "time": 79,
+          "segmentId": "seg-4",
+          "label": "a dangerous situation into an important",
+          "type": "evidence"
+        },
+        {
+          "time": 0.7,
+          "segmentId": "seg-5",
+          "label": "Um, while some people argue that making",
+          "type": "argument"
+        },
+        {
+          "time": 26.1,
+          "segmentId": "seg-5",
+          "label": "in drug use. Research from the National",
+          "type": "evidence"
+        },
+        {
+          "time": 50.6,
+          "segmentId": "seg-5",
+          "label": "important to recognize that addiction is",
+          "type": "argument"
+        },
+        {
+          "time": 77.8,
+          "segmentId": "seg-5",
+          "label": "overdoses may be fatal within minutes.",
+          "type": "argument"
+        },
+        {
+          "time": 103.1,
+          "segmentId": "seg-5",
+          "label": "distributation are cru crucial first",
+          "type": "argument"
+        },
+        {
+          "time": 0.6,
+          "segmentId": "seg-6",
+          "label": "Well, they didn't even talk about ours.",
+          "type": "argument"
+        },
+        {
+          "time": 14.9,
+          "segmentId": "seg-6",
+          "label": "believe that providing supervised",
+          "type": "argument"
+        },
+        {
+          "time": 30.2,
+          "segmentId": "seg-6",
+          "label": "limited. In fact, without support,",
+          "type": "argument"
+        },
+        {
+          "time": 48.9,
+          "segmentId": "seg-6",
+          "label": "using and need help. These facilities",
+          "type": "argument"
+        },
+        {
+          "time": 66.9,
+          "segmentId": "seg-6",
+          "label": "rehabilitation centers reduce the",
+          "type": "argument"
+        },
+        {
+          "time": 3.4,
+          "segmentId": "seg-7",
+          "label": "Uh in conclusion, the opioid epidemic is",
+          "type": "evidence"
+        },
+        {
+          "time": 19,
+          "segmentId": "seg-7",
+          "label": "increasing access to Malone, we ensure",
+          "type": "argument"
+        },
+        {
+          "time": 34.3,
+          "segmentId": "seg-7",
+          "label": "saved and more can continue to be saved.",
+          "type": "rhetoric"
+        },
+        {
+          "time": 48.9,
+          "segmentId": "seg-7",
+          "label": "important. Addiction is a disease,",
+          "type": "structure"
+        },
+        {
+          "time": 65.8,
+          "segmentId": "seg-7",
+          "label": "future. By expanding access to melazone",
+          "type": "evidence"
+        },
+        {
+          "time": 6.2,
+          "segmentId": "seg-8",
+          "label": "Rehabilitation centers are critical and",
+          "type": "evidence"
+        },
+        {
+          "time": 20.5,
+          "segmentId": "seg-8",
+          "label": "supervised environments where",
+          "type": "argument"
+        },
+        {
+          "time": 36.3,
+          "segmentId": "seg-8",
+          "label": "only saving individual lives, but also",
+          "type": "rhetoric"
+        },
+        {
+          "time": 51.5,
+          "segmentId": "seg-8",
+          "label": "Distributing nlloxxone without",
+          "type": "structure"
+        },
+        {
+          "time": 66.9,
+          "segmentId": "seg-8",
+          "label": "the crisis and should only be",
+          "type": "evidence"
+        }
+      ]
     }
   ]
 }
