@@ -431,6 +431,88 @@ Pick 4-6 moments that are most important for students to notice.`
   }, [generateOutline, generatePrompts, generateKeyMoments]);
 
   // ===========================================================================
+  // AI TEAM METADATA
+  // ===========================================================================
+
+  const [teamMetaStatus, setTeamMetaStatus] = useState('idle'); // idle | loading | done | error
+
+  const generateTeamMetadata = useCallback(async () => {
+    const hasTranscripts = transcripts.some(t => t.length > 0);
+    if (!hasTranscripts || !apiKey) return;
+
+    setTeamMetaStatus('loading');
+    try {
+      // Gather all transcripts labeled by segment
+      const allTranscriptText = segments.map((seg, i) => {
+        if (!transcripts[i].length) return null;
+        const text = transcripts[i].map(t => `${formatTime(t.start)} ${t.text}`).join('\n');
+        return `=== ${seg.label} ===\n${text}`;
+      }).filter(Boolean).join('\n\n');
+
+      const result = await callClaude(
+        'You are an expert debate coach analyzing high school debate transcripts. Return ONLY valid JSON, no explanation.',
+        `Analyze all of these debate segment transcripts and extract team metadata.
+
+Debate Topic: ${debateTopic || '(not specified)'}
+Team A Name: ${teamAName}
+Team B Name: ${teamBName}
+
+Transcripts:
+${allTranscriptText}
+
+Return a JSON object:
+{
+  "teamA": {
+    "members": ["First Last", "First Last"],
+    "position": "A 1-2 sentence summary of Team A's overall policy position/argument",
+    "keyStats": ["Statistic or data point cited by Team A", "Another stat"]
+  },
+  "teamB": {
+    "members": ["First Last", "First Last"],
+    "position": "A 1-2 sentence summary of Team B's overall policy position/argument",
+    "keyStats": ["Statistic or data point cited by Team B", "Another stat"]
+  }
+}
+
+Requirements:
+- members: List the student names you can identify from the transcript (speakers, names mentioned). If you cannot identify specific names, return an empty array.
+- position: Summarize each team's core argument in 1-2 clear sentences. Write for a high school audience.
+- keyStats: Extract 2-4 specific statistics, data points, or factual claims each team uses as evidence. Quote them closely. If none are found, return an empty array.`
+      );
+
+      const parsed = JSON.parse(result.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim());
+
+      // Only fill in fields that are currently empty
+      if (!teamAMembers.trim() && parsed.teamA.members?.length) {
+        setTeamAMembers(parsed.teamA.members.join(', '));
+      }
+      if (!teamAPosition.trim() && parsed.teamA.position) {
+        setTeamAPosition(parsed.teamA.position);
+      }
+      if (teamAStats.every(s => !s.trim()) && parsed.teamA.keyStats?.length) {
+        setTeamAStats(parsed.teamA.keyStats);
+      }
+      if (!teamBMembers.trim() && parsed.teamB.members?.length) {
+        setTeamBMembers(parsed.teamB.members.join(', '));
+      }
+      if (!teamBPosition.trim() && parsed.teamB.position) {
+        setTeamBPosition(parsed.teamB.position);
+      }
+      if (teamBStats.every(s => !s.trim()) && parsed.teamB.keyStats?.length) {
+        setTeamBStats(parsed.teamB.keyStats);
+      }
+
+      setTeamMetaStatus('done');
+    } catch (err) {
+      console.error('Team metadata generation error:', err);
+      setTeamMetaStatus('error');
+      alert('Error generating team metadata: ' + err.message);
+    }
+  }, [apiKey, transcripts, segments, debateTopic, teamAName, teamBName,
+      teamAMembers, teamAPosition, teamAStats, teamBMembers, teamBPosition, teamBStats,
+      callClaude]);
+
+  // ===========================================================================
   // EXPORT
   // ===========================================================================
 
@@ -626,6 +708,14 @@ Pick 4-6 moments that are most important for students to notice.`
 
       <hr className="border-gray-200" />
 
+      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+        <p className="text-sm text-blue-800 font-body">
+          <strong>💡 These fields are optional.</strong> If you leave them blank, the AI can fill them in
+          automatically in Step 5 after you upload transcripts. It will analyze what each team said and
+          generate position statements, key statistics, and more.
+        </p>
+      </div>
+
       {/* Team A */}
       <div className="bg-cedar/5 border border-cedar/20 rounded-lg p-5">
         <h3 className="text-lg text-cedar mb-3">{teamAName || 'Team A'}</h3>
@@ -637,19 +727,19 @@ Pick 4-6 moments that are most important for students to notice.`
               placeholder="e.g., Group 1" />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Team Members (comma-separated)</label>
+            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Team Members (comma-separated) <span className="text-xs font-normal text-gray-400 ml-1">Optional — AI can help</span></label>
             <input type="text" value={teamAMembers} onChange={e => setTeamAMembers(e.target.value)}
               className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm font-body focus:ring-2 focus:ring-cedar focus:border-cedar outline-none"
               placeholder="e.g., Trisha, Aidan, Coco, Charlie, Rosemary" />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Position Statement</label>
+            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Position Statement <span className="text-xs font-normal text-gray-400 ml-1">Optional — AI can generate from transcripts</span></label>
             <textarea value={teamAPosition} onChange={e => setTeamAPosition(e.target.value)} rows={2}
               className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm font-body focus:ring-2 focus:ring-cedar focus:border-cedar outline-none resize-none"
               placeholder="What this team argues for..." />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Key Statistics</label>
+            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Key Statistics <span className="text-xs font-normal text-gray-400 ml-1">Optional — AI can extract from transcripts</span></label>
             {teamAStats.map((stat, i) => (
               <div key={i} className="flex gap-2 mb-2">
                 <input type="text" value={stat} onChange={e => {
@@ -680,19 +770,19 @@ Pick 4-6 moments that are most important for students to notice.`
               placeholder="e.g., Group 2" />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Team Members (comma-separated)</label>
+            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Team Members (comma-separated) <span className="text-xs font-normal text-gray-400 ml-1">Optional — AI can help</span></label>
             <input type="text" value={teamBMembers} onChange={e => setTeamBMembers(e.target.value)}
               className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm font-body focus:ring-2 focus:ring-cedar focus:border-cedar outline-none"
               placeholder="e.g., Finn, Brody, Sophie, Kayla, Chloe" />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Position Statement</label>
+            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Position Statement <span className="text-xs font-normal text-gray-400 ml-1">Optional — AI can generate from transcripts</span></label>
             <textarea value={teamBPosition} onChange={e => setTeamBPosition(e.target.value)} rows={2}
               className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm font-body focus:ring-2 focus:ring-cedar focus:border-cedar outline-none resize-none"
               placeholder="What this team argues for..." />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Key Statistics</label>
+            <label className="block text-sm font-semibold text-gray-700 mb-1 font-body">Key Statistics <span className="text-xs font-normal text-gray-400 ml-1">Optional — AI can extract from transcripts</span></label>
             {teamBStats.map((stat, i) => (
               <div key={i} className="flex gap-2 mb-2">
                 <input type="text" value={stat} onChange={e => {
@@ -896,6 +986,70 @@ Pick 4-6 moments that are most important for students to notice.`
         {!hasTranscripts && (
           <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center">
             <p className="text-gray-500 font-body">Upload transcripts in Step 4 first — AI generation needs transcript text to work from.</p>
+          </div>
+        )}
+
+        {/* Team Metadata Auto-Fill */}
+        {hasTranscripts && apiKey && (
+          <div className="border border-blue-200 rounded-lg bg-blue-50/50 p-5">
+            <div className="flex items-center justify-between mb-2">
+              <div>
+                <h4 className="font-semibold text-sm font-body text-blue-900">Team Metadata (Auto-Fill)</h4>
+                <p className="text-xs text-blue-600 font-body mt-1">
+                  AI will analyze all transcripts to identify team members, summarize each team's position, and extract key statistics they cited.
+                  {(!teamAMembers.trim() || !teamBMembers.trim() || !teamAPosition.trim() || !teamBPosition.trim()) ?
+                    ' Empty fields from Step 2 will be filled in automatically.' :
+                    ' Fields you already filled in Step 2 will be kept as-is.'}
+                </p>
+              </div>
+              <div className="flex items-center gap-3 shrink-0 ml-4">
+                {teamMetaStatus === 'done' && <span className="text-xs text-green-600 font-body font-semibold">✓ Done</span>}
+                {teamMetaStatus === 'error' && <span className="text-xs text-red-500 font-body">✕ Error</span>}
+                <button
+                  onClick={generateTeamMetadata}
+                  disabled={teamMetaStatus === 'loading'}
+                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-body font-semibold hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap">
+                  {teamMetaStatus === 'loading' ? 'Analyzing Transcripts...' : teamMetaStatus === 'done' ? 'Re-Generate' : 'Generate Team Info'}
+                </button>
+              </div>
+            </div>
+            {teamMetaStatus === 'done' && (
+              <div className="mt-3 grid grid-cols-2 gap-3 text-xs font-body">
+                <div className="bg-white rounded border border-blue-100 p-3">
+                  <p className="font-semibold text-blue-800 mb-1">{teamAName}</p>
+                  <p className="text-gray-600"><strong>Members:</strong> {teamAMembers || '(none found)'}</p>
+                  <p className="text-gray-600 mt-1"><strong>Position:</strong> {teamAPosition || '(none)'}</p>
+                  <p className="text-gray-600 mt-1"><strong>Key Stats:</strong> {teamAStats.filter(s=>s.trim()).join('; ') || '(none)'}</p>
+                </div>
+                <div className="bg-white rounded border border-blue-100 p-3">
+                  <p className="font-semibold text-blue-800 mb-1">{teamBName}</p>
+                  <p className="text-gray-600"><strong>Members:</strong> {teamBMembers || '(none found)'}</p>
+                  <p className="text-gray-600 mt-1"><strong>Position:</strong> {teamBPosition || '(none)'}</p>
+                  <p className="text-gray-600 mt-1"><strong>Key Stats:</strong> {teamBStats.filter(s=>s.trim()).join('; ') || '(none)'}</p>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Generate Everything Button */}
+        {hasTranscripts && apiKey && (
+          <div className="flex items-center justify-between bg-gradient-to-r from-cedar/10 to-leather/10 border border-cedar/30 rounded-lg p-4">
+            <div>
+              <h4 className="font-semibold text-sm font-body text-leather">Generate All AI Content</h4>
+              <p className="text-xs text-gray-500 font-body mt-1">Runs team metadata + outlines, study questions, and key moments for every segment with a transcript.</p>
+            </div>
+            <button
+              onClick={async () => {
+                await generateTeamMetadata();
+                for (let i = 0; i < segments.length; i++) {
+                  if (transcripts[i].length > 0) await generateAllForSegment(i);
+                }
+              }}
+              disabled={aiStatus.some(s => s.outline === 'loading' || s.prompts === 'loading' || s.moments === 'loading') || teamMetaStatus === 'loading'}
+              className="px-5 py-2.5 bg-leather text-white rounded-lg text-sm font-body font-bold hover:bg-leather/90 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap ml-4">
+              Generate Everything
+            </button>
           </div>
         )}
 

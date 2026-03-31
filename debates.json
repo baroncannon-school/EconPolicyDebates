@@ -20,7 +20,7 @@
           "Rosemary"
         ],
         "position": "Housing First + Mental Health/Substance Abuse Treatment + Financial Incentives",
-        "onePagerUrl": null,
+        "onePagerUrl": "briefs/debate-1-teamA.pdf",
         "keyStats": [
           "82% of homeless individuals have mental health conditions",
           "90% Housing First tenant retention rate",
@@ -39,7 +39,7 @@
           "Chloe"
         ],
         "position": "Housing First with step-by-step approach: housing centers first, then expand to rehab facilities",
-        "onePagerUrl": null,
+        "onePagerUrl": "briefs/debate-1-teamB.pdf",
         "keyStats": [
           "9 out of 10 people remain housed after 1 year",
           "Housing first increases engagement in job training and healthcare",
@@ -1837,7 +1837,7 @@
         "name": "Group 1",
         "members": [],
         "position": "Regulate legal opioid prescriptions (limiting to severe/cancer pain, following Japan's model) and increase prison sentences for illegal opioid trafficking to attack the crisis from both the supply and demand sides.",
-        "onePagerUrl": null,
+        "onePagerUrl": "briefs/debate-2-teamA.pdf",
         "keyStats": [
           "Over 1 million US drug overdose deaths, 500,000+ from opioids",
           "150-220 opioid overdose deaths per day",
@@ -1851,7 +1851,7 @@
         "name": "Group 2",
         "members": [],
         "position": "Expand drug courts and treatment-based rehabilitation programs as alternatives to incarceration, treating substance abuse as a public health issue rather than a criminal one to reduce recidivism and promote recovery.",
-        "onePagerUrl": null,
+        "onePagerUrl": "briefs/debate-2-teamB.pdf",
         "keyStats": [
           "564,000 opioid deaths in California in two decades",
           "7.1 million US adults under criminal justice supervision; nearly half struggle with drug abuse",
@@ -5129,7 +5129,7 @@
         "name": "Group 1",
         "members": [],
         "position": "Implement a progressive income-based health insurance system that restructures costs based on ability to pay, expands subsidies through existing programs like ACA and Medicaid, and strengthens the private insurance market while prioritizing preventive care.",
-        "onePagerUrl": null,
+        "onePagerUrl": "briefs/debate-3-teamA.pdf",
         "keyStats": [
           "53% of Californians delayed or skipped medical care due to costs in 2023",
           "38% of Californians carried medical debt",
@@ -5143,7 +5143,7 @@
         "name": "Group 2",
         "members": [],
         "position": "Lower the Medicare eligibility age from 65 to 60, expanding government-provided coverage to older adults who face the highest private insurance premiums and greatest health risks, reducing household spending and improving health outcomes.",
-        "onePagerUrl": null,
+        "onePagerUrl": "briefs/debate-3-teamB.pdf",
         "keyStats": [
           "25% of adults aged 60-64 experience being uninsured before Medicare at 65",
           "Lowering Medicare age would reduce total household health spending by $3.2 billion",
@@ -8792,7 +8792,7 @@
         "name": "Group 1",
         "members": [],
         "position": "Implement personalized wraparound care that addresses the root causes of homelessness — mental health disorders, addiction, and unemployment — through tailored services, temporary housing with onboarding, and support for long-term self-sufficiency.",
-        "onePagerUrl": null,
+        "onePagerUrl": "briefs/debate-4-teamA.pdf",
         "keyStats": [
           "67% of homeless population homeless due to mental health struggles (nonprofit survey)",
           "Bay Area Community Service: mental health treatment improves long-term outcomes and confidence",
@@ -8805,7 +8805,7 @@
         "name": "Group 2",
         "members": [],
         "position": "Implement Housing First nationwide — provide rapid access to stable, permanent housing without preconditions, then offer voluntary support services. Housing is a precondition for recovery, and the data shows this approach is both more effective and more cost-efficient.",
-        "onePagerUrl": null,
+        "onePagerUrl": "briefs/debate-4-teamB.pdf",
         "keyStats": [
           "90%+ of Housing First participants remain stably housed (CA Dept of Housing)",
           "Review of 26 studies: Housing First decreased homelessness by 88%, improved stability by 41%",
@@ -11058,7 +11058,7 @@
         "name": "Group 1",
         "members": [],
         "position": "Increase universal access to naloxone (Narcan) and expand treatment resources including rehabilitation centers and medication-assisted treatment (MAT), starting in California and expanding nationwide. Saving lives first through naloxone, then supporting long-term recovery through treatment.",
-        "onePagerUrl": null,
+        "onePagerUrl": "briefs/debate-5-teamA.pdf",
         "keyStats": [
           "CA Dept of Public Health: naloxone distribution has reversed nearly 400,000 overdoses",
           "National Library of Medicine: 84.3% of people alive 1 year after receiving naloxone from EMS",
@@ -11072,7 +11072,7 @@
         "name": "Group 2",
         "members": [],
         "position": "Invest primarily in rehabilitation centers as the main solution — providing structured, supervised environments for treatment, medical care, counseling, and behavioral therapy. Naloxone should be distributed within rehab centers, not widely without supervision.",
-        "onePagerUrl": null,
+        "onePagerUrl": "briefs/debate-5-teamB.pdf",
         "keyStats": [
           "NIDA: structured treatment programs significantly improve recovery outcomes and reduce relapse",
           "CDC: timely administration of overdose reversal medications prevents death in overdose cases",
@@ -13674,6 +13674,1819 @@
           "segmentId": "seg-8",
           "label": "the crisis and should only be",
           "type": "evidence"
+        }
+      ]
+    },
+    {
+      "id": "debate-6",
+      "period": "1st",
+      "debateTopic": "Health Insurance",
+      "topic": "Health Insurance: Universal Coverage vs. Market Solutions",
+      "description": "Should the U.S. government expand the Affordable Care Act through Medicaid drug rebate expansion, or focus on market-based solutions? This debate examines the trade-offs between universal coverage, affordability, and economic efficiency in healthcare policy.",
+      "teamA": {
+        "name": "Group 1",
+        "members": [],
+        "position": "Expand Medicaid drug rebate program to improve prescription medication affordability and accessibility",
+        "onePagerUrl": "briefs/debate-6-teamA.pdf",
+        "keyStats": [
+          "Medicaid collects $42B in rebates from $60B drug spending",
+          "60% of adults worry about affording prescription drugs",
+          "21% of adults skip prescriptions due to cost",
+          "1 in 7 cut pills or skip doses due to costs",
+          "10% revenue reduction leads to only 2-15% innovation impact"
+        ]
+      },
+      "teamB": {
+        "name": "Group 2",
+        "members": [],
+        "position": "Support and strengthen the Affordable Care Act through expanded coverage and pre-existing condition protections",
+        "onePagerUrl": "briefs/debate-6-teamB.pdf",
+        "keyStats": [
+          "Uninsured rate fell from 14.5% to 8% after ACA",
+          "Millions of Americans gained healthcare coverage",
+          "Pre-existing condition protections eliminate denial barriers",
+          "Medicaid expansion reduced hospital uncompensated care",
+          "9 out of 10 people remain housed after housing stability"
+        ]
+      },
+      "segments": [
+        {
+          "id": "seg-1",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "A",
+          "youtubeId": "nKK_DcDfduU",
+          "transcript": [
+            {
+              "start": 0.56,
+              "end": 5.759,
+              "text": "Okay."
+            },
+            {
+              "start": 3.2,
+              "end": 7.68,
+              "text": "Uh, we support expanding the Medicaid"
+            },
+            {
+              "start": 5.759,
+              "end": 9.44,
+              "text": "drug rebate program because it makes"
+            },
+            {
+              "start": 7.68,
+              "end": 11.519,
+              "text": "prescription medications more affordable"
+            },
+            {
+              "start": 9.44,
+              "end": 13.44,
+              "text": "and accessible. Too many Americans"
+            },
+            {
+              "start": 11.519,
+              "end": 15.04,
+              "text": "struggle to pay for necessary drugs, and"
+            },
+            {
+              "start": 13.44,
+              "end": 18.16,
+              "text": "this policy lowers costs for both"
+            },
+            {
+              "start": 15.04,
+              "end": 20.32,
+              "text": "patients and taxpayers. Evidence shows"
+            },
+            {
+              "start": 18.16,
+              "end": 22,
+              "text": "rebate programs reduce drug prices, so"
+            },
+            {
+              "start": 20.32,
+              "end": 24.24,
+              "text": "expanding them builds on a proven"
+            },
+            {
+              "start": 22,
+              "end": 26.16,
+              "text": "system. Opponents argue it may hurt"
+            },
+            {
+              "start": 24.24,
+              "end": 27.519,
+              "text": "pharmaceutical innovation, but companies"
+            },
+            {
+              "start": 26.16,
+              "end": 29.679,
+              "text": "will still profit through large"
+            },
+            {
+              "start": 27.519,
+              "end": 31.359,
+              "text": "guaranteed Medicaid purchases. With"
+            },
+            {
+              "start": 29.679,
+              "end": 33.04,
+              "text": "proper enforcement and policy design,"
+            },
+            {
+              "start": 31.359,
+              "end": 37.239,
+              "text": "innovation can continue while more"
+            },
+            {
+              "start": 33.04,
+              "end": 37.239,
+              "text": "people get the medication they need."
+            }
+          ],
+          "duration": 37.239,
+          "prompts": [
+            "What is Team A's primary argument for why the ACA matters to American healthcare?",
+            "What specific data does Team A cite to demonstrate the ACA's success in expanding coverage?"
+          ],
+          "outline": [
+            {
+              "id": "o1-1",
+              "title": "Healthcare Access Crisis",
+              "startTime": 0.56,
+              "endTime": 5.76,
+              "bullets": [
+                "Many Americans cannot afford health insurance",
+                "Millions uninsured or denied coverage for pre-existing conditions"
+              ]
+            },
+            {
+              "id": "o1-2",
+              "title": "The Problem: Delayed Care",
+              "startTime": 5.76,
+              "endTime": 13.04,
+              "bullets": [
+                "People delay care when they cannot afford it",
+                "Increases personal suffering and overall costs to society"
+              ]
+            },
+            {
+              "id": "o1-3",
+              "title": "The ACA Solution",
+              "startTime": 13.04,
+              "endTime": 25.36,
+              "bullets": [
+                "Health insurance marketplaces established",
+                "Protections for pre-existing conditions",
+                "Medicaid expansions in many states"
+              ]
+            },
+            {
+              "id": "o1-4",
+              "title": "Proven Success",
+              "startTime": 25.36,
+              "endTime": 37.24,
+              "bullets": [
+                "Uninsured rate fell from 14.5% to 8%",
+                "Millions gained access to health coverage"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-2",
+          "type": "opening",
+          "label": "Opening Statement",
+          "team": "B",
+          "youtubeId": "GpjmWbeZtlg",
+          "transcript": [
+            {
+              "start": 3.2800000000000002,
+              "end": 8,
+              "text": "We believe the Affordable Care Act is an"
+            },
+            {
+              "start": 5.92,
+              "end": 10.24,
+              "text": "important policy because it was created"
+            },
+            {
+              "start": 8,
+              "end": 13.04,
+              "text": "to solve the major problems of millions"
+            },
+            {
+              "start": 10.24,
+              "end": 15.679,
+              "text": "of Americans not being able to afford"
+            },
+            {
+              "start": 13.04,
+              "end": 18.4,
+              "text": "health insurance or get reliable medic"
+            },
+            {
+              "start": 15.679,
+              "end": 20.8,
+              "text": "medical care. Before the ACA, many"
+            },
+            {
+              "start": 18.4,
+              "end": 23.359,
+              "text": "people were uninsured, denied coverage"
+            },
+            {
+              "start": 20.8,
+              "end": 25.519,
+              "text": "because of pre-existing conditions, or"
+            },
+            {
+              "start": 23.359,
+              "end": 28.16,
+              "text": "stuck with expensive plans that did not"
+            },
+            {
+              "start": 25.519,
+              "end": 30.24,
+              "text": "fully protect them. This matters because"
+            },
+            {
+              "start": 28.16,
+              "end": 32.16,
+              "text": "when people could not afford doctor"
+            },
+            {
+              "start": 30.24,
+              "end": 35.12,
+              "text": "visits, medicine or treatment, they"
+            },
+            {
+              "start": 32.16,
+              "end": 37.12,
+              "text": "often delayed care until their health"
+            },
+            {
+              "start": 35.12,
+              "end": 40,
+              "text": "became worse, which increased both"
+            },
+            {
+              "start": 37.12,
+              "end": 43.36,
+              "text": "personal suffering and overall cost to"
+            },
+            {
+              "start": 40,
+              "end": 45.04,
+              "text": "society. The ACA was implemented across"
+            },
+            {
+              "start": 43.36,
+              "end": 47.2,
+              "text": "the United States through health"
+            },
+            {
+              "start": 45.04,
+              "end": 50.64,
+              "text": "insurance marketplaces,"
+            },
+            {
+              "start": 47.2,
+              "end": 54.48,
+              "text": "protections for people with pre-existing"
+            },
+            {
+              "start": 50.64,
+              "end": 56.96,
+              "text": "conditions, and Medicaid expansions in"
+            },
+            {
+              "start": 54.48,
+              "end": 59.28,
+              "text": "many states, all with the goal of making"
+            },
+            {
+              "start": 56.96,
+              "end": 62.239,
+              "text": "health care more accessible and"
+            },
+            {
+              "start": 59.28,
+              "end": 65.28,
+              "text": "affordable. According to the Center on"
+            },
+            {
+              "start": 62.239,
+              "end": 69.04,
+              "text": "Budget and Policy Priorities, after the"
+            },
+            {
+              "start": 65.28,
+              "end": 71.28,
+              "text": "ACA's major coverage provisions took"
+            },
+            {
+              "start": 69.04,
+              "end": 73.2,
+              "text": "effect, the uninsured rate fell from"
+            },
+            {
+              "start": 71.28,
+              "end": 78.64,
+              "text": "14.5%"
+            },
+            {
+              "start": 73.2,
+              "end": 81.28,
+              "text": "in 2013 to 8% in 2022, showing that the"
+            },
+            {
+              "start": 78.64,
+              "end": 82.96,
+              "text": "law significantly improved access to"
+            },
+            {
+              "start": 81.28,
+              "end": 85.36,
+              "text": "health coverage for millions of"
+            },
+            {
+              "start": 82.96,
+              "end": 88.56,
+              "text": "Americans. This policy is important"
+            },
+            {
+              "start": 85.36,
+              "end": 92.159,
+              "text": "because is important not only because it"
+            },
+            {
+              "start": 88.56,
+              "end": 95.119,
+              "text": "helps individuals get needed care but"
+            },
+            {
+              "start": 92.159,
+              "end": 98.799,
+              "text": "also it strengthens the general welfare"
+            },
+            {
+              "start": 95.119,
+              "end": 101.28,
+              "text": "by improve improving public health"
+            },
+            {
+              "start": 98.799,
+              "end": 105.24,
+              "text": "reducing financial hardship and creating"
+            },
+            {
+              "start": 101.28,
+              "end": 105.24,
+              "text": "a more stable society."
+            }
+          ],
+          "duration": 105.24,
+          "prompts": [
+            "What are the three main components of the ACA that Team B highlights in their opening?",
+            "How does Team B connect the ACA's coverage expansion to broader economic and social benefits?"
+          ],
+          "outline": [
+            {
+              "id": "o2-1",
+              "title": "The Affordability Solution",
+              "startTime": 3.28,
+              "endTime": 10.24,
+              "bullets": [
+                "ACA created to make healthcare affordable and accessible",
+                "Address millions unable to afford insurance or medical care"
+              ]
+            },
+            {
+              "id": "o2-2",
+              "title": "Key Policy Components",
+              "startTime": 10.24,
+              "endTime": 20.8,
+              "bullets": [
+                "Health insurance marketplaces",
+                "Pre-existing condition protections",
+                "Medicaid expansion programs"
+              ]
+            },
+            {
+              "id": "o2-3",
+              "title": "Coverage Gap Reduction",
+              "startTime": 20.8,
+              "endTime": 32.16,
+              "bullets": [
+                "Uninsured rate: 14.5% to 8% after ACA",
+                "Significantly improved access for millions"
+              ]
+            },
+            {
+              "id": "o2-4",
+              "title": "Broader Social Benefits",
+              "startTime": 32.16,
+              "endTime": 45.24,
+              "bullets": [
+                "Improves individual health outcomes",
+                "Strengthens general welfare and public health",
+                "Reduces financial hardship and promotes stability"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-3",
+          "type": "main",
+          "label": "Main Argument",
+          "team": "A",
+          "youtubeId": "u3aDnFaERdg",
+          "transcript": [
+            {
+              "start": 3.84,
+              "end": 7.12,
+              "text": "Expanding the Medicaid drug rebate"
+            },
+            {
+              "start": 5.68,
+              "end": 9.04,
+              "text": "program is justified because it"
+            },
+            {
+              "start": 7.12,
+              "end": 10.32,
+              "text": "demonstratedly"
+            },
+            {
+              "start": 9.04,
+              "end": 10.88,
+              "text": "lowers"
+            },
+            {
+              "start": 10.32,
+              "end": 13.36,
+              "text": "sure"
+            },
+            {
+              "start": 10.88,
+              "end": 14.559,
+              "text": "net drug prices and program spending"
+            },
+            {
+              "start": 13.36,
+              "end": 16.96,
+              "text": "while addressing widespread"
+            },
+            {
+              "start": 14.559,
+              "end": 18.72,
+              "text": "affordability problems and any risk to"
+            },
+            {
+              "start": 16.96,
+              "end": 21.6,
+              "text": "innovation are modest and manageable"
+            },
+            {
+              "start": 18.72,
+              "end": 23.279,
+              "text": "relative to those gains. Medicaid's drug"
+            },
+            {
+              "start": 21.6,
+              "end": 25.199,
+              "text": "rebate system already cuts net"
+            },
+            {
+              "start": 23.279,
+              "end": 27.119,
+              "text": "prescription spending roughly in half,"
+            },
+            {
+              "start": 25.199,
+              "end": 29.92,
+              "text": "showing it is a proven cost control"
+            },
+            {
+              "start": 27.119,
+              "end": 32.079,
+              "text": "tool. Medicaid spent about 60 billion on"
+            },
+            {
+              "start": 29.92,
+              "end": 34.48,
+              "text": "output prescription drugs, but collected"
+            },
+            {
+              "start": 32.079,
+              "end": 36.88,
+              "text": "42 billion in rebates, bringing down net"
+            },
+            {
+              "start": 34.48,
+              "end": 38.399,
+              "text": "spending 38 billion. These figures"
+            },
+            {
+              "start": 36.88,
+              "end": 40.32,
+              "text": "support the claim that rebates"
+            },
+            {
+              "start": 38.399,
+              "end": 43.52,
+              "text": "substantially reduce what Medicaid and"
+            },
+            {
+              "start": 40.32,
+              "end": 45.92,
+              "text": "tax pays for drugs. To address"
+            },
+            {
+              "start": 43.52,
+              "end": 48.079,
+              "text": "affordability, 60% of adults report"
+            },
+            {
+              "start": 45.92,
+              "end": 50.16,
+              "text": "being worried about affordability cru"
+            },
+            {
+              "start": 48.079,
+              "end": 53.68,
+              "text": "affording crucial prescription drugs for"
+            },
+            {
+              "start": 50.16,
+              "end": 55.76,
+              "text": "them and their families. AF finds 21% of"
+            },
+            {
+              "start": 53.68,
+              "end": 58.719,
+              "text": "adults have not filled prescription"
+            },
+            {
+              "start": 55.76,
+              "end": 60,
+              "text": "because of cost. 23%"
+            },
+            {
+              "start": 58.719,
+              "end": 62.239,
+              "text": "substituted over-the-counter"
+            },
+            {
+              "start": 60,
+              "end": 64.799,
+              "text": "alternatives and about one in seven cut"
+            },
+            {
+              "start": 62.239,
+              "end": 67.6,
+              "text": "pills and skip doses in the last year"
+            },
+            {
+              "start": 64.799,
+              "end": 69.84,
+              "text": "due to costs. These statistics show a"
+            },
+            {
+              "start": 67.6,
+              "end": 72.32,
+              "text": "clear affordability crisis that rebate"
+            },
+            {
+              "start": 69.84,
+              "end": 74.56,
+              "text": "expansions can alleviate by pushing net"
+            },
+            {
+              "start": 72.32,
+              "end": 76.159,
+              "text": "prices down and a large public program"
+            },
+            {
+              "start": 74.56,
+              "end": 78.799,
+              "text": "that covers tens of millions of"
+            },
+            {
+              "start": 76.159,
+              "end": 82.159,
+              "text": "low-income people. risk to innovation"
+            },
+            {
+              "start": 78.799,
+              "end": 84.88,
+              "text": "are modest as a USC Schaefer Center"
+            },
+            {
+              "start": 82.159,
+              "end": 87.68,
+              "text": "review estimates that a 10% reduction in"
+            },
+            {
+              "start": 84.88,
+              "end": 90.4,
+              "text": "expected pharmaceutical revenues leads"
+            },
+            {
+              "start": 87.68,
+              "end": 92.4,
+              "text": "to only a 2 to 15% reduction in measures"
+            },
+            {
+              "start": 90.4,
+              "end": 94.88,
+              "text": "of innovations such as clinical trial"
+            },
+            {
+              "start": 92.4,
+              "end": 96.96,
+              "text": "starts or new drug approvals. Drug"
+            },
+            {
+              "start": 94.88,
+              "end": 98.56,
+              "text": "makers still gain access to Medicaid's"
+            },
+            {
+              "start": 96.96,
+              "end": 101.04,
+              "text": "large guaranteed market, so"
+            },
+            {
+              "start": 98.56,
+              "end": 103.04,
+              "text": "well-designed rebate expansions can pre"
+            },
+            {
+              "start": 101.04,
+              "end": 105.36,
+              "text": "preserve profitable incentives for"
+            },
+            {
+              "start": 103.04,
+              "end": 107.28,
+              "text": "innovation while making essential"
+            },
+            {
+              "start": 105.36,
+              "end": 111.479,
+              "text": "medications more affordable and"
+            },
+            {
+              "start": 107.28,
+              "end": 111.479,
+              "text": "accessible for low-income patients."
+            }
+          ],
+          "duration": 111.479,
+          "prompts": [
+            "What evidence does Team A provide about the current Medicaid drug rebate program's effectiveness?",
+            "According to Team A, why is expanding drug rebates a solution to healthcare affordability?",
+            "How does Team A address the concern that rebate expansion might harm pharmaceutical innovation?"
+          ],
+          "outline": [
+            {
+              "id": "o3-1",
+              "title": "Expanding Medicaid Rebates",
+              "startTime": 3.84,
+              "endTime": 16.96,
+              "bullets": [
+                "Medicaid rebate program proven cost control tool",
+                "Cuts net drug prices roughly in half",
+                "Medicaid collected $42B in rebates from $60B spending"
+              ]
+            },
+            {
+              "id": "o3-2",
+              "title": "Prescription Drug Affordability Crisis",
+              "startTime": 16.96,
+              "endTime": 45.92,
+              "bullets": [
+                "60% of adults worry about affording drugs",
+                "21% skip prescriptions due to cost",
+                "1 in 7 cut pills or skip doses"
+              ]
+            },
+            {
+              "id": "o3-3",
+              "title": "Innovation Concerns Are Modest",
+              "startTime": 45.92,
+              "endTime": 51.48,
+              "bullets": [
+                "10% revenue reduction = only 2-15% innovation impact",
+                "Medicaid guaranteed market preserves incentives"
+              ]
+            },
+            {
+              "id": "o3-4",
+              "title": "Balanced Solution",
+              "startTime": 51.48,
+              "endTime": 51.48,
+              "bullets": [
+                "Expands access without harming innovation",
+                "Medicines more affordable for low-income patients"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-4",
+          "type": "main",
+          "label": "Main Argument",
+          "team": "B",
+          "youtubeId": "W5tD5b-DgXw",
+          "transcript": [
+            {
+              "start": 1.04,
+              "end": 8.24,
+              "text": "Um after the AA um ACA took effect the"
+            },
+            {
+              "start": 4.88,
+              "end": 14.32,
+              "text": "insur uninsured rate dropped from uh"
+            },
+            {
+              "start": 8.24,
+              "end": 17.199,
+              "text": "14.5% to 8%. This decline shows the ACA"
+            },
+            {
+              "start": 14.32,
+              "end": 19.76,
+              "text": "effectively expanded access to health"
+            },
+            {
+              "start": 17.199,
+              "end": 24.16,
+              "text": "care insurance meaning more individuals"
+            },
+            {
+              "start": 19.76,
+              "end": 26.24,
+              "text": "could obtain um necessary care. As"
+            },
+            {
+              "start": 24.16,
+              "end": 28.24,
+              "text": "coverage increases, overall public"
+            },
+            {
+              "start": 26.24,
+              "end": 31.76,
+              "text": "health improves and long-term health"
+            },
+            {
+              "start": 28.24,
+              "end": 36,
+              "text": "care costs decreases due due to earlier"
+            },
+            {
+              "start": 31.76,
+              "end": 39.12,
+              "text": "treatment. The ACA protects people with"
+            },
+            {
+              "start": 36,
+              "end": 43.52,
+              "text": "preexisting conditions from being denied"
+            },
+            {
+              "start": 39.12,
+              "end": 47.68,
+              "text": "healthc care coverage by um prohibiting"
+            },
+            {
+              "start": 43.52,
+              "end": 50,
+              "text": "insurers from um prohibiting insurers"
+            },
+            {
+              "start": 47.68,
+              "end": 53.12,
+              "text": "from denying coverage. The ACA"
+            },
+            {
+              "start": 50,
+              "end": 56.48,
+              "text": "eliminated eliminated a major structural"
+            },
+            {
+              "start": 53.12,
+              "end": 59.28,
+              "text": "barrier that excluded high risk"
+            },
+            {
+              "start": 56.48,
+              "end": 62,
+              "text": "individuals from health care system."
+            },
+            {
+              "start": 59.28,
+              "end": 65.68,
+              "text": "This promotes equality and ensures that"
+            },
+            {
+              "start": 62,
+              "end": 68.56,
+              "text": "health care to access or ensures that"
+            },
+            {
+              "start": 65.68,
+              "end": 71.76,
+              "text": "access to health care is based on need"
+            },
+            {
+              "start": 68.56,
+              "end": 76.159,
+              "text": "rather than medical history."
+            },
+            {
+              "start": 71.76,
+              "end": 80.08,
+              "text": "Medicaid expansion reduced hospital"
+            },
+            {
+              "start": 76.159,
+              "end": 83.2,
+              "text": "uncomp un"
+            },
+            {
+              "start": 80.08,
+              "end": 88.159,
+              "text": "uncompensated costs or care costs and"
+            },
+            {
+              "start": 83.2,
+              "end": 89.84,
+              "text": "improved financial stability. Reducing"
+            },
+            {
+              "start": 88.159,
+              "end": 92.64,
+              "text": "uncompensated"
+            },
+            {
+              "start": 89.84,
+              "end": 94.24,
+              "text": "care costs. stabilizes hospital"
+            },
+            {
+              "start": 92.64,
+              "end": 97.68,
+              "text": "financials,"
+            },
+            {
+              "start": 94.24,
+              "end": 100.799,
+              "text": "allowing health care systems to remain"
+            },
+            {
+              "start": 97.68,
+              "end": 103.759,
+              "text": "optional and continue"
+            },
+            {
+              "start": 100.799,
+              "end": 107.119,
+              "text": "serving communities. This demonstrates"
+            },
+            {
+              "start": 103.759,
+              "end": 109.84,
+              "text": "that expanding coverage not only helps"
+            },
+            {
+              "start": 107.119,
+              "end": 113.759,
+              "text": "individuals but also strengthen"
+            },
+            {
+              "start": 109.84,
+              "end": 119.079,
+              "text": "strengthens the border healthcare"
+            },
+            {
+              "start": 113.759,
+              "end": 119.079,
+              "text": "and rest in functions."
+            }
+          ],
+          "duration": 119.079,
+          "prompts": [
+            "What data does Team B present about the ACA's impact on uninsured rates?",
+            "How does Team B explain the relationship between pre-existing condition protections and healthcare access?",
+            "According to Team B, how did Medicaid expansion benefit hospitals and healthcare systems?"
+          ],
+          "outline": [
+            {
+              "id": "o4-1",
+              "title": "ACA Coverage Expansion",
+              "startTime": 1.04,
+              "endTime": 24.16,
+              "bullets": [
+                "Uninsured rate: 14.5% to 8%",
+                "ACA expanded healthcare access significantly",
+                "More individuals obtain necessary medical care"
+              ]
+            },
+            {
+              "id": "o4-2",
+              "title": "Protection from Discrimination",
+              "startTime": 24.16,
+              "endTime": 43.52,
+              "bullets": [
+                "Pre-existing condition protections prohibit denials",
+                "Eliminated structural barriers excluding high-risk individuals",
+                "Healthcare access based on need, not medical history"
+              ]
+            },
+            {
+              "id": "o4-3",
+              "title": "System Stabilization",
+              "startTime": 43.52,
+              "endTime": 59.08,
+              "bullets": [
+                "Medicaid expansion reduced uncompensated hospital costs",
+                "Improved hospital financial stability",
+                "Healthcare systems continue serving communities"
+              ]
+            },
+            {
+              "id": "o4-4",
+              "title": "Broader Economic Benefits",
+              "startTime": 59.08,
+              "endTime": 59.08,
+              "bullets": [
+                "Coverage expansion strengthens broader healthcare system",
+                "Helps individuals and stabilizes institutions"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-5",
+          "type": "rebuttal",
+          "label": "Rebuttal",
+          "team": "A",
+          "youtubeId": "8wcLV4_iunw",
+          "transcript": [
+            {
+              "start": 3.04,
+              "end": 10.919,
+              "text": "All right. So, according to um"
+            },
+            {
+              "start": 7.359,
+              "end": 10.919,
+              "text": "according to"
+            },
+            {
+              "start": 12.08,
+              "end": 16.16,
+              "text": "according to legal clarity.org, the"
+            },
+            {
+              "start": 14.559,
+              "end": 17.84,
+              "text": "affordable care act has failed to make"
+            },
+            {
+              "start": 16.16,
+              "end": 20.56,
+              "text": "healthcare truly affordable for many"
+            },
+            {
+              "start": 17.84,
+              "end": 22.08,
+              "text": "Americans. Um they talk about how"
+            },
+            {
+              "start": 20.56,
+              "end": 24.08,
+              "text": "premiums and deductibles have actually"
+            },
+            {
+              "start": 22.08,
+              "end": 26.08,
+              "text": "increased for people that do not qual"
+            },
+            {
+              "start": 24.08,
+              "end": 28.08,
+              "text": "qualify for subsidies, leaving middle"
+            },
+            {
+              "start": 26.08,
+              "end": 29.679,
+              "text": "class families paying more coverage than"
+            },
+            {
+              "start": 28.08,
+              "end": 32.16,
+              "text": "they use less. And actually indiv"
+            },
+            {
+              "start": 29.679,
+              "end": 34.079,
+              "text": "individual premiums were also raised for"
+            },
+            {
+              "start": 32.16,
+              "end": 35.92,
+              "text": "middle class individuals during when the"
+            },
+            {
+              "start": 34.079,
+              "end": 38,
+              "text": "affordable affordable care act was"
+            },
+            {
+              "start": 35.92,
+              "end": 40.16,
+              "text": "passed. The ACA has also reduced"
+            },
+            {
+              "start": 38,
+              "end": 42.48,
+              "text": "consumer choice by encouraging narrow"
+            },
+            {
+              "start": 40.16,
+              "end": 43.76,
+              "text": "provider narrow narrowing provider"
+            },
+            {
+              "start": 42.48,
+              "end": 46.8,
+              "text": "networks. So there's basically less"
+            },
+            {
+              "start": 43.76,
+              "end": 50.239,
+              "text": "options if you're under Obamacare or the"
+            },
+            {
+              "start": 46.8,
+              "end": 52.879,
+              "text": "ACA. And then it's limited access to"
+            },
+            {
+              "start": 50.239,
+              "end": 55.199,
+              "text": "doctors and hospitals. In addition, the"
+            },
+            {
+              "start": 52.879,
+              "end": 57.12,
+              "text": "law places financial and reg regulatory"
+            },
+            {
+              "start": 55.199,
+              "end": 59.359,
+              "text": "burdens on employers, particularly small"
+            },
+            {
+              "start": 57.12,
+              "end": 61.76,
+              "text": "businesses, which can discourage hiring"
+            },
+            {
+              "start": 59.359,
+              "end": 64.08,
+              "text": "and reduce work hours. These issues show"
+            },
+            {
+              "start": 61.76,
+              "end": 66.799,
+              "text": "that while AC expanded coverage, it did"
+            },
+            {
+              "start": 64.08,
+              "end": 68.64,
+              "text": "also it did so at the cost of"
+            },
+            {
+              "start": 66.799,
+              "end": 71.64,
+              "text": "affordability, flexibility, and market"
+            },
+            {
+              "start": 68.64,
+              "end": 71.64,
+              "text": "efficiency."
+            }
+          ],
+          "duration": 71.64,
+          "prompts": [
+            "What specific criticisms does Team A raise about the ACA's impact on affordability?",
+            "How does Team A argue that the ACA has reduced consumer choice in healthcare?",
+            "What employer-related burdens does Team A claim the ACA creates?"
+          ],
+          "outline": [
+            {
+              "id": "o5-1",
+              "title": "ACA Affordability Failures",
+              "startTime": 3.04,
+              "endTime": 26.08,
+              "bullets": [
+                "Premiums and deductibles increased for non-subsidy eligible",
+                "Middle class families pay more for less coverage",
+                "Failed to make healthcare truly affordable"
+              ]
+            },
+            {
+              "id": "o5-2",
+              "title": "Consumer Choice Reduced",
+              "startTime": 26.08,
+              "endTime": 42.48,
+              "bullets": [
+                "Narrow provider networks limit options",
+                "Fewer doctors and hospitals available",
+                "Reduced access to preferred healthcare providers"
+              ]
+            },
+            {
+              "id": "o5-3",
+              "title": "Employer and Market Burdens",
+              "startTime": 42.48,
+              "endTime": 52.88,
+              "bullets": [
+                "Financial and regulatory burdens on employers",
+                "Particularly impacts small businesses",
+                "Discourages hiring and reduces work hours"
+              ]
+            },
+            {
+              "id": "o5-4",
+              "title": "Summary of Trade-offs",
+              "startTime": 52.88,
+              "endTime": 64.08,
+              "bullets": [
+                "Expanded coverage came at cost of affordability",
+                "Lost flexibility and market efficiency"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-6",
+          "type": "rebuttal",
+          "label": "Rebuttal",
+          "team": "B",
+          "youtubeId": "fza2lW5lBn8",
+          "transcript": [
+            {
+              "start": 1.6,
+              "end": 5.759,
+              "text": "Well, in response to you guys saying"
+            },
+            {
+              "start": 3.2800000000000002,
+              "end": 8.08,
+              "text": "that the ACA premiums have been too"
+            },
+            {
+              "start": 5.759,
+              "end": 10.8,
+              "text": "expensive. Um, however, according to the"
+            },
+            {
+              "start": 8.08,
+              "end": 12.96,
+              "text": "Kaiser Family Foundation, uh, since more"
+            },
+            {
+              "start": 10.8,
+              "end": 14.4,
+              "text": "people, uh, more people have enrolled,"
+            },
+            {
+              "start": 12.96,
+              "end": 17.199,
+              "text": "meaning more subsidies have cut"
+            },
+            {
+              "start": 14.4,
+              "end": 19.199,
+              "text": "insurance while improved access. So, um,"
+            },
+            {
+              "start": 17.199,
+              "end": 21.52,
+              "text": "another rebuttal against you guys is"
+            },
+            {
+              "start": 19.199,
+              "end": 23.119,
+              "text": "that the ACA, you guys said the ACA"
+            },
+            {
+              "start": 21.52,
+              "end": 25.519,
+              "text": "marketplace plans, uh, restricted"
+            },
+            {
+              "start": 23.119,
+              "end": 27.039,
+              "text": "provider networks to control cost, which"
+            },
+            {
+              "start": 25.519,
+              "end": 28.96,
+              "text": "you guys pretty much said limited like"
+            },
+            {
+              "start": 27.039,
+              "end": 30.56,
+              "text": "the patients that have like which the"
+            },
+            {
+              "start": 28.96,
+              "end": 32.559,
+              "text": "research has said like the patients have"
+            },
+            {
+              "start": 30.56,
+              "end": 35.84,
+              "text": "had fewer doctors, hospitals available,"
+            },
+            {
+              "start": 32.559,
+              "end": 38.48,
+              "text": "but however, um, narrow networks are a"
+            },
+            {
+              "start": 35.84,
+              "end": 40.239,
+              "text": "cost control mechanism and not a"
+            },
+            {
+              "start": 38.48,
+              "end": 42.32,
+              "text": "coverage failure. So patients are"
+            },
+            {
+              "start": 40.239,
+              "end": 44.32,
+              "text": "basically trading their flexibility um"
+            },
+            {
+              "start": 42.32,
+              "end": 45.68,
+              "text": "for doctors for lower cost but they have"
+            },
+            {
+              "start": 44.32,
+              "end": 49.32,
+              "text": "the same access to the essential"
+            },
+            {
+              "start": 45.68,
+              "end": 49.32,
+              "text": "benefits standards."
+            },
+            {
+              "start": 50.559,
+              "end": 59.28,
+              "text": "Um and then for you guys, um we said"
+            },
+            {
+              "start": 55.84,
+              "end": 63.039,
+              "text": "that you're lowering the drug prices may"
+            },
+            {
+              "start": 59.28,
+              "end": 65.6,
+              "text": "not solve the overall problem since um"
+            },
+            {
+              "start": 63.039,
+              "end": 70.88,
+              "text": "the ACA will provide like long-term"
+            },
+            {
+              "start": 65.6,
+              "end": 73.76,
+              "text": "benefits for um its sorry for its"
+            },
+            {
+              "start": 70.88,
+              "end": 76.88,
+              "text": "patients and you guys are just providing"
+            },
+            {
+              "start": 73.76,
+              "end": 82.04,
+              "text": "uh lower drug costs which may not result"
+            },
+            {
+              "start": 76.88,
+              "end": 82.04,
+              "text": "in a long-term solution. So,"
+            },
+            {
+              "start": 82.24,
+              "end": 84.479,
+              "text": "okay."
+            }
+          ],
+          "duration": 84.479,
+          "prompts": [
+            "How does Team B respond to Team A's concerns about premium increases and affordability?",
+            "What economic reasoning does Team B provide for why narrow provider networks exist under the ACA?",
+            "How does Team B differentiate between the ACA's comprehensive benefits and alternative policies?"
+          ],
+          "outline": [
+            {
+              "id": "o6-1",
+              "title": "Subsidies Improve Affordability",
+              "startTime": 1.6,
+              "endTime": 17.2,
+              "bullets": [
+                "More enrollment = more subsidies",
+                "Kaiser Family Foundation data shows improved access",
+                "Subsidies cut insurance costs for expanded population"
+              ]
+            },
+            {
+              "id": "o6-2",
+              "title": "Narrow Networks Are Cost Control",
+              "startTime": 17.2,
+              "endTime": 38.48,
+              "bullets": [
+                "Networks restricted to control costs, not coverage failure",
+                "Trade-off: flexibility for affordability",
+                "Access to essential benefits standards maintained"
+              ]
+            },
+            {
+              "id": "o6-3",
+              "title": "Long-term vs Short-term Solutions",
+              "startTime": 38.48,
+              "endTime": 49.32,
+              "bullets": [
+                "ACA provides long-term benefits",
+                "Drug price reductions offer limited scope",
+                "Comprehensive coverage addresses overall problem"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-7",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "A",
+          "youtubeId": "tRyErQRV210",
+          "transcript": [
+            {
+              "start": 1.199,
+              "end": 4.799,
+              "text": "Um, to close, the government should"
+            },
+            {
+              "start": 2.96,
+              "end": 6.319,
+              "text": "expand the Medicaid rebate program"
+            },
+            {
+              "start": 4.799,
+              "end": 8.4,
+              "text": "because it would improve affordable"
+            },
+            {
+              "start": 6.319,
+              "end": 10.559,
+              "text": "access to prescription medications by"
+            },
+            {
+              "start": 8.4,
+              "end": 12.48,
+              "text": "requiring pharmaceutical companies to"
+            },
+            {
+              "start": 10.559,
+              "end": 15.12,
+              "text": "provide larger rebates on brandame"
+            },
+            {
+              "start": 12.48,
+              "end": 17.199,
+              "text": "drugs, reducing costs for taxpayers and"
+            },
+            {
+              "start": 15.12,
+              "end": 19.119,
+              "text": "Medicaid patients. Although some critics"
+            },
+            {
+              "start": 17.199,
+              "end": 21.039,
+              "text": "argue that the rebate policies may"
+            },
+            {
+              "start": 19.119,
+              "end": 22.8,
+              "text": "reduce pharmaceutical innovation, a"
+            },
+            {
+              "start": 21.039,
+              "end": 24.96,
+              "text": "well-designed rebate program can lower"
+            },
+            {
+              "start": 22.8,
+              "end": 27.76,
+              "text": "drug prices without significant harm, as"
+            },
+            {
+              "start": 24.96,
+              "end": 29.92,
+              "text": "the policy targets excessive uh price"
+            },
+            {
+              "start": 27.76,
+              "end": 32,
+              "text": "incentives and high spending drugs. It"
+            },
+            {
+              "start": 29.92,
+              "end": 33.92,
+              "text": "still allows companies to earn profit as"
+            },
+            {
+              "start": 32,
+              "end": 36.32,
+              "text": "demand increases while improving patient"
+            },
+            {
+              "start": 33.92,
+              "end": 38.16,
+              "text": "access and medication use. This rebate"
+            },
+            {
+              "start": 36.32,
+              "end": 40.399,
+              "text": "program helps ensure that more people,"
+            },
+            {
+              "start": 38.16,
+              "end": 42.719,
+              "text": "especially lower income individuals, can"
+            },
+            {
+              "start": 40.399,
+              "end": 44.559,
+              "text": "afford the medications as they need to"
+            },
+            {
+              "start": 42.719,
+              "end": 46.64,
+              "text": "stay healthy. When citizens have better"
+            },
+            {
+              "start": 44.559,
+              "end": 48.399,
+              "text": "access to prescription drugs, overall"
+            },
+            {
+              "start": 46.64,
+              "end": 50.559,
+              "text": "public health improves, which benefits"
+            },
+            {
+              "start": 48.399,
+              "end": 53.36,
+              "text": "society as a whole."
+            },
+            {
+              "start": 50.559,
+              "end": 53.36,
+              "text": "All right."
+            }
+          ],
+          "duration": 53.36,
+          "prompts": [
+            "What is Team A's specific policy recommendation for improving healthcare costs?",
+            "How does Team A address arguments that their policy could harm pharmaceutical innovation?",
+            "What public health outcomes does Team A emphasize in their closing argument?"
+          ],
+          "outline": [
+            {
+              "id": "o7-1",
+              "title": "Core Policy Position",
+              "startTime": 1.2,
+              "endTime": 15.12,
+              "bullets": [
+                "Expand Medicaid drug rebate program",
+                "Makes prescription medications more affordable",
+                "Reduces costs for taxpayers and patients"
+              ]
+            },
+            {
+              "id": "o7-2",
+              "title": "Innovation Concerns Addressed",
+              "startTime": 15.12,
+              "endTime": 32,
+              "bullets": [
+                "Well-designed programs lower prices without significant harm",
+                "Companies still earn profits with demand increase",
+                "Targets excessive pricing on high-spending drugs"
+              ]
+            },
+            {
+              "id": "o7-3",
+              "title": "Public Health Outcomes",
+              "startTime": 32,
+              "endTime": 53.36,
+              "bullets": [
+                "Ensures lower-income individuals afford medication",
+                "Better medication access improves public health",
+                "Society-wide benefits from healthier population"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seg-8",
+          "type": "closing",
+          "label": "Closing Statement",
+          "team": "B",
+          "youtubeId": "PdOsZjxP-RU",
+          "transcript": [
+            {
+              "start": 1.76,
+              "end": 5.68,
+              "text": "We believe the Affordable Care Act"
+            },
+            {
+              "start": 3.84,
+              "end": 8.4,
+              "text": "should continue to be supported because"
+            },
+            {
+              "start": 5.68,
+              "end": 11.36,
+              "text": "it makes health care more affordable,"
+            },
+            {
+              "start": 8.4,
+              "end": 13.519,
+              "text": "protects people from unfair insurance"
+            },
+            {
+              "start": 11.36,
+              "end": 15.679,
+              "text": "practices, and gives millions of"
+            },
+            {
+              "start": 13.519,
+              "end": 17.92,
+              "text": "Americans better access to the care that"
+            },
+            {
+              "start": 15.679,
+              "end": 20.24,
+              "text": "they need. By lowering the numbers of"
+            },
+            {
+              "start": 17.92,
+              "end": 23.279,
+              "text": "uninsured people and helping families"
+            },
+            {
+              "start": 20.24,
+              "end": 25.92,
+              "text": "avoid financial burden of untreated"
+            },
+            {
+              "start": 23.279,
+              "end": 28.24,
+              "text": "illnesses or overwhelming medical bills,"
+            },
+            {
+              "start": 25.92,
+              "end": 31.119,
+              "text": "the ACA does more than improve"
+            },
+            {
+              "start": 28.24,
+              "end": 33.76,
+              "text": "individual lives. It promotes general"
+            },
+            {
+              "start": 31.119,
+              "end": 36.399,
+              "text": "welfare by creating a healthier, more"
+            },
+            {
+              "start": 33.76,
+              "end": 39.12,
+              "text": "financially secure and more stable"
+            },
+            {
+              "start": 36.399,
+              "end": 41.2,
+              "text": "society. For both these reasons, the"
+            },
+            {
+              "start": 39.12,
+              "end": 43.84,
+              "text": "Affordable Care Act remains a necessary"
+            },
+            {
+              "start": 41.2,
+              "end": 47.2,
+              "text": "policy for both economic fairness and"
+            },
+            {
+              "start": 43.84,
+              "end": 47.2,
+              "text": "public well-being."
+            }
+          ],
+          "duration": 47.2,
+          "prompts": [
+            "What three core benefits does Team B emphasize the ACA provides in their closing?",
+            "How does Team B connect individual healthcare improvements to broader societal benefits?",
+            "Why does Team B argue the ACA is necessary for both economic fairness and public well-being?"
+          ],
+          "outline": [
+            {
+              "id": "o8-1",
+              "title": "ACA Core Benefits",
+              "startTime": 1.76,
+              "endTime": 20.24,
+              "bullets": [
+                "Makes healthcare more affordable",
+                "Protects from unfair insurance practices",
+                "Millions gain better access to care"
+              ]
+            },
+            {
+              "id": "o8-2",
+              "title": "Reduces Financial Burden",
+              "startTime": 20.24,
+              "endTime": 33.76,
+              "bullets": [
+                "Lowers uninsured numbers",
+                "Helps families avoid overwhelming medical bills",
+                "Prevents financial hardship from untreated illness"
+              ]
+            },
+            {
+              "id": "o8-3",
+              "title": "Broader Social Impact",
+              "startTime": 33.76,
+              "endTime": 47.2,
+              "bullets": [
+                "Creates healthier, more stable society",
+                "Promotes general welfare through financial security",
+                "Necessary for economic fairness and public well-being"
+              ]
+            }
+          ]
+        }
+      ],
+      "keyMoments": [
+        {
+          "time": 0.56,
+          "segmentId": "seg-1",
+          "label": "Healthcare access crisis stated",
+          "type": "argument"
+        },
+        {
+          "time": 25.36,
+          "segmentId": "seg-1",
+          "label": "ACA uninsured rate decline (14.5% to 8%)",
+          "type": "evidence"
+        },
+        {
+          "time": 3.28,
+          "segmentId": "seg-2",
+          "label": "ACA created to solve affordability",
+          "type": "argument"
+        },
+        {
+          "time": 20.8,
+          "segmentId": "seg-2",
+          "label": "Coverage gap reduction data",
+          "type": "evidence"
+        },
+        {
+          "time": 3.84,
+          "segmentId": "seg-3",
+          "label": "Medicaid rebate system cuts prices in half",
+          "type": "evidence"
+        },
+        {
+          "time": 16.96,
+          "segmentId": "seg-3",
+          "label": "Drug affordability crisis (21% skip prescriptions)",
+          "type": "evidence"
+        },
+        {
+          "time": 45.92,
+          "segmentId": "seg-3",
+          "label": "Innovation impact modest (2-15% reduction)",
+          "type": "evidence"
+        },
+        {
+          "time": 1.04,
+          "segmentId": "seg-4",
+          "label": "ACA coverage success documented",
+          "type": "evidence"
+        },
+        {
+          "time": 24.16,
+          "segmentId": "seg-4",
+          "label": "Pre-existing condition protections",
+          "type": "argument"
+        },
+        {
+          "time": 43.52,
+          "segmentId": "seg-4",
+          "label": "Hospital uncompensated care reduction",
+          "type": "evidence"
+        },
+        {
+          "time": 3.04,
+          "segmentId": "seg-5",
+          "label": "ACA premiums increased for non-subsidized",
+          "type": "argument"
+        },
+        {
+          "time": 26.08,
+          "segmentId": "seg-5",
+          "label": "Narrow networks reduce consumer choice",
+          "type": "argument"
+        },
+        {
+          "time": 42.48,
+          "segmentId": "seg-5",
+          "label": "Employer burden claims",
+          "type": "argument"
+        },
+        {
+          "time": 1.6,
+          "segmentId": "seg-6",
+          "label": "Subsidies improve affordability for more people",
+          "type": "evidence"
+        },
+        {
+          "time": 17.2,
+          "segmentId": "seg-6",
+          "label": "Narrow networks as cost control mechanism",
+          "type": "argument"
+        },
+        {
+          "time": 38.48,
+          "segmentId": "seg-6",
+          "label": "ACA long-term benefits superior",
+          "type": "argument"
+        },
+        {
+          "time": 1.2,
+          "segmentId": "seg-7",
+          "label": "Medicaid rebate expansion core policy",
+          "type": "argument"
+        },
+        {
+          "time": 15.12,
+          "segmentId": "seg-7",
+          "label": "Innovation concerns manageable",
+          "type": "argument"
+        },
+        {
+          "time": 32,
+          "segmentId": "seg-7",
+          "label": "Lower-income medication access priority",
+          "type": "argument"
+        },
+        {
+          "time": 1.76,
+          "segmentId": "seg-8",
+          "label": "ACA core benefits restated",
+          "type": "argument"
+        },
+        {
+          "time": 20.24,
+          "segmentId": "seg-8",
+          "label": "ACA reduces financial burden on families",
+          "type": "argument"
+        },
+        {
+          "time": 33.76,
+          "segmentId": "seg-8",
+          "label": "Broader social stability through ACA",
+          "type": "argument"
         }
       ]
     }
