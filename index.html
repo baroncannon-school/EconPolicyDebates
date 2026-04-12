@@ -191,12 +191,50 @@ function App() {
   const [loadError, setLoadError] = useState(null);
 
   useEffect(() => {
+    const SUPABASE_URL = 'https://tqtgyjcjawrxxpcpmhxt.supabase.co';
+    const SUPABASE_KEY = 'sb_publishable_--5IIbGAgbWdBqRDP3biDQ_oQBzCAJt';
+
     fetch('debates.json')
       .then(res => {
         if (!res.ok) throw new Error(`Failed to load debates.json (${res.status})`);
         return res.json();
       })
-      .then(data => {
+      .then(async (data) => {
+        // Fetch student assignments from Supabase to populate team members
+        try {
+          const [studentsRes, assignmentsRes] = await Promise.all([
+            fetch(`${SUPABASE_URL}/rest/v1/debate_students?order=name.asc`, {
+              headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
+            }),
+            fetch(`${SUPABASE_URL}/rest/v1/debate_assignments`, {
+              headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
+            }),
+          ]);
+          if (studentsRes.ok && assignmentsRes.ok) {
+            const students = await studentsRes.json();
+            const assignments = await assignmentsRes.json();
+            const studentMap = {};
+            students.forEach(s => { studentMap[s.id] = s; });
+
+            // Group assignments by debate + team → unique student names
+            data.debates.forEach(debate => {
+              const debateAssignments = assignments.filter(a => a.debate_id === debate.id);
+              const teamAStudentIds = [...new Set(debateAssignments.filter(a => a.team === 'A').map(a => a.student_id))];
+              const teamBStudentIds = [...new Set(debateAssignments.filter(a => a.team === 'B').map(a => a.student_id))];
+              const teamANames = teamAStudentIds.map(id => studentMap[id]?.name).filter(Boolean)
+                .map(n => n.split(' ')[0]); // First names only
+              const teamBNames = teamBStudentIds.map(id => studentMap[id]?.name).filter(Boolean)
+                .map(n => n.split(' ')[0]); // First names only
+              // Only override if we got names from Supabase (preserve static fallback)
+              if (teamANames.length) debate.teamA.members = teamANames;
+              if (teamBNames.length) debate.teamB.members = teamBNames;
+            });
+            console.log('[Supabase] Enriched debates with', assignments.length, 'assignments from', students.length, 'students');
+          }
+        } catch (e) {
+          console.warn('[Supabase] Could not load student assignments, using static data:', e.message);
+        }
+
         SITE_CONFIG = data;
         setConfigLoaded(true);
       })
