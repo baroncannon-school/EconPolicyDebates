@@ -856,8 +856,23 @@ Requirements:
   };
 
   const renderGradingSection = () => {
-    const unassignedStudents = students.filter(s => s.period === selectedPeriod && !assignments.find(a => a.student_id === s.id && a.debate_id === selectedDebate));
-    const debateAssignments = assignments.filter(a => a.debate_id === selectedDebate && a.student_id && students.find(st => st.id === a.student_id && st.period === selectedPeriod));
+    // Filter debates by selected period
+    const periodDebates = DEBATES.filter(d => d.period === selectedPeriod);
+    const currentDebatePeriod = DEBATES.find(d => d.id === selectedDebate)?.period;
+    // Auto-sync: if selected debate doesn't match period, pick first matching debate
+    const effectiveDebate = currentDebatePeriod === selectedPeriod ? selectedDebate : (periodDebates[0]?.id || selectedDebate);
+
+    const unassignedStudents = students.filter(s =>
+      s.period === selectedPeriod &&
+      !assignments.find(a => a.student_id === s.id && a.debate_id === effectiveDebate)
+    );
+    const debateAssignments = assignments.filter(a =>
+      a.debate_id === effectiveDebate &&
+      students.find(st => st.id === a.student_id && st.period === selectedPeriod)
+    );
+
+    // Group assignments by segment for cleaner display
+    const segmentLabels = { opening: 'Opening', main: 'Main Argument', rebuttal: 'Rebuttal', closing: 'Closing' };
 
     return (
       <div className="space-y-6">
@@ -871,8 +886,10 @@ Requirements:
             <input type="password" value={supabaseAnonKey} onChange={e => setSupabaseAnonKey(e.target.value)}
               placeholder="Supabase anon key"
               className="w-full border border-gray-300 rounded px-3 py-2 text-sm font-body" />
-            <button onClick={loadStudents}
-              className="px-3 py-1.5 bg-cedar text-white rounded text-sm font-semibold hover:bg-cedar/90">Load Students</button>
+            <button onClick={loadAllData} disabled={loadingData}
+              className="px-3 py-1.5 bg-cedar text-white rounded text-sm font-semibold hover:bg-cedar/90 disabled:opacity-50">
+              {loadingData ? 'Loading...' : 'Load All Data'}
+            </button>
           </div>
         </div>
 
@@ -941,73 +958,188 @@ Requirements:
           <h3 className="font-semibold text-gray-700 mb-3 text-sm">Debate Assignments & Grading</h3>
           <div className="mb-4 pb-4 border-b">
             <label className="block text-sm font-semibold text-gray-600 mb-2">Select Debate:</label>
-            <select value={selectedDebate} onChange={e => { setSelectedDebate(e.target.value); setSelectedStudent(null); }}
+            <select value={effectiveDebate} onChange={e => { setSelectedDebate(e.target.value); setSelectedStudent(null); }}
               className="w-full px-3 py-2 border border-gray-300 rounded text-sm font-body">
-              <option value="debate-1">Debate 1: Homelessness</option>
+              {periodDebates.map(d => (
+                <option key={d.id} value={d.id}>{d.id.replace('debate-', 'Debate ')}: {d.topic}</option>
+              ))}
             </select>
           </div>
+
           <div className="grid grid-cols-2 gap-4">
+            {/* Assigned Students */}
             <div>
-              <h4 className="text-xs font-semibold text-gray-600 mb-2">Assigned Students</h4>
-              <div className="space-y-1 max-h-64 overflow-y-auto border rounded p-2 bg-gray-50">
-                {debateAssignments.map((a, i) => {
-                  const st = students.find(s => s.id === a.student_id);
-                  return st ? (
-                    <div key={i} className="text-xs p-2 bg-white border rounded hover:bg-gray-50 cursor-pointer"
-                      onClick={() => setSelectedStudent({ ...st, assignment: a })}>
-                      <div className="font-semibold">{st.name}</div>
-                      <div className="text-gray-500">{a.team} — {a.segment_type}</div>
+              <h4 className="text-xs font-semibold text-gray-600 mb-2">Assigned ({debateAssignments.length})</h4>
+              <div className="space-y-1 max-h-80 overflow-y-auto border rounded p-2 bg-gray-50">
+                {['A', 'B'].map(team => {
+                  const teamAssignments = debateAssignments.filter(a => a.team === team);
+                  if (!teamAssignments.length) return null;
+                  return (
+                    <div key={team} className="mb-2">
+                      <div className={`text-xs font-bold px-2 py-1 rounded ${team === 'A' ? 'bg-cedar/10 text-cedar' : 'bg-leather/10 text-leather'}`}>
+                        Team {team} ({team === 'A' ? 'Group 1' : 'Group 2'})
+                      </div>
+                      {teamAssignments.map((a, i) => {
+                        const st = students.find(s => s.id === a.student_id);
+                        const isSelected = selectedStudent?.assignment?.id === a.id;
+                        const hasGrade = !!gradingForms[a.id]?.gradeId;
+                        return st ? (
+                          <div key={a.id}
+                            className={`text-xs p-2 border rounded cursor-pointer mt-1 ${isSelected ? 'bg-cedar/10 border-cedar' : hasGrade ? 'bg-green-50 border-green-200' : 'bg-white hover:bg-gray-50'}`}
+                            onClick={() => setSelectedStudent({ ...st, assignment: a })}>
+                            <div className="flex justify-between items-center">
+                              <div>
+                                <span className="font-semibold">{st.name}</span>
+                                {hasGrade && <span className="ml-2 text-green-600">✓ graded</span>}
+                              </div>
+                              <button onClick={e => { e.stopPropagation(); removeAssignment(a.id); }}
+                                className="text-red-400 hover:text-red-600 text-xs px-1" title="Remove assignment">✕</button>
+                            </div>
+                            <div className="text-gray-500">{segmentLabels[a.segment_type] || a.segment_type}</div>
+                          </div>
+                        ) : null;
+                      })}
                     </div>
-                  ) : null;
+                  );
                 })}
-                {debateAssignments.length === 0 && <p className="text-xs text-gray-400 p-2">No assignments yet</p>}
+                {debateAssignments.length === 0 && <p className="text-xs text-gray-400 p-2">No assignments yet — click a student on the right to assign them</p>}
               </div>
             </div>
+
+            {/* Unassigned Students */}
             <div>
-              <h4 className="text-xs font-semibold text-gray-600 mb-2">Unassigned Students</h4>
-              <div className="space-y-1 max-h-64 overflow-y-auto border rounded p-2 bg-gray-50">
+              <h4 className="text-xs font-semibold text-gray-600 mb-2">Unassigned ({unassignedStudents.length})</h4>
+              <div className="space-y-1 max-h-80 overflow-y-auto border rounded p-2 bg-gray-50">
                 {unassignedStudents.map(s => (
-                  <div key={s.id} className="text-xs p-2 bg-white border rounded hover:bg-blue-50 cursor-pointer">
-                    {s.name}<br/><span className="text-gray-500">{s.email}</span>
+                  <div key={s.id}
+                    className="text-xs p-2 bg-white border rounded hover:bg-blue-50 cursor-pointer transition-colors"
+                    onClick={() => setAssignDialog({ student: s, team: 'A', segmentType: 'opening' })}>
+                    <div className="font-semibold">{s.name}</div>
+                    <div className="text-gray-500">{s.email}</div>
                   </div>
                 ))}
+                {unassignedStudents.length === 0 && students.length > 0 && (
+                  <p className="text-xs text-green-600 p-2">All students assigned for this debate!</p>
+                )}
               </div>
             </div>
           </div>
         </div>
 
+        {/* Assignment Dialog */}
+        {assignDialog && (
+          <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50" onClick={() => setAssignDialog(null)}>
+            <div className="bg-white rounded-xl shadow-2xl p-6 w-96 max-w-[90vw]" onClick={e => e.stopPropagation()}>
+              <h3 className="text-lg font-headline text-leather mb-1">Assign Student</h3>
+              <p className="text-sm text-gray-600 mb-4">{assignDialog.student.name}</p>
+
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-600 mb-2">Team</label>
+                  <div className="flex gap-2">
+                    {['A', 'B'].map(t => (
+                      <button key={t} onClick={() => setAssignDialog(prev => ({ ...prev, team: t }))}
+                        className={`flex-1 py-2 rounded text-sm font-semibold transition-colors ${
+                          assignDialog.team === t
+                            ? (t === 'A' ? 'bg-cedar text-white' : 'bg-leather text-white')
+                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                        }`}>
+                        Team {t} ({t === 'A' ? 'Group 1' : 'Group 2'})
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-600 mb-2">Segment</label>
+                  <select value={assignDialog.segmentType}
+                    onChange={e => setAssignDialog(prev => ({ ...prev, segmentType: e.target.value }))}
+                    className="w-full px-3 py-2 border border-gray-300 rounded text-sm font-body">
+                    <option value="opening">Opening Statement</option>
+                    <option value="main">Main Argument</option>
+                    <option value="rebuttal">Counter/Rebuttal</option>
+                    <option value="closing">Closing Statement</option>
+                  </select>
+                </div>
+
+                <div className="flex gap-2 pt-2">
+                  <button onClick={() => setAssignDialog(null)}
+                    className="flex-1 px-4 py-2 bg-gray-100 text-gray-600 rounded text-sm font-semibold hover:bg-gray-200">
+                    Cancel
+                  </button>
+                  <button disabled={saving}
+                    onClick={() => saveAssignment(assignDialog.student.id, effectiveDebate, assignDialog.team, assignDialog.segmentType)}
+                    className="flex-1 px-4 py-2 bg-leather text-white rounded text-sm font-semibold hover:bg-leather/90 disabled:opacity-50">
+                    {saving ? 'Saving...' : 'Assign'}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Grading Form */}
         {selectedStudent && (
-          <div className="bg-white border border-cedar rounded-lg p-4 sticky bottom-0">
-            <h3 className="font-semibold text-gray-700 mb-4">{selectedStudent.name} — Grading</h3>
+          <div className="bg-white border-2 border-cedar rounded-lg p-4">
+            <div className="flex justify-between items-start mb-4">
+              <h3 className="font-semibold text-gray-700">{selectedStudent.name} — Grading</h3>
+              <button onClick={() => setSelectedStudent(null)} className="text-gray-400 hover:text-gray-600 text-lg">✕</button>
+            </div>
             <div className="space-y-4">
               {/* Basic Info */}
               <div className="grid grid-cols-3 gap-3 text-sm bg-gray-50 p-3 rounded">
-                <div><span className="text-gray-500">Team:</span> <strong>{selectedStudent.assignment.team}</strong></div>
-                <div><span className="text-gray-500">Segment:</span> <strong>{selectedStudent.assignment.segment_type}</strong></div>
+                <div><span className="text-gray-500">Team:</span> <strong>{selectedStudent.assignment.team === 'A' ? 'Group 1 (A)' : 'Group 2 (B)'}</strong></div>
+                <div><span className="text-gray-500">Segment:</span> <strong>{segmentLabels[selectedStudent.assignment.segment_type]}</strong></div>
                 <div><span className="text-gray-500">Email:</span> <strong className="text-xs">{selectedStudent.email}</strong></div>
               </div>
 
               {/* Score Inputs */}
               <div className="grid grid-cols-2 gap-3">
-                {['research', 'presentation', 'consistency', 'segment'].map(cat => (
-                  <div key={cat}>
-                    <label className="block text-xs font-semibold text-gray-600 mb-1 capitalize">{cat}</label>
-                    <input type="number" min="0" max="10"
-                      value={gradingForms[selectedStudent.email]?.[cat] || 0}
-                      onChange={e => setGradingForms({...gradingForms, [selectedStudent.email]: {...(gradingForms[selectedStudent.email] || {}), [cat]: parseInt(e.target.value) || 0}})}
-                      className="w-full border border-gray-300 rounded px-2 py-1 text-sm font-body" />
-                  </div>
-                ))}
+                {[
+                  { key: 'research', label: 'Research & Evidence' },
+                  { key: 'presentation', label: 'Presentation & Delivery' },
+                  { key: 'consistency', label: 'Consistency & Logic' },
+                  { key: 'segment', label: 'Segment Contribution' },
+                ].map(cat => {
+                  const assignId = selectedStudent.assignment.id;
+                  const val = gradingForms[assignId]?.[cat.key] || 0;
+                  return (
+                    <div key={cat.key}>
+                      <label className="block text-xs font-semibold text-gray-600 mb-1">{cat.label}</label>
+                      <div className="flex items-center gap-2">
+                        <input type="range" min="0" max="10" value={val}
+                          onChange={e => setGradingForms(prev => ({
+                            ...prev,
+                            [assignId]: { ...(prev[assignId] || {}), [cat.key]: parseInt(e.target.value) || 0 }
+                          }))}
+                          className="flex-1" />
+                        <input type="number" min="0" max="10" value={val}
+                          onChange={e => setGradingForms(prev => ({
+                            ...prev,
+                            [assignId]: { ...(prev[assignId] || {}), [cat.key]: Math.min(10, Math.max(0, parseInt(e.target.value) || 0)) }
+                          }))}
+                          className="w-14 border border-gray-300 rounded px-2 py-1 text-sm font-body text-center" />
+                        <span className="text-xs text-gray-400">/10</span>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
 
               {/* Comment */}
               <div>
                 <label className="block text-xs font-semibold text-gray-600 mb-1">Teacher Comment</label>
                 <textarea
-                  value={gradingForms[selectedStudent.email]?.comment || ''}
-                  onChange={e => setGradingForms({...gradingForms, [selectedStudent.email]: {...(gradingForms[selectedStudent.email] || {}), comment: e.target.value}})}
+                  value={gradingForms[selectedStudent.assignment.id]?.comment || ''}
+                  onChange={e => {
+                    const assignId = selectedStudent.assignment.id;
+                    setGradingForms(prev => ({
+                      ...prev,
+                      [assignId]: { ...(prev[assignId] || {}), comment: e.target.value }
+                    }));
+                  }}
                   rows={3}
+                  placeholder="Specific feedback for this student's performance..."
                   className="w-full border border-gray-300 rounded px-2 py-1 text-sm font-body resize-none" />
               </div>
 
@@ -1015,13 +1147,18 @@ Requirements:
               <div className="bg-cedar/10 border border-cedar/20 rounded p-3 flex justify-between items-center">
                 <span className="text-sm font-semibold text-gray-700">Total Score</span>
                 <span className="text-2xl font-headline text-cedar">
-                  {(gradingForms[selectedStudent.email]?.research || 0) + (gradingForms[selectedStudent.email]?.presentation || 0) + (gradingForms[selectedStudent.email]?.consistency || 0) + (gradingForms[selectedStudent.email]?.segment || 0)}/40
+                  {(() => {
+                    const f = gradingForms[selectedStudent.assignment.id] || {};
+                    return (f.research || 0) + (f.presentation || 0) + (f.consistency || 0) + (f.segment || 0);
+                  })()}/40
                 </span>
               </div>
 
               {/* Save Button */}
-              <button className="w-full px-4 py-2 bg-leather text-white rounded text-sm font-semibold hover:bg-leather/90">
-                Save Grade
+              <button disabled={saving}
+                onClick={() => saveGrade(selectedStudent.assignment.id, gradingForms[selectedStudent.assignment.id] || {})}
+                className="w-full px-4 py-2 bg-leather text-white rounded text-sm font-semibold hover:bg-leather/90 disabled:opacity-50">
+                {saving ? 'Saving...' : (gradingForms[selectedStudent.assignment.id]?.gradeId ? 'Update Grade' : 'Save Grade')}
               </button>
             </div>
           </div>
@@ -1030,12 +1167,19 @@ Requirements:
         {/* Publish Controls */}
         <div className="bg-white border border-gray-200 rounded-lg p-4">
           <h3 className="font-semibold text-gray-700 mb-3 text-sm">Publish Feedback</h3>
+          <p className="text-xs text-gray-500 mb-3">Publishing makes grades visible to students on the main site after they sign in.</p>
           <div className="flex gap-3">
-            <button className="px-4 py-2 bg-green-600 text-white rounded text-sm font-semibold hover:bg-green-700">
-              Publish All Grades for {selectedDebate}
+            <button disabled={saving || debateAssignments.length === 0}
+              onClick={() => {
+                if (confirm(`Publish all grades for ${effectiveDebate}? Students will be able to see their feedback.`)) {
+                  publishDebateGrades(effectiveDebate);
+                }
+              }}
+              className="px-4 py-2 bg-green-600 text-white rounded text-sm font-semibold hover:bg-green-700 disabled:opacity-50">
+              {saving ? 'Publishing...' : `Publish All Grades for ${effectiveDebate.replace('debate-', 'Debate ')}`}
             </button>
             <div className="flex-1 text-xs text-gray-500 flex items-center">
-              {publishedDebates.has(selectedDebate) ? '✓ Published' : 'Not yet published'}
+              {publishedDebates.has(effectiveDebate) ? '✅ Published — students can see feedback' : 'Not yet published'}
             </div>
           </div>
         </div>
