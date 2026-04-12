@@ -594,6 +594,45 @@ Requirements:
   }, [buildConfig]);
 
   // ===========================================================================
+  // GRADING SECTION HELPERS (must be before early return for hooks rules)
+  // ===========================================================================
+
+  const callSupabase = useCallback(async (table, method = 'GET', body = null) => {
+    if (!supabaseUrl || !supabaseAnonKey) throw new Error('Supabase not configured');
+    const url = `${supabaseUrl}/rest/v1/${table}`;
+    const options = {
+      method,
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': supabaseAnonKey,
+        'Authorization': `Bearer ${supabaseAnonKey}`,
+      },
+    };
+    if (body) options.body = JSON.stringify(body);
+    const res = await fetch(url, options);
+    if (!res.ok) throw new Error(`Supabase error: ${res.status}`);
+    return res.json();
+  }, [supabaseUrl, supabaseAnonKey]);
+
+  const loadStudents = useCallback(async () => {
+    try {
+      const data = await callSupabase('debate_students');
+      setStudents(data || []);
+    } catch (err) {
+      alert('Failed to load students: ' + err.message);
+    }
+  }, [callSupabase]);
+
+  const loadAssignments = useCallback(async () => {
+    try {
+      const data = await callSupabase('debate_assignments');
+      setAssignments(data || []);
+    } catch (err) {
+      alert('Failed to load assignments: ' + err.message);
+    }
+  }, [callSupabase]);
+
+  // ===========================================================================
   // SEGMENT HELPERS
   // ===========================================================================
 
@@ -643,45 +682,6 @@ Requirements:
       </div>
     );
   }
-
-  // ===========================================================================
-  // GRADING SECTION HELPERS
-  // ===========================================================================
-
-  const callSupabase = async (table, method = 'GET', body = null) => {
-    if (!supabaseUrl || !supabaseAnonKey) throw new Error('Supabase not configured');
-    const url = `${supabaseUrl}/rest/v1/${table}`;
-    const options = {
-      method,
-      headers: {
-        'Content-Type': 'application/json',
-        'apikey': supabaseAnonKey,
-        'Authorization': `Bearer ${supabaseAnonKey}`,
-      },
-    };
-    if (body) options.body = JSON.stringify(body);
-    const res = await fetch(url, options);
-    if (!res.ok) throw new Error(`Supabase error: ${res.status}`);
-    return res.json();
-  };
-
-  const loadStudents = useCallback(async () => {
-    try {
-      const data = await callSupabase('debate_students');
-      setStudents(data || []);
-    } catch (err) {
-      alert('Failed to load students: ' + err.message);
-    }
-  }, [supabaseUrl, supabaseAnonKey]);
-
-  const loadAssignments = useCallback(async () => {
-    try {
-      const data = await callSupabase('debate_assignments');
-      setAssignments(data || []);
-    } catch (err) {
-      alert('Failed to load assignments: ' + err.message);
-    }
-  }, [supabaseUrl, supabaseAnonKey]);
 
   const importStudentsFromCSV = () => {
     const lines = csvInput.trim().split('\n');
