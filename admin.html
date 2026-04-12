@@ -639,18 +639,26 @@ Requirements:
   const loadStudents = useCallback(async () => {
     try {
       const data = await callSupabase('debate_students?order=name.asc');
+      console.log('[Supabase] Loaded students:', data?.length || 0);
       setStudents(data || []);
+      return data || [];
     } catch (err) {
+      console.error('[Supabase] Load students failed:', err);
       alert('Failed to load students: ' + err.message);
+      return [];
     }
   }, [callSupabase]);
 
   const loadAssignments = useCallback(async () => {
     try {
       const data = await callSupabase('debate_assignments');
+      console.log('[Supabase] Loaded assignments:', data?.length || 0, data);
       setAssignments(data || []);
+      return data || [];
     } catch (err) {
+      console.error('[Supabase] Load assignments failed:', err);
       alert('Failed to load assignments: ' + err.message);
+      return [];
     }
   }, [callSupabase]);
 
@@ -706,16 +714,22 @@ Requirements:
   const saveAssignment = useCallback(async (studentId, debateId, team, segmentType) => {
     try {
       setSaving(true);
+      console.log('[Supabase] Saving assignment:', { studentId, debateId, team, segmentType });
       const result = await callSupabase('debate_assignments', 'POST', {
         student_id: studentId,
         debate_id: debateId,
         team: team,
         segment_type: segmentType,
       });
-      // Refresh assignments
+      console.log('[Supabase] Save result:', result);
+      if (!result || !result.length) {
+        throw new Error('Supabase returned no data — assignment may not have saved. Check RLS policies.');
+      }
+      // Verify by re-fetching from database
       await loadAssignments();
       setAssignDialog(null);
     } catch (err) {
+      console.error('[Supabase] Save failed:', err);
       alert('Failed to save assignment: ' + err.message);
     } finally {
       setSaving(false);
@@ -928,10 +942,18 @@ Requirements:
             <input type="password" value={supabaseAnonKey} onChange={e => setSupabaseAnonKey(e.target.value)}
               placeholder="Supabase anon key"
               className="w-full border border-gray-300 rounded px-3 py-2 text-sm font-body" />
-            <button onClick={loadAllData} disabled={loadingData}
+            <button onClick={() => { hasLoadedGradingRef.current = false; loadAllData(); }} disabled={loadingData}
               className="px-3 py-1.5 bg-cedar text-white rounded text-sm font-semibold hover:bg-cedar/90 disabled:opacity-50">
-              {loadingData ? 'Loading...' : 'Load All Data'}
+              {loadingData ? 'Loading...' : 'Refresh Data from Supabase'}
             </button>
+          </div>
+          {/* Data status banner */}
+          <div className={`mt-3 p-2 rounded text-xs font-body ${students.length > 0 ? 'bg-green-50 text-green-700 border border-green-200' : 'bg-yellow-50 text-yellow-700 border border-yellow-200'}`}>
+            {students.length > 0 ? (
+              <span>Connected — {students.length} students, {assignments.length} assignments, {grades.length} grades loaded from Supabase</span>
+            ) : (
+              <span>No data loaded yet. Enter your anon key and click "Refresh Data from Supabase".</span>
+            )}
           </div>
         </div>
 
