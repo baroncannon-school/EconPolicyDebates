@@ -185,13 +185,26 @@ function App() {
   const [supabaseAnonKey, setSupabaseAnonKey] = useState(() => localStorage.getItem('admin_supabaseAnonKey') || '');
   const [students, setStudents] = useState([]);
   const [assignments, setAssignments] = useState([]);
+  const [grades, setGrades] = useState([]); // loaded from debate_grades
   const [selectedDebate, setSelectedDebate] = useState('debate-1');
   const [selectedStudent, setSelectedStudent] = useState(null);
   const [studentRosterTab, setStudentRosterTab] = useState('list'); // 'list' or 'upload'
   const [csvInput, setCsvInput] = useState('');
   const [selectedPeriod, setSelectedPeriod] = useState('4th');
-  const [gradingForms, setGradingForms] = useState({}); // { 'student-email': { research: 5, presentation: 7, consistency: 8, segment: 6, comment: '' } }
-  const [publishedDebates, setPublishedDebates] = useState(new Set()); // debate-ids that are published
+  const [gradingForms, setGradingForms] = useState({});
+  const [publishedDebates, setPublishedDebates] = useState(new Set());
+  const [assignDialog, setAssignDialog] = useState(null); // { student, team: 'A', segmentType: 'opening' }
+  const [saving, setSaving] = useState(false);
+  const [loadingData, setLoadingData] = useState(false);
+
+  const DEBATES = [
+    { id: 'debate-1', period: '4th', topic: 'Homelessness' },
+    { id: 'debate-2', period: '4th', topic: 'Opioid Crisis' },
+    { id: 'debate-3', period: '4th', topic: 'Health Insurance' },
+    { id: 'debate-4', period: '1st', topic: 'Homelessness' },
+    { id: 'debate-5', period: '1st', topic: 'Opioid Crisis' },
+    { id: 'debate-6', period: '1st', topic: 'Health Insurance' },
+  ];
 
   // Save course info to localStorage
   useEffect(() => {
@@ -597,26 +610,32 @@ Requirements:
   // GRADING SECTION HELPERS (must be before early return for hooks rules)
   // ===========================================================================
 
-  const callSupabase = useCallback(async (table, method = 'GET', body = null) => {
+  const callSupabase = useCallback(async (endpoint, method = 'GET', body = null, extraHeaders = {}) => {
     if (!supabaseUrl || !supabaseAnonKey) throw new Error('Supabase not configured');
-    const url = `${supabaseUrl}/rest/v1/${table}`;
-    const options = {
-      method,
-      headers: {
-        'Content-Type': 'application/json',
-        'apikey': supabaseAnonKey,
-        'Authorization': `Bearer ${supabaseAnonKey}`,
-      },
+    const url = `${supabaseUrl}/rest/v1/${endpoint}`;
+    const headers = {
+      'Content-Type': 'application/json',
+      'apikey': supabaseAnonKey,
+      'Authorization': `Bearer ${supabaseAnonKey}`,
+      'Prefer': method === 'POST' ? 'return=representation' : (method === 'PATCH' ? 'return=representation' : ''),
+      ...extraHeaders,
     };
+    // Clean empty headers
+    Object.keys(headers).forEach(k => { if (!headers[k]) delete headers[k]; });
+    const options = { method, headers };
     if (body) options.body = JSON.stringify(body);
     const res = await fetch(url, options);
-    if (!res.ok) throw new Error(`Supabase error: ${res.status}`);
-    return res.json();
+    if (!res.ok) {
+      const errText = await res.text();
+      throw new Error(`Supabase ${method} ${endpoint}: ${res.status} — ${errText}`);
+    }
+    const text = await res.text();
+    return text ? JSON.parse(text) : null;
   }, [supabaseUrl, supabaseAnonKey]);
 
   const loadStudents = useCallback(async () => {
     try {
-      const data = await callSupabase('debate_students');
+      const data = await callSupabase('debate_students?order=name.asc');
       setStudents(data || []);
     } catch (err) {
       alert('Failed to load students: ' + err.message);
@@ -631,6 +650,140 @@ Requirements:
       alert('Failed to load assignments: ' + err.message);
     }
   }, [callSupabase]);
+
+  const loadGrades = useCallback(async () => {
+    try {
+      const data = await callSupabase('debate_grades');
+      setGrades(data || []);
+      // Pre-populate gradingForms from saved grades
+      const forms = {};
+      if (data) {
+        data.forEach(g => {
+          // Find the assignment to get student email
+          // We'll key by assignment_id instead
+          forms[g.assignment_id] = {
+            research: g.research_score || 0,
+            presentation: g.presentation_score || 0,
+            consistency: g.consistency_score || 0,
+            segment: g.segment_score || 0,
+            comment: g.teacher_comment || '',
+            gradeId: g.id,
+            isPublished: g.is_published || false,
+          };
+        });
+      }
+      setGradingForms(forms);
+    } catch (err) {
+      alert('Failed to load grades: ' + err.message);
+    }
+  }, [callSupabase]);
+
+  const loadAllData = useCallback(async () => {
+    setLoadingData(true);
+    try {
+      await loadStudents();
+      await loadAssignments();
+      await loadGrades();
+    } finally {
+      setLoadingData(false);
+    }
+  }, [loadStudents, loadAssignments, loadGrades]);
+
+  const saveAssignment = useCallback(async (studentId, debateId, team, segmentType) => {
+    try {
+      setSaving(true);
+      const result = await callSupabase('debate_assignments', 'POST', {
+        student_id: studentId,
+        debate_id: debateId,
+        team: team,
+        segment_type: segmentType,
+      });
+      // Refresh assignments
+      await loadAssignments();
+      setAssignDialog(null);
+    } catch (err) {
+      alert('Failed to save assignment: ' + err.message);
+    } finally {
+      setSaving(false);
+    }
+  }, [callSupabase, loadAssignments]);
+
+  const removeAssignment = useCallback(async (assignmentId) => {
+    if (!confirm('Remove this student assignment?')) return;
+    try {
+      setSaving(true);
+      await callSupabase(`debate_assignments?id=eq.${assignmentId}`, 'DELETE');
+      await loadAssignments();
+      setSelectedStudent(null);
+    } catch (err) {
+      alert('Failed to remove assignment: ' + err.message);
+    } finally {
+      setSaving(false);
+    }
+  }, [callSupabase, loadAssignments]);
+
+  const saveGrade = useCallback(async (assignmentId, formData) => {
+    try {
+      setSaving(true);
+      const gradeData = {
+        assignment_id: assignmentId,
+        research_score: formData.research || 0,
+        presentation_score: formData.presentation || 0,
+        consistency_score: formData.consistency || 0,
+        segment_score: formData.segment || 0,
+        teacher_comment: formData.comment || '',
+        updated_at: new Date().toISOString(),
+      };
+      if (formData.gradeId) {
+        // Update existing grade
+        await callSupabase(`debate_grades?id=eq.${formData.gradeId}`, 'PATCH', gradeData);
+      } else {
+        // Insert new grade
+        const result = await callSupabase('debate_grades', 'POST', gradeData);
+        if (result && result[0]) {
+          // Update local form with new grade ID
+          setGradingForms(prev => ({
+            ...prev,
+            [assignmentId]: { ...prev[assignmentId], gradeId: result[0].id }
+          }));
+        }
+      }
+      await loadGrades();
+      alert('Grade saved!');
+    } catch (err) {
+      alert('Failed to save grade: ' + err.message);
+    } finally {
+      setSaving(false);
+    }
+  }, [callSupabase, loadGrades]);
+
+  const publishDebateGrades = useCallback(async (debateId) => {
+    try {
+      setSaving(true);
+      // Get all assignment IDs for this debate
+      const debateAssignmentIds = assignments
+        .filter(a => a.debate_id === debateId)
+        .map(a => a.id);
+      if (!debateAssignmentIds.length) {
+        alert('No assignments found for this debate.');
+        return;
+      }
+      // Update all grades for these assignments to published
+      const idList = debateAssignmentIds.map(id => `"${id}"`).join(',');
+      await callSupabase(
+        `debate_grades?assignment_id=in.(${idList})`,
+        'PATCH',
+        { is_published: true, updated_at: new Date().toISOString() }
+      );
+      setPublishedDebates(prev => new Set([...prev, debateId]));
+      await loadGrades();
+      alert('All grades published! Students can now see their feedback.');
+    } catch (err) {
+      alert('Failed to publish grades: ' + err.message);
+    } finally {
+      setSaving(false);
+    }
+  }, [callSupabase, assignments, loadGrades]);
 
   // ===========================================================================
   // SEGMENT HELPERS
