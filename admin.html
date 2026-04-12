@@ -223,6 +223,9 @@ function App() {
     localStorage.setItem('admin_supabaseAnonKey', supabaseAnonKey);
   }, [supabaseUrl, supabaseAnonKey]);
 
+  // Ref for auto-load tracking (must be before early return)
+  const hasLoadedGradingRef = useRef(false);
+
   // ===========================================================================
   // GOOGLE SSO
   // ===========================================================================
@@ -689,6 +692,17 @@ Requirements:
     }
   }, [loadStudents, loadAssignments, loadGrades]);
 
+  // Auto-load data when entering grading section with credentials configured
+  useEffect(() => {
+    if (currentSection === 'grading' && supabaseUrl && supabaseAnonKey && user && !hasLoadedGradingRef.current) {
+      hasLoadedGradingRef.current = true;
+      loadAllData();
+    }
+    if (currentSection !== 'grading') {
+      hasLoadedGradingRef.current = false;
+    }
+  }, [currentSection, supabaseUrl, supabaseAnonKey, user, loadAllData]);
+
   const saveAssignment = useCallback(async (studentId, debateId, team, segmentType) => {
     try {
       setSaving(true);
@@ -862,14 +876,42 @@ Requirements:
     // Auto-sync: if selected debate doesn't match period, pick first matching debate
     const effectiveDebate = currentDebatePeriod === selectedPeriod ? selectedDebate : (periodDebates[0]?.id || selectedDebate);
 
-    const unassignedStudents = students.filter(s =>
-      s.period === selectedPeriod &&
-      !assignments.find(a => a.student_id === s.id && a.debate_id === effectiveDebate)
+    // Students assigned to ANY debate (across all topics) are "claimed"
+    const studentsWithAnyAssignment = new Set(assignments.map(a => a.student_id));
+    // Students assigned specifically to THIS debate
+    const studentsInThisDebate = new Set(
+      assignments.filter(a => a.debate_id === effectiveDebate).map(a => a.student_id)
     );
+
+    // Fully unassigned: in this period, not assigned to ANY debate
+    const fullyUnassigned = students.filter(s =>
+      s.period === selectedPeriod && !studentsWithAnyAssignment.has(s.id)
+    );
+    // Already in this debate: can be assigned to MORE segments (same team)
+    const inThisDebate = students.filter(s =>
+      s.period === selectedPeriod && studentsInThisDebate.has(s.id)
+    );
+    // Assigned to a DIFFERENT debate: not available
+    const inOtherDebate = students.filter(s =>
+      s.period === selectedPeriod && studentsWithAnyAssignment.has(s.id) && !studentsInThisDebate.has(s.id)
+    );
+
     const debateAssignments = assignments.filter(a =>
       a.debate_id === effectiveDebate &&
       students.find(st => st.id === a.student_id && st.period === selectedPeriod)
     );
+
+    // Helper: get a student's existing team in this debate (for auto-locking)
+    const getStudentTeamInDebate = (studentId) => {
+      const existing = assignments.find(a => a.debate_id === effectiveDebate && a.student_id === studentId);
+      return existing ? existing.team : null;
+    };
+    // Helper: get segments already assigned for a student in this debate
+    const getStudentSegmentsInDebate = (studentId) => {
+      return assignments
+        .filter(a => a.debate_id === effectiveDebate && a.student_id === studentId)
+        .map(a => a.segment_type);
+    };
 
     // Group assignments by segment for cleaner display
     const segmentLabels = { opening: 'Opening', main: 'Main Argument', rebuttal: 'Rebuttal', closing: 'Closing' };
@@ -1006,20 +1048,76 @@ Requirements:
               </div>
             </div>
 
-            {/* Unassigned Students */}
+            {/* Available Students */}
             <div>
-              <h4 className="text-xs font-semibold text-gray-600 mb-2">Unassigned ({unassignedStudents.length})</h4>
+              <h4 className="text-xs font-semibold text-gray-600 mb-2">Available ({fullyUnassigned.length + inThisDebate.length})</h4>
               <div className="space-y-1 max-h-80 overflow-y-auto border rounded p-2 bg-gray-50">
-                {unassignedStudents.map(s => (
-                  <div key={s.id}
-                    className="text-xs p-2 bg-white border rounded hover:bg-blue-50 cursor-pointer transition-colors"
-                    onClick={() => setAssignDialog({ student: s, team: 'A', segmentType: 'opening' })}>
-                    <div className="font-semibold">{s.name}</div>
-                    <div className="text-gray-500">{s.email}</div>
+                {/* Students already in this debate — can add more segments */}
+                {inThisDebate.length > 0 && (
+                  <div className="mb-2">
+                    <div className="text-xs font-bold px-2 py-1 rounded bg-blue-50 text-blue-700 mb-1">
+                      In this debate — add more segments
+                    </div>
+                    {inThisDebate.map(s => {
+                      const existingTeam = getStudentTeamInDebate(s.id);
+                      const existingSegs = getStudentSegmentsInDebate(s.id);
+                      const allAssigned = existingSegs.length >= 4;
+                      return (
+                        <div key={s.id}
+                          className={`text-xs p-2 border rounded mt-1 transition-colors ${allAssigned ? 'bg-gray-100 text-gray-400' : 'bg-white hover:bg-blue-50 cursor-pointer'}`}
+                          onClick={() => {
+                            if (allAssigned) return;
+                            const nextSeg = ['opening','main','rebuttal','closing'].find(seg => !existingSegs.includes(seg)) || 'opening';
+                            setAssignDialog({ student: s, team: existingTeam || 'A', segmentType: nextSeg, lockedTeam: true });
+                          }}>
+                          <div className="font-semibold">{s.name} <span className="font-normal text-gray-400">— Team {existingTeam}</span></div>
+                          <div className="text-gray-500">Segments: {existingSegs.map(seg => segmentLabels[seg]).join(', ')}{allAssigned ? ' (all assigned)' : ''}</div>
+                        </div>
+                      );
+                    })}
                   </div>
-                ))}
-                {unassignedStudents.length === 0 && students.length > 0 && (
-                  <p className="text-xs text-green-600 p-2">All students assigned for this debate!</p>
+                )}
+
+                {/* Fully unassigned students */}
+                {fullyUnassigned.length > 0 && (
+                  <div className="mb-2">
+                    {inThisDebate.length > 0 && (
+                      <div className="text-xs font-bold px-2 py-1 rounded bg-gray-100 text-gray-600 mb-1">
+                        Not yet assigned to any debate
+                      </div>
+                    )}
+                    {fullyUnassigned.map(s => (
+                      <div key={s.id}
+                        className="text-xs p-2 bg-white border rounded hover:bg-blue-50 cursor-pointer transition-colors mt-1"
+                        onClick={() => setAssignDialog({ student: s, team: 'A', segmentType: 'opening', lockedTeam: false })}>
+                        <div className="font-semibold">{s.name}</div>
+                        <div className="text-gray-500">{s.email}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {fullyUnassigned.length === 0 && inThisDebate.length === 0 && students.length > 0 && (
+                  <p className="text-xs text-green-600 p-2">All students assigned!</p>
+                )}
+
+                {/* Students in other debates — shown but greyed out */}
+                {inOtherDebate.length > 0 && (
+                  <div className="mt-2 pt-2 border-t">
+                    <div className="text-xs font-bold px-2 py-1 rounded bg-gray-100 text-gray-400 mb-1">
+                      Assigned to other debates ({inOtherDebate.length})
+                    </div>
+                    {inOtherDebate.map(s => {
+                      const otherDebateId = assignments.find(a => a.student_id === s.id)?.debate_id;
+                      const otherDebate = DEBATES.find(d => d.id === otherDebateId);
+                      return (
+                        <div key={s.id} className="text-xs p-2 bg-gray-50 border rounded mt-1 text-gray-400">
+                          <div>{s.name}</div>
+                          <div>{otherDebate ? otherDebate.topic : otherDebateId}</div>
+                        </div>
+                      );
+                    })}
+                  </div>
                 )}
               </div>
             </div>
@@ -1036,30 +1134,47 @@ Requirements:
               <div className="space-y-4">
                 <div>
                   <label className="block text-xs font-semibold text-gray-600 mb-2">Team</label>
-                  <div className="flex gap-2">
-                    {['A', 'B'].map(t => (
-                      <button key={t} onClick={() => setAssignDialog(prev => ({ ...prev, team: t }))}
-                        className={`flex-1 py-2 rounded text-sm font-semibold transition-colors ${
-                          assignDialog.team === t
-                            ? (t === 'A' ? 'bg-cedar text-white' : 'bg-leather text-white')
-                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                        }`}>
-                        Team {t} ({t === 'A' ? 'Group 1' : 'Group 2'})
-                      </button>
-                    ))}
-                  </div>
+                  {assignDialog.lockedTeam ? (
+                    <div className={`py-2 rounded text-sm font-semibold text-center text-white ${assignDialog.team === 'A' ? 'bg-cedar' : 'bg-leather'}`}>
+                      Team {assignDialog.team} ({assignDialog.team === 'A' ? 'Group 1' : 'Group 2'}) — locked
+                    </div>
+                  ) : (
+                    <div className="flex gap-2">
+                      {['A', 'B'].map(t => (
+                        <button key={t} onClick={() => setAssignDialog(prev => ({ ...prev, team: t }))}
+                          className={`flex-1 py-2 rounded text-sm font-semibold transition-colors ${
+                            assignDialog.team === t
+                              ? (t === 'A' ? 'bg-cedar text-white' : 'bg-leather text-white')
+                              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                          }`}>
+                          Team {t} ({t === 'A' ? 'Group 1' : 'Group 2'})
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 <div>
                   <label className="block text-xs font-semibold text-gray-600 mb-2">Segment</label>
-                  <select value={assignDialog.segmentType}
-                    onChange={e => setAssignDialog(prev => ({ ...prev, segmentType: e.target.value }))}
-                    className="w-full px-3 py-2 border border-gray-300 rounded text-sm font-body">
-                    <option value="opening">Opening Statement</option>
-                    <option value="main">Main Argument</option>
-                    <option value="rebuttal">Counter/Rebuttal</option>
-                    <option value="closing">Closing Statement</option>
-                  </select>
+                  {(() => {
+                    const existingSegs = getStudentSegmentsInDebate(assignDialog.student.id);
+                    const allSegs = [
+                      { value: 'opening', label: 'Opening Statement' },
+                      { value: 'main', label: 'Main Argument' },
+                      { value: 'rebuttal', label: 'Counter/Rebuttal' },
+                      { value: 'closing', label: 'Closing Statement' },
+                    ];
+                    const availableSegs = allSegs.filter(s => !existingSegs.includes(s.value));
+                    return (
+                      <select value={assignDialog.segmentType}
+                        onChange={e => setAssignDialog(prev => ({ ...prev, segmentType: e.target.value }))}
+                        className="w-full px-3 py-2 border border-gray-300 rounded text-sm font-body">
+                        {availableSegs.map(s => (
+                          <option key={s.value} value={s.value}>{s.label}</option>
+                        ))}
+                      </select>
+                    );
+                  })()}
                 </div>
 
                 <div className="flex gap-2 pt-2">
