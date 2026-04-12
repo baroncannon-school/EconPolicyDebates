@@ -517,6 +517,11 @@ function DebateReview() {
   const [isSigningIn, setIsSigningIn] = useState(false);
   const [authError, setAuthError] = useState(null);
 
+  // Feedback/grading state
+  const [studentFeedback, setStudentFeedback] = useState(null); // { research, presentation, consistency, segment, total, comment, segment_type, team }
+  const [supabaseUrl, setSupabaseUrl] = useState('https://hfojiycmzghnhafllasz.supabase.co');
+  const [supabaseAnonKey, setSupabaseAnonKey] = useState('');
+
   // Drive sync state
   const [isSaving, setIsSaving] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -697,6 +702,7 @@ function DebateReview() {
     { key: 'notes', label: 'Notes', icon: 'FileText' },
     { key: 'compare', label: 'Compare', icon: 'ArrowLeftRight' },
     { key: 'brief', label: 'One-Pager Briefs', icon: 'FileCheck', hidden: !debate?.teamA?.onePagerUrl && !debate?.teamB?.onePagerUrl },
+    { key: 'feedback', label: 'My Feedback', icon: 'Star', hidden: !user || !studentFeedback },
   ];
 
   const SLOT_NAMES = ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'];
@@ -885,7 +891,46 @@ function DebateReview() {
     setUser(null);
     setDriveFileId(null);
     setLastSaved(null);
+    setStudentFeedback(null);
   };
+
+  // Fetch student feedback from Supabase
+  const fetchStudentFeedback = useCallback(async (email, currentDebateId) => {
+    if (!supabaseAnonKey || !email) return;
+    try {
+      const url = `${supabaseUrl}/rest/v1/debate_grade_summary?student_email=eq.${encodeURIComponent(email)}&debate_id=eq.${currentDebateId}&is_published=eq.true`;
+      const res = await fetch(url, {
+        headers: {
+          'apikey': supabaseAnonKey,
+          'Authorization': `Bearer ${supabaseAnonKey}`,
+        },
+      });
+      if (!res.ok) return; // Silently fail if no data
+      const data = await res.json();
+      if (data.length > 0) {
+        const grade = data[0];
+        setStudentFeedback({
+          research: grade.research_score || 0,
+          presentation: grade.presentation_score || 0,
+          consistency: grade.consistency_score || 0,
+          segment: grade.segment_score || 0,
+          total: grade.total_score || 0,
+          comment: grade.teacher_comment || '',
+          segment_type: grade.segment_type,
+          team: grade.team,
+        });
+      }
+    } catch (err) {
+      console.log('Could not fetch feedback:', err);
+    }
+  }, [supabaseUrl, supabaseAnonKey]);
+
+  // Fetch feedback when user or debate changes
+  useEffect(() => {
+    if (user?.email && debate?.id) {
+      fetchStudentFeedback(user.email, debate.id);
+    }
+  }, [user?.email, debate?.id, fetchStudentFeedback]);
 
   // Drive: Find existing notes file
   const findDriveFile = useCallback(async (accessToken) => {
@@ -1730,6 +1775,103 @@ function DebateReview() {
 
     if (panelType === 'brief') {
       return <PdfBriefPanel debate={debate} />;
+    }
+
+    if (panelType === 'feedback') {
+      // My Feedback - shows graded scores and teacher comment
+      if (!studentFeedback) {
+        return (
+          <div className="flex flex-col items-center justify-center h-full text-center">
+            <Star className="w-8 h-8 text-gray-300 mb-2" />
+            <p className="text-sm text-gray-500 font-body">No feedback yet</p>
+            <p className="text-xs text-gray-400 font-body">Your teacher hasn't published feedback for this debate yet.</p>
+          </div>
+        );
+      }
+
+      const rubricGuide = {
+        opening: {
+          research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+          presentation: 'Clarity, confidence, eye contact, vocabulary',
+          consistency: 'Consistent language, cohesive message, connecting to teammates',
+          segment: 'Define policy, introduce implementations, hook/engage, preview evidence',
+        },
+        main: {
+          research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+          presentation: 'Clarity, confidence, eye contact, vocabulary',
+          consistency: 'Consistent language, cohesive message, connecting to teammates',
+          segment: 'Define objectives with data, cite 2-5 sources with lead-ins, corroborate, address counter-claim',
+        },
+        rebuttal: {
+          research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+          presentation: 'Clarity, confidence, eye contact, vocabulary',
+          consistency: 'Consistent language, cohesive message, connecting to teammates',
+          segment: 'Identify opposing claims, counter with evidence, cite 1-3 sources, sow doubt supporting own group',
+        },
+        closing: {
+          research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+          presentation: 'Clarity, confidence, eye contact, vocabulary',
+          consistency: 'Consistent language, cohesive message, connecting to teammates',
+          segment: 'Reiterate primary claim, call back to teammates, state desired implementation',
+        },
+      };
+
+      const guide = rubricGuide[studentFeedback.segment_type] || rubricGuide.opening;
+
+      return (
+        <>
+          <h3 className="text-sm font-bold text-gray-700 mb-3 font-body">Your Feedback</h3>
+
+          {/* Segment Info */}
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4 text-xs">
+            <p className="text-blue-700 font-body">
+              <strong>Segment:</strong> {studentFeedback.segment_type} (Team {studentFeedback.team})
+            </p>
+          </div>
+
+          {/* Scores Grid */}
+          <div className="space-y-3 mb-4">
+            {[
+              { key: 'research', label: 'Research' },
+              { key: 'presentation', label: 'Presentation' },
+              { key: 'consistency', label: 'Group Consistency' },
+              { key: 'segment', label: studentFeedback.segment_type?.charAt(0).toUpperCase() + studentFeedback.segment_type?.slice(1) || 'Segment' },
+            ].map(cat => (
+              <div key={cat.key} className="border border-gray-200 rounded-lg p-3">
+                <div className="flex items-center justify-between mb-2">
+                  <label className="text-xs font-bold text-gray-700 font-body">{cat.label}</label>
+                  <div className="text-lg font-headline text-cedar font-bold">{studentFeedback[cat.key]}/10</div>
+                </div>
+                <div className="flex gap-1 mb-2">
+                  {[...Array(10)].map((_, i) => (
+                    <div
+                      key={i}
+                      className={`h-1.5 flex-1 rounded-full ${
+                        i < studentFeedback[cat.key] ? 'bg-cedar' : 'bg-gray-200'
+                      }`}
+                    />
+                  ))}
+                </div>
+                <p className="text-xs text-gray-500 font-body">{guide[cat.key]}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Total Score */}
+          <div className="bg-cedar text-white rounded-lg p-3 mb-4 text-center">
+            <p className="text-xs text-white/70 font-body mb-1">Total Score</p>
+            <p className="text-3xl font-headline font-bold">{studentFeedback.total}/40</p>
+          </div>
+
+          {/* Teacher Comment */}
+          {studentFeedback.comment && (
+            <div className="border border-gray-200 rounded-lg p-3 bg-gray-50">
+              <h4 className="text-xs font-bold text-gray-700 mb-2 font-body">Teacher Comment</h4>
+              <p className="text-xs text-gray-700 font-body leading-relaxed whitespace-pre-wrap">{studentFeedback.comment}</p>
+            </div>
+          )}
+        </>
+      );
     }
   };
 
