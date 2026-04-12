@@ -400,8 +400,8 @@ function DebateReview() {
 
   // Feedback/grading state
   const [studentFeedback, setStudentFeedback] = useState(null); // { research, presentation, consistency, segment, total, comment, segment_type, team }
-  const [supabaseUrl, setSupabaseUrl] = useState('https://hfojiycmzghnhafllasz.supabase.co');
-  const [supabaseAnonKey, setSupabaseAnonKey] = useState('');
+  const [supabaseUrl, setSupabaseUrl] = useState('https://tqtgyjcjawrxxpcpmhxt.supabase.co');
+  const [supabaseAnonKey, setSupabaseAnonKey] = useState('sb_publishable_--5IIbGAgbWdBqRDP3biDQ_oQBzCAJt');
 
   // Drive sync state
   const [isSaving, setIsSaving] = useState(false);
