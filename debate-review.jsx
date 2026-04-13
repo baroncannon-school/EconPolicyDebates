@@ -437,9 +437,26 @@ function DebateReview() {
   const [authError, setAuthError] = useState(null);
 
   // Feedback/grading state
-  const [studentFeedback, setStudentFeedback] = useState(null); // { research, presentation, consistency, segment, total, comment, segment_type, team }
-  const [supabaseUrl, setSupabaseUrl] = useState('https://tqtgyjcjawrxxpcpmhxt.supabase.co');
-  const [supabaseAnonKey, setSupabaseAnonKey] = useState('sb_publishable_--5IIbGAgbWdBqRDP3biDQ_oQBzCAJt');
+  const [studentFeedback, setStudentFeedback] = useState(null);
+  const [supabaseUrl] = useState('https://tqtgyjcjawrxxpcpmhxt.supabase.co');
+  const [supabaseAnonKey] = useState('sb_publishable_--5IIbGAgbWdBqRDP3biDQ_oQBzCAJt');
+
+  // Teacher grading state
+  const TEACHER_EMAILS = ['bcannon@sfhs.com', 'bcannon@snapfituniforms.com']; // authorized teacher emails
+  const urlParams = new URLSearchParams(window.location.search);
+  const isTeacher = user && (TEACHER_EMAILS.includes(user.email?.toLowerCase()) || urlParams.get('teacher') === 'true');
+  const [teacherApiKey, setTeacherApiKey] = useState(() => {
+    try { return localStorage.getItem('admin_claudeApiKey') || ''; } catch { return ''; }
+  });
+  const [segmentStudents, setSegmentStudents] = useState([]); // students assigned to current segment
+  const [allAssignments, setAllAssignments] = useState([]); // all assignments for current debate
+  const [allStudents, setAllStudents] = useState([]); // all students from Supabase
+  const [gradingStudent, setGradingStudent] = useState(null); // currently grading this student/assignment
+  const [gradeForm, setGradeForm] = useState({ research: 0, presentation: 0, consistency: 0, segment: 0, comment: '' });
+  const [gradeId, setGradeId] = useState(null); // existing grade ID if updating
+  const [isAutoGrading, setIsAutoGrading] = useState(false);
+  const [isSavingGrade, setIsSavingGrade] = useState(false);
+  const [gradeSaved, setGradeSaved] = useState(false);
 
   // Drive sync state
   const [isSaving, setIsSaving] = useState(false);
@@ -622,6 +639,7 @@ function DebateReview() {
     { key: 'compare', label: 'Compare', icon: 'ArrowLeftRight' },
     { key: 'brief', label: 'One-Pager Briefs', icon: 'FileCheck', hidden: !debate?.teamA?.onePagerUrl && !debate?.teamB?.onePagerUrl },
     { key: 'feedback', label: 'My Feedback', icon: 'Star', hidden: !user || !studentFeedback },
+    { key: 'grading', label: 'Grade Students', icon: 'ClipboardCheck', hidden: !isTeacher },
   ];
 
   const SLOT_NAMES = ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'];
@@ -754,6 +772,257 @@ function DebateReview() {
     };
     return map[topic] || 'bg-gray-100 text-gray-700 border-gray-200';
   };
+
+  // ===========================================================================
+  // TEACHER GRADING LOGIC
+  // ===========================================================================
+
+  // Load assignments and students for grading when debate changes
+  useEffect(() => {
+    if (!isTeacher || !supabaseAnonKey) return;
+    const debateId = debate?.id;
+    if (!debateId) return;
+
+    const headers = { 'apikey': supabaseAnonKey, 'Authorization': `Bearer ${supabaseAnonKey}` };
+
+    Promise.all([
+      fetch(`${supabaseUrl}/rest/v1/debate_assignments?debate_id=eq.${debateId}`, { headers }).then(r => r.json()),
+      fetch(`${supabaseUrl}/rest/v1/debate_students?order=name.asc`, { headers }).then(r => r.json()),
+      fetch(`${supabaseUrl}/rest/v1/debate_grades`, { headers }).then(r => r.json()),
+    ]).then(([assignments, students, grades]) => {
+      setAllAssignments(assignments || []);
+      setAllStudents(students || []);
+      // Build a map of assignment_id → grade for quick lookup
+      const gradeMap = {};
+      (grades || []).forEach(g => { gradeMap[g.assignment_id] = g; });
+      window.__gradeMap = gradeMap; // store for panel access
+    }).catch(err => {
+      console.error('[Teacher] Failed to load grading data:', err);
+    });
+  }, [isTeacher, debate?.id, supabaseUrl, supabaseAnonKey]);
+
+  // Update segment students when segment changes
+  useEffect(() => {
+    if (!isTeacher || !segment) return;
+    const segStudents = allAssignments
+      .filter(a => a.segment_type === segment.type && a.team === segment.team)
+      .map(a => {
+        const student = allStudents.find(s => s.id === a.student_id);
+        return student ? { ...student, assignment: a } : null;
+      })
+      .filter(Boolean);
+    setSegmentStudents(segStudents);
+    // Auto-select first student if none selected or segment changed
+    if (segStudents.length > 0 && (!gradingStudent || !segStudents.find(s => s.id === gradingStudent.id))) {
+      const first = segStudents[0];
+      setGradingStudent(first);
+      // Load existing grade if any
+      const existingGrade = window.__gradeMap?.[first.assignment.id];
+      if (existingGrade) {
+        setGradeForm({
+          research: existingGrade.research_score || 0,
+          presentation: existingGrade.presentation_score || 0,
+          consistency: existingGrade.consistency_score || 0,
+          segment: existingGrade.segment_score || 0,
+          comment: existingGrade.teacher_comment || '',
+        });
+        setGradeId(existingGrade.id);
+      } else {
+        setGradeForm({ research: 0, presentation: 0, consistency: 0, segment: 0, comment: '' });
+        setGradeId(null);
+      }
+      setGradeSaved(false);
+    }
+  }, [isTeacher, segment?.type, segment?.team, allAssignments, allStudents]);
+
+  // When teacher selects a different student to grade
+  const selectGradingStudent = useCallback((student) => {
+    setGradingStudent(student);
+    setGradeSaved(false);
+    const existingGrade = window.__gradeMap?.[student.assignment.id];
+    if (existingGrade) {
+      setGradeForm({
+        research: existingGrade.research_score || 0,
+        presentation: existingGrade.presentation_score || 0,
+        consistency: existingGrade.consistency_score || 0,
+        segment: existingGrade.segment_score || 0,
+        comment: existingGrade.teacher_comment || '',
+      });
+      setGradeId(existingGrade.id);
+    } else {
+      setGradeForm({ research: 0, presentation: 0, consistency: 0, segment: 0, comment: '' });
+      setGradeId(null);
+    }
+  }, []);
+
+  // AI auto-grade using Claude API
+  const autoGradeStudent = useCallback(async () => {
+    if (!teacherApiKey || !gradingStudent || !segment) return;
+    setIsAutoGrading(true);
+
+    const rubricGuide = {
+      opening: {
+        research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+        presentation: 'Clarity, confidence, eye contact, vocabulary',
+        consistency: 'Consistent language, cohesive message, connecting to teammates',
+        segment: 'Define policy, introduce implementations, hook/engage, preview evidence',
+      },
+      main: {
+        research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+        presentation: 'Clarity, confidence, eye contact, vocabulary',
+        consistency: 'Consistent language, cohesive message, connecting to teammates',
+        segment: 'Define objectives with data, cite 2-5 sources with lead-ins, corroborate, address counter-claim',
+      },
+      rebuttal: {
+        research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+        presentation: 'Clarity, confidence, eye contact, vocabulary',
+        consistency: 'Consistent language, cohesive message, connecting to teammates',
+        segment: 'Identify opposing claims, counter with evidence, cite 1-3 sources, sow doubt supporting own group',
+      },
+      closing: {
+        research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+        presentation: 'Clarity, confidence, eye contact, vocabulary',
+        consistency: 'Consistent language, cohesive message, connecting to teammates',
+        segment: 'Reiterate primary claim, call back to teammates, state desired implementation',
+      },
+    };
+
+    const guide = rubricGuide[segment.type] || rubricGuide.opening;
+    const transcriptText = (segment.transcript || []).map(t => t.text).join(' ');
+    const outlineText = (segment.outline || []).map(o => `${o.title}: ${(o.bullets || []).join('; ')}`).join('\n');
+
+    try {
+      const res = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': teacherApiKey,
+          'anthropic-version': '2023-06-01',
+          'anthropic-dangerous-direct-browser-access': 'true',
+        },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-20250514',
+          max_tokens: 1024,
+          system: `You are an expert high school economics debate coach grading student performances. You are fair but encouraging. Grade on a scale of 0-10 for each category. Return ONLY valid JSON.`,
+          messages: [{ role: 'user', content: `Grade this student's ${segment.type} statement performance in a high school economics debate.
+
+Student: ${gradingStudent.name}
+Team: ${gradingStudent.assignment.team === 'A' ? 'Group 1' : 'Group 2'}
+Segment Type: ${segment.type}
+Debate Topic: ${debate.debateTopic || debate.topic}
+
+Rubric Categories (each scored 0-10):
+1. Research & Evidence: ${guide.research}
+2. Presentation & Delivery: ${guide.presentation}
+3. Group Consistency: ${guide.consistency}
+4. ${segment.type.charAt(0).toUpperCase() + segment.type.slice(1)} Performance: ${guide.segment}
+
+Transcript of the segment:
+${transcriptText || '(No transcript available)'}
+
+Argument outline:
+${outlineText || '(No outline available)'}
+
+Return a JSON object with scores and a personalized 2-3 sentence comment for the student:
+{
+  "research": <0-10>,
+  "presentation": <0-10>,
+  "consistency": <0-10>,
+  "segment": <0-10>,
+  "comment": "Personalized feedback addressing the student by first name. Be specific about what they did well and one area for improvement."
+}
+
+Important: Be fair and constructive. Most students should score 5-8 range. Only give 9-10 for truly exceptional work. Note: you are evaluating a GROUP performance from transcript — you cannot assess individual eye contact or confidence, so base presentation score on verbal clarity, vocabulary, and structure visible in the transcript.` }],
+        }),
+      });
+
+      if (!res.ok) throw new Error(`Claude API error: ${res.status}`);
+      const data = await res.json();
+      const text = data.content[0].text;
+      const parsed = JSON.parse(text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim());
+
+      setGradeForm({
+        research: Math.min(10, Math.max(0, parsed.research || 0)),
+        presentation: Math.min(10, Math.max(0, parsed.presentation || 0)),
+        consistency: Math.min(10, Math.max(0, parsed.consistency || 0)),
+        segment: Math.min(10, Math.max(0, parsed.segment || 0)),
+        comment: parsed.comment || '',
+      });
+      setGradeSaved(false);
+    } catch (err) {
+      console.error('[AutoGrade] Error:', err);
+      alert('Auto-grade error: ' + err.message);
+    } finally {
+      setIsAutoGrading(false);
+    }
+  }, [teacherApiKey, gradingStudent, segment, debate]);
+
+  // Save grade to Supabase
+  const saveTeacherGrade = useCallback(async () => {
+    if (!gradingStudent) return;
+    setIsSavingGrade(true);
+    try {
+      const gradeData = {
+        assignment_id: gradingStudent.assignment.id,
+        research_score: gradeForm.research,
+        presentation_score: gradeForm.presentation,
+        consistency_score: gradeForm.consistency,
+        segment_score: gradeForm.segment,
+        teacher_comment: gradeForm.comment,
+        updated_at: new Date().toISOString(),
+      };
+
+      const headers = {
+        'Content-Type': 'application/json',
+        'apikey': supabaseAnonKey,
+        'Authorization': `Bearer ${supabaseAnonKey}`,
+        'Prefer': 'return=representation',
+      };
+
+      let res;
+      if (gradeId) {
+        res = await fetch(`${supabaseUrl}/rest/v1/debate_grades?id=eq.${gradeId}`, {
+          method: 'PATCH', headers, body: JSON.stringify(gradeData),
+        });
+      } else {
+        res = await fetch(`${supabaseUrl}/rest/v1/debate_grades`, {
+          method: 'POST', headers, body: JSON.stringify(gradeData),
+        });
+      }
+
+      if (!res.ok) throw new Error(`Supabase error: ${res.status} ${await res.text()}`);
+      const result = await res.json();
+      if (result?.[0]?.id) {
+        setGradeId(result[0].id);
+        // Update local grade map
+        if (window.__gradeMap) {
+          window.__gradeMap[gradingStudent.assignment.id] = result[0];
+        }
+      }
+      setGradeSaved(true);
+      console.log('[Teacher] Grade saved for', gradingStudent.name);
+    } catch (err) {
+      console.error('[Teacher] Save grade error:', err);
+      alert('Failed to save grade: ' + err.message);
+    } finally {
+      setIsSavingGrade(false);
+    }
+  }, [gradingStudent, gradeForm, gradeId, supabaseUrl, supabaseAnonKey]);
+
+  // Auto-grade all students in segment at once
+  const autoGradeAllInSegment = useCallback(async () => {
+    if (!teacherApiKey || !segmentStudents.length) return;
+    for (const student of segmentStudents) {
+      selectGradingStudent(student);
+      // Small delay to let state update
+      await new Promise(r => setTimeout(r, 100));
+    }
+    // Grade the first one — the teacher can iterate through the rest
+    if (segmentStudents[0]) {
+      selectGradingStudent(segmentStudents[0]);
+      await autoGradeStudent();
+    }
+  }, [teacherApiKey, segmentStudents, selectGradingStudent, autoGradeStudent]);
 
   // Google Sign-In
   const handleGoogleSignIn = useCallback(() => {
@@ -1694,6 +1963,184 @@ function DebateReview() {
 
     if (panelType === 'brief') {
       return <PdfBriefPanel debate={debate} />;
+    }
+
+    if (panelType === 'grading') {
+      // Teacher Grading Panel
+      const segLabel = { opening: 'Opening', main: 'Main Argument', rebuttal: 'Rebuttal', closing: 'Closing' };
+      const rubricDesc = {
+        opening: {
+          research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+          presentation: 'Clarity, confidence, eye contact, vocabulary',
+          consistency: 'Consistent language, cohesive message, connecting to teammates',
+          segment: 'Define policy, introduce implementations, hook/engage, preview evidence',
+        },
+        main: {
+          research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+          presentation: 'Clarity, confidence, eye contact, vocabulary',
+          consistency: 'Consistent language, cohesive message, connecting to teammates',
+          segment: 'Define objectives with data, cite 2-5 sources, corroborate, address counter-claim',
+        },
+        rebuttal: {
+          research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+          presentation: 'Clarity, confidence, eye contact, vocabulary',
+          consistency: 'Consistent language, cohesive message, connecting to teammates',
+          segment: 'Identify opposing claims, counter with evidence, cite 1-3 sources, sow doubt',
+        },
+        closing: {
+          research: 'Evidence quality, sourcing, lead-ins, reputable sources',
+          presentation: 'Clarity, confidence, eye contact, vocabulary',
+          consistency: 'Consistent language, cohesive message, connecting to teammates',
+          segment: 'Reiterate primary claim, call back to teammates, state desired implementation',
+        },
+      };
+      const desc = rubricDesc[segment?.type] || rubricDesc.opening;
+
+      // All students for THIS debate (not just this segment)
+      const debateStudentAssignments = allAssignments.map(a => {
+        const student = allStudents.find(s => s.id === a.student_id);
+        return student ? { ...student, assignment: a } : null;
+      }).filter(Boolean);
+
+      const total = gradeForm.research + gradeForm.presentation + gradeForm.consistency + gradeForm.segment;
+
+      return (
+        <>
+          {/* Header */}
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-bold text-gray-700 font-body flex items-center gap-1.5">
+              <ClipboardCheck className="w-4 h-4 text-cedar" />
+              Grade Students
+            </h3>
+            {!teacherApiKey && (
+              <div className="text-xs text-amber-600 bg-amber-50 px-2 py-1 rounded">
+                Set Claude API key in Admin for auto-grading
+              </div>
+            )}
+          </div>
+
+          {/* Current Segment Info */}
+          <div className="bg-leather/5 border border-leather/20 rounded-lg p-2 mb-3 text-xs">
+            <span className="text-leather font-semibold">{segLabel[segment?.type] || 'Segment'}</span>
+            <span className="text-gray-500 ml-2">Team {segment?.team} ({segment?.team === 'A' ? 'Group 1' : 'Group 2'})</span>
+            <span className="text-gray-400 ml-2">• {segmentStudents.length} student{segmentStudents.length !== 1 ? 's' : ''}</span>
+          </div>
+
+          {/* Student Selector — shows segment students prominently, others dimmed */}
+          <div className="mb-3">
+            <label className="text-xs font-semibold text-gray-600 mb-1 block">Student:</label>
+            {segmentStudents.length > 0 ? (
+              <div className="flex flex-wrap gap-1 mb-1">
+                {segmentStudents.map(s => {
+                  const hasGrade = !!window.__gradeMap?.[s.assignment.id];
+                  const isActive = gradingStudent?.id === s.id && gradingStudent?.assignment?.id === s.assignment.id;
+                  return (
+                    <button key={s.assignment.id} onClick={() => selectGradingStudent(s)}
+                      className={`px-2 py-1 rounded text-xs font-semibold transition-colors ${
+                        isActive
+                          ? 'bg-cedar text-white'
+                          : hasGrade
+                            ? 'bg-green-100 text-green-700 hover:bg-green-200'
+                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                      }`}>
+                      {s.name.split(' ')[0]}{hasGrade && !isActive ? ' ✓' : ''}
+                    </button>
+                  );
+                })}
+              </div>
+            ) : (
+              <p className="text-xs text-gray-400 italic">No students assigned to this segment. Navigate to a segment with assigned students.</p>
+            )}
+            {/* All debate students dropdown for quick jump */}
+            {debateStudentAssignments.length > segmentStudents.length && (
+              <select className="w-full text-xs border border-gray-200 rounded px-2 py-1 mt-1 text-gray-500"
+                value=""
+                onChange={e => {
+                  const a = debateStudentAssignments.find(s => s.assignment.id === e.target.value);
+                  if (a) selectGradingStudent(a);
+                }}>
+                <option value="">Jump to any student in this debate...</option>
+                {debateStudentAssignments.map(s => (
+                  <option key={s.assignment.id} value={s.assignment.id}>
+                    {s.name} — Team {s.assignment.team} {segLabel[s.assignment.segment_type]}
+                    {window.__gradeMap?.[s.assignment.id] ? ' ✓' : ''}
+                  </option>
+                ))}
+              </select>
+            )}
+          </div>
+
+          {/* Auto-grade button */}
+          {gradingStudent && teacherApiKey && (
+            <button onClick={autoGradeStudent} disabled={isAutoGrading}
+              className="w-full mb-3 px-3 py-2 bg-cedar/10 border border-cedar/30 text-cedar rounded-lg text-xs font-semibold hover:bg-cedar/20 disabled:opacity-50 transition-colors flex items-center justify-center gap-2">
+              {isAutoGrading ? (
+                <><span className="animate-spin">⏳</span> AI is grading...</>
+              ) : (
+                <><Sparkles className="w-3.5 h-3.5" /> Auto-Grade with AI</>
+              )}
+            </button>
+          )}
+
+          {/* Rubric Scores */}
+          {gradingStudent && (
+            <div className="space-y-2.5 mb-3">
+              {[
+                { key: 'research', label: 'Research & Evidence' },
+                { key: 'presentation', label: 'Presentation & Delivery' },
+                { key: 'consistency', label: 'Group Consistency' },
+                { key: 'segment', label: segLabel[segment?.type] || 'Segment' },
+              ].map(cat => (
+                <div key={cat.key} className="border border-gray-200 rounded-lg p-2">
+                  <div className="flex items-center justify-between mb-1">
+                    <label className="text-xs font-bold text-gray-700 font-body">{cat.label}</label>
+                    <div className="flex items-center gap-1">
+                      <input type="number" min="0" max="10" value={gradeForm[cat.key]}
+                        onChange={e => setGradeForm(prev => ({ ...prev, [cat.key]: Math.min(10, Math.max(0, parseInt(e.target.value) || 0)) }))}
+                        className="w-10 text-center text-sm font-headline font-bold text-cedar border border-gray-200 rounded" />
+                      <span className="text-xs text-gray-400">/10</span>
+                    </div>
+                  </div>
+                  <input type="range" min="0" max="10" value={gradeForm[cat.key]}
+                    onChange={e => setGradeForm(prev => ({ ...prev, [cat.key]: parseInt(e.target.value) }))}
+                    className="w-full h-1.5 appearance-none bg-gray-200 rounded-full" style={{ accentColor: '#a16c0d' }} />
+                  <p className="text-[10px] text-gray-400 mt-0.5">{desc[cat.key]}</p>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Comment */}
+          {gradingStudent && (
+            <div className="mb-3">
+              <label className="text-xs font-bold text-gray-700 font-body mb-1 block">Feedback Comment</label>
+              <textarea value={gradeForm.comment}
+                onChange={e => setGradeForm(prev => ({ ...prev, comment: e.target.value }))}
+                rows={3}
+                placeholder="Personalized feedback for this student..."
+                className="w-full border border-gray-200 rounded-lg px-2 py-1.5 text-xs font-body resize-none focus:ring-1 focus:ring-cedar focus:border-cedar outline-none" />
+            </div>
+          )}
+
+          {/* Total + Save */}
+          {gradingStudent && (
+            <>
+              <div className="bg-cedar text-white rounded-lg p-2 mb-3 flex items-center justify-between">
+                <span className="text-xs font-body">Total Score</span>
+                <span className="text-xl font-headline font-bold">{total}/40</span>
+              </div>
+              <button onClick={saveTeacherGrade} disabled={isSavingGrade}
+                className={`w-full px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                  gradeSaved
+                    ? 'bg-green-600 text-white'
+                    : 'bg-leather text-white hover:bg-leather/90'
+                } disabled:opacity-50`}>
+                {isSavingGrade ? 'Saving...' : gradeSaved ? '✓ Saved' : (gradeId ? 'Update Grade' : 'Save Grade')}
+              </button>
+            </>
+          )}
+        </>
+      );
     }
 
     if (panelType === 'feedback') {
