@@ -444,7 +444,8 @@ function DebateReview() {
   // Teacher grading state
   const TEACHER_EMAILS = ['baroncannon@sfhs.com']; // authorized teacher emails
   const urlParams = new URLSearchParams(window.location.search);
-  const isTeacher = user && (TEACHER_EMAILS.includes(user.email?.toLowerCase()) || urlParams.get('teacher') === 'true');
+  const teacherUrlOverride = urlParams.get('teacher') === 'true';
+  const isTeacher = teacherUrlOverride || (user && TEACHER_EMAILS.includes(user.email?.toLowerCase()));
   const [teacherApiKey, setTeacherApiKey] = useState(() => {
     try { return localStorage.getItem('admin_claudeApiKey') || ''; } catch { return ''; }
   });
@@ -2035,7 +2036,11 @@ Important: Be fair and constructive. Most students should score 5-8 range. Only 
                   const hasGrade = !!window.__gradeMap?.[s.assignment.id];
                   const isActive = gradingStudent?.id === s.id && gradingStudent?.assignment?.id === s.assignment.id;
                   return (
-                    <button key={s.assignment.id} onClick={() => selectGradingStudent(s)}
+                    <button key={s.assignment.id} onClick={() => {
+                      selectGradingStudent(s);
+                      const segIdx = debate.segments.findIndex(seg => seg.type === s.assignment.segment_type && seg.team === s.assignment.team);
+                      if (segIdx >= 0) goToSegment(segIdx);
+                    }}
                       className={`px-2 py-1 rounded text-xs font-semibold transition-colors ${
                         isActive
                           ? 'bg-cedar text-white'
@@ -2057,7 +2062,12 @@ Important: Be fair and constructive. Most students should score 5-8 range. Only 
                 value=""
                 onChange={e => {
                   const a = debateStudentAssignments.find(s => s.assignment.id === e.target.value);
-                  if (a) selectGradingStudent(a);
+                  if (a) {
+                    selectGradingStudent(a);
+                    // Jump to the matching video segment
+                    const segIdx = debate.segments.findIndex(s => s.type === a.assignment.segment_type && s.team === a.assignment.team);
+                    if (segIdx >= 0) goToSegment(segIdx);
+                  }
                 }}>
                 <option value="">Jump to any student in this debate...</option>
                 {debateStudentAssignments.map(s => (
