@@ -563,7 +563,7 @@ function DebateReview() {
   const [supabaseAnonKey] = useState('sb_publishable_--5IIbGAgbWdBqRDP3biDQ_oQBzCAJt');
 
   // Teacher grading state
-  const TEACHER_EMAILS = ['bcannon@sfhs.com', 'bcannon@snapfituniforms.com']; // authorized teacher emails
+  const TEACHER_EMAILS = ['baroncannon@sfhs.com']; // authorized teacher emails
   const urlParams = new URLSearchParams(window.location.search);
   const isTeacher = user && (TEACHER_EMAILS.includes(user.email?.toLowerCase()) || urlParams.get('teacher') === 'true');
   const [teacherApiKey, setTeacherApiKey] = useState(() => {
