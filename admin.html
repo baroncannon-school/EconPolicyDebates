@@ -813,6 +813,114 @@ Requirements:
     }
   }, [callSupabase, assignments, loadGrades]);
 
+  const exportGradingContext = useCallback(async () => {
+    try {
+      setSaving(true);
+      // 1. Fetch debates.json from the live GitHub Pages site
+      const debatesRes = await fetch('https://baroncannon-school.github.io/EconPolicyDebates/debates.json');
+      if (!debatesRes.ok) throw new Error('Could not fetch debates.json from the live site');
+      const debatesData = await debatesRes.json();
+
+      // 2. Build enriched student roster with assignments & grades
+      const enrichedStudents = students.map(s => {
+        const studentAssignments = assignments
+          .filter(a => a.student_id === s.id)
+          .map(a => {
+            const debate = DEBATES.find(d => d.id === a.debate_id);
+            const grade = gradingForms[a.id] || null;
+            return {
+              debate_id: a.debate_id,
+              debate_topic: debate?.topic || 'Unknown',
+              debate_period: debate?.period || 'Unknown',
+              team: a.team,
+              segment_type: a.segment_type,
+              grade: grade ? {
+                research: grade.research,
+                presentation: grade.presentation,
+                consistency: grade.consistency,
+                segment: grade.segment,
+                total: grade.research + grade.presentation + grade.consistency + grade.segment,
+                comment: grade.comment,
+                is_published: grade.isPublished || false,
+              } : null,
+            };
+          });
+        return {
+          id: s.id,
+          name: s.name,
+          email: s.email,
+          period: s.period,
+          assignments: studentAssignments,
+        };
+      });
+
+      // 3. Build per-debate summary with team rosters
+      const debateSummaries = DEBATES.map(d => {
+        const debateContent = debatesData.debates?.find(dc => dc.id === d.id);
+        const debateAssigns = assignments.filter(a => a.debate_id === d.id);
+        const teamA = debateAssigns.filter(a => a.team === 'A').map(a => {
+          const st = students.find(s => s.id === a.student_id);
+          return { name: st?.name || 'Unknown', segment: a.segment_type };
+        });
+        const teamB = debateAssigns.filter(a => a.team === 'B').map(a => {
+          const st = students.find(s => s.id === a.student_id);
+          return { name: st?.name || 'Unknown', segment: a.segment_type };
+        });
+        return {
+          id: d.id,
+          period: d.period,
+          topic: d.topic,
+          teamA_name: debateContent?.teamA?.name || 'Team A',
+          teamA_position: debateContent?.teamA?.position || '',
+          teamA_roster: teamA,
+          teamB_name: debateContent?.teamB?.name || 'Team B',
+          teamB_position: debateContent?.teamB?.position || '',
+          teamB_roster: teamB,
+          segments: debateContent?.segments || [],
+          keyMoments: debateContent?.keyMoments || [],
+          keyStats: debateContent?.keyStats || [],
+        };
+      });
+
+      // 4. Combine into a single context bundle
+      const contextBundle = {
+        _meta: {
+          exported_at: new Date().toISOString(),
+          exported_by: user?.email || 'admin',
+          purpose: 'Grading context for Economics Policy Debates — Saint Francis High School',
+          rubric: {
+            categories: [
+              { name: 'Research & Evidence', key: 'research', max: 10, description: 'Quality and relevance of cited evidence, data, and sources' },
+              { name: 'Presentation & Delivery', key: 'presentation', max: 10, description: 'Clarity, confidence, pacing, and persuasiveness of delivery' },
+              { name: 'Consistency & Logic', key: 'consistency', max: 10, description: 'Logical coherence, staying on topic, and addressing counterarguments' },
+              { name: 'Segment Contribution', key: 'segment', max: 10, description: 'How well the student fulfilled their specific role (opening, main argument, rebuttal, closing)' },
+            ],
+            total_max: 40,
+          },
+        },
+        debates: debateSummaries,
+        students: enrichedStudents,
+      };
+
+      // 5. Download as JSON file
+      const blob = new Blob([JSON.stringify(contextBundle, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `grading-context-${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      alert('Grading context exported! Upload this file to a new Cowork session for AI-assisted grading.');
+    } catch (err) {
+      alert('Export failed: ' + err.message);
+      console.error('[Export]', err);
+    } finally {
+      setSaving(false);
+    }
+  }, [students, assignments, gradingForms, user, DEBATES]);
+
   // ===========================================================================
   // SEGMENT HELPERS
   // ===========================================================================
@@ -1318,6 +1426,25 @@ Requirements:
             <div className="flex-1 text-xs text-gray-500 flex items-center">
               {publishedDebates.has(effectiveDebate) ? '✅ Published — students can see feedback' : 'Not yet published'}
             </div>
+          </div>
+        </div>
+
+        {/* Export Grading Context */}
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h3 className="font-semibold text-gray-700 mb-3 text-sm">Export Grading Context</h3>
+          <p className="text-xs text-gray-500 mb-3">
+            Download a single JSON file that bundles all debate transcripts, outlines, arguments, student assignments,
+            and existing grades. Upload this to a Claude Cowork session for AI-assisted grading with full context.
+          </p>
+          <div className="flex gap-3 items-center">
+            <button disabled={saving || students.length === 0}
+              onClick={exportGradingContext}
+              className="px-4 py-2 bg-leather text-white rounded text-sm font-semibold hover:bg-leather/90 disabled:opacity-50">
+              {saving ? 'Exporting...' : 'Export Combined Grading Context (.json)'}
+            </button>
+            <span className="text-xs text-gray-400">
+              {students.length} students, {assignments.length} assignments, {Object.keys(gradingForms).length} grades
+            </span>
           </div>
         </div>
       </div>
