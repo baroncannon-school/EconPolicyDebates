@@ -1603,6 +1603,102 @@ Requirements:
           </div>
         </div>
 
+        {/* Export Grades for Gradebook */}
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <h3 className="font-semibold text-gray-700 mb-3 text-sm">Export Grades for Gradebook</h3>
+          <p className="text-xs text-gray-500 mb-3">
+            Download a CSV of all graded students across all debates. One row per student — if a student has multiple segments, their scores are averaged. Ready to paste into your gradebook.
+          </p>
+          <div className="flex gap-3 items-center flex-wrap">
+            <button disabled={students.length === 0}
+              onClick={() => {
+                // Build one row per student, averaging across all their graded segments
+                const rows = [];
+                const periodStudents = students.filter(s => s.period === selectedPeriod);
+                periodStudents.forEach(s => {
+                  const studentAssigns = assignments.filter(a => a.student_id === s.id);
+                  if (!studentAssigns.length) {
+                    rows.push({ name: s.name, email: s.email, period: s.period, debate: 'Unassigned', segments: 0, research: '', presentation: '', consistency: '', segment: '', total: '', comment: '' });
+                    return;
+                  }
+                  const debate = DEBATES.find(d => d.id === studentAssigns[0].debate_id);
+                  const gradedAssigns = studentAssigns.filter(a => gradingForms[a.id]?.gradeId);
+                  if (!gradedAssigns.length) {
+                    rows.push({ name: s.name, email: s.email, period: s.period, debate: debate?.topic || '?', segments: studentAssigns.length, research: '', presentation: '', consistency: '', segment: '', total: '', comment: 'Not yet graded' });
+                    return;
+                  }
+                  // Average scores across segments
+                  const avg = (key) => {
+                    const vals = gradedAssigns.map(a => gradingForms[a.id]?.[key] || 0);
+                    return (vals.reduce((s,v) => s+v, 0) / vals.length).toFixed(1);
+                  };
+                  const r = parseFloat(avg('research')), p = parseFloat(avg('presentation')), c = parseFloat(avg('consistency')), sg = parseFloat(avg('segment'));
+                  const comments = gradedAssigns.map(a => gradingForms[a.id]?.comment).filter(Boolean).join(' | ');
+                  rows.push({ name: s.name, email: s.email, period: s.period, debate: debate?.topic || '?', segments: gradedAssigns.length, research: r, presentation: p, consistency: c, segment: sg, total: (r+p+c+sg).toFixed(1), comment: comments });
+                });
+                // Sort by name
+                rows.sort((a,b) => a.name.localeCompare(b.name));
+                // Build CSV
+                const header = 'Student Name,Email,Period,Debate Topic,Segments Graded,Research (/10),Presentation (/10),Consistency (/10),Segment (/10),Total (/40),Comments';
+                const csvRows = rows.map(r => [r.name, r.email, r.period, r.debate, r.segments, r.research, r.presentation, r.consistency, r.segment, r.total, `"${(r.comment||'').replace(/"/g,'""')}"`].join(','));
+                const csv = header + '\n' + csvRows.join('\n');
+                const blob = new Blob([csv], { type: 'text/csv' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `debate-grades-${selectedPeriod}-period-${new Date().toISOString().slice(0,10)}.csv`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+              }}
+              className="px-4 py-2 bg-cedar text-white rounded text-sm font-semibold hover:bg-cedar/90 disabled:opacity-50">
+              Export {selectedPeriod} Period Grades (.csv)
+            </button>
+            <button disabled={students.length === 0}
+              onClick={() => {
+                // All periods combined
+                const rows = [];
+                students.forEach(s => {
+                  const studentAssigns = assignments.filter(a => a.student_id === s.id);
+                  if (!studentAssigns.length) {
+                    rows.push({ name: s.name, email: s.email, period: s.period, debate: 'Unassigned', segments: 0, research: '', presentation: '', consistency: '', segment: '', total: '', comment: '' });
+                    return;
+                  }
+                  const debate = DEBATES.find(d => d.id === studentAssigns[0].debate_id);
+                  const gradedAssigns = studentAssigns.filter(a => gradingForms[a.id]?.gradeId);
+                  if (!gradedAssigns.length) {
+                    rows.push({ name: s.name, email: s.email, period: s.period, debate: debate?.topic || '?', segments: studentAssigns.length, research: '', presentation: '', consistency: '', segment: '', total: '', comment: 'Not yet graded' });
+                    return;
+                  }
+                  const avg = (key) => {
+                    const vals = gradedAssigns.map(a => gradingForms[a.id]?.[key] || 0);
+                    return (vals.reduce((s,v) => s+v, 0) / vals.length).toFixed(1);
+                  };
+                  const r = parseFloat(avg('research')), p = parseFloat(avg('presentation')), c = parseFloat(avg('consistency')), sg = parseFloat(avg('segment'));
+                  const comments = gradedAssigns.map(a => gradingForms[a.id]?.comment).filter(Boolean).join(' | ');
+                  rows.push({ name: s.name, email: s.email, period: s.period, debate: debate?.topic || '?', segments: gradedAssigns.length, research: r, presentation: p, consistency: c, segment: sg, total: (r+p+c+sg).toFixed(1), comment: comments });
+                });
+                rows.sort((a,b) => a.period.localeCompare(b.period) || a.name.localeCompare(b.name));
+                const header = 'Student Name,Email,Period,Debate Topic,Segments Graded,Research (/10),Presentation (/10),Consistency (/10),Segment (/10),Total (/40),Comments';
+                const csvRows = rows.map(r => [r.name, r.email, r.period, r.debate, r.segments, r.research, r.presentation, r.consistency, r.segment, r.total, `"${(r.comment||'').replace(/"/g,'""')}"`].join(','));
+                const csv = header + '\n' + csvRows.join('\n');
+                const blob = new Blob([csv], { type: 'text/csv' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `debate-grades-all-periods-${new Date().toISOString().slice(0,10)}.csv`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+              }}
+              className="px-4 py-2 bg-white border border-cedar text-cedar rounded text-sm font-semibold hover:bg-cedar/10 disabled:opacity-50">
+              Export All Periods (.csv)
+            </button>
+          </div>
+        </div>
+
         {/* Export Grading Context */}
         <div className="bg-white border border-gray-200 rounded-lg p-4">
           <h3 className="font-semibold text-gray-700 mb-3 text-sm">Export Grading Context</h3>
