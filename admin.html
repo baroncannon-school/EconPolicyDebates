@@ -48,6 +48,8 @@
 
 const GOOGLE_CLIENT_ID = '590647019888-8bmuqo86m43v14g1f43a2f00q1v3l9c4.apps.googleusercontent.com';
 const ALLOWED_DOMAIN = 'sfhs.com';
+const SUPABASE_URL = 'https://tqtgyjcjawrxxpcpmhxt.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_--5IIbGAgbWdBqRDP3biDQ_oQBzCAJt';
 
 const SEGMENT_TEMPLATE = [
   { type: 'opening', team: 'A', label: 'Opening Statement — Team A' },
@@ -193,8 +195,9 @@ function App() {
 
   // ===== GRADING SECTION STATE =====
   const [currentSection, setCurrentSection] = useState('wizard'); // 'wizard' or 'grading'
-  const [supabaseUrl, setSupabaseUrl] = useState(() => localStorage.getItem('admin_supabaseUrl') || 'https://tqtgyjcjawrxxpcpmhxt.supabase.co');
-  const [supabaseAnonKey, setSupabaseAnonKey] = useState(() => localStorage.getItem('admin_supabaseAnonKey') || '');
+  // Supabase config — anon key is public (RLS controls access), no need for user input
+  const supabaseUrl = SUPABASE_URL;
+  const supabaseAnonKey = SUPABASE_ANON_KEY;
   const [students, setStudents] = useState([]);
   const [assignments, setAssignments] = useState([]);
   const [grades, setGrades] = useState([]); // loaded from debate_grades
@@ -230,10 +233,7 @@ function App() {
     if (apiKey) localStorage.setItem('admin_claudeApiKey', apiKey);
   }, [apiKey]);
 
-  useEffect(() => {
-    localStorage.setItem('admin_supabaseUrl', supabaseUrl);
-    localStorage.setItem('admin_supabaseAnonKey', supabaseAnonKey);
-  }, [supabaseUrl, supabaseAnonKey]);
+  // Supabase URL and anon key are now constants — no localStorage needed
 
   // Ref for auto-load tracking (must be before early return)
   const hasLoadedGradingRef = useRef(false);
@@ -634,7 +634,7 @@ Requirements:
   // ===========================================================================
 
   const callSupabase = useCallback(async (endpoint, method = 'GET', body = null, extraHeaders = {}) => {
-    if (!supabaseUrl || !supabaseAnonKey) throw new Error('Supabase not configured');
+    // URL and key are constants — always available
     const url = `${supabaseUrl}/rest/v1/${endpoint}`;
     const headers = {
       'Content-Type': 'application/json',
@@ -654,7 +654,7 @@ Requirements:
     }
     const text = await res.text();
     return text ? JSON.parse(text) : null;
-  }, [supabaseUrl, supabaseAnonKey]);
+  }, []);
 
   const loadStudents = useCallback(async () => {
     try {
@@ -722,14 +722,14 @@ Requirements:
 
   // Auto-load data when entering grading section with credentials configured
   useEffect(() => {
-    if (currentSection === 'grading' && supabaseUrl && supabaseAnonKey && user && !hasLoadedGradingRef.current) {
+    if (currentSection === 'grading' && user && !hasLoadedGradingRef.current) {
       hasLoadedGradingRef.current = true;
       loadAllData();
     }
     if (currentSection !== 'grading') {
       hasLoadedGradingRef.current = false;
     }
-  }, [currentSection, supabaseUrl, supabaseAnonKey, user, loadAllData]);
+  }, [currentSection, user, loadAllData]);
 
   const saveAssignment = useCallback(async (studentId, debateId, team, segmentType) => {
     try {
@@ -1060,28 +1060,20 @@ Requirements:
 
     return (
       <div className="space-y-6">
-        {/* Config */}
+        {/* Data Connection Status */}
         <div className="bg-white border border-gray-200 rounded-lg p-4">
-          <h3 className="font-semibold text-gray-700 mb-3 text-sm">Supabase Config</h3>
-          <div className="space-y-2">
-            <input type="text" value={supabaseUrl} onChange={e => setSupabaseUrl(e.target.value)}
-              placeholder="https://xxx.supabase.co"
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm font-body" />
-            <input type="password" value={supabaseAnonKey} onChange={e => setSupabaseAnonKey(e.target.value)}
-              placeholder="Supabase anon key"
-              className="w-full border border-gray-300 rounded px-3 py-2 text-sm font-body" />
+          <div className="flex items-center justify-between">
+            <div className={`flex-1 p-2 rounded text-xs font-body ${students.length > 0 ? 'bg-green-50 text-green-700 border border-green-200' : 'bg-yellow-50 text-yellow-700 border border-yellow-200'}`}>
+              {students.length > 0 ? (
+                <span>Connected — {students.length} students, {assignments.length} assignments, {grades.length} grades loaded</span>
+              ) : (
+                <span>Loading data from Supabase...</span>
+              )}
+            </div>
             <button onClick={() => { hasLoadedGradingRef.current = false; loadAllData(); }} disabled={loadingData}
-              className="px-3 py-1.5 bg-cedar text-white rounded text-sm font-semibold hover:bg-cedar/90 disabled:opacity-50">
-              {loadingData ? 'Loading...' : 'Refresh Data from Supabase'}
+              className="ml-3 px-3 py-1.5 bg-cedar text-white rounded text-sm font-semibold hover:bg-cedar/90 disabled:opacity-50">
+              {loadingData ? 'Loading...' : 'Refresh'}
             </button>
-          </div>
-          {/* Data status banner */}
-          <div className={`mt-3 p-2 rounded text-xs font-body ${students.length > 0 ? 'bg-green-50 text-green-700 border border-green-200' : 'bg-yellow-50 text-yellow-700 border border-yellow-200'}`}>
-            {students.length > 0 ? (
-              <span>Connected — {students.length} students, {assignments.length} assignments, {grades.length} grades loaded from Supabase</span>
-            ) : (
-              <span>No data loaded yet. Enter your anon key and click "Refresh Data from Supabase".</span>
-            )}
           </div>
         </div>
 
